@@ -11,7 +11,7 @@
       "question": "<div class='progress_note''><strong> Progress note</strong> Blood cultures have been collected. Patient has been started on vancomycin and cefepime.</div><br><br>The nurse has noted that the patient has been started on antibiotics and is experiencing difficulty finding a suitable site for intravenous access due to the patient's history of intravenous drug use , which often makes venous access challenging. The nurse inquires whether a <strong>peripherally inserted central catheter line</strong> might be a more appropriate option. Your decision is:",
       "choices": ["Proceed with it", "Decide against it"],
       "correct": 1,
-      "explanation": "PICC line should not be insterted in patient whom you are suspecting bacteremia. There is a risk for relapse"
+      "explanation": "PICC lines should be avoided in suspected bacteremia and <span class='highlight'>delayed at least 48 hours</span> after resolution to reduce the <span class='highlight'>risk of recurrent or catheter-related infections</span>. They can serve as a <span class='highlight'>nidus for biofilm formation</span> and bacterial colonization"
     }
   ]
   
