@@ -1,14 +1,14 @@
 [
     {
       "id": 1,
-      "question": "You have been consulted to admit the patient. Blood cultures have already been collected. The emergency department physician is seeking your input on the most appropriate antibiotic choice. You are eager to help and you recommend",
+      "question": "You have been consulted to admit the patient. <strong>Blood cultures</strong> have already been collected. The emergency department physician is seeking your input on the most appropriate antibiotic choice. You are eager to help and you recommend",
       "choices": ["Ceftriaxone and doxycycline", "Vancomycin and azithromycin", "Vancomycin and cefepime", " Daptomycin and rifampin", "Ceftriaxone and doxycycline"],
       "correct": 2,
-      "explanation": "Vancomycin provides coverage against resistant Gram-positive bacteria, particularly MRSA, while cefepime offers broad-spectrum coverage against Gram-negative bacteria, including Pseudomonas aeruginosa. This combination helps address the most common and dangerous pathogens until specific culture results guide targeted therapy."
+      "explanation": "<span class='highlight'>Vancomycin</span> provides coverage against <span class='highlight'>resistant Gram-positive bacteria, particularly MRSA</span>, while <span class='highlight'>cefepime</span> offers broad-spectrum coverage against <span class='highlight'>Gram-negative bacteria, including Pseudomonas aeruginosa</span>. This combination helps address the most common and dangerous pathogens until specific culture results guide targeted therapy."
     },
     {
-      "id": 2,
-      "question": "The nurse has noted that the patient has been started on antibiotics and is experiencing difficulty finding a suitable site for intravenous access due to the patient's history of intravenous drug use , which often makes venous access challenging. The nurse inquires whether a peripherally inserted central catheter line might be a more appropriate option. Your decision is:",
+      "id": null,
+      "question": "<div class='progress_note''><strong> Progress note</strong> Blood cultures have been collected. Patient has been started on vancomycin and cefepime.</div><br><br>The nurse has noted that the patient has been started on antibiotics and is experiencing difficulty finding a suitable site for intravenous access due to the patient's history of intravenous drug use , which often makes venous access challenging. The nurse inquires whether a <strong>peripherally inserted central catheter line</strong> might be a more appropriate option. Your decision is:",
       "choices": ["Proceed with it", "Decide against it"],
       "correct": 1,
       "explanation": "PICC line should not be insterted in patient whom you are suspecting bacteremia. There is a risk for relapse"

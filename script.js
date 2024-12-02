@@ -27,7 +27,7 @@ function loadQuestion() {
   const question = questions[currentQuestionIndex];
   const questionHTML = `
     <br>
-    <p>${question.id}. ${question.question}<p>
+    <p> ${question.question}<p>
     ${question.choices
       .map(
         (choice, index) => `

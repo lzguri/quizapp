@@ -43,13 +43,24 @@ th {
     margin: 15px 0;
     font-size: 16px;
   }
+
+  .highlight {
+    background-color: #1BFC06;
+  }
+
+  .progress_note {
+    border: 1px solid #0c2d48;
+    background-color: #ADD8E6;
+    padding: 5px;
+    border-radius: 6px;
+  }
   
   .correct {
     color: rgb(7, 8, 7);
   }
   
   .incorrect {
-    color: red;
+    color: black;
   }
   
   .navigation-buttons {
