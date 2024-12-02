@@ -1,61 +1,75 @@
 body {
     font-family: Arial, sans-serif;
-    background-color: #f4f4f4;
-    margin: 0;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    height: 100vh;
-  }
-  
-  .quiz-container {
-    background: #fff;
-    padding: 20px;
-    border-radius: 8px;
-    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
-    text-align: center;
-    width: 300px;
-  }
+}
 
-  p {
-    text-align: left;
-  }
-  
-  h1 {
-    font-size: 24px;
+.clinical_presentation {
+    color:black;
+    width: 90%;
+    justify-content: center; /* Center horizontally */
+    align-items: center; /* Center vertically */
+    height: 100vh; /* Full viewport height */
+    position: relative;
+    left: 50%;
+    transform: translate(-50%);
+
+}
+
+h1 {
+    text-align: center;
+}
+
+.question-container {
     margin-bottom: 20px;
-  }
-  
-  .options {
-    margin-top: 20px;
-    text-align: left;
-  }
-  
-  button {
-    display: block;
-    text-align: left;
-    width: 100%;
-    padding: 10px;
-    margin: 10px 0;
-    font-size: 16px;
-    cursor: pointer;
+    font-size: 18px;
+    font-weight: bold;
+}
+
+.choices-container {
+    margin-bottom: 20px;
+}
+
+button {
+    padding: 10px 20px;
+    margin: 5px;
     border: none;
-    border-radius: 5px;
-    background-color: #007bff;
+    background-color: #007BFF;
     color: white;
-  }
-  
-  button:hover {
-    background-color: #0056b3;
-  }
-  
-  .hidden {
-    display: none;
-  }
-  
-  #explanation {
-    margin-top: 20px;
-    font-size: 16px;
-    color: green;
-  }
-  
+    cursor: pointer;
+    border-radius: 5px;
+}
+
+button:disabled {
+    background-color: #cccccc;
+    cursor: not-allowed;
+}
+
+.error {
+    color: red;
+    margin-top: 10px;
+}
+
+.explanation {
+    margin-top: 15px;
+    font-style: italic;
+    color: #333;
+}
+
+body {
+    font-family:Arial, Helvetica, sans-serif;
+    font-size:14px;
+    content: justify;
+}
+table {
+    
+    border-collapse: collapse;
+    margin: auto;
+}
+th, td {
+    border: 1px solid #000;
+    padding: 5px;
+    padding-right: 5px;
+    text-align: left;
+}
+th {
+    background-color: #f2f2f2;
+}
