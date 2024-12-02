@@ -1,23 +1,17 @@
 [
     {
-        "id": 1,
-        "question": "What is the capital of France?",
-        "choices": ["Paris", "London", "Berlin", "Madrid"],
-        "answer": "Paris",
-        "explanation": "Paris is the capital and most populous city of France."
+      "id": 1,
+      "question": "You have been consulted to admit the patient. Blood cultures have already been collected. The emergency department physician is seeking your input on the most appropriate antibiotic choice. You are eager to help and you recommend",
+      "choices": ["Ceftriaxone and doxycycline", "Vancomycin and azithromycin", "Vancomycin and cefepime", " Daptomycin and rifampin", "Ceftriaxone and doxycycline"],
+      "correct": 2,
+      "explanation": "Vancomycin provides coverage against resistant Gram-positive bacteria, particularly MRSA, while cefepime offers broad-spectrum coverage against Gram-negative bacteria, including Pseudomonas aeruginosa. This combination helps address the most common and dangerous pathogens until specific culture results guide targeted therapy."
     },
     {
-        "id": 2,
-        "question": "Which planet is known as the Red Planet?",
-        "choices": ["Earth", "Mars", "Jupiter", "Venus"],
-        "answer": "Mars",
-        "explanation": "Mars is called the Red Planet due to its reddish appearance caused by iron oxide."
-    },
-    {
-        "id": 3,
-        "question": "What is the largest mammal?",
-        "choices": ["Elephant", "Blue Whale", "Giraffe", "Hippopotamus"],
-        "answer": "Blue Whale",
-        "explanation": "The blue whale is the largest mammal, weighing up to 200 tons."
+      "id": 2,
+      "question": "The nurse has noted that the patient has been started on antibiotics and is experiencing difficulty finding a suitable site for intravenous access due to the patient's history of intravenous drug use , which often makes venous access challenging. The nurse inquires whether a peripherally inserted central catheter line might be a more appropriate option. Your decision is:",
+      "choices": ["Proceed with it", "Decide against it"],
+      "correct": 1,
+      "explanation": "PICC line should not be insterted in patient whom you are suspecting bacteremia. There is a risk for relapse"
     }
-]
+  ]
+  

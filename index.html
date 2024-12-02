@@ -1,90 +1,85 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Lab Results Table</title>
-    <link rel="stylesheet" href="styles.css">
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Quiz Application</title>
+  <link rel="stylesheet" href="styles.css">
 </head>
 <body>
+  <div>
     <div class="clinical_presentation">
-    <p>A 32-year-old female presents to the emergency 
-        department with a one-week history of fever, chills, fatigue, night sweats, and malaise. She has also experienced unintentional weight loss of approximately 1.4 kilograms and generalized musculoskeletal symptoms including myalgias and arthralgias. Additionally, she reports intermittent chest discomfort and progressive dyspnea. The patient has a significant history of intravenous heroin use for the past three years and a history of recurrent skin infections, including a previous skin abscess. She denies any recent sick contacts, dysuria, or diarrhea.</p>
-    
-    <p>
-     Vital signs are notable for blood pressure of 134/76 mmHg, fever of 38.9°C, heart rate of 105 bpm, and respiratory rate of 20 breaths/min. Physical examination reveals an ill-appearing, diaphoretic female with multiple track marks on both upper extremities. . Cardiovascular examination reveals a systolic murmur at the left lower sternal border, radiating to the epigastrium. Pulmonary examination is clear bilaterally. Skin examination demonstrates numerous track marks.</p>
-    <table>
-        <thead>
-            <tr>
-                <th>Lab Name</th>
-                <th>Value</th>
-                <th>Reference Range</th>
-            </tr>
-        </thead>
-        <tbody>
-            <tr>
-                <td>WBC</td>
-                <td>20.3</td>
-                <td>4.0–11.0 x 10³/μL</td>
-            </tr>
-            <tr>
-                <td>Hemoglobin</td>
-                <td>10.5</td>
-                <td>13.5–17.5 g/dL (male), 12.0–15.5 g/dL (female)</td>
-            </tr>
-            <tr>
-                <td>PLT</td>
-                <td>460</td>
-                <td>150–450 x 10³/μL</td>
-            </tr>
-            <tr>
-                <td>CRP</td>
-                <td>203</td>
-                <td>&lt;10 mg/L</td>
-            </tr>
-            <tr>
-                <td>ESR</td>
-                <td>65</td>
-                <td>0–20 mm/hr</td>
-            </tr>
-            <tr>
-                <td>Creatinine</td>
-                <td>0.9</td>
-                <td>0.6–1.2 mg/dL</td>
-            </tr>
-            <tr>
-                <td>BUN</td>
-                <td>23</td>
-                <td>7–20 mg/dL</td>
-            </tr>
-            <tr>
-                <td>ALT</td>
-                <td>105</td>
-                <td>7–56 U/L</td>
-            </tr>
-            <tr>
-                <td>AST</td>
-                <td>76</td>
-                <td>10–40 U/L</td>
-            </tr>
-        </tbody>
-    </table>
-        <p>You have been consulted to admit the patient. Blood cultures have already been collected. The emergency department physician is seeking your input on the most appropriate antibiotic choice. You are eager to help and you recommend:</p>
-        <div class="quiz-container">
-        <input type="radio"> Ceftriaxone and doxycycline
-        <br>
-        <input type="radio"> Vancomycin and azithromycin
-        <br>
-        <input type="radio"> Vancomycin and cefepime
-        <br>
-        <input type="radio"> Daptomycin and doxycycline
-        <br>
-        <input type="radio"> Ceftriaxone and doxycycline
-        <br>
-        <br>
-        <input type="button" name="" value="Submit" id="sbmBtn">
+        <p>A 32-year-old female presents to the emergency 
+            department with a one-week history of fever, chills, fatigue, night sweats, and malaise. She has also experienced unintentional weight loss of approximately 1.4 kilograms and generalized musculoskeletal symptoms including myalgias and arthralgias. Additionally, she reports intermittent chest discomfort and progressive dyspnea. The patient has a significant history of intravenous heroin use for the past three years and a history of recurrent skin infections, including a previous skin abscess. She denies any recent sick contacts, dysuria, or diarrhea.</p>
+        
+        <p> Vital signs are notable for blood pressure of 134/76 mmHg, fever of 38.9°C, heart rate of 105 bpm, and respiratory rate of 20 breaths/min. Physical examination reveals an ill-appearing, diaphoretic female with multiple track marks on both upper extremities. Cardiovascular examination reveals a systolic murmur heard best at the apex of the heart. Pulmonary examination is clear bilaterally. Skin examination demonstrates numerous track marks.</p>
+        <table>
+            <thead>
+                <tr>
+                    <th>Lab Name</th>
+                    <th>Value</th>
+                    <th>Reference Range</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td>WBC</td>
+                    <td>20.3</td>
+                    <td>4.0–11.0 x 10³/μL</td>
+                </tr>
+                <tr>
+                    <td>Hemoglobin</td>
+                    <td>10.5</td>
+                    <td>13.5–17.5 g/dL (male), 12.0–15.5 g/dL (female)</td>
+                </tr>
+                <tr>
+                    <td>PLT</td>
+                    <td>460</td>
+                    <td>150–450 x 10³/μL</td>
+                </tr>
+                <tr>
+                    <td>CRP</td>
+                    <td>203</td>
+                    <td>&lt;10 mg/L</td>
+                </tr>
+                <tr>
+                    <td>ESR</td>
+                    <td>65</td>
+                    <td>0–20 mm/hr</td>
+                </tr>
+                <tr>
+                    <td>Creatinine</td>
+                    <td>0.9</td>
+                    <td>0.6–1.2 mg/dL</td>
+                </tr>
+                <tr>
+                    <td>BUN</td>
+                    <td>23</td>
+                    <td>7–20 mg/dL</td>
+                </tr>
+                <tr>
+                    <td>ALT</td>
+                    <td>105</td>
+                    <td>7–56 U/L</td>
+                </tr>
+                <tr>
+                    <td>AST</td>
+                    <td>76</td>
+                    <td>10–40 U/L</td>
+                </tr>
+            </tbody>
+        </table>
+  </div>
+  <div class="container">
+    <div id="question-box"></div>
+    <div id="feedback"></div>
+    <div class="navigation-buttons">
+      <button id="prev" class="nav-button">Previous</button>
+      <button id="submit" class="nav-button">Submit</button>
+      <button id="next" class="nav-button">Next</button>
+      <button id="finish" onclick="finishQuiz()">Finish</button>
     </div>
-    
-
+  </div>
+  <script src="script.js"></script>
 </body>
 </html>

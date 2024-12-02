@@ -1,97 +1,136 @@
-let questions = [];
 let currentQuestionIndex = 0;
-let answers = []; // Tracks user answers
+let answers = {}; // Store user's answers
+let questions = [];
 
-const questionContainer = document.getElementById('questionContainer');
-const choicesContainer = document.getElementById('choicesContainer');
-const errorText = document.getElementById('errorText');
-const explanationText = document.getElementById('explanationText');
-const prevButton = document.getElementById('prevButton');
-const nextButton = document.getElementById('nextButton');
+// Fetch questions from the JSON file
+fetch("questions.json")
+  .then(response => response.json())
+  .then(data => {
+    questions = data;
+    loadQuestion();
+  })
+  .catch(error => console.error("Error loading questions:", error));
 
-// Fetch the questions from the JSON file
-async function loadQuestions() {
-    try {
-        const response = await fetch('questions.json');
-        questions = await response.json();
-        answers = Array(questions.length).fill(null); // Initialize answer tracking
-        renderQuestion();
-    } catch (error) {
-        console.error('Error loading questions:', error);
-    }
-}
+// Load the current question or show the score if all questions are done
+function loadQuestion() {
+  const questionBox = document.getElementById("question-box");
+  const feedback = document.getElementById("feedback");
+  feedback.innerHTML = ""; // Clear previous feedback
+  questionBox.innerHTML = ""; // Clear the question box
 
-function renderQuestion() {
-    if (questions.length === 0) return; // Ensure questions are loaded
+  if (currentQuestionIndex >= questions.length) {
+    // All questions answered, show the score
+    showScore();
+    return;
+  }
 
-    const currentQuestion = questions[currentQuestionIndex];
-    questionContainer.textContent = `${currentQuestion.id}. ${currentQuestion.question}`;
-    
-    choicesContainer.innerHTML = ''; // Clear previous choices
-    currentQuestion.choices.forEach((choice, index) => {
-        const choiceDiv = document.createElement('div');
-        const choiceInput = document.createElement('input');
-        choiceInput.type = 'radio';
-        choiceInput.name = 'choices';
-        choiceInput.value = choice;
-        choiceInput.id = `choice${index}`;
-        choiceInput.disabled = answers[currentQuestionIndex] !== null; // Freeze answered questions
-        
-        if (answers[currentQuestionIndex] === choice) {
-            choiceInput.checked = true; // Preserve selection
-        }
+  const question = questions[currentQuestionIndex];
+  const questionHTML = `
+    <br>
+    <p>${question.id}. ${question.question}<p>
+    ${question.choices
+      .map(
+        (choice, index) => `
+      <label>
+        <input type="radio" name="choice" value="${index}" ${
+          answers[currentQuestionIndex] === index ? "checked" : ""
+        } ${answers[currentQuestionIndex] !== undefined ? "disabled" : ""}>
+        ${choice}
+      </label><br>
+    `
+      )
+      .join("")}
+  `;
+  questionBox.innerHTML = questionHTML;
 
-        const choiceLabel = document.createElement('label');
-        choiceLabel.htmlFor = `choice${index}`;
-        choiceLabel.textContent = choice;
+  // Show feedback if the question has been answered
+  if (answers[currentQuestionIndex] !== undefined) {
+    const selectedAnswer = answers[currentQuestionIndex];
+    const correctAnswer = question.correct;
+    const feedback = document.getElementById("feedback");
 
-        choiceDiv.appendChild(choiceInput);
-        choiceDiv.appendChild(choiceLabel);
-        choicesContainer.appendChild(choiceDiv);
-    });
-
-    explanationText.textContent = ''; // Clear the explanation
-    updateButtons();
-    errorText.textContent = ''; // Clear errors
-}
-
-function updateButtons() {
-    prevButton.disabled = currentQuestionIndex === 0;
-    nextButton.disabled = currentQuestionIndex === questions.length - 1;
-}
-
-function nextQuestion() {
-    if (currentQuestionIndex < questions.length - 1) {
-        currentQuestionIndex++;
-        renderQuestion();
-    }
-}
-
-function prevQuestion() {
-    if (currentQuestionIndex > 0) {
-        currentQuestionIndex--;
-        renderQuestion();
-    }
-}
-
-function submitAnswer() {
-    const selectedChoice = document.querySelector('input[name="choices"]:checked');
-    if (!selectedChoice) {
-        errorText.textContent = 'Please select an answer before proceeding!';
-        return;
-    }
-
-    const currentQuestion = questions[currentQuestionIndex];
-    answers[currentQuestionIndex] = selectedChoice.value;
-
-    // Show explanation only if the answer is correct
-    if (selectedChoice.value === currentQuestion.answer) {
-        explanationText.textContent = `Correct! ${currentQuestion.explanation}`;
+    if (selectedAnswer === correctAnswer) {
+      feedback.innerHTML = `<p class="correct">Correct! ${question.explanation}</p>`;
     } else {
-        explanationText.textContent = ''; // Clear explanation if incorrect
+      feedback.innerHTML = `<p class="incorrect">Incorrect! ${question.explanation}</p>`;
+      document
+        .querySelectorAll("input[name='choice']")
+        [correctAnswer].parentNode.style.color = "green"; // Highlight correct answer
     }
+  }
 
-    renderQuestion();
+  // Update navigation buttons
+  document.getElementById("prev").disabled = currentQuestionIndex === 0;
+  document.getElementById("next").disabled =
+    currentQuestionIndex === questions.length - 1 || answers[currentQuestionIndex] === undefined;
+
+  // Disable the Submit button if the question is already answered
+  document.getElementById("submit").disabled = answers[currentQuestionIndex] !== undefined;
 }
 
-loadQuestions(); // Initialize the app
+// Handle the Submit button click
+document.getElementById("submit").addEventListener("click", () => {
+  const selected = document.querySelector("input[name='choice']:checked");
+  if (!selected) {
+    alert("Please select an answer before submitting.");
+    return;
+  }
+
+  const selectedAnswer = parseInt(selected.value);
+  const question = questions[currentQuestionIndex];
+  const feedback = document.getElementById("feedback");
+
+  if (selectedAnswer === question.correct) {
+    feedback.innerHTML = `<p class="correct">Correct! ${question.explanation}</p>`;
+  } else {
+    feedback.innerHTML = `<p class="incorrect">Incorrect! ${question.explanation}</p>`;
+    document
+      .querySelectorAll("input[name='choice']")
+      [question.correct].parentNode.style.color = "green";
+  }
+
+  // Store the user's answer and disable inputs
+  answers[currentQuestionIndex] = selectedAnswer;
+  document.querySelectorAll("input[name='choice']").forEach(input => {
+    input.disabled = true;
+  });
+
+  document.getElementById("submit").disabled = true;
+  document.getElementById("next").disabled = currentQuestionIndex === questions.length - 1;
+});
+
+// Handle the Previous button click
+document.getElementById("prev").addEventListener("click", () => {
+  currentQuestionIndex--;
+  loadQuestion();
+});
+
+// Handle the Next button click
+document.getElementById("next").addEventListener("click", () => {
+  currentQuestionIndex++;
+  loadQuestion();
+});
+
+// Show the final score
+function showScore() {
+  const questionBox = document.getElementById("question-box");
+  const feedback = document.getElementById("feedback");
+  feedback.innerHTML = ""; // Clear feedback
+
+  const totalQuestions = questions.length;
+  const correctAnswers = Object.keys(answers).filter(
+    index => questions[index].correct === answers[index]
+  ).length;
+
+  questionBox.innerHTML = `
+    <h2>Quiz Complete!</h2>
+    <p>You scored ${correctAnswers} out of ${totalQuestions} (${(
+    (correctAnswers / totalQuestions) *
+    100
+  ).toFixed(2)}%).</p>
+    <p>Thank you for taking the quiz!</p>
+  `;
+
+  // Hide navigation buttons after completion
+  document.querySelector(".navigation-buttons").style.display = "none";
+}
