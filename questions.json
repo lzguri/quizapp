@@ -2,7 +2,7 @@
     {
         "id": null,
         "question": "Which of the following is the most likely diagnosis?",
-        "choices": ["Pneumonia", "Urinary tract infection", "Acute cholecystitis", "Infective endocarditis"],
+        "choices": ["Pneumonia", "Urinary tract infection", "Acute cholecystitis", "Infective endocarditis", "Myocardial infarction"],
         "correct": 3,
         "explanation": "The most likely diagnosis in this case is infective endocarditis. The patient has a history of <span class='highlight'>intravenous drug use,</span> and now presents with <span class='highlight'>fever and a heart murmur</span>, which are classic findings for IE."
     }, 
@@ -22,8 +22,8 @@
     },
     {
         "id": null,
-        "question": "Which abnormality on the EKG would be most concerning to you?",
-        "choices": ["Sinus tachycardia", "Atrial fibrillation", "First-degree AV block", "Non-specific T wave changes"],
+        "question": "GIven our diagnosis of IE, which abnormality on the EKG would be most concerning to you?",
+        "choices": ["Sinus tachycardia", "Atrial fibrillation", "First-degree AV block", "Non-specific T wave changes", "High QRS amplitude"],
         "correct": 2,
         "explanation": "First-degree AV block is a concerning finding as it may indicate extension of infection into the<span class='highlight'> paravalvular region.</span>"
     }    

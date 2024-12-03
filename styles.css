@@ -48,19 +48,29 @@ th {
     background-color: #1BFC06;
   }
 
+  .wright_answer, .incorrect_answer {
+    color: black;
+    font-weight: bolder;
+  }
+
   .progress_note {
     border: 1px solid #0c2d48;
     background-color: #ADD8E6;
     padding: 5px;
-    border-radius: 6px;
   }
   
   .correct {
     color: rgb(7, 8, 7);
+    border: 1px solid green;
+    padding: 3px;
+    background-color: #dddada;
   }
   
   .incorrect {
     color: black;
+    border: 1px solid red;
+    padding: 3px;
+    background-color: #dddada;
   }
   
   .navigation-buttons {

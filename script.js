@@ -81,9 +81,9 @@ document.getElementById("submit").addEventListener("click", () => {
   const feedback = document.getElementById("feedback");
 
   if (selectedAnswer === question.correct) {
-    feedback.innerHTML = `<p class="correct">Correct! ${question.explanation}</p>`;
+    feedback.innerHTML = `<p class="correct"><span class="wright_answer">Correct!</span> ${question.explanation}</p>`;
   } else {
-    feedback.innerHTML = `<p class="incorrect">Incorrect! ${question.explanation}</p>`;
+    feedback.innerHTML = `<p class="incorrect"><span class="incorrect_answer">Incorrect!</span> ${question.explanation}</p>`;
     document
       .querySelectorAll("input[name='choice']")
       [question.correct].parentNode.style.color = "green";
