@@ -1,17 +1,31 @@
 [
     {
+        "id": null,
+        "question": "Which of the following is the most likely diagnosis?",
+        "choices": ["Pneumonia", "Urinary tract infection", "Acute cholecystitis", "Infective endocarditis"],
+        "correct": 3,
+        "explanation": "The most likely diagnosis in this case is infective endocarditis. The patient has a history of <span class='highlight'>intravenous drug use,</span> and now presents with <span class='highlight'>fever and a heart murmur</span>, which are classic findings for IE."
+    }, 
+    {
       "id": 1,
       "question": "You have been consulted to admit the patient. <strong>Blood cultures</strong> have already been collected. The emergency department physician is seeking your input on the most appropriate antibiotic choice. You are eager to help and you recommend",
       "choices": ["Ceftriaxone and doxycycline", "Vancomycin and azithromycin", "Vancomycin and cefepime", " Daptomycin and rifampin", "Ceftriaxone and doxycycline"],
       "correct": 2,
-      "explanation": "<span class='highlight'>Vancomycin</span> provides coverage against <span class='highlight'>resistant Gram-positive bacteria, particularly MRSA</span>, while <span class='highlight'>cefepime</span> offers broad-spectrum coverage against <span class='highlight'>Gram-negative bacteria, including Pseudomonas aeruginosa</span>. This combination helps address the most common and dangerous pathogens until specific culture results guide targeted therapy."
+      "explanation": "<span class='highlight'>Vancomycin</span> is effective against <span class='highlight'>resistant Gram-positive bacteria, including MRSA</span>, as well as streptococci, enterococci, and coagulase-negative staphylococci. Staphylococcus aureus and streptococci are the primary pathogens responsible for endocarditis. In contrast, <span class='highlight'>cefepime</span> provides broad-spectrum coverage against <span class='highlight'>Gram-negative bacteria, including Pseudomonas aeruginosa</span>. An alternative combination of antibiotics to consider is vancomycin with ceftriaxone. Whenever possible, review previous culture results as they can offer valuable guidance for selecting appropriate therapy."
     },
     {
       "id": null,
       "question": "<div class='progress_note''><strong> Progress note</strong> Blood cultures have been collected. Patient has been started on vancomycin and cefepime.</div><br><br>The nurse has noted that the patient has been started on antibiotics and is experiencing difficulty finding a suitable site for intravenous access due to the patient's history of intravenous drug use , which often makes venous access challenging. The nurse inquires whether a <strong>peripherally inserted central catheter line</strong> might be a more appropriate option. Your decision is:",
       "choices": ["Proceed with it", "Decide against it"],
       "correct": 1,
-      "explanation": "PICC lines should be avoided in suspected bacteremia and <span class='highlight'>delayed at least 48 hours</span> after resolution to reduce the <span class='highlight'>risk of recurrent or catheter-related infections</span>. They can serve as a <span class='highlight'>nidus for biofilm formation</span> and bacterial colonization"
-    }
+      "explanation": "The decision to place a PICC line should be evaluated on a case-by-case basis. In general, PICC lines should be avoided in cases of suspected bacteremia and <span class='highlight'>delayed for at least 48 hours</span> after resolution to minimize the <span class='highlight'>risk of recurrent or catheter-related infections</span>. PICC lines can act as a <span class='highlight'>nidus for biofilm formation</span> and bacterial colonization"
+    },
+    {
+        "id": null,
+        "question": "Which abnormality on the EKG would be most concerning to you?",
+        "choices": ["Sinus tachycardia", "Atrial fibrillation", "First-degree AV block", "Non-specific T wave changes"],
+        "correct": 2,
+        "explanation": "First-degree AV block is a concerning finding as it may indicate extension of infection into the<span class='highlight'> paravalvular region.</span>"
+    }    
   ]
   
