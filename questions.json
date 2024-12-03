@@ -22,10 +22,11 @@
     },
     {
         "id": null,
-        "question": "GIven our diagnosis of IE, which abnormality on the EKG would be most concerning to you?",
+        "question": "Given the diagnosis of infective endocarditis (IE), which abnormality on the EKG would be most concerning?",
         "choices": ["Sinus tachycardia", "Atrial fibrillation", "First-degree AV block", "Non-specific T wave changes", "High QRS amplitude"],
         "correct": 2,
-        "explanation": "First-degree AV block is a concerning finding as it may indicate extension of infection into the<span class='highlight'> paravalvular region.</span>"
-    }    
+        "explanation": "First-degree AV block is a significant finding as it may suggest extension of the infection into the <span class='highlight'>paravalvular region</span>, potentially indicating an abscess. While atrial fibrillation is a concerning arrhythmia, it is not uncommon for infection to trigger atrial fibrillation, particularly in older patients, though it is less typical in younger individuals."
+    }
+    
   ]
   

@@ -45,12 +45,12 @@ th {
   }
 
   .highlight {
-    background-color: #1BFC06;
+    background-color: #fffacd;
   }
 
   .wright_answer, .incorrect_answer {
     color: black;
-    font-weight: bolder;
+    font-weight: bold;
   }
 
   .progress_note {
