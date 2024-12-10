@@ -100,4 +100,11 @@ th {
     padding: 20px;
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
   }
+
+  @media screen and (max-width: 768px) {
+    .container {
+      width: 100%;  /* Makes the container occupy full width on smaller screens */
+      padding: 10px; /* Reduce padding on smaller screens for better fit */
+    }
+  }
   
