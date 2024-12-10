@@ -64,7 +64,20 @@
         ],
         "correct": 3,
         "explanation": "An echocardiogram is necessary in this case. Although the patient presents with a murmur that requires investigation, an echocardiogram should be ordered regardless of the presence of a murmur to assess for valvular abnormalities and vegetations, which are common in infective endocarditis (IE)."
+    },
+    {
+        "id": null,
+        "question": "<div class='progress_note'><strong>Progress Note:</strong> Blood cultures are positive for MRSA. The patient is currently on vancomycin. Anti-HCV is positive, and HCV RNA has been sent for further testing. An echocardiogram is being conducted. Since this is MRSA bacteremia, an ID consult is recommended, which has already been completed.</div><br><br>What is your next step now?",
+        "choices": [
+            "Order urinalysis",
+            "Await ID consult",
+            "Order procalcitonin",
+            "Order repeat blood cultures"
+        ],
+        "correct": 3,
+        "explanation": "In cases of Staphylococcus aureus bacteremia, blood cultures should be repeated every 24 to 48 hours until clearance is achieved while on antibiotics. Persistent bacteremia has prognostic value."
     }
+    
     
   ]
   
