@@ -1,40 +1,50 @@
 [
     {
-        "question": "Which of the following is the most likely diagnosis?",
-        "answers": [
-            "Pneumonia",
-            "Urinary tract infection",
-            "Acute cholecystitis",
-            "Infective endocarditis",
-            "Myocardial infarction"
-        ],
-        "rightChoice": 3,
-        "explanation": "The most likely diagnosis in this case is infective endocarditis. The patient has a history of <span class='highlight'>intravenous drug use,</span> and now presents with <span class='highlight'>fever and a heart murmur</span>, which are classic findings for IE.",
-        "addNote": ["A 32-year-old female presents to the emergency department with a one-week history of fever, chills, fatigue, night sweats, and malaise. She has also experienced unintentional weight loss of approximately 1.4 kilograms and generalized musculoskeletal symptoms including myalgias and arthralgias. The patient has a significant history of intravenous heroin use for the past three years and a history of recurrent skin infections, including a previous skin abscess. She denies any recent ick contacts, dysuria, or diarrhea.",
-        "Vital signs are notable for blood pressure of 134/76 mmHg, fever of 38.9°C, heart rate of 105 bpm, and respiratory rate of 20 breaths/min.",
-        " Physical examination reveals an ill-appearing, diaphoretic female with multiple track marks on both upper extremities. Cardiovascular examination reveals a systolic murmur heard best at the apex of the heart. Pulmonary examination is clear bilaterally. Skin examination demonstrates numerous track marks.The electrocardiogram demonstrates sinus tachycardia with nonspecific T-wave abnormalities. The chest X-ray reveals no evidence of an acute cardiopulmonary process."],
+        "question": "You are evaluating a patient in the emergency department. ER physician has ordered a type and screen already. Based on the blood workup, which is the most likely cause of the patient's anemia?",
+        "answers": ["Thalassemia", "Vitamin B12 deficiency", "Iron deficiency anemia", "Sideroblastic anemia", "Hemolytic anemia"],
+        "rightChoice": 2,
+        "explanation": "<span class='highlight'>Iron deficiency anemia</span> is the most likely diagnosis in this patient, as indicated by the hypochromic (low MCH/MCHC), microcytic (low MCV) anemia observed in the blood workup. Three primary causes of microcytic anemia include thalassemia, iron deficiency anemia, and sideroblastic anemia, with advanced anemia of chronic disease also being a potential cause. <span class='highlight'>Iron deficiency anemia</span> typically presents with elevated platelet counts (PLT) and increased red cell distribution width (RDW), both of which are characteristic findings. In contrast, <span class='highlight'>thalassemia</span> is associated with a normal RDW.",
+        "addNote": "",
+        "addNote": ["<strong>History of Present Illness:</strong>The patient is a 23-year-old male who presented to the hospital for evaluation of abdominal pain. He reports a long-standing history of intermittent abdominal pain over several months, localized to the lower abdomen. The pain is described as sharp at times and dull at others. He also reports alternating episodes of diarrhea and normal stools, with persistent rectal bleeding for several months. He denies fever but notes decreased appetite and unintentional weight loss. Two days prior to presentation, the abdominal pain worsened, prompting him to seek evaluation in the emergency department. A chart review revealed a prior ED visit approximately one year ago for unrelated symptoms, during which routine laboratory testing incidentally identified anemia. The patient denies any NSAID use.",
+        "<strong>Medications:</strong> None",
+        "<strong>Social History:</strong>  Smokes 1 pack of cigarettes per day, denies alcohol consumption and illicit drug use.",
+        "<strong>Family History:</strong>  Father underwent bowel surgery at a young age, details unknown.",
+        "<strong>Vital Signs:</strong> Blood Pressure 134/76 mmHg, Heart Rate 101 beats/min, Temperature 98.2°F, Respiratory Rate 12 breaths/min.",
+        "<strong>Physical Examination:</strong><br>General: Thin male appearing pale and underweight.<br>Skin: Pallor noted.<br>HEENT: Conjunctiva pale.<br>Abdomen: Tenderness noted in the lower abdomen without rebound or guarding.<br>Cardiovascular: Tachycardic, regular rhythm, no murmurs or gallops.<br>Pulmonary: Clear breath sounds bilaterally.<br>Neurological: Grossly intact."],
         "addLabs": {
         "header": ["Test", "Result", "Reference Range"],
         "rows": [
-          ["Hemoglobin", "14.0 g/dL", "13.5-17.5 g/dL"],
-          ["Glucose", "220 mg/dL", "70-110 mg/dL"],
-          ["WBC", "8.2 x10^9/L", "4.0-10.0 x10^9/L"]
-        ]
+        ["WBC", "15.7 x10^9/L", "4.0-10.0 x10^9/L"],
+        ["RBC", "4.5 x10^12/L", "4.7-6.1 x10^12/L"],
+        ["Hemoglobin", "6.6 g/dL", "13.5-17.5 g/dL"],
+        ["MCHC", "22.5 g/dL", "32-36 g/dL"],
+        ["MCH", "15.1 pg", "27-31 pg"],
+        ["MCV", "64.5 fL", "80-100 fL"],
+        ["Platelets (PLT)", "560 x10^9/L", "150-450 x10^9/L"],
+        ["RDW", "22%", "11.5-14.5%"],
+        ["Creatinine", "0.67 mg/dL", "0.6-1.2 mg/dL"],
+        ["BUN", "14 mg/dL", "7-20 mg/dL"],
+        ["Albumin", "3.2 g/dL", "3.5-5.0 g/dL"],
+        ["AST", "22 U/L", "10-40 U/L"],
+        ["ALT", "23 U/L", "7-56 U/L"],
+        ["CRP", "14.5 mg/L", "<10 mg/L"]
+    ]
         },
         "addOrders": [
             "Administer pain relief medication",
-            "Acetaminophen PRN"
+            "Nil per os (NPO)",
+            "Type and screen"
         ]
     },
     {
-        "question": "You have been consulted to admit the patient. <strong>Blood cultures</strong> have already been collected. The emergency department physician is seeking your input on the most appropriate antibiotic choice. You are eager to help and you recommend",
-        "answers": ["Ceftriaxone and doxycycline", "Vancomycin and azithromycin", "Vancomycin and cefepime", " Daptomycin and rifampin", "Ceftriaxone and doxycycline"],
-        "rightChoice": 2,
-        "explanation": "<span class='highlight'>Vancomycin</span> is effective against <span class='highlight'>resistant Gram-positive bacteria, including MRSA</span>, as well as streptococci, enterococci, and coagulase-negative staphylococci. Staphylococcus aureus and streptococci are the primary pathogens responsible for endocarditis. In contrast, <span class='highlight'>cefepime</span> provides broad-spectrum coverage against <span class='highlight'>Gram-negative bacteria, including Pseudomonas aeruginosa</span>. An alternative combination of antibiotics to consider is vancomycin with ceftriaxone. Whenever possible, review previous culture results as they can offer valuable guidance for selecting appropriate therapy.",
+        "question": "You are evaluating a patient in the emergency department. The physician has ordered a type and screen along with other blood tests. Based on the blood workup, which is the most likely cause of the patient's anemia?",
+        "answers": ["Thalassemia", "Vitamin B12 deficiency", "Iron deficiency anemia", "Sideroblastic anemia", "Hemolytic anemia"],
+        "rightChoice": 3,
+        "explanation": "<span class='highlight'>Iron deficiency anemia</span> is the most likely diagnosis in this patient, as indicated by the hypochromic (low MCH/MCHC), microcytic (low MCV) anemia observed in the blood workup. Three primary causes of microcytic anemia include thalassemia, iron deficiency anemia, and sideroblastic anemia, with advanced anemia of chronic disease also being a potential cause. <span class='highlight'>Iron deficiency anemia</span> typically presents with elevated platelet counts (PLT) and increased red cell distribution width (RDW), both of which are characteristic findings. In contrast, <span class='highlight'>thalassemia</span> is associated with a normal RDW.",
         "addNote": "",
         "addLabs": {},
         "addOrders": [
-            "Blood culture"
+
     ]
     },
     {
