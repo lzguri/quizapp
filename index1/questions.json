@@ -1,0 +1,83 @@
+[
+    {
+        "id": null,
+        "question": "Which of the following is the most likely diagnosis?",
+        "choices": ["Pneumonia", "Urinary tract infection", "Acute cholecystitis", "Infective endocarditis", "Myocardial infarction"],
+        "correct": 3,
+        "explanation": "The most likely diagnosis in this case is infective endocarditis. The patient has a history of <span class='highlight'>intravenous drug use,</span> and now presents with <span class='highlight'>fever and a heart murmur</span>, which are classic findings for IE."
+    }, 
+    {
+      "id": 1,
+      "question": "You have been consulted to admit the patient. <strong>Blood cultures</strong> have already been collected. The emergency department physician is seeking your input on the most appropriate antibiotic choice. You are eager to help and you recommend",
+      "choices": ["Ceftriaxone and doxycycline", "Vancomycin and azithromycin", "Vancomycin and cefepime", " Daptomycin and rifampin", "Ceftriaxone and doxycycline"],
+      "correct": 2,
+      "explanation": "<span class='highlight'>Vancomycin</span> is effective against <span class='highlight'>resistant Gram-positive bacteria, including MRSA</span>, as well as streptococci, enterococci, and coagulase-negative staphylococci. Staphylococcus aureus and streptococci are the primary pathogens responsible for endocarditis. In contrast, <span class='highlight'>cefepime</span> provides broad-spectrum coverage against <span class='highlight'>Gram-negative bacteria, including Pseudomonas aeruginosa</span>. An alternative combination of antibiotics to consider is vancomycin with ceftriaxone. Whenever possible, review previous culture results as they can offer valuable guidance for selecting appropriate therapy."
+    },
+    {
+      "id": null,
+      "question": "<div class='progress_note''><strong> Progress note</strong> Blood cultures have been collected. Patient has been started on vancomycin and cefepime.</div><br><br>The nurse has noted that the patient has been started on antibiotics and is experiencing difficulty finding a suitable site for intravenous access due to the patient's history of intravenous drug use , which often makes venous access challenging. The nurse inquires whether a <strong>peripherally inserted central catheter line</strong> might be a more appropriate option. Your decision is:",
+      "choices": ["Proceed with it", "Decide against it"],
+      "correct": 1,
+      "explanation": "The decision to place a PICC line should be evaluated on a case-by-case basis. In general, PICC lines should be avoided in cases of suspected bacteremia and <span class='highlight'>delayed for at least 48 hours</span> after resolution to minimize the <span class='highlight'>risk of recurrent or catheter-related infections</span>. PICC lines can act as a <span class='highlight'>nidus for biofilm formation</span> and bacterial colonization"
+    },
+    {
+        "id": null,
+        "question": "Given the diagnosis of infective endocarditis (IE), which abnormality on the EKG would be most concerning?",
+        "choices": ["Sinus tachycardia", "Atrial fibrillation", "First-degree AV block", "Non-specific T wave changes", "High QRS amplitude"],
+        "correct": 2,
+        "explanation": "First-degree AV block is a significant finding as it may suggest extension of the infection into the <span class='highlight'>paravalvular region</span>, potentially indicating an abscess. While atrial fibrillation is a concerning arrhythmia, it is not uncommon for infection to trigger atrial fibrillation, particularly in older patients, though it is less typical in younger individuals."
+    },
+    {
+        "id": null,
+        "question": "Returning to the case, you receive a call from the lab reporting that the blood cultures are positive for gram-positive cocci in clusters, later confirmed to be Staphylococcus aureus. What is your next step?",
+        "choices": ["Stop vancomycin and start nafcillin", "Add cefazolin to the current regimen", "Stop cefepime and continue vancomycin", "Stop vancomycin and start daptomycin", "Add rifampin"],
+        "correct": 2,
+        "explanation": "At this stage, gram-negative coverage can be discontinued. Vancomycin should be continued as antibiotic sensitivities are not yet available, and MRSA cannot be ruled out. While nafcillin or cefazolin would be excellent options for MSSA, it is premature to make this switch. Daptomycin covers MRSA, but the patient is already adequately covered with vancomycin."
+    },
+    {
+        "id": null,
+        "question": "<div class='progress_note'><strong>Progress Note:</strong> Blood cultures are positive for Staphylococcus aureus. Cefepime has been discontinued, and vancomycin is being continued pending sensitivities.</div><br><br>After reviewing the labs, you note that the patient's ALT is elevated. What is your next step?",
+        "choices": ["Ignore the elevated ALT, likely due to alcohol abuse", "Order ANA and anti-smooth muscle antibody", "Order anti-HCV", "Just trend the levels for now", "Consult a liver specialist"],
+        "correct": 2,
+        "explanation": "Given the patient's history of intravenous drug use, which significantly increases the risk for hepatitis C, the appropriate next step is to test for anti-HCV antibodies."
+    },
+    {
+        "id": null,
+        "question": "<div class='progress_note'><strong>Progress Note:</strong> Blood cultures are positive for Staphylococcus aureus. Cefepime has been discontinued, and vancomycin is being continued pending sensitivities. ALT elevation is being investigated.</div><br><br>You correctly tested for hepatitis C, and her anti-HCV is positive. The patient asks, 'What does a positive result mean?'",
+        "choices": [
+            "She will need further testing", 
+            "She is definitely positive and needs treatment", 
+            "The result is a false positive; something else may have caused it", 
+            "A liver specialist will provide a more definitive answer"
+        ],
+        "correct": 0,
+        "explanation": "A positive anti-HCV result can indicate one of the following: (1) the patient currently has an active infection, (2) she had a past infection but cleared it spontaneously (anti-HCV antibodies persist after resolution), or (3) the result is a false positive. In the context of infective endocarditis (IE), the production of rheumatoid factor can lead to false-positive anti-HCV results. The next appropriate step is to check HCV RNA. If HCV RNA is positive, it confirms an active infection that requires treatment."
+    },
+    {
+        "id": null,
+        "question": "<div class='progress_note'><strong>Progress Note:</strong> Blood cultures are positive for Staphylococcus aureus. Cefepime has been discontinued, and vancomycin is being continued pending sensitivities. Anti-HCV is positive, and HCV RNA has been sent for further testing.</div><br><br>Lab confirms MRSA. You have correctly continued vancomycin. What is your next step?",
+        "choices": [
+            "Order a chest x-ray", 
+            "Add ceftaroline to vancomycin", 
+            "Continue current management", 
+            "Order echocardiogram"
+        ],
+        "correct": 3,
+        "explanation": "An echocardiogram is necessary in this case. Although the patient presents with a murmur that requires investigation, an echocardiogram should be ordered regardless of the presence of a murmur to assess for valvular abnormalities and vegetations, which are common in infective endocarditis (IE)."
+    },
+    {
+        "id": null,
+        "question": "<div class='progress_note'><strong>Progress Note:</strong> Blood cultures are positive for MRSA. The patient is currently on vancomycin. Anti-HCV is positive, and HCV RNA has been sent for further testing. An echocardiogram is being conducted. Since this is MRSA bacteremia, an ID consult is recommended, which has already been completed.</div><br><br>What is your next step now?",
+        "choices": [
+            "Order urinalysis",
+            "Await ID consult",
+            "Order procalcitonin",
+            "Order repeat blood cultures"
+        ],
+        "correct": 3,
+        "explanation": "In cases of Staphylococcus aureus bacteremia, blood cultures should be repeated every 24 to 48 hours until clearance is achieved while on antibiotics. Persistent bacteremia has prognostic value."
+    }
+    
+    
+  ]
+  

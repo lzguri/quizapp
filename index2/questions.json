@@ -1,0 +1,54 @@
+[
+    {
+        "question": "Which of the following is the most likely diagnosis?",
+        "answers": [
+            "Pneumonia",
+            "Urinary tract infection",
+            "Acute cholecystitis",
+            "Infective endocarditis",
+            "Myocardial infarction"
+        ],
+        "rightChoice": 3,
+        "explanation": "The most likely diagnosis in this case is infective endocarditis. The patient has a history of <span class='highlight'>intravenous drug use,</span> and now presents with <span class='highlight'>fever and a heart murmur</span>, which are classic findings for IE.",
+        "addNote": ["A 32-year-old female presents to the emergency department with a one-week history of fever, chills, fatigue, night sweats, and malaise. She has also experienced unintentional weight loss of approximately 1.4 kilograms and generalized musculoskeletal symptoms including myalgias and arthralgias. The patient has a significant history of intravenous heroin use for the past three years and a history of recurrent skin infections, including a previous skin abscess. She denies any recent ick contacts, dysuria, or diarrhea.",
+        "Vital signs are notable for blood pressure of 134/76 mmHg, fever of 38.9°C, heart rate of 105 bpm, and respiratory rate of 20 breaths/min.",
+        " Physical examination reveals an ill-appearing, diaphoretic female with multiple track marks on both upper extremities. Cardiovascular examination reveals a systolic murmur heard best at the apex of the heart. Pulmonary examination is clear bilaterally. Skin examination demonstrates numerous track marks.The electrocardiogram demonstrates sinus tachycardia with nonspecific T-wave abnormalities. The chest X-ray reveals no evidence of an acute cardiopulmonary process."],
+        "addLabs": {
+        "header": ["Test", "Result", "Reference Range"],
+        "rows": [
+          ["Hemoglobin", "14.0 g/dL", "13.5-17.5 g/dL"],
+          ["Glucose", "220 mg/dL", "70-110 mg/dL"],
+          ["WBC", "8.2 x10^9/L", "4.0-10.0 x10^9/L"]
+        ]
+        },
+        "addOrders": [
+            "Administer pain relief medication",
+            "Acetaminophen PRN"
+        ]
+    },
+    {
+        "question": "You have been consulted to admit the patient. <strong>Blood cultures</strong> have already been collected. The emergency department physician is seeking your input on the most appropriate antibiotic choice. You are eager to help and you recommend",
+        "answers": ["Ceftriaxone and doxycycline", "Vancomycin and azithromycin", "Vancomycin and cefepime", " Daptomycin and rifampin", "Ceftriaxone and doxycycline"],
+        "rightChoice": 2,
+        "explanation": "<span class='highlight'>Vancomycin</span> is effective against <span class='highlight'>resistant Gram-positive bacteria, including MRSA</span>, as well as streptococci, enterococci, and coagulase-negative staphylococci. Staphylococcus aureus and streptococci are the primary pathogens responsible for endocarditis. In contrast, <span class='highlight'>cefepime</span> provides broad-spectrum coverage against <span class='highlight'>Gram-negative bacteria, including Pseudomonas aeruginosa</span>. An alternative combination of antibiotics to consider is vancomycin with ceftriaxone. Whenever possible, review previous culture results as they can offer valuable guidance for selecting appropriate therapy.",
+        "addNote": "",
+        "addLabs": {},
+        "addOrders": [
+            "Blood culture"
+    ]
+    },
+    {
+        "question": "What is your name?",
+        "answers": [
+            "Order abdominal CT",
+            "Prescribe antibiotics",
+            "Perform endoscopy",
+            "Discharge patient"
+        ],
+        "rightChoice": 0,
+        "explanation": "An abdominal CT is recommended to confirm the diagnosis and evaluate for complications of pancreatitis.",
+        "addNote": "",
+        "addLabs": {},
+        "addOrders": ["Abdominal CT"]
+    }
+]

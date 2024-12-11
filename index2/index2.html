@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Medical Quiz App</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <header>
+        <h1>Medical Quiz App</h1>
+    </header>
+
+    <main>
+        <!-- Collapsible Sections -->
+        <section id="notes-section" class="collapsible">
+            <h2>Notes</h2>
+            <div id="notes-content"></div>
+        </section>
+
+        <section id="results-section" class="collapsible">
+            <h2>Results</h2>
+            <div id="results-content"></div>
+        </section>
+
+        <section id="orders-section" class="collapsible">
+            <h2>Orders</h2>
+            <div id="orders-content"></div>
+        </section>
+
+        <!-- Quiz Area -->
+        <section id="quiz-section">
+            <h2>Question</h2>
+            <div id="question-container"></div>
+            <div id="answers-container"></div>
+            <div id="explanation-container"></div>
+
+            <!-- Navigation Buttons -->
+            <div class="navigation">
+                <button id="previous-button" disabled>Previous</button>
+                <button id="next-button" disabled>Next</button>
+                <button id="finish-button" style="display: none;">Finish</button>
+            </div>
+        </section>
+    </main>
+
+        <!-- Score Section -->
+    <section id="score-section" style="display: none;">
+            <h2>Your Score</h2>
+            <p id="score-result"></p>
+    </section>
+
+
+    <script src="script.js"></script>
+</body>
+</html>

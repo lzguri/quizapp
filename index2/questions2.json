@@ -1,0 +1,19 @@
+[
+    {
+      "question": "What is the diagnosis?",
+      "answers": ["Diabetes", "Hypertension", "Anemia"],
+      "rightChoice": 0,
+      "explanation": "The correct diagnosis is Diabetes due to the elevated blood sugar levels.",
+      "addNote": "<b>Clinical note:</b> Patient presents with polyuria and polydipsia.",
+      "addLabs": {
+        "header": ["Test", "Result", "Reference Range"],
+        "rows": [
+          ["Hemoglobin", "14.0 g/dL", "13.5-17.5 g/dL"],
+          ["Glucose", "220 mg/dL", "70-110 mg/dL"],
+          ["WBC", "8.2 x10^9/L", "4.0-10.0 x10^9/L"]
+        ]
+      },
+      "addOrders": "<b>Orders:</b> Start insulin therapy."
+    }
+  ]
+  
