@@ -37,28 +37,28 @@
         ]
     },
     {
-        "question": "You are evaluating a patient in the emergency department. The physician has ordered a type and screen along with other blood tests. Based on the blood workup, which is the most likely cause of the patient's anemia?",
-        "answers": ["Thalassemia", "Vitamin B12 deficiency", "Iron deficiency anemia", "Sideroblastic anemia", "Hemolytic anemia"],
-        "rightChoice": 3,
-        "explanation": "<span class='highlight'>Iron deficiency anemia</span> is the most likely diagnosis in this patient, as indicated by the hypochromic (low MCH/MCHC), microcytic (low MCV) anemia observed in the blood workup. Three primary causes of microcytic anemia include thalassemia, iron deficiency anemia, and sideroblastic anemia, with advanced anemia of chronic disease also being a potential cause. <span class='highlight'>Iron deficiency anemia</span> typically presents with elevated platelet counts (PLT) and increased red cell distribution width (RDW), both of which are characteristic findings. In contrast, <span class='highlight'>thalassemia</span> is associated with a normal RDW.",
-        "addNote": "",
+        "question": "In order to evaluate the type of anemia your next step is to order?",
+        "answers": ["Thyroid-stimulating hormone", "Vitamin B12 and folic acid", "Iron studies", "Reticulocyte count", "Haptoglobin"],
+        "rightChoice":2,
+        "explanation": "Iron deficiency anemia is the most common cause of anemia worldwide. Next step in a patient with microcytic hypochromic anemia or when suspecting iron deficiency anemia is to order iron studies. Low ferritin levels, high TIBC, low percent saturation, and low serum iron levels are indicative of iron deficiency. It's important to note that ferritin levels are inversely proportional to TIBC. Low ferritin often leads to high TIBC as the body attempts to compensate by increasing iron-binding capacity.",
         "addLabs": {},
         "addOrders": [
 
     ]
     },
     {
-        "question": "What is your name?",
-        "answers": [
-            "Order abdominal CT",
-            "Prescribe antibiotics",
-            "Perform endoscopy",
-            "Discharge patient"
-        ],
-        "rightChoice": 0,
-        "explanation": "An abdominal CT is recommended to confirm the diagnosis and evaluate for complications of pancreatitis.",
+  "question": "Given the confirmed diagnosis of iron deficiency anemia and a hemoglobin level below 7 g/dL, what is the most appropriate next step in the management of this patient?",
+  "answers": [
+    "Order abdominal CT",
+    "Prescribe antibiotics",
+    "Consult hematology",
+    "Order packed red blood cell (PRBC) transfusion",
+    "Monitor the patient closely"
+  ],
+  "rightChoice": 3,
+  "explanation": "A hemoglobin level below 7 g/dL indicates severe anemia. In such cases, a PRBC transfusion is often necessary to rapidly correct the anemia and alleviate symptoms like fatigue, shortness of breath, and tachycardia.",
         "addNote": "",
         "addLabs": {},
-        "addOrders": ["Abdominal CT"]
+        "addOrders": []
     }
 ]

@@ -20,7 +20,7 @@ section {
     background: white;
 }
 
-.collapsible h2 {
+.collapsible h2  {
     margin: 0;
     cursor: pointer;
     padding: 10px;
@@ -124,5 +124,10 @@ section {
 
 .siqora {
     font-weight: 500;
+}
+
+#orders-content, #notes-content, #results-content, #question-container, #answers-container, #explanation-container {
+    padding-left: 10px;
+    padding-right: 10px;
 }
 
