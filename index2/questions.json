@@ -74,7 +74,7 @@
          "explanation": "One unit of pRBC typically has a <span class='highlight'>hematocrit of 55% to 65%.</span> In a patient who is not actively bleeding, the transfusion of one unit of pRBCs is expected to raise the <span class='highlight'>hemoglobin level by approximately 1 g/dL and the hematocrit by about 3%.</span>. If hemoglobin doesn't rise appropriately think about ongoing bleeding or hemolysis.",
          "addNote": "",
         "addLabs": {},
-              "addOrders": []
+            "addProgress": ["One unit of pRBC ordered"]
     },
     {
        "question": "The patient has been transfused, and the post-transfusion hemoglobin level is 7.6 g/dL. You are satisfied with the increase in hemoglobin. What is the next appropriate step?",
@@ -106,7 +106,9 @@
   "rightChoice": 5,
   "explanation": "This question is meant to give you a differential in our patient. All the above can cause hematochezia except for celiac disease, which is not associated with blood in the stools. Diverticulosis is less likely in this patient, as it is more common in older individuals; however, we cannot completely rule it out.",
         "addNote": "",
-        "addLabs": {},
+        "addLabs": {
+            "header":["Colonoscopy result"]
+        },
         "addOrders": []
     }
 ]
