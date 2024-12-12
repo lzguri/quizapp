@@ -52,7 +52,7 @@
             "Order abdominal CT",
              "Prescribe antibiotics",
              "Consult hematology",
-            "Order packed red blood cell (PRBC) transfusion",
+            "Order pRBC transfusion",
             "Monitor the patient closely"
   ],
         "rightChoice": 3,
@@ -67,7 +67,23 @@
          "rightChoice": 0,
          "explanation": "One unit of pRBC typically has a hematocrit of 55% to 65%. In a patient who is not actively bleeding, the transfusion of one unit of pRBCs is expected to raise the hemoglobin level by approximately 1 g/dL and the hematocrit by about 3%.",
          "addNote": "",
-              "addLabs": {},
+        "addLabs": {},
               "addOrders": []
+    },
+    {
+       "question": "The patient has been transfused, and the post-transfusion hemoglobin level is 7.6 g/dL. You are satisfied with the increase in hemoglobin. What is the next appropriate step?",
+    "answers": [
+        "CT abdomen/pelvis with contrast",
+        "CT angiogram of the abdomen",
+        "Gastric emptying scan",
+        "Fecal occult blood test",
+        "Colonoscopy"
+    ],
+    "rightChoice": 4,
+    "explanation": "The next step is to identify the source of bleeding that likely caused the patient's iron deficiency anemia. Consultation with the gastroenterology service for colonoscopy is appropriate. Bowel preparation is necessary prior to colonoscopy to ensure the colon is adequately cleared of stool, allowing for optimal visualization of the colonic mucosa and identification of potential bleeding sources or lesions.",
+        "addLabs": {},
+        "addOrders": [
+
+    ]
     }
 ]
