@@ -47,18 +47,29 @@
     ]
     },
     {
-  "question": "You have now diagnosed the patient with iron deficiency anemia, what is the most appropriate next step in the management of this patient?",
-  "answers": [
-    "Order abdominal CT",
-    "Prescribe antibiotics",
-    "Consult hematology",
-    "Order packed red blood cell (PRBC) transfusion",
-    "Monitor the patient closely"
+        "question": "You have now diagnosed the patient with iron deficiency anemia, what is the most appropriate next step in the management of this patient?",
+        "answers": [
+            "Order abdominal CT",
+             "Prescribe antibiotics",
+             "Consult hematology",
+            "Order packed red blood cell (PRBC) transfusion",
+            "Monitor the patient closely"
   ],
-  "rightChoice": 3,
-  "explanation": "A hemoglobin level below 7 g/dL indicates severe anemia. In such cases, a PRBC transfusion is often necessary to rapidly correct the anemia and alleviate symptoms like fatigue, shortness of breath, and tachycardia.",
+        "rightChoice": 3,
+        "explanation": "A hemoglobin level below 7 g/dL indicates severe anemia. In such cases, a PRBC transfusion is often necessary to rapidly correct the anemia and alleviate symptoms like fatigue, shortness of breath, and tachycardia.",
         "addNote": "",
         "addLabs": {},
         "addOrders": []
+    },
+    {
+        "question": "What is the expected increase in hemoglobin after transfusion of one unit of pRBC in a patient who is not actively bleeding?",
+         "answers": ["1 g/dL", "2 g/dL", "3 g/dL", "5 g/dL", "10 g/dL"],
+         "rightChoice": 0,
+         "explanation": "One unit of pRBC typically has a hematocrit of 55% to 65%. In a patient who is not actively bleeding, the transfusion of one unit of pRBCs is expected to raise the hemoglobin level by approximately 1 g/dL and the hematocrit by about 3%."
+    },
+    {
+              "addNote": "",
+              "addLabs": {},
+              "addOrders": []
     }
 ]
