@@ -5,6 +5,7 @@ fetch('questions.json')
 
 let currentQuestionIndex = 0;
 let userAnswers = [];
+let progressHistory = []; // Will store references to appended progress note elements for each question
 
 function initializeQuiz(quizData) {
     displayQuestion(quizData);
@@ -17,7 +18,9 @@ function initializeQuiz(quizData) {
 
         if (currentQuestionIndex < quizData.length - 1) {
             currentQuestionIndex++;
-            collapseSections(); // Collapse sections instead of hiding them
+            if (currentQuestionIndex === 1) {
+                switchToProgressMode();
+            }
             displayQuestion(quizData);
         } else {
             showScore(quizData);
@@ -26,8 +29,11 @@ function initializeQuiz(quizData) {
 
     document.getElementById('previous-button').addEventListener('click', () => {
         if (currentQuestionIndex > 0) {
+            // Remove the progress lines for the current question before going back
+            removeLastProgressLines(currentQuestionIndex);
+
             currentQuestionIndex--;
-            displayQuestion(quizData, true); // Pass true to indicate revisiting
+            displayQuestion(quizData, true);
         }
     });
 
@@ -66,12 +72,19 @@ function displayQuestion(quizData, isRevisit = false) {
         answersContainer.appendChild(button);
     });
 
-    // Update notes, results, and orders sections
-    updateSection('notes-content', questionData.addNote);
-    updateLabsSection(questionData.addLabs);
-    updateSection('orders-content', questionData.addOrders);
+    if (currentQuestionIndex === 0) {
+        // First question: show notes/results/orders again
+        showInitialSections();
+        updateSection('notes-content', questionData.addNote);
+        updateLabsSection(questionData.addLabs);
+        updateSection('orders-content', questionData.addOrders);
+    } else {
+        // From the second question onwards, only append progress lines if not revisiting
+        if (!isRevisit && questionData.addProgress) {
+            updateProgressSection(questionData.addProgress);
+        }
+    }
 
-    // Show explanation for revisited questions
     const explanationContainer = document.getElementById('explanation-container');
     explanationContainer.innerHTML = isRevisit || userAnswers[currentQuestionIndex] !== undefined
         ? (userAnswers[currentQuestionIndex] === questionData.rightChoice
@@ -116,6 +129,8 @@ function handleAnswerSelection(selectedIndex, quizData) {
 
 function updateSection(sectionId, content) {
     const section = document.getElementById(sectionId);
+    if (!section) return;
+
     if (content) {
         if (Array.isArray(content)) {
             content.forEach(item => {
@@ -139,6 +154,8 @@ function updateSection(sectionId, content) {
 
 function updateLabsSection(labs) {
     const section = document.getElementById('results-content');
+    if (!section) return;
+
     section.innerHTML = ''; // Clear existing content
 
     if (labs) {
@@ -175,14 +192,52 @@ function updateLabsSection(labs) {
     }
 }
 
+function updateProgressSection(progressLines) {
+    const section = document.getElementById('progress-content');
+    if (!section) return;
 
+    const appendedElements = [];
 
-function collapseSections() {
-    const sections = ['notes-section', 'results-section', 'orders-section'];
-    sections.forEach(sectionId => {
-        const section = document.getElementById(sectionId);
-        section.classList.add('collapsed'); // Add collapsed class
-    });
+    if (Array.isArray(progressLines)) {
+        progressLines.forEach(item => {
+            const p = document.createElement('p');
+            p.innerHTML = item;
+            section.appendChild(p);
+            appendedElements.push(p);
+        });
+    } else {
+        const p = document.createElement('p');
+        p.innerHTML = progressLines;
+        section.appendChild(p);
+        appendedElements.push(p);
+    }
+
+    // Store appended elements for this question
+    progressHistory[currentQuestionIndex] = appendedElements;
+}
+
+function removeLastProgressLines(questionIndex) {
+    if (progressHistory[questionIndex]) {
+        const appendedElements = progressHistory[questionIndex];
+        appendedElements.forEach(el => {
+            if (el && el.parentNode) {
+                el.parentNode.removeChild(el);
+            }
+        });
+        // Clear the stored reference after removal
+        progressHistory[questionIndex] = [];
+    }
+}
+
+function switchToProgressMode() {
+    // Hide notes/results/orders sections
+    document.getElementById('notes-section').style.display = 'none';
+    document.getElementById('results-section').style.display = 'none';
+    document.getElementById('orders-section').style.display = 'none';
+
+    // Show progress-section
+    const progressSection = document.getElementById('progress-section');
+    progressSection.style.display = 'block';
 }
 
 function showScore(quizData) {
@@ -190,7 +245,7 @@ function showScore(quizData) {
     const totalQuestions = quizData.length;
     const scoreSection = document.getElementById('score-section');
     const mainSection = document.querySelector('main');
-    const percentScore = (correctAnswers/totalQuestions)*100
+    const percentScore = (correctAnswers / totalQuestions) * 100;
 
     // Clear previous content in the score section
     scoreSection.innerHTML = `
@@ -213,8 +268,17 @@ function showScore(quizData) {
     returnButton.addEventListener('click', () => {
         scoreSection.style.display = 'none';
         mainSection.style.display = 'block';
-        currentQuestionIndex = 0; // Reset to the first question
-        displayQuestion(quizData, true); // Enable review mode for all questions
+
+        // Reset to the first question
+        currentQuestionIndex = 0;
+
+        // Show notes/results/orders again and hide progress note
+        showInitialSections();
+        document.getElementById('progress-section').style.display = 'none';
+        document.getElementById('progress-content').innerHTML = '';
+
+        // Display first question in revisit mode (all answered questions should be reviewable)
+        displayQuestion(quizData, true);
     });
     scoreSection.appendChild(returnButton);
 
@@ -223,9 +287,15 @@ function showScore(quizData) {
     resetButton.innerText = "Reset Quiz";
     resetButton.addEventListener('click', () => {
         userAnswers = [];
+        progressHistory = [];
         currentQuestionIndex = 0;
         scoreSection.style.display = 'none';
         mainSection.style.display = 'block';
+
+        showInitialSections();
+        document.getElementById('progress-section').style.display = 'none';
+        document.getElementById('progress-content').innerHTML = '';
+
         displayQuestion(quizData); // Restart with fresh state
     });
     scoreSection.appendChild(resetButton);
@@ -233,4 +303,19 @@ function showScore(quizData) {
     // Hide the main quiz and show the score section
     mainSection.style.display = 'none';
     scoreSection.style.display = 'block';
+}
+
+// Helper function to show initial sections (notes, results, orders) and remove collapsed class if any
+function showInitialSections() {
+    const notesSection = document.getElementById('notes-section');
+    const resultsSection = document.getElementById('results-section');
+    const ordersSection = document.getElementById('orders-section');
+
+    notesSection.style.display = '';
+    resultsSection.style.display = '';
+    ordersSection.style.display = '';
+
+    notesSection.classList.remove('collapsed');
+    resultsSection.classList.remove('collapsed');
+    ordersSection.classList.remove('collapsed');
 }

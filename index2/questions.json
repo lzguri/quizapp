@@ -38,10 +38,13 @@
     },
     {
         "question": "In order to evaluate the type of anemia your next step is to order?",
-        "answers": ["Thyroid-stimulating hormone", "Vitamin B12 and folic acid", "Iron studies", "Reticulocyte count", "Haptoglobin"],
-        "rightChoice":2,
+        "answers": ["Thyroid-stimulating hormone", "Vitamin B12 and folic acid", "Reticulocyte count", "Iron studies", "Haptoglobin"],
+        "rightChoice":3,
         "explanation": "Iron deficiency anemia is the <span class='highlight'>most common cause of anemia worldwide</span>. The next step in evaluating a patient with microcytic, hypochromic anemia or suspected iron deficiency anemia is to order <span class='highlight'>iron studies</span>. Key findings supporting the diagnosis include low ferritin levels, high total iron-binding capacity (TIBC), low percent saturation, and low serum iron levels. Notably, <span class='highlight'>ferritin levels are inversely proportional to TIBC</span>; low ferritin often leads to elevated TIBC as the body compensates by increasing its iron-binding capacity. In contrast, iron overload states such as hemochromatosis are characterized by very high ferritin levels and low TIBC. Sideroblastic anemia can present with similar iron studies to hemochromatosis, including high ferritin and low TIBC.",
         "addLabs": {},
+        "addProgress": [
+            "A 23-year-old male presented with worsening lower abdominal pain, sharp and dull in nature, accompanied by persistent rectal bleeding, alternating diarrhea and normal stools, decreased appetite, and unintentional weight loss over several months. History of anemia identified incidentally one year ago. Social history includes smoking 1 pack per day, and family history is notable for a father who underwent bowel surgery at a young age. Vital signs reveal tachycardia, and examination shows pallor, lower abdominal tenderness, and no guarding or rebound. Laboratory results reveal significant anemia (hemoglobin 6.6 g/dL), microcytosis (MCV 64.5 fL), elevated WBC (15.7 x10^9/L), and thrombocytosis (560 x10^9/L). CRP is elevated at 14.5 mg/L, and albumin is low at 3.2 g/dL. Orders include pain management, NPO, and type and screen."
+    ],
         "addOrders": [
 
     ]
@@ -58,6 +61,9 @@
         "rightChoice": 3,
         "explanation": "Just a reminder! It's good practice to have a type and screen prepared if transfusion is anticipated, as in this case. Additionally, iron studies should be checked before ordering a transfusion, as transfusion can distort these results. Returning to the question, a hemoglobin <span class='highlight'>level below 7 g/dL</span> indicates severe anemia. In such cases, a packed red blood cell [pRBC] transfusion is often necessary to rapidly correct anemia and alleviate symptoms such as fatigue, shortness of breath, and tachycardia. A threshold of 7 g/dL is generally used to guide transfusion decisions; however, in certain situations, such as acute coronary syndrome, a higher threshold of 8 g/dL may be considered. As the saying goes,<strong> 'Don’t treat the number, treat the patient.</strong>'",
         "addNote": "",
+        "addProgress": [
+      "Iron studies are suggestive of iron deficiency anemia"
+    ],
         "addLabs": {},
         "addOrders": []
     },
