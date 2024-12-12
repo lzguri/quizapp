@@ -190,11 +190,13 @@ function showScore(quizData) {
     const totalQuestions = quizData.length;
     const scoreSection = document.getElementById('score-section');
     const mainSection = document.querySelector('main');
+    const percentScore = (correctAnswers/totalQuestions)*100
 
     // Clear previous content in the score section
     scoreSection.innerHTML = `
         <h2>Your Score</h2>
         <p>You scored ${correctAnswers} out of ${totalQuestions}</p>
+        <p>Your score <strong>${Math.round(percentScore)} % </strong></p>
     `;
 
     // Add feedback message

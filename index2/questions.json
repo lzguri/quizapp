@@ -1,9 +1,9 @@
 [
     {
-        "question": "You are evaluating a patient in the emergency department. ER physician has ordered a type and screen already. Based on the blood workup, which is the most likely cause of the patient's anemia?",
+        "question": "You are evaluating a patient in the emergency department. ER physician has ordered a <strong>type and screen</strong> already. Based on the blood workup, which is the most likely cause of the patient's anemia?",
         "answers": ["Thalassemia", "Vitamin B12 deficiency", "Iron deficiency anemia", "Sideroblastic anemia", "Hemolytic anemia"],
         "rightChoice": 2,
-        "explanation": "<span class='highlight'>Iron deficiency anemia</span> is the most likely diagnosis in this patient, as indicated by the hypochromic (low MCH/MCHC), microcytic (low MCV) anemia observed in the blood workup. Three primary causes of microcytic anemia include thalassemia, iron deficiency anemia, and sideroblastic anemia, with advanced anemia of chronic disease also being a potential cause. <span class='highlight'>Iron deficiency anemia</span> typically presents with elevated platelet counts (PLT) and increased red cell distribution width (RDW), both of which are characteristic findings. In contrast, <span class='highlight'>thalassemia</span> is associated with a normal RDW.",
+        "explanation": "<span class='highlight'>Iron deficiency anemia</span> is the most likely diagnosis in this patient, as indicated by the hypochromic (low MCH/MCHC), microcytic (low MCV) anemia observed in the blood workup. Three primary <span class='highlight'>causes of microcytic anemia include thalassemia, iron deficiency anemia, and sideroblastic anemia, with advanced anemia of chronic disease</span> also being a potential cause. Features suggestive <span class='highlight'>Iron deficiency anemia</span> are <span class='highlight'>high PLT and increased RDW</span>. If you chooce <span class='highlight'>thalassemia</span>, RDW is usually normal.",
         "addNote": "",
         "addNote": ["<strong>History of Present Illness:</strong>The patient is a 23-year-old male who presented to the hospital for evaluation of abdominal pain. He reports a long-standing history of intermittent abdominal pain over several months, localized to the lower abdomen. The pain is described as sharp at times and dull at others. He also reports alternating episodes of diarrhea and normal stools, with persistent rectal bleeding for several months. He denies fever but notes decreased appetite and unintentional weight loss. Two days prior to presentation, the abdominal pain worsened, prompting him to seek evaluation in the emergency department. A chart review revealed a prior ED visit approximately one year ago for unrelated symptoms, during which routine laboratory testing incidentally identified anemia. The patient denies any NSAID use.",
         "<strong>Medications:</strong> None",
@@ -40,14 +40,14 @@
         "question": "In order to evaluate the type of anemia your next step is to order?",
         "answers": ["Thyroid-stimulating hormone", "Vitamin B12 and folic acid", "Iron studies", "Reticulocyte count", "Haptoglobin"],
         "rightChoice":2,
-        "explanation": "Iron deficiency anemia is the most common cause of anemia worldwide. Next step in a patient with microcytic hypochromic anemia or when suspecting iron deficiency anemia is to order iron studies. Low ferritin levels, high TIBC, low percent saturation, and low serum iron levels are indicative of iron deficiency. It's important to note that ferritin levels are inversely proportional to TIBC. Low ferritin often leads to high TIBC as the body attempts to compensate by increasing iron-binding capacity.",
+        "explanation": "By the way, Iron deficiency anemia is the most<span class='highlight'> common cause of anemia </span> worldwide. Next step in a patient with microcytic hypochromic anemia or when suspecting iron deficiency anemia is to order <span class='highlight'>iron studies</span>. Low ferritin levels, high TIBC, low percent saturation, and low serum iron levels are indicative of iron deficiency. It's important to note that <span class='highlight'>ferritin levels are inversely proportional to TIBC</span>. Low ferritin often leads to high TIBC as the body attempts to compensate by increasing iron-binding capacity.",
         "addLabs": {},
         "addOrders": [
 
     ]
     },
     {
-  "question": "Given the confirmed diagnosis of iron deficiency anemia and a hemoglobin level below 7 g/dL, what is the most appropriate next step in the management of this patient?",
+  "question": "You have now diagnosed the patient with iron deficiency anemia, what is the most appropriate next step in the management of this patient?",
   "answers": [
     "Order abdominal CT",
     "Prescribe antibiotics",
