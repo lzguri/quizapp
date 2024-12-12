@@ -65,7 +65,7 @@
         "question": "What is the expected increase in hemoglobin after transfusion of one unit of pRBC in a patient who is not actively bleeding?",
          "answers": ["1 g/dL", "2 g/dL", "3 g/dL", "5 g/dL", "10 g/dL"],
          "rightChoice": 0,
-         "explanation": "One unit of pRBC typically has a <span class='highlight'>hematocrit of 55% to 65%.</span> In a patient who is not actively bleeding, the transfusion of one unit of pRBCs is expected to raise the <span class='highlight'>hemoglobin level by approximately 1 g/dL and the hematocrit by about 3%.</span>",
+         "explanation": "One unit of pRBC typically has a <span class='highlight'>hematocrit of 55% to 65%.</span> In a patient who is not actively bleeding, the transfusion of one unit of pRBCs is expected to raise the <span class='highlight'>hemoglobin level by approximately 1 g/dL and the hematocrit by about 3%.</span>. If hemoglobin doesn't rise appropriately think about ongoing bleeding or hemolysis.",
          "addNote": "",
         "addLabs": {},
               "addOrders": []
