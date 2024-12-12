@@ -3,7 +3,7 @@
         "question": "You are evaluating a patient in the emergency department. ER physician has ordered a <strong>type and screen</strong> already. Based on the blood workup, which is the most likely cause of the patient's anemia?",
         "answers": ["Thalassemia", "Vitamin B12 deficiency", "Iron deficiency anemia", "Sideroblastic anemia", "Hemolytic anemia"],
         "rightChoice": 2,
-        "explanation": "<span class='highlight'>Iron deficiency anemia</span> is the most likely diagnosis in this patient, as indicated by the hypochromic (low MCH/MCHC), microcytic (low MCV) anemia observed in the blood workup. Three primary causes of microcytic anemia include thalassemia, iron deficiency anemia, and sideroblastic anemia, with advanced anemia of chronic disease also being a potential cause. Features suggestive <span class='highlight'>Iron deficiency anemia</span> are <span class='highlight'>high PLT and increased RDW</span>. In addition our patient has been experiencing hematochezia. If you chooce <span class='highlight'>thalassemia</span>, RDW is usually normal.",
+        "explanation": "Iron deficiency anemia is the most likely diagnosis in this patient, as indicated by the <span class='highlight'>hypochromic (low MCH/MCHC), microcytic (low MCV) anemia</span> observed in the blood workup. In addition, our patient has been experiencing  <span class='highlight'>hematochezia</span>, leading to chronic blood loss and accompanying iron depletion. The three primary causes of microcytic anemia include thalassemia, iron deficiency anemia, and sideroblastic anemia, with advanced anemia of chronic disease also being a potential cause, although  <span class='highlight'>ACD is usually normocytic</span>. Features suggestive of iron deficiency anemia in our patient include a  <span class='highlight'>high platelet count  and increased red cell distribution width</span> ; although not specific to IDA, they are suggestive.  <span class='highlight'>RDW is typically normal in thalassemia</span>",
         "addNote": "",
         "addNote": ["<strong>History of Present Illness:</strong>The patient is a 23-year-old male who presented to the hospital for evaluation of abdominal pain. He reports a long-standing history of intermittent abdominal pain over several months, localized to the lower abdomen. The pain is described as sharp at times and dull at others. He also reports alternating episodes of diarrhea and normal stools, with persistent rectal bleeding for several months. He denies fever but notes decreased appetite and unintentional weight loss. Two days prior to presentation, the abdominal pain worsened, prompting him to seek evaluation in the emergency department. A chart review revealed a prior ED visit approximately one year ago for unrelated symptoms, during which routine laboratory testing incidentally identified anemia. The patient denies any NSAID use.",
         "<strong>Medications:</strong> None",
@@ -40,7 +40,7 @@
         "question": "In order to evaluate the type of anemia your next step is to order?",
         "answers": ["Thyroid-stimulating hormone", "Vitamin B12 and folic acid", "Iron studies", "Reticulocyte count", "Haptoglobin"],
         "rightChoice":2,
-        "explanation": "By the way, Iron deficiency anemia is the most<span class='highlight'> common cause of anemia </span> worldwide. Next step in a patient with microcytic hypochromic anemia or when suspecting iron deficiency anemia is to order <span class='highlight'>iron studies</span>. Low ferritin levels, high TIBC, low percent saturation, and low serum iron levels are indicative of iron deficiency. It's important to note that <span class='highlight'>ferritin levels are inversely proportional to TIBC</span>. Low ferritin often leads to high TIBC as the body attempts to compensate by increasing iron-binding capacity.",
+        "explanation": "Iron deficiency anemia is the <span class='highlight'>most common cause of anemia worldwide</span>. The next step in evaluating a patient with microcytic, hypochromic anemia or suspected iron deficiency anemia is to order <span class='highlight'>iron studies</span>. Key findings supporting the diagnosis include low ferritin levels, high total iron-binding capacity (TIBC), low percent saturation, and low serum iron levels. Notably, <span class='highlight'>ferritin levels are inversely proportional to TIBC</span>; low ferritin often leads to elevated TIBC as the body compensates by increasing its iron-binding capacity. In contrast, iron overload states such as hemochromatosis are characterized by very high ferritin levels and low TIBC. Sideroblastic anemia can present with similar iron studies to hemochromatosis, including high ferritin and low TIBC.",
         "addLabs": {},
         "addOrders": [
 
@@ -56,7 +56,7 @@
             "Monitor the patient closely"
   ],
         "rightChoice": 3,
-        "explanation": "A hemoglobin level below 7 g/dL indicates severe anemia. In such cases, a PRBC transfusion is often necessary to rapidly correct the anemia and alleviate symptoms like fatigue, shortness of breath, and tachycardia.",
+        "explanation": "Just a reminder! It's good practice to have a type and screen prepared if transfusion is anticipated, as in this case. Additionally, iron studies should be checked before ordering a transfusion, as transfusion can distort these results. Returning to the question, a hemoglobin <span class='highlight'>level below 7 g/dL</span> indicates severe anemia. In such cases, a packed red blood cell [pRBC] transfusion is often necessary to rapidly correct anemia and alleviate symptoms such as fatigue, shortness of breath, and tachycardia. A threshold of 7 g/dL is generally used to guide transfusion decisions; however, in certain situations, such as acute coronary syndrome, a higher threshold of 8 g/dL may be considered. As the saying goes,<strong> 'Don’t treat the number, treat the patient.</strong>'",
         "addNote": "",
         "addLabs": {},
         "addOrders": []
@@ -65,7 +65,7 @@
         "question": "What is the expected increase in hemoglobin after transfusion of one unit of pRBC in a patient who is not actively bleeding?",
          "answers": ["1 g/dL", "2 g/dL", "3 g/dL", "5 g/dL", "10 g/dL"],
          "rightChoice": 0,
-         "explanation": "One unit of pRBC typically has a hematocrit of 55% to 65%. In a patient who is not actively bleeding, the transfusion of one unit of pRBCs is expected to raise the hemoglobin level by approximately 1 g/dL and the hematocrit by about 3%.",
+         "explanation": "One unit of pRBC typically has a <span class='highlight'>hematocrit of 55% to 65%.</span> In a patient who is not actively bleeding, the transfusion of one unit of pRBCs is expected to raise the <span class='highlight'>hemoglobin level by approximately 1 g/dL and the hematocrit by about 3%.</span>",
          "addNote": "",
         "addLabs": {},
               "addOrders": []
@@ -80,10 +80,27 @@
         "Colonoscopy"
     ],
     "rightChoice": 4,
-    "explanation": "The next step is to identify the source of bleeding that likely caused the patient's iron deficiency anemia. Consultation with the gastroenterology service for colonoscopy is appropriate. Bowel preparation is necessary prior to colonoscopy to ensure the colon is adequately cleared of stool, allowing for optimal visualization of the colonic mucosa and identification of potential bleeding sources or lesions.",
+    "explanation": "The next step is to identify the source of bleeding likely responsible for the patient's iron deficiency anemia. A common postulate is that <strong>'IDA in an adult male is due to GI bleeding unless proven otherwise'.</strong> In this case, the presence of hematochezia makes it more apparent that the bleeding is gastrointestinal in origin. Consultation with the gastroenterology service for colonoscopy is appropriate. Adequate bowel preparation is essential prior to colonoscopy to clear the colon of stool, ensuring optimal visualization of the colonic mucosa and facilitating the identification of potential bleeding sources or lesions",
         "addLabs": {},
         "addOrders": [
 
     ]
+    },
+    {
+        "question": "Before we get colonoscopy results, so far with what we know, which diagnoses can we rule out?",
+  "answers": [
+    "Colonic Angiodysplasia",
+    "Colon cancer",
+    "Colon polyps",
+    "Diverticulosis",
+    "Ulcerative colitis",
+    "Celiac disease",
+    "Hereditary hemorrhagic telangiectasia"
+  ],
+  "rightChoice": 5,
+  "explanation": "This question is meant to give you a differential in our patient. All the above can cause hematochezia except for celiac disease, which is not associated with blood in the stools. Diverticulosis is less likely in this patient, as it is more common in older individuals; however, we cannot completely rule it out.",
+        "addNote": "",
+        "addLabs": {},
+        "addOrders": []
     }
 ]
