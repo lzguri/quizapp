@@ -1,11 +1,10 @@
 [
     {
-        "question": "You are evaluating a patient in the emergency department. ER physician has ordered a <strong>type and screen</strong> already. Based on the blood workup, which is the most likely cause of the patient's anemia?",
+        "question": "You are evaluating the patient in the emergency department. ER physician has ordered a <strong>type and screen</strong> already. Based on the blood workup, which is the most likely cause of the patient's anemia?",
         "answers": ["Thalassemia", "Vitamin B12 deficiency", "Iron deficiency anemia", "Sideroblastic anemia", "Hemolytic anemia"],
         "rightChoice": 2,
         "explanation": "Iron deficiency anemia is the most likely diagnosis in this patient, as indicated by the <span class='highlight'>hypochromic (low MCH/MCHC), microcytic (low MCV) anemia</span> observed in the blood workup. In addition, our patient has been experiencing  <span class='highlight'>hematochezia</span>, leading to chronic blood loss and accompanying iron depletion. The three primary causes of microcytic anemia include thalassemia, iron deficiency anemia, and sideroblastic anemia, with advanced anemia of chronic disease also being a potential cause, although  <span class='highlight'>ACD is usually normocytic</span>. Features suggestive of iron deficiency anemia in our patient include a  <span class='highlight'>high platelet count  and increased red cell distribution width</span> ; although not specific to IDA, they are suggestive.  <span class='highlight'>RDW is typically normal in thalassemia</span>",
-        "addNote": "",
-        "addNote": ["<strong>History of Present Illness:</strong>The patient is a 23-year-old male who presented to the hospital for evaluation of abdominal pain. He reports a long-standing history of intermittent abdominal pain over several months, localized to the lower abdomen. The pain is described as sharp at times and dull at others. He also reports alternating episodes of diarrhea and normal stools, with persistent rectal bleeding for several months. He denies fever but notes decreased appetite and unintentional weight loss. Two days prior to presentation, the abdominal pain worsened, prompting him to seek evaluation in the emergency department. A chart review revealed a prior ED visit approximately one year ago for unrelated symptoms, during which routine laboratory testing incidentally identified anemia. The patient denies any NSAID use.",
+        "addNote": ["<strong>History of Present Illness:</strong>The patient is a 33-year-old male who presented to the hospital for evaluation of abdominal pain. He reports a long-standing history of intermittent abdominal pain over several months, localized to the lower abdomen. The pain is described as sharp at times and dull at others. He also reports alternating episodes of diarrhea and normal stools, with persistent rectal bleeding for several months. He denies fever but notes decreased appetite and unintentional weight loss. Two days prior to presentation, the abdominal pain worsened, prompting him to seek evaluation in the emergency department. A chart review revealed a prior ED visit approximately one year ago for unrelated symptoms, during which routine laboratory testing incidentally identified anemia. The patient denies any NSAID use.",
         "<strong>Medications:</strong> None",
         "<strong>Social History:</strong>  Smokes 1 pack of cigarettes per day, denies alcohol consumption and illicit drug use.",
         "<strong>Family History:</strong>  Father underwent bowel surgery at a young age, details unknown.",
@@ -119,7 +118,7 @@
         "addOrders": []
     },
     {
-        "question": "<span class='report'>Colonoscopy report:Multiple colonic polyps were identified, some exhibiting ulcerative features. A lesion was noted causing 80% obstruction of the colon approximately 30 centimeters from the anal verge. Biopsy specimens were obtained</span><br> After receiving the colonoscopy report, whats your next step?",
+        "question": "<span class='report'>Colonoscopy report: Multiple colonic polyps were identified, some exhibiting ulcerative features. A lesion was noted causing 80% obstruction of the colon approximately 30 centimeters from the anal verge. Biopsy specimens were obtained</span><br> After receiving the colonoscopy report, whats your next step?",
         "answers": [
             "Obtain a CT abdomen",
             "Talk to colorectal surgery",
@@ -139,7 +138,7 @@
         "addOrders": []
       },
       {
-        "question": "<span class='report'>CT chest/abdomen/pelvis with contrast report:Multiple pulmonary micronodules are seen in the lung bases. There is notable thickening of the rectosigmoid wall, potentially involving the mid and lower rectum, along with dilated bowel segments containing air-fluid levels but lacking a clear transition point. Lymphadenopathy is evident at the root of the sigmoid mesocolon and in mildly enlarged central retroperitoneal nodes. The liver shows multifocal large complex hypoattenuating lesions affecting both the right hepatic lobe and the medial segment of the left hepatic lobe. No evidence of ascites or free air is present</span> <br><span class='report'>Biopsy result:Invasive adenocarcinoma</span><br><br>What is the next best step for this patient?",
+        "question": "<span class='report'>CT chest/abdomen/pelvis with contrast report: Multiple pulmonary micronodules are seen in the lung bases. There is notable thickening of the rectosigmoid wall, potentially involving the mid and lower rectum, along with dilated bowel segments containing air-fluid levels but lacking a clear transition point. Lymphadenopathy is evident at the root of the sigmoid mesocolon and in mildly enlarged central retroperitoneal nodes. The liver shows multifocal large complex hypoattenuating lesions affecting both the right hepatic lobe and the medial segment of the left hepatic lobe. No evidence of ascites or free air is present</span> <br><span class='report'>Biopsy result: Invasive adenocarcinoma</span><br><br>What is the next best step for this patient?",
         "answers": [
             "Obtain a MRI of the brain",
             "Talk to colorectal surgery",
@@ -151,16 +150,28 @@
         "explanation": "By now, you are probably wondering why this young patient has developed colon cancer. Remember, his father underwent colon surgery at a young age, and his colonoscopy report revealed multiple polyps. It is highly likely that the patient has a hereditary colon cancer syndrome. Based on the information we have so far, we know the patient has adenocarcinoma of the colon. Given the presence of distant metastases, this is classified as stage IV. At this point, we need to discuss treatment options with the patient. Stage IV colon cancer is considered non-curable, but the patient has the right to make their own decisions after receiving a thorough explanation. Since this mass is nearly obstructing the colon and causing bleeding, the best approach is to consult with colorectal surgery"
       },
       {
-        "question": "A total proctocolectomy with end ileostomy has been recommended by surgical service, and the patient has provided informed consent. Prior to proceeding with the surgery, which laboratory tests would you like to obtain?",
+        "question": "A total proctocolectomy with end ileostomy has been recommended by surgical service, and the patient has provided informed consent. Prior to proceeding with a total proctocolectomy with end ileostomy, which laboratory investigations would you recommend?",
         "answers": [
             "CRP",
             "CEA",
-            "Consult oncology",
-            "Obtain an upper endoscopy",
-            "Ultrasound of the liver"
+            "CA 125",
+            "AFP",
+            "No need for any test before surgery"
         ],
         "rightChoice": 1,
-        "explanation": "By now, you are probably wondering why this young patient has developed colon cancer. Remember, his father underwent colon surgery at a young age, and his colonoscopy report revealed multiple polyps. It is highly likely that the patient has a hereditary colon cancer syndrome. Based on the information we have so far, we know the patient has adenocarcinoma of the colon. Given the presence of distant metastases, this is classified as stage IV. At this point, we need to discuss treatment options with the patient. Stage IV colon cancer is considered non-curable, but the patient has the right to make their own decisions after receiving a thorough explanation. Since this mass is nearly obstructing the colon and causing bleeding, the best approach is to consult with colorectal surgery"
+        "explanation": "Carcinoembryonic antigen [CEA] serves as a tumor marker for colorectal cancer but lacks the sensitivity and specificity required for use as a screening or diagnostic tool. Instead, CEA is primarily utilized for prognostic purposes and monitoring during follow-up. A decrease in CEA levels following treatment is considered a favorable indicator of response"
+      },
+      {
+        "question": "Patient tolerated well surgery. Which of the following is most common herediatry colon cancer syndrome?",
+        "answers": [
+            "Familial adenomatous polyposis",
+            "MUTYH-associated polyposis",
+            "Peutz-Jeghers syndrome",
+            "Lynch syndrome",
+            "Serrated polyposis syndrome"
+        ],
+        "rightChoice": 3,
+        "explanation": "Lynch Syndrome [hereditary nonpolyposis colorectal cancer, HNPCC] is an autosomal dominant condition caused by mutations in mismatch repair [MMR] genes, such as MLH1 and MSH2. These mutations result in microsatellite instability [MSI] and confer a high risk of colorectal and other cancers. Unlike familial adenomatous polyposis [FAP], which is characterized by hundreds of polyps, Lynch syndrome typically presents with a limited number of polyps but demonstrates a faster progression from adenoma to carcinoma, often in the proximal colon. In our patient, the presence of numerous polyps made Lynch syndrome less likely and FAP more probable. Testing for MSI was performed and returned negative."
       }
    
 ]
