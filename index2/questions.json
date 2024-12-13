@@ -92,11 +92,10 @@
         "Colonoscopy"
     ],
     "rightChoice": 4,
-    "explanation": "The next step is to identify the source of bleeding likely responsible for the patient's iron deficiency anemia. A common postulate is that <strong>'IDA in an adult male is due to GI bleeding unless proven otherwise'.</strong> In this case, the presence of hematochezia makes it more apparent that the bleeding is gastrointestinal in origin. Consultation with the gastroenterology service for colonoscopy is appropriate. Adequate bowel preparation is essential prior to colonoscopy to clear the colon of stool, ensuring optimal visualization of the colonic mucosa and facilitating the identification of potential bleeding sources or lesions",
+    "explanation": "The next step is to identify the source of bleeding likely responsible for the patient's iron deficiency anemia. A common postulate is that <strong>'IDA in an adult male is due to GI bleeding unless proven otherwise'.</strong> In this case, the presence of hematochezia makes it more apparent that the bleeding is gastrointestinal in origin. Consultation with the gastroenterology service for colonoscopy is appropriate. <span class='highlight'> Adequate bowel preparation </span> is essential prior to colonoscopy to clear the colon of stool, ensuring optimal visualization of the colonic mucosa and facilitating the identification of potential bleeding sources or lesions",
         "addLabs": {},
-        "addOrders": [
-
-    ]
+        "addOrders": [ ],
+        "addProgress": "Transfusion successfully completed. The post-transfusion hemoglobin level is 7.6 g/dL."
     },
     {
         "question": "Before we get colonoscopy results, so far with what we know, which diagnoses can we rule out?",
@@ -110,15 +109,15 @@
     "Hereditary hemorrhagic telangiectasia"
   ],
   "rightChoice": 5,
-  "explanation": "This question is meant to give you a differential in our patient. All the above can cause hematochezia except for celiac disease, which is not associated with blood in the stools. Diverticulosis is less likely in this patient, as it is more common in older individuals; however, we cannot completely rule it out.",
-        "addNote": "",
+  "explanation": "This question is meant to give you a differential in our patient. <span class='highlight'>All the above can cause hematochezia except for celiac disease,</span> which is not associated with blood in the stools. Diverticulosis is less likely in this patient, as it is more common in older individuals; however, we cannot completely rule it out. Patient with connective tissue disorder or ADPKD can have diverticulosis at a young age",
+        "addProgress": "GI has been consulted, and the patient is scheduled for a colonoscopy. Bowel preparation has been ordered.",
         "addLabs": {
             "header":["Colonoscopy result"]
         },
         "addOrders": []
     },
     {
-        "question": "<span class='report'>Colonoscopy report: Multiple colonic polyps were identified, some exhibiting ulcerative features. A lesion was noted causing 80% obstruction of the colon approximately 30 centimeters from the anal verge. Biopsy specimens were obtained</span><br> After receiving the colonoscopy report, whats your next step?",
+        "question": "<span class='report'><strong>Colonoscopy report:</strong> Multiple colonic polyps were identified, some exhibiting ulcerative features. A lesion was noted causing 80% obstruction of the colon approximately 30 centimeters from the anal verge. Biopsy specimens were obtained</span><br> After receiving the colonoscopy report, whats your next step?",
         "answers": [
             "Obtain a CT abdomen",
             "Talk to colorectal surgery",
@@ -133,12 +132,12 @@
             "rows": [[ "Multiple colonic polyps were identified, some exhibiting ulcerative features. A lesion was noted causing 80% obstruction of the colon approximately 30 centimeters from the anal verge. Biopsy specimens were obtained" ]]
         },
         "addLabs": {},
-        "addProgress": [
+        "addProgress": ["Colonoscopy has been performed, revealing an 80% obstructing mass and multiple polyps with ulceration, likely the source of bleeding."
         ],
         "addOrders": []
       },
       {
-        "question": "<span class='report'>CT chest/abdomen/pelvis with contrast report: Multiple pulmonary micronodules are seen in the lung bases. There is notable thickening of the rectosigmoid wall, potentially involving the mid and lower rectum, along with dilated bowel segments containing air-fluid levels but lacking a clear transition point. Lymphadenopathy is evident at the root of the sigmoid mesocolon and in mildly enlarged central retroperitoneal nodes. The liver shows multifocal large complex hypoattenuating lesions affecting both the right hepatic lobe and the medial segment of the left hepatic lobe. No evidence of ascites or free air is present</span> <br><span class='report'>Biopsy result: Invasive adenocarcinoma</span><br><br>What is the next best step for this patient?",
+        "question": "<span class='report'><strong>CT chest/abdomen/pelvis with contrast report:</strong> Multiple pulmonary micronodules are seen in the lung bases. There is notable thickening of the rectosigmoid wall, potentially involving the mid and lower rectum, along with dilated bowel segments containing air-fluid levels but lacking a clear transition point. Lymphadenopathy is evident at the root of the sigmoid mesocolon and in mildly enlarged central retroperitoneal nodes. The liver shows multifocal large complex hypoattenuating lesions affecting both the right hepatic lobe and the medial segment of the left hepatic lobe. No evidence of ascites or free air is present</span> <br><span class='report'><strong>Biopsy result: </strong>Invasive adenocarcinoma</span><br><br>What is the next best step for this patient?",
         "answers": [
             "Obtain a MRI of the brain",
             "Talk to colorectal surgery",
@@ -147,7 +146,8 @@
             "Ultrasound of the liver"
         ],
         "rightChoice": 1,
-        "explanation": "By now, you are probably wondering why this young patient has developed colon cancer. Remember, his father underwent colon surgery at a young age, and his colonoscopy report revealed multiple polyps. It is highly likely that the patient has a hereditary colon cancer syndrome. Based on the information we have so far, we know the patient has adenocarcinoma of the colon. Given the presence of distant metastases, this is classified as stage IV. At this point, we need to discuss treatment options with the patient. Stage IV colon cancer is considered non-curable, but the patient has the right to make their own decisions after receiving a thorough explanation. Since this mass is nearly obstructing the colon and causing bleeding, the best approach is to consult with colorectal surgery"
+        "explanation": "By now, you are probably wondering why this young patient has developed colon cancer. Remember, his father underwent colon surgery at a young age for reason we dont know, and his colonoscopy report revealed multiple polyps. It is highly likely that the patient has a hereditary colon cancer syndrome. Based on the information we have so far, we know the patient has adenocarcinoma of the colon. Given the presence of <span class='highlight'>distant metastases, this is classified as stage IV.</span> At this point, we need to discuss treatment options with the patient. Stage IV colon cancer is considered non-curable, but the patient has the right to make their own decisions after receiving a thorough explanation. Since this mass is nearly obstructing the colon and causing bleeding, the best approach is to consult with colorectal surgery",
+        "addProgress":"CT chest/abdomen/mass showing likely lung and liver metastasis. Biopsy is positive for invasive adenocarcinoma "
       },
       {
         "question": "A total proctocolectomy with end ileostomy has been recommended by surgical service, and the patient has provided informed consent. Prior to proceeding with a total proctocolectomy with end ileostomy, which laboratory investigations would you recommend?",
@@ -159,7 +159,8 @@
             "No need for any test before surgery"
         ],
         "rightChoice": 1,
-        "explanation": "Carcinoembryonic antigen [CEA] serves as a tumor marker for colorectal cancer but lacks the sensitivity and specificity required for use as a screening or diagnostic tool. Instead, CEA is primarily utilized for prognostic purposes and monitoring during follow-up. A decrease in CEA levels following treatment is considered a favorable indicator of response"
+        "explanation": "Carcinoembryonic antigen [CEA] serves as a tumor marker for colorectal cancer but lacks the sensitivity and specificity required for use as a screening or diagnostic tool. Instead, CEA is primarily utilized for prognostic purposes and monitoring during follow-up. A decrease in CEA levels following treatment is considered a favorable indicator of response",
+        "addProgress":"Surgery has been consulted recommending total proctocolectomy with end ileostomy"
       },
       {
         "question": "Patient tolerated well surgery. Which of the following is most common herediatry colon cancer syndrome?",

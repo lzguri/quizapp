@@ -77,7 +77,7 @@ function displayQuestion(quizData, isRevisit = false) {
         showInitialSections();
         updateSection('notes-content', questionData.addNote);
         updateLabsSection(questionData.addLabs);
-        updateSection('orders-content', questionData.addOrders);
+        //updateSection('orders-content', questionData.addOrders);
     } else {
         // From the second question onwards, only append progress lines if not revisiting
         if (!isRevisit && questionData.addProgress) {
