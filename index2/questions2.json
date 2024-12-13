@@ -1,19 +1,46 @@
-[
-    {
-      "question": "What is the diagnosis?",
-      "answers": ["Diabetes", "Hypertension", "Anemia"],
-      "rightChoice": 0,
-      "explanation": "The correct diagnosis is Diabetes due to the elevated blood sugar levels.",
-      "addNote": "<b>Clinical note:</b> Patient presents with polyuria and polydipsia.",
-      "addLabs": {
-        "header": ["Test", "Result", "Reference Range"],
-        "rows": [
-          ["Hemoglobin", "14.0 g/dL", "13.5-17.5 g/dL"],
-          ["Glucose", "220 mg/dL", "70-110 mg/dL"],
-          ["WBC", "8.2 x10^9/L", "4.0-10.0 x10^9/L"]
-        ]
-      },
-      "addOrders": "<b>Orders:</b> Start insulin therapy."
-    }
-  ]
-  
+{
+  "question": "In order to evaluate the type of anemia your next step is to order?",
+  "answers": [
+      "Thyroid-stimulating hormone",
+      "Vitamin B12 and folic acid",
+      "Reticulocyte count",
+      "Iron studies",
+      "Haptoglobin"
+  ],
+  "rightChoice": 3,
+  "explanation": "Write explanation here",
+  "addQuestionTable": {
+      "header": ["Colonoscopy report"],
+      "rows": [
+          ["Serum Sodium", "135 mmol/L", "135-145 mmol/L"],
+          ["Serum Potassium", "4.2 mmol/L", "3.5-5.0 mmol/L"]
+      ]
+  },
+  "addLabs": {},
+  "addProgress": [
+      "Write text here, it will show on the progress note."
+  ],
+  "addOrders": []
+}
+
+
+{
+  "question": "After receiving the colonoscopy report, whats your next step?",
+  "answers": [
+      "Obtain a CT abdomen",
+      "Talk to colorectal surgery",
+      "Await pathology results",
+      "Consult oncology",
+      "CT chest/abdomen/pelvis with contrast"
+  ],
+  "rightChoice": 4,
+  "explanation": "The presence of ulcerated polyps and a partially obstructing colonic mass strongly suggests colorectal carcinoma. Given the potential for advanced disease, particularly with the risk of obstruction and ongoing blood loss, expeditious evaluation is warranted. Two approaches may be considered: <br>1) Immediate staging with a contrast-enhanced CT scan of the chest, abdomen, and pelvis to assess for metastatic disease.<br> 2) Await definitive histopathological confirmation before proceeding with staging investigations.<br> Due to the potential for rapid disease progression and the risk associated with the partial obstruction, immediate staging is recommended to facilitate timely management.",
+  "addQuestionTable": {
+      "header": ["Colonoscopy report"],
+      "rows": [[ "Multiple colonic polyps were identified, some exhibiting ulcerative features. A lesion was noted causing 80% obstruction of the colon approximately 30 centimeters from the anal verge. Biopsy specimens were obtained" ]]
+  },
+  "addLabs": {},
+  "addProgress": [
+  ],
+  "addOrders": []
+}

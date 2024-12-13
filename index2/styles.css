@@ -131,3 +131,11 @@ section {
     padding-right: 10px;
 }
 
+.report {
+    display: block;
+    font-family: "Noto mono";
+    font-size: 0.8rem;
+    border:0.2px dashed black;
+    padding:4px;
+}
+
