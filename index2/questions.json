@@ -172,7 +172,7 @@
             "Serrated polyposis syndrome"
         ],
         "rightChoice": 3,
-        "explanation": "Lynch Syndrome [hereditary nonpolyposis colorectal cancer, HNPCC] is an autosomal dominant condition caused by mutations in mismatch repair [MMR] genes, such as MLH1 and MSH2. These mutations result in microsatellite instability [MSI] and confer a high risk of colorectal and other cancers. Unlike familial adenomatous polyposis [FAP], which is characterized by hundreds of polyps, Lynch syndrome typically presents with a limited number of polyps but demonstrates a faster progression from adenoma to carcinoma, often in the proximal colon. In our patient, the presence of numerous polyps made Lynch syndrome less likely and FAP more probable. Testing for MSI was performed and returned negative."
+        "explanation": "Lynch Syndrome [hereditary nonpolyposis colorectal cancer, HNPCC] is an autosomal dominant condition caused by mutations in mismatch repair [MMR] genes, such as MLH1 and MSH2. These mutations result in microsatellite instability [MSI] and confer a high risk of colorectal and other cancers. Unlike <span class='highlight'>familial adenomatous polyposis [FAP], which is characterized by hundreds of polyps</span>, Lynch syndrome typically presents with a limited number of polyps but demonstrates a <span class='highlight'>faster progression from adenoma to carcinoma, often in the proximal colon</span>. In our patient, the presence of numerous polyps made Lynch syndrome less likely and FAP more probable. Testing for MSI was performed and returned negative."
       }
    
 ]
