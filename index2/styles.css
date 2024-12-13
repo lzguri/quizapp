@@ -137,6 +137,6 @@ section {
     font-size: 0.8rem;
     border:0.2px dashed black;
     padding:4px;
-    color:rgb(253, 253, 253);
+   background-color:rgb(253, 253, 253);
 }
 
