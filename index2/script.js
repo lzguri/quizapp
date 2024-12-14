@@ -265,6 +265,7 @@ function showScore(quizData) {
     // Add Return button
     const returnButton = document.createElement('button');
     returnButton.innerText = "Return to Quiz";
+    returnButton.className = "return-button";
     returnButton.addEventListener('click', () => {
         scoreSection.style.display = 'none';
         mainSection.style.display = 'block';
@@ -285,6 +286,7 @@ function showScore(quizData) {
     // Add Reset button
     const resetButton = document.createElement('button');
     resetButton.innerText = "Reset Quiz";
+    resetButton.className = "reset-button";
     resetButton.addEventListener('click', () => {
         userAnswers = [];
         progressHistory = [];
