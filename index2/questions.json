@@ -69,7 +69,7 @@
         "addNote": "",
         "addProgress": [
 
-            "Iron studies are suggestive of iron deficiency anemia"
+            "Iron studies are suggestive of iron deficiency anemia."
     ],
         "addLabs": {},
         "addOrders": []
@@ -81,7 +81,7 @@
          "explanation": "One unit of pRBC typically has a <span class='highlight'>hematocrit of 55% to 65%.</span> In a patient who is not actively bleeding, the transfusion of one unit of pRBCs is expected to raise the <span class='highlight'>hemoglobin level by approximately 1 g/dL and the hematocrit by about 3%.</span>. If hemoglobin doesn't rise appropriately think about <span class='highlight'>ongoing bleeding or hemolysis.</span>",
          "addNote": "",
         "addLabs": {},
-            "addProgress": ["One unit of pRBC ordered"]
+            "addProgress": ["One unit of pRBC ordered given Hb < 7 g/dL."]
     },
     {
        "question": "The patient has been transfused, and the post-transfusion hemoglobin level is 7.6 g/dL. You are satisfied with the increase in hemoglobin. What is the next appropriate step?",
