@@ -32,7 +32,8 @@ section {
     padding-top: 0px;
 }
 
-#notes-section, #results-section, #orders-section {
+/* add #orders-section if needed */
+#notes-section, #results-section {
     display: block;
     padding: 20px;
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
