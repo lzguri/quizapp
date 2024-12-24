@@ -312,6 +312,7 @@ function showInitialSections() {
     const notesSection = document.getElementById('notes-section');
     const resultsSection = document.getElementById('results-section');
     const ordersSection = document.getElementById('orders-section');
+    ordersSection.innerHTML = '';
 
     notesSection.style.display = '';
     resultsSection.style.display = '';
