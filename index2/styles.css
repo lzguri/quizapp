@@ -141,7 +141,7 @@ section {
     font-weight: 500;
 }
 
-#orders-content, #notes-content, #results-content, #question-container, #answers-container, #explanation-container, #progress-content {
+#notes-content, #results-content, #question-container, #answers-container, #explanation-container, #progress-content {
     padding-left: 10px;
     padding-right: 10px;
 }

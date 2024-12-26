@@ -320,5 +320,5 @@ function showInitialSections() {
 
     notesSection.classList.remove('collapsed');
     resultsSection.classList.remove('collapsed');
-    ordersSection.classList.remove('collapsed');
+    
 }
