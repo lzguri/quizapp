@@ -1,5 +1,5 @@
 // Fetch the quiz data from the JSON file
-fetch('questions2.json')
+fetch('questions.json')
     .then(response => response.json())
     .then(data => initializeQuiz(data));
 
