@@ -7,7 +7,7 @@
         "<strong>Family History:</strong>  None reported",
         "<strong>Vital Signs:</strong> Blood Pressure 89/50 mmHg, Heart Rate 130 beats/min, Temperature 98.2°F, Respiratory Rate 31 breaths/min, Spo2 95% on room air",
         "<strong>Physical Examination:</strong><br>General: Thin male appearing dehydrated and fatigued.<br>Skin: Pallor noted with depigmented patches, characterized by sharply demarcated areas of hypopigmentation on the hands and forearms.<br>HEENT: Dry mucous membranes, pale conjunctiva.<br>Abdomen: Mild diffuse tenderness without rebound or guarding.<br>Cardiovascular: Tachycardic with a regular rhythm, no murmurs, rubs, or gallops.<br>Pulmonary: Clear breath sounds bilaterally.<br>Neurological: Alert but fatigued; grossly intact cranial nerves and motor function",
-        "<strong>ED Progress:<strong> Patient is being given IV fluids in the form of a bolus. Labs are pending."
+        "<strong>ED Progress:</strong> Patient is being given IV fluids in the form of a bolus. Labs are pending."
         ],
         "question": "Given the presentation which one is most likely diagnosis in this patient?",
         "answers": [
@@ -27,6 +27,28 @@
         "addProgress": [
         ],
         "addOrders": []
+      },
+      {
+        "question": "How do SGLT-2 inhibitors increase the risk for euglycemic DKA?",
+        "answers": [
+            "Increase in insulin secretion when using SGLT2 inhibitors",
+            "Decrease in glucagon secretion",
+            "Indirectly promoting β-oxidation",
+            "SGLT-2 inhibitors directly promote ketogenesis"
+        ],
+        "rightChoice":2,
+        "explanation": "SGLT2 inhibitors lower blood glucose by promoting glucose excretion in urine, leading to normal or near-normal blood glucose levels. However, this will <span class='highlight'>reduce insulin secretion and increase glucagon levels,</span> promoting lipolysis and ketogenesis [β-oxidation is the process], which results in ketoacidosis with a high anion gap"
+      },
+      {
+        "question": "The nurse caring for the patient is concerned about a patient breathing too fast and asks if the patient should be intubated due to the risk of respiratory arrest. What is your response?",
+        "answers": [
+          "Great idea, let's intubate immediately!",
+          "The patient doesn’t require intubation at the moment.",
+          "The patient is hyperventilating due to anxiety and needs sedation."
+        ],
+        "rightChoice": 1,
+        "explanation": "The patient doesn’t require intubation at this time. The rapid breathing is due to metabolic acidosis, where the body compensates by blowing off more CO2. This is a normal compensatory mechanism. Concern should arise if a patient with marked metabolic acidosis is not breathing fast enough. Remember to use Winter's formula to calculate the expected CO2 in metabolic acidosis . <span class='highlight'>Intubation should be avoided</span> in DKA as it interferes with the compensatory mechanism, and matching the patient’s respiratory effort on a ventilator is challenging.."
       }
+      
       
 ]
