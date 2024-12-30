@@ -23,7 +23,31 @@
             "header": ["Colonoscopy report"],
             "rows": [[ "Multiple colonic polyps were identified, some exhibiting ulcerative features. A lesion was noted causing 80% obstruction of the colon approximately 30 centimeters from the anal verge. Biopsy specimens were obtained" ]]
         },
-        "addLabs": {},
+        "addLabs": {
+            "header": ["Test", "Result", "Reference Range"],
+            "rows": [
+                ["WBC", "18.3 K/μL", "4.0-10.0 K/μL"],
+                ["RBC", "4.8 M/μL", "4.7-6.1 M/μL"],
+                ["Hemoglobin", "17.1 g/dL", "13.5-17.5 g/dL"],
+                ["MCV", "105 fL", "80-100 fL"],
+                ["Platelets", "220 K/μL", "150-450 K/μL"],
+                ["Creatinine", "1.9 mg/dL", "0.6-1.2 mg/dL"],
+                ["BUN", "30 mg/dL", "7-20 mg/dL"],
+                ["Albumin", "3.4 g/dL", "3.5-5.0 g/dL"],
+                ["AST", "20 U/L", "10-40 U/L"],
+                ["ALT", "18 U/L", "7-56 U/L"],
+                ["Glucose", "420 mg/dL", "70-100 mg/dL"],
+                ["Sodium", "130 mmol/L", "135-145 mmol/L"],
+                ["Potassium", "5.7 mmol/L", "3.5-5.0 mmol/L"],
+                ["Chloride", "90 mmol/L", "96-106 mmol/L"],
+                ["Bicarbonate", "12 mmol/L", "22-28 mmol/L"],
+                ["Anion Gap", "28 mmol/L", "8-12 mmol/L"],
+                ["pH (arterial)", "7.22", "7.35-7.45"],
+                ["pCO2", "25 mmHg", "35-45 mmHg"],
+                ["Beta-Hydroxybutyrate", "5.8 mmol/L", "<0.6 mmol/L"]
+            ]
+        
+        },
         "addProgress": [
         ],
         "addOrders": []
@@ -36,6 +60,29 @@
             "Indirectly promoting β-oxidation",
             "SGLT-2 inhibitors directly promote ketogenesis"
         ],
+        "addLabs": {
+            "header": ["Test", "Result", "Reference Range"],
+            "rows": [
+                ["WBC", "18.3 K/μL", "4.0-10.0 K/μL"],
+                ["RBC", "4.8 M/μL", "4.7-6.1 M/μL"],
+                ["Hemoglobin", "17.1 g/dL", "13.5-17.5 g/dL"],
+                ["MCV", "105 fL", "80-100 fL"],
+                ["Platelets", "220 K/μL", "150-450 K/μL"],
+                ["Creatinine", "1.9 mg/dL", "0.6-1.2 mg/dL"],
+                ["BUN", "30 mg/dL", "7-20 mg/dL"],
+                ["Albumin", "3.4 g/dL", "3.5-5.0 g/dL"],
+                ["AST", "20 U/L", "10-40 U/L"],
+                ["ALT", "18 U/L", "7-56 U/L"],
+                ["Glucose", "420 mg/dL", "70-100 mg/dL"],
+                ["Sodium", "130 mmol/L", "135-145 mmol/L"],
+                ["Potassium", "5.7 mmol/L", "3.5-5.0 mmol/L"],
+                ["Chloride", "90 mmol/L", "96-106 mmol/L"],
+                ["Bicarbonate", "12 mmol/L", "22-28 mmol/L"],
+                ["Anion Gap", "28 mmol/L", "8-12 mmol/L"],
+                ["pH (arterial)", "7.22", "7.35-7.45"],
+                ["pCO2", "25 mmHg", "35-45 mmHg"],
+                ["Beta-Hydroxybutyrate", "5.8 mmol/L", "<0.6 mmol/L"]
+            ]},
         "rightChoice":2,
         "explanation": "SGLT2 inhibitors lower blood glucose by promoting glucose excretion in urine, leading to normal or near-normal blood glucose levels. However, this will <span class='highlight'>reduce insulin secretion and increase glucagon levels,</span> promoting lipolysis and ketogenesis [β-oxidation is the process], which results in ketoacidosis with a high anion gap"
       },
