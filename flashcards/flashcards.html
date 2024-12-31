@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Flashcard App</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div id="app">
+        <!-- Progress Bar -->
+        <div class="progress-bar">
+            <div class="progress-bar-fill"></div>
+        </div>
+
+        <!-- Flashcard Section -->
+        <div class="flashcard">
+            <!-- Question -->
+            <div id="question">Question will appear here</div>
+
+            <!-- Answer Options -->
+            <div id="answers">
+                <button class="answer-option"><span>A</span> Option A</button>
+                <button class="answer-option"><span>B</span> Option B</button>
+                <button class="answer-option"><span>C</span> Option C</button>
+                <button class="answer-option"><span>D</span> Option D</button>
+            </div>
+
+            <!-- Explanation Section -->
+            <div id="explanation"></div>
+        </div>
+
+        <!-- Controls -->
+        <div class="controls">
+            <button id="next">Next</button>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>

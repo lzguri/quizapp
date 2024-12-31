@@ -5,9 +5,8 @@
         "<strong>Medications:</strong> Insulin glargine 18 UI at bedtime, sliding scale insulin, levothyroxine",
         "<strong>Social History:</strong>  Denies alcohol consumption and illicit drug use.",
         "<strong>Family History:</strong>  None reported",
-        "<strong>Vital Signs:</strong> Blood Pressure 89/50 mmHg, Heart Rate 130 beats/min, Temperature 98.2°F, Respiratory Rate 31 breaths/min, Spo2 95% on room air",
-        "<strong>Physical Examination:</strong><br>General: Thin male appearing dehydrated and fatigued.<br>Skin: Pallor noted with depigmented patches, characterized by sharply demarcated areas of hypopigmentation on the hands and forearms.<br>HEENT: Dry mucous membranes, pale conjunctiva.<br>Abdomen: Mild diffuse tenderness without rebound or guarding.<br>Cardiovascular: Tachycardic with a regular rhythm, no murmurs, rubs, or gallops.<br>Pulmonary: Clear breath sounds bilaterally.<br>Neurological: Alert but fatigued; grossly intact cranial nerves and motor function",
-        "<strong>ED Progress:</strong> Patient is being given IV fluids in the form of a bolus. Labs are pending."
+        "<strong>Vital Signs:</strong> Blood Pressure 89/40 mmHg, Heart Rate 130 beats/min, Temperature 98.2°F, Respiratory Rate 31 breaths/min, Spo2 95% on room air",
+        "<strong>Physical Examination:</strong><br>General: Thin male appearing dehydrated and fatigued.<br>Skin: Pallor noted with depigmented patches, characterized by sharply demarcated areas of hypopigmentation on the hands and forearms.<br>HEENT: Dry mucous membranes, pale conjunctiva.<br>Abdomen: Mild diffuse tenderness without rebound or guarding.<br>Cardiovascular: Tachycardic with a regular rhythm, no murmurs, rubs, or gallops.<br>Pulmonary: Clear breath sounds bilaterally.<br>Neurological: Alert but fatigued; grossly intact cranial nerves and motor function"
         ],
         "question": "Given the presentation which one is most likely diagnosis in this patient?",
         "answers": [
@@ -18,10 +17,10 @@
             "Acute pancreatitis"
         ],
         "rightChoice": 2,
-        "explanation": "The most likely diagnosis is diabetic ketoacidosis, given the patient's history of type 1 diabetes mellitus, recent insulin omission, symptoms of dehydration, diffuse abdominal pain, and elevated respiratory rate. The other conditions are less consistent with the presentation. While hyperosmolar hyperglycemic state can occur in type 1 diabetes mellitus, it is far less common. Myxedema coma is unlikely given that it typically presents with bradycardia, hypothermia, and a depressed respiratory rate, opposite to what we are seeing in this case",
+        "explanation": "The most likely diagnosis is diabetic ketoacidosis, given the patient's history of type 1 diabetes mellitus, recent insulin omission, symptoms of dehydration, metabolic acidosis, and elevated respiratory rate. The other conditions are less consistent with the presentation. While hyperosmolar hyperglycemic state can occur in type 1 diabetes mellitus, it is far less common. Myxedema coma is unlikely given that it typically presents with bradycardia, hypothermia, and a depressed respiratory rate, opposite to what we are seeing in this case",
         "addQuestionTable": {
-            "header": ["Colonoscopy report"],
-            "rows": [[ "Multiple colonic polyps were identified, some exhibiting ulcerative features. A lesion was noted causing 80% obstruction of the colon approximately 30 centimeters from the anal verge. Biopsy specimens were obtained" ]]
+            "header": [],
+            "rows": [[ ]]
         },
         "addLabs": {
             "header": ["Test", "Result", "Reference Range"],
@@ -40,18 +39,46 @@
                 ["Sodium", "130 mmol/L", "135-145 mmol/L"],
                 ["Potassium", "5.7 mmol/L", "3.5-5.0 mmol/L"],
                 ["Chloride", "90 mmol/L", "96-106 mmol/L"],
-                ["Bicarbonate", "12 mmol/L", "22-28 mmol/L"],
-                ["Anion Gap", "28 mmol/L", "8-12 mmol/L"],
+                ["Bicarbonate", "15 mmol/L", "22-28 mmol/L"],
+                ["Anion Gap", "32 mmol/L", "8-12 mmol/L"],
                 ["pH (arterial)", "7.22", "7.35-7.45"],
-                ["pCO2", "25 mmHg", "35-45 mmHg"],
-                ["Beta-Hydroxybutyrate", "5.8 mmol/L", "<0.6 mmol/L"]
+                ["pCO2", "29 mmHg", "35-45 mmHg"]
             ]
-        
         },
         "addProgress": [
         ],
         "addOrders": []
       },
+      {
+        "question": "After reviewing the case and labs your next step is to?",
+        "answers": [
+          "Check β-Hydroxybutyrate",
+          "Check lactic acid",
+          "Start IV fluids",
+          "Start vasopressors",
+          "Start bicarbonate drip"
+        ],
+        "rightChoice": 2,
+        "explanation": "In an acutely hypotensive patient (BP 89/40 mmHg, MAP ~56 mmHg), the immediate priority is to address circulation with fluid resuscitation. Given the patient's vomiting and hyperglycemia, his hypotension is very likely due to dehydration, making volume repletion essential. While additional tests (e.g., beta-hydroxybutyrate) and interventions may be indicated, restoring adequate blood pressure ensures organ perfusion and follows the <span class='highlight'>ABCs of emergency management (Airway, Breathing, Circulation)</span>. If the patient does not respond sufficiently to fluids, vasopressors may be added to maintain hemodynamic stability.",
+        "addProgress": [
+          "The patient was started on IV fluids to correct hypotension and stabilize circulation."
+        ]
+      }, 
+      {
+        "question": "What kind of acid-base disorder does this patient have?",
+        "answers": [
+          "High-anion-gap metabolic acidosis with appropriate respiratory compensation",
+          "High-anion-gap metabolic acidosis plus primary respiratory alkalosis",
+          "High-anion-gap metabolic acidosis plus metabolic alkalosis",
+          "Normal-anion-gap metabolic acidosis",
+          "Primary respiratory alkalosis"
+        ],
+        "rightChoice": 2,
+        "explanation": "Step-by-step analysis:<br><ol><li>The low pH (7.22) and low HCO3- (15 mmol/L) confirm metabolic acidosis.</li><li>The anion gap of 32 mmol/L indicates a high-anion-gap metabolic acidosis.</li><li>Winter's formula for expected pCO2 is about 28.5–32.5 mmHg, so the actual pCO2 of 29 mmHg is an appropriate compensatory response (no primary respiratory alkalosis or acidosis).</li><li>The delta gap (32 - 12 = 20) suggests the bicarbonate should be roughly 4 mmol/L if there were only a high-anion-gap acidosis. Since it's 15 mmol/L, this indicates a concurrent metabolic alkalosis.</li></ol>Conclusion: The patient has a high-anion-gap metabolic acidosis plus metabolic alkalosis, with appropriate respiratory compensation.",
+        "addProgress": [
+          "Analysis indicates a mixed metabolic disturbance: high-anion-gap acidosis plus metabolic alkalosis."
+        ]
+      },           
       {
         "question": "How do SGLT-2 inhibitors increase the risk for euglycemic DKA?",
         "answers": [

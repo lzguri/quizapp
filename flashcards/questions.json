@@ -1,0 +1,27 @@
+
+[
+    {
+        "question":"Which of the following is first line treatment for gastroparesis",
+        "answers": [
+            "Metoclopramide",
+            "Ondasetron",
+            "Erythromycin",
+            "Olanzapine",
+            "Dexamethasone"
+        ],
+        "correct":0,
+        "explanation": "Metoclopramide is used for gastroparesis because it stimulates gastric motility and speeds up stomach emptying. Mechanistically, it blocks dopamine D₂ receptors and increases acetylcholine release in the GI tract. Erythromycin can be used also but its not a first-line agent"
+    },
+    {
+        "question":"Which of the following is a side effect for metoclopramide",
+        "answers": [
+            "Nausea and vomiting",
+            "Hypotension",
+            "Decrease in prolactin level",
+            "Extrapyriamidal symptoms",
+            "Constipation"
+        ],
+        "correct":3,
+        "explanation": "Metoclopramide cause extrapyramidal symptoms by blocking dopamine D2 receptors in the central nervous system [particularly in the nigrostriatal pathway]"
+    }
+]
