@@ -61,7 +61,7 @@
         "rightChoice": 2,
         "explanation": "In an acutely hypotensive patient (BP 89/40 mmHg, MAP ~56 mmHg), the immediate priority is to address circulation with fluid resuscitation. Given the patient's vomiting and hyperglycemia, his hypotension is very likely due to dehydration, making volume repletion essential. While additional tests (e.g., beta-hydroxybutyrate) and interventions may be indicated, restoring adequate blood pressure ensures organ perfusion and follows the <span class='highlight'>ABCs of emergency management (Airway, Breathing, Circulation)</span>. If the patient does not respond sufficiently to fluids, vasopressors may be added to maintain hemodynamic stability.",
         "addProgress": [
-          "The patient was started on IV fluids to correct hypotension and stabilize circulation."
+          "A 36-year-old male with a history of Type 1 diabetes mellitus and hypothyroidism presented with a 2-day history of nausea, vomiting, abdominal pain, fatigue, and increased thirst. He admitted to not taking insulin due to inadequate food intake. On examination, he was dehydrated, tachycardic, hypotensive, and fatigued. Labs revealed hyperglycemia (420 mg/dL), metabolic acidosis (pH 7.22, bicarbonate 15 mmol/L, pCO2 29 mmHg), hyperkalemia (5.7 mmol/L), elevated creatinine (1.9 mg/dL), and an anion gap of 32 mmol/L."
         ]
       }, 
       {
@@ -76,43 +76,32 @@
         "rightChoice": 2,
         "explanation": "Step-by-step analysis:<br><ol><li>The low pH (7.22) and low HCO3- (15 mmol/L) confirm metabolic acidosis.</li><li>The anion gap of 32 mmol/L indicates a high-anion-gap metabolic acidosis.</li><li>Winter's formula for expected pCO2 is about 28.5–32.5 mmHg, so the actual pCO2 of 29 mmHg is an appropriate compensatory response (no primary respiratory alkalosis or acidosis).</li><li>The delta gap (32 - 12 = 20) suggests the bicarbonate should be roughly 4 mmol/L if there were only a high-anion-gap acidosis. Since it's 15 mmol/L, this indicates a concurrent metabolic alkalosis.</li></ol>Conclusion: The patient has a high-anion-gap metabolic acidosis plus metabolic alkalosis, with appropriate respiratory compensation.",
         "addProgress": [
-          "Analysis indicates a mixed metabolic disturbance: high-anion-gap acidosis plus metabolic alkalosis."
+          "Patient has been diagnosed with Diabetic ketoacidosis.<br><br>IV fluids [bolus] has been started to correct low BP and dehydration."
         ]
-      },           
-      {
-        "question": "How do SGLT-2 inhibitors increase the risk for euglycemic DKA?",
-        "answers": [
-            "Increase in insulin secretion when using SGLT2 inhibitors",
-            "Decrease in glucagon secretion",
-            "Indirectly promoting β-oxidation",
-            "SGLT-2 inhibitors directly promote ketogenesis"
-        ],
-        "addLabs": {
-            "header": ["Test", "Result", "Reference Range"],
-            "rows": [
-                ["WBC", "18.3 K/μL", "4.0-10.0 K/μL"],
-                ["RBC", "4.8 M/μL", "4.7-6.1 M/μL"],
-                ["Hemoglobin", "17.1 g/dL", "13.5-17.5 g/dL"],
-                ["MCV", "105 fL", "80-100 fL"],
-                ["Platelets", "220 K/μL", "150-450 K/μL"],
-                ["Creatinine", "1.9 mg/dL", "0.6-1.2 mg/dL"],
-                ["BUN", "30 mg/dL", "7-20 mg/dL"],
-                ["Albumin", "3.4 g/dL", "3.5-5.0 g/dL"],
-                ["AST", "20 U/L", "10-40 U/L"],
-                ["ALT", "18 U/L", "7-56 U/L"],
-                ["Glucose", "420 mg/dL", "70-100 mg/dL"],
-                ["Sodium", "130 mmol/L", "135-145 mmol/L"],
-                ["Potassium", "5.7 mmol/L", "3.5-5.0 mmol/L"],
-                ["Chloride", "90 mmol/L", "96-106 mmol/L"],
-                ["Bicarbonate", "12 mmol/L", "22-28 mmol/L"],
-                ["Anion Gap", "28 mmol/L", "8-12 mmol/L"],
-                ["pH (arterial)", "7.22", "7.35-7.45"],
-                ["pCO2", "25 mmHg", "35-45 mmHg"],
-                ["Beta-Hydroxybutyrate", "5.8 mmol/L", "<0.6 mmol/L"]
-            ]},
-        "rightChoice":2,
-        "explanation": "SGLT2 inhibitors lower blood glucose by promoting glucose excretion in urine, leading to normal or near-normal blood glucose levels. However, this will <span class='highlight'>reduce insulin secretion and increase glucagon levels,</span> promoting lipolysis and ketogenesis [β-oxidation is the process], which results in ketoacidosis with a high anion gap"
       },
+      {
+        "question": "You have correctly diagnosed this patient with DKA and have started resuscitation with IV fluids. What is the next step in management?",
+        "answers": [
+          "Start IV insulin",
+          "Start SC insulin",
+          "Start D5W",
+          "Start bicarbonate infusion"
+        ],
+        "rightChoice": 0,
+        "explanation": "In severe DKA, the next critical step after initial fluid resuscitation is to start an intravenous insulin infusion [insulin drip]. Subcutaneous insulin can be considered only in mild DKA, but not in severe cases."
+      },
+      {
+        "question": "After starting an insulin drip, you are considering maintenance fluids for this patient. Which would be best?",
+        "answers": [
+          "Albumin infusion",
+          "Lactated Ringer",
+          "Normal Saline",
+          "Bicarbonate infusion"
+        ],
+        "rightChoice": 1,
+        "explanation": "Lactated Ringer (LR) is preferred for maintenance fluids in severe DKA because its pH is around 6.5 and its lactate is metabolized by the liver into bicarbonate, helping to buffer acidity. In contrast, Normal Saline has a pH of approximately 5.0 and can contribute to a hyperchloremic metabolic acidosis in a patient already experiencing significant acidemia. Albumin infusion is not indicated here, and bicarbonate infusion is typically reserved for patients with a very low pH (e.g., <6.9).",
+        "addProgress": "Insulin infusion has been initiated in accordance with the hospital’s titration protocol."
+      },      
       {
         "question": "The nurse caring for the patient is concerned about a patient breathing too fast and asks if the patient should be intubated due to the risk of respiratory arrest. What is your response?",
         "answers": [
@@ -121,8 +110,64 @@
           "The patient is hyperventilating due to anxiety and needs sedation."
         ],
         "rightChoice": 1,
-        "explanation": "The patient doesn’t require intubation at this time. The rapid breathing is due to metabolic acidosis, where the body compensates by blowing off more CO2. This is a normal compensatory mechanism. Concern should arise if a patient with marked metabolic acidosis is not breathing fast enough. Remember to use Winter's formula to calculate the expected CO2 in metabolic acidosis . <span class='highlight'>Intubation should be avoided</span> in DKA as it interferes with the compensatory mechanism, and matching the patient’s respiratory effort on a ventilator is challenging.."
+        "explanation": "The patient doesn’t require intubation at this time. The rapid breathing is due to metabolic acidosis, where the body compensates by blowing off more CO2. This is a normal compensatory mechanism. Concern should arise if a patient with marked metabolic acidosis is not breathing fast enough. Remember to use Winter's formula to calculate the expected CO2 in metabolic acidosis . <span class='highlight'>Intubation should be avoided</span> in DKA as it interferes with the compensatory mechanism, and matching the patient’s respiratory effort on a ventilator is challenging.",
+        "addProgress": "Lactated ringer has been started as maintenance fluids"
+      },
+      {
+        "question": "As part of your hospital protocol, you have ordered a BMP every 4 hours and point-of-care glucose checks every hour. What is the ideal rate of glucose reduction per hour during DKA treatment?",
+        "answers": [
+          "25–50 mg/dL per hour",
+          "50–75 mg/dL per hour",
+          "Doesn't make any difference",
+          "Greater than 200 mg/dL per hour"
+        ],
+        "rightChoice": 1,
+        "explanation": "The recommended rate of glucose reduction in DKA management is approximately 50–75 mg/dL per hour. A slower drop may prolong hyperglycemia, while a more rapid drop increases the risk of cerebral edema.",
+        "addProgress": "BMP every 4 hours and point-of-care glucose checks every hour ordered"
+      },      
+      {
+        "question": "Regarding hyperkalemia. Which statement is correct?",
+        "answers": [
+          "Total body potassium level is elevated",
+          "Despite high serum potassium, total body potassium is very likely low",
+          "Can't make a determination"
+        ],
+        "rightChoice": 1,
+        "explanation": "Although serum potassium may be high in a hyperglycemic, acidotic state, total body potassium is usually depleted. This occurs because acidosis shifts potassium out of cells, raising serum levels, while osmotic diuresis from hyperglycemia causes significant potassium losses in urine. As a result, patients with diabetic ketoacidosis [DKA] who appear to have a normal or high serum potassium level still require potassium supplementation to prevent dangerous hypokalemia during treatment. In fact, potassium supplementation is usually started if the patient’s serum potassium is below 5.3 mEq/L to avoid a drop to dangerously low levels once insulin therapy begins"
+      },  
+      {
+        "question": "Another BMP shows improvement in bicarbonate and a lower anion gap. Potassium is now 4.7, and you have added potassium supplements to the LR. The nurse notifies you that the POC glucose is 200 mg/dL. Your next step is to?",
+        "answers": [
+          "Continue current management",
+          "Add D5W to the fluids",
+          "Switch to normal saline",
+          "Discontinue insulin"
+        ],
+        "rightChoice": 1,
+        "explanation": "Although the glucose has decreased to 200 mg/dL, the acidosis may not be fully resolved. Insulin must be continued to correct the underlying metabolic derangements, so adding dextrose (D5W) to the fluids helps prevent hypoglycemia while allowing ongoing insulin therapy."
+      },            
+      {
+        "question": "Off topic here but how do SGLT-2 inhibitors increase the risk for euglycemic DKA?",
+        "answers": [
+            "Increase in insulin secretion when using SGLT2 inhibitors",
+            "Decrease in glucagon secretion",
+            "Indirectly promoting β-oxidation",
+            "SGLT-2 inhibitors directly promote ketogenesis"
+        ],
+        "rightChoice":2,
+        "explanation": "SGLT2 inhibitors lower blood glucose by promoting glucose excretion in urine, leading to normal or near-normal blood glucose levels. However, this will <span class='highlight'>reduce insulin secretion and increase glucagon levels,</span> promoting lipolysis and ketogenesis [β-oxidation is the process], which results in ketoacidosis with a high anion gap",
+        "addProgress": "Dextrose 5% in water [D5W] was added to the maintenance fluids as the patient's glucose level fell below 250 mg/dL"
+      },
+      {
+        "question": "You have successfully resolved the patient's DKA and transitioned to long-acting insulin. The patient is feeling better and tolerating a diet, but now reports difficulty walking and a sense of imbalance. What is your next step?",
+        "answers": [
+          "It's likely diabetic neuropathy; continue home medications",
+          "Order an MRI to rule out stroke",
+          "Check vitamin B12 levels",
+          "Check lead levels"
+        ],
+        "rightChoice": 2,
+        "explanation": "The patient has a history of autoimmune disorders (type 1 diabetes, hypothyroidism, and likely vitiligo given white patches), raising suspicion for pernicious anemia—a condition that can cause vitamin B12 deficiency. Low B12 levels can lead to gait disturbances and neurologic symptoms, so checking vitamin B12 is essential."
       }
-      
       
 ]
