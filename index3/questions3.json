@@ -64,7 +64,7 @@
       {
         "question": "What kind of acid-base disorder does this patient have?",
         "answers": [
-          "High-anion-gap metabolic acidosis with appropriate respiratory compensation",
+          "High-anion-gap metabolic acidosis with appropriate respiratory compensation only",
           "High-anion-gap metabolic acidosis plus primary respiratory alkalosis",
           "High-anion-gap metabolic acidosis plus metabolic alkalosis",
           "Normal-anion-gap metabolic acidosis",
