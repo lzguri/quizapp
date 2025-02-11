@@ -14,43 +14,12 @@ body {
     box-shadow: 0px 0px 10px gray;
 }
 
-body {
-    margin: 0;
-    /* You might *not* need height: 100vh here unless you want the body to *always*
-       be full viewport height, even on larger screens.  Often, it's better to let
-       the body's height be determined by its content. */
-    display: flex;
-    flex-direction: column;
-}
-
-#my-div { /* Or your selector */
-    width: 100%; /* Default width */
-    /* Other default styles */
-    background-color: lightgreen;
-    padding: 20px;
-    box-sizing: border-box;
-}
-
-/* Media query for smaller screens (phones and tablets) */
-@media (max-width: 768px) { /* Adjust 768px as needed */
-    #my-div {
-        flex-grow: 1; /* Take up available space on smaller screens */
-        /* You might want to adjust padding or other styles here */
-        padding: 15px;
+/* Media query for mobile devices */
+@media (max-width: 768px) {
+    .container {
+      height: 100vh; /* Sets the height to 100% viewport height */
     }
-
-    /* If you *do* want the body to be full viewport height *only* on smaller screens: */
-    body {
-        height: 100vh;
-    }
-}
-
-/* Optional: Another media query for even smaller screens (phones) */
-@media (max-width: 400px) {  /* Adjust 400px as needed */
-    #my-div {
-        padding: 10px;
-    }
-}
+  }
 
 .button-choice {
     display: block;
@@ -91,7 +60,7 @@ button {
     cursor: pointer;
     border: none;
     border-radius: 5px;
-    background-color: #007bff;
+    background-color: #818284;
     color: white;
     font-size: 16px;
 }
