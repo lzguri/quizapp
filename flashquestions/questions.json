@@ -78,11 +78,12 @@
                 "name": "Chronic obstructive pulmonary dsisease",
                 "questions": [
                     {
-                        "question": "AAT deficiency usually involve which lobes of the lung?",
-                        "choices": ["Upper lobes", "Lower lobes", "Doesnt affect the lung at all"],
+                        "question": "Alpha-1 antitrypsin [AAT] deficiency usually involves which lobes of the lung?",
+                        "choices": ["Upper lobes", "Lower lobes", "Doesn't affect the lung at all"],
                         "correct_answer": "Lower lobes",
-                        "explanation": "The liver is the most commonly affected organ in hereditary hemochromatosis, leading to cirrhosis."
+                        "explanation": "Alpha-1 antitrypsin deficiency primarily affects the lower lobes of the lung due to the accumulation of neutrophil elastase activity, which damages the alveoli."
                     }
+                    
                 ]
             },
             {

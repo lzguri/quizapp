@@ -4,7 +4,7 @@ body {
     padding: 20px;
 }
 
-#homepage, #quizContainer {
+/*#homepage, #quizContainer {
     margin: 20px auto;
     width: 50%;
     background: white;
@@ -12,7 +12,7 @@ body {
     border-radius: 10px;
     box-shadow: 0px 0px 10px gray;
     text-align: left;
-}
+}*/
 
 /* Media query for mobile devices */
 @media (max-width: 768px) {
@@ -26,7 +26,7 @@ body {
     text-align:left;
 }
 .score-result {
-    text-align: center;
+    text-align: right;
 }
 
 .button-choice {
@@ -71,6 +71,10 @@ button {
     background-color: #818284;
     color: white;
     font-size: 16px;
+}
+
+.tableExplanation {
+    border: 1px solid black;
 }
 
 button:hover {
