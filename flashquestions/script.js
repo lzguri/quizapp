@@ -258,15 +258,14 @@ document.addEventListener("DOMContentLoaded", () => {
 function adjustDivWidth() {
     const div = document.getElementById('content');  // Select #content
     if (div) {  // Ensure the element exists
-        div.style.margin = '20px auto';
-        div.style.background = 'white';
-        div.style.padding = '20px';
-        div.style.borderRadius = '10px';
-        div.style.boxShadow = '0px 0px 10px gray';
-        div.style.textAlign = 'left';
-        
         if (window.innerWidth > 768) {
             div.style.width = '50%';
+            div.style.margin = '20px auto';
+            div.style.background = 'white';
+            div.style.padding = '20px';
+            div.style.borderRadius = '10px';
+            div.style.boxShadow = '0px 0px 10px gray';
+            div.style.textAlign = 'left';
         } else {
             div.style.width = '100%';
         }

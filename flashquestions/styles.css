@@ -4,6 +4,10 @@ body {
     padding: 20px;
 }
 
+.internal-medicine {
+    text-align: center;
+}
+
 /*#homepage, #quizContainer {
     margin: 20px auto;
     width: 50%;
