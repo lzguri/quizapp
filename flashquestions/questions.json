@@ -117,11 +117,42 @@
                         "choices": ["Liver function tests", "Creatine kinase", "Complete blood count", "Serum potassium"],
                         "correct_answer": "Creatine kinase",
                         "explanation": "Daptomycin can cause muscle toxicity, including rhabdomyolysis, so creatine kinase [CK] levels should be monitored weekly during therapy."
+                    } 
+                ]
+            },
+            {
+                "name": "Cryptococcal infection",
+                "questions": [
+                    {
+                        "question": "How is cryptococcal meningitis diagnosed?",
+                        "choices": ["CT scan of the head", "Detection of cryptococcal antigen in CSF", "Blood culture", "CD4 count < 200/µL"],
+                        "correct_answer": "Detection of cryptococcal antigen in CSF",
+                        "explanation": "The diagnosis of cryptococcal meningitis is based on the detection of cryptococcal antigen in the CSF or culture of Cryptococcus neoformans from the CSF."
+                    },                    
+                    {
+                        "question": "What is the treatment for cryptococcal meningitis?",
+                        "choices": ["Amphotericin B plus flucytosine", "Vancomycin and ceftriaxone", "Fluconazole monotherapy", "Amphotericin B monotherapy"],
+                        "correct_answer": "Amphotericin B plus flucytosine",
+                        "explanation": "The treatment for cryptococcal meningitis involves induction with amphotericin B plus flucytosine"
+                    },
+                    {
+                        "question": "Which drug is used as a maintenance agent for cryptococcal meningitis?",
+                        "choices": ["Flucytosine", "Amphotericin B", "Fluconazole", "Vancomycin"],
+                        "correct_answer": "Fluconazole",
+                        "explanation": "Fluconazole is the preferred maintenance agent for cryptococcal meningitis following initial induction-treatment with amphotericin B and flucytosine."
+                    },
+                    {
+                        "question": "How long should maintenance therapy be continued for cryptococcal meningitis in HIV-infected patients?",
+                        "choices": ["6 months", "1 year", "2 years", "Until symptoms resolve"],
+                        "correct_answer": "1 year",
+                        "explanation": "Maintenance therapy should be continued for at least 1 year and until the patient's CD4 count is greater than 100/µL with an undetectable viral load."
                     }
+                    
                     
                     
                 ]
             }
+            
         ]
     }
 ]
