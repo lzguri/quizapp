@@ -39,11 +39,11 @@
                 "name": "Hemochromatosis",
                 "questions": [
                     {
-                        "question": "Which organ is most commonly affected in hereditary hemochromatosis?",
-                        "choices": ["Liver", "Kidney", "Lungs", "Spleen"],
-                        "correct_answer": "Liver",
-                        "explanation": "The liver is the most commonly affected organ in hereditary hemochromatosis, leading to cirrhosis."
-                    }
+                        "question": "Why does iron deposition in tissues cause damage in hemochromatosis?",
+                        "choices": ["Iron directly causes DNA mutations", "Iron overload leads to oxidative stress", "Iron interferes with calcium metabolism", "Iron accumulates in blood vessels, causing blockages"],
+                        "correct_answer": "Iron overload leads to oxidative stress",
+                        "explanation": "In hemochromatosis, excess iron accumulates in tissues and catalyzes the formation of free radicals, leading to oxidative stress, which damages cells, tissues, and organs."
+                    }                    
                 ]
             },
             {
@@ -84,17 +84,6 @@
                         "explanation": "Alpha-1 antitrypsin deficiency primarily affects the lower lobes of the lung due to the accumulation of neutrophil elastase activity, which damages the alveoli."
                     }
                     
-                ]
-            },
-            {
-                "name": "IPF",
-                "questions": [
-                    {
-                        "question": "What is the primary biochemical abnormality in IPF?",
-                        "choices": ["Lungs", "Iron overload", "Zinc deficiency", "Calcium imbalance"],
-                        "correct_answer": "Lungs",
-                        "explanation": "Wilson disease is caused by defective copper excretion, leading to toxic accumulation."
-                    }
                 ]
             }
         ]

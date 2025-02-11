@@ -25,6 +25,7 @@ document.addEventListener("DOMContentLoaded", () => {
             renderTopics();
         })
         .catch(error => console.error("Error loading JSON:", error));
+        
 
     function renderTopics() {
         topicsDiv.innerHTML = "";
@@ -190,29 +191,46 @@ document.addEventListener("DOMContentLoaded", () => {
         let correctAnswers = userAnswers.filter((answer, index) => answer === selectedQuestions[index].correct_answer).length;
         let percentage = ((correctAnswers / selectedQuestions.length) * 100).toFixed(2);
     
-        scoreDetails.innerHTML = `
-            <h2 class="score-result">Score: ${correctAnswers} / ${selectedQuestions.length} (${percentage}%)</h2>
-            <table class="tableExplanation">
-                <thead>
-                    <tr>
-                        <th>Your Answer</th>
-                        <th>Correct Answer</th>
-                        <th>Explanation</th>
+       /* scoreDetails.innerHTML = `
+        <h2 class="score-result">Score: ${correctAnswers} / ${selectedQuestions.length} (${percentage}%)</h2>
+        <table class="tableExplanation">
+            <thead>
+                <tr>
+                    <th>Your Answer</th>
+                    <th>Correct Answer</th>
+                    <th>Explanation</th>
+                </tr>
+            </thead>
+            <tbody>
+                ${selectedQuestions.map((question, index) => `
+                    <tr style="background-color: ${userAnswers[index] === question.correct_answer ? "lightgreen" : "lightcoral"};">
+                        <td>${userAnswers[index] || "No answer"}</td>
+                        <td>${question.correct_answer}</td>
+                        <td>${question.explanation}</td>
                     </tr>
-                </thead>
-                <tbody>
-                    ${selectedQuestions.map((question, index) => `
-                        <tr style="background-color: ${userAnswers[index] === question.correct_answer ? "lightgreen" : "lightcoral"};">
-                            <td>${userAnswers[index] || "No answer"}</td>
-                            <td>${question.correct_answer}</td>
-                            <td>${question.explanation}</td>
-                        </tr>
-                    `).join("")}
-                </tbody>
-            </table>
-            <button id="resetQuizFinal">Reset Quiz</button>
-            <button id="returnHomeFinal">Return to Homepage</button>
-        `;
+                `).join("")}
+            </tbody>
+        </table>
+        <button id="resetQuizFinal">Reset Quiz</button>
+        <button id="returnHomeFinal">Return to Homepage</button>
+    `;*/
+    scoreDetails.innerHTML = `
+    <h2>Your score is ${correctAnswers} / ${selectedQuestions.length} (${percentage}%)</h2>
+    ${selectedQuestions.map((question, index) => `
+        <div style="border: 1px solid ${userAnswers[index] === question.correct_answer ? "green" : "red"}; border-radius: 3px; padding: 4px; margin: 3px 0; background-color: ${userAnswers[index] === question.correct_answer ? "#d4edda" : "#f8d7da"}; font-size: 14px; line-height: 1.2;">
+            <p style="margin: 2px 0;"><strong>Question ${index + 1}:</strong> ${userAnswers[index] === question.correct_answer ? "Answered correctly" : "Answered wrong"}</p>
+            <p style="margin: 2px 0;"><strong>Question:</strong> ${question.question}</p>
+            <p style="margin: 2px 0;"><strong>Explanation:</strong> ${question.explanation}</p>
+        </div>
+
+    `).join("")}
+     <button id="resetQuizFinal">Reset Quiz</button>
+     <button id="returnHomeFinal">Return to Homepage</button>
+`;
+
+
+
+
     
         document.getElementById("resetQuizFinal").addEventListener("click", startQuiz);
         document.getElementById("returnHomeFinal").addEventListener("click", () => location.reload());
