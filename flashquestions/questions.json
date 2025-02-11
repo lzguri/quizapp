@@ -111,7 +111,14 @@
                         "choices": ["Vancomycin", "Nafcillin", "Rifampin", "Azithromycin"],
                         "correct_answer": "Nafcillin",
                         "explanation": "Nafcillin and cefazolin are the preferred treatments for MSSA due to superior efficacy. Vancomycin can treat MSSA but is less effective than beta-lactams like nafcillin or cefazolin."
+                    },
+                    {
+                        "question": "A patient is on daptomycin for MRSA endocarditis. Which laboratory test should be monitored?",
+                        "choices": ["Liver function tests", "Creatine kinase", "Complete blood count", "Serum potassium"],
+                        "correct_answer": "Creatine kinase",
+                        "explanation": "Daptomycin can cause muscle toxicity, including rhabdomyolysis, so creatine kinase [CK] levels should be monitored weekly during therapy."
                     }
+                    
                     
                 ]
             }
