@@ -213,10 +213,11 @@ document.addEventListener("DOMContentLoaded", () => {
         explanationDiv.style.fontWeight = "normal";
         explanationDiv.style.marginTop = "10px";
         explanationDiv.style.backgroundColor = "lightgreen";
-        explanationDiv.style.border = '1px solid black';
+        explanationDiv.style.border = '1px solid #003759';
         explanationDiv.style.padding = '5px';
+        explanationDiv.style.fontSize = "14px"
         //explanationDiv.style.backgroundColor = choice === questionData.correct_answer ? "lightgreen" : "lightcoral";
-        explanationDiv.style.backgroundColor = '#90d5ff'
+        explanationDiv.style.backgroundColor = '#90E8FF'
         answerChoices.appendChild(explanationDiv);
     }
 

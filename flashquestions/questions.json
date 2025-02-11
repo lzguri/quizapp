@@ -3,20 +3,33 @@
         "name": "Cardiology",
         "subtopics": [
             {
-                "name": "Heart Failure",
+                "name": "Coronary artery disease",
                 "questions": [
                     {
-                        "question": "What is the most common cause of hospitalization?",
-                        "choices": ["Heart Failure", "Atrial Fibrillation", "Myocardial Infarction"],
-                        "correct_answer": "Heart Failure",
-                        "explanation": "Heart failure is the most common cause of hospitalization."
+                        "question": "Which medications should be avoided in patients using nitrates?",
+                        "choices": ["Sildenafil", "Aspirin", "Lisinopril", "Metoprolol"],
+                        "correct_answer": "Sildenafil",
+                        "explanation": "Sildenafil and other phosphodiesterase inhibitors [vardenafil, tadalafil] should be avoided in patients using nitrates because they can cause a dangerous drop in blood pressure due to their combined vasodilatory effects."
+                    },                    
+                    {
+                        "question": "What is the proper use of nitrates in the management of angina to prevent tachyphylaxis?",
+                        "choices": ["Use nitrates continuously without a break", "Establish a nitrate-free period of 8 to 12 hours per day", "Only use nitrates during physical activity", "Use nitrates only when other treatments fail"],
+                        "correct_answer": "Establish a nitrate-free period of 8 to 12 hours per day",
+                        "explanation": "To prevent nitrate tachyphylaxis, it is important to establish a nitrate-free period of 8 to 12 hours per day, typically overnight, during which nitrates are not used."
                     },
                     {
-                        "question": "Which drug improves survival in heart failure with reduced ejection fraction?",
-                        "choices": ["Furosemide", "Metoprolol", "Amlodipine", "Digoxin"],
-                        "correct_answer": "Metoprolol",
-                        "explanation": "Beta-blockers like Metoprolol improve survival in HFrEF by reducing sympathetic activity."
+                        "question": "A patient with symptomatic coronary artery disease who is already on β-blockers and nitrates, BP at target, which other medication should be added?",
+                        "choices": ["Ranolazine", "Furosemide", "Aspirin", "HCTZ"],
+                        "correct_answer": "Ranolazine",
+                        "explanation": "Ranolazine should be considered for patients with coronary artery disease who remain symptomatic despite optimal doses of β-blockers and nitrates"
+                    },
+                    {
+                        "question": "When should ranolazine be avoided?",
+                        "choices": ["In patients with uncontrolled hypertension", "In patients with a history of seizures", "In patients with liver cirrhosis", "In patients with QT prolongation"],
+                        "correct_answer": "In patients with QT prolongation",
+                        "explanation": "Ranolazine should be avoided in patients with bradycardia or prolonged QT interval, as it can exacerbate these conditions by further prolonging the QT interval and affecting heart rate."
                     }
+                                                
                 ]
             },
             {
@@ -146,9 +159,18 @@
                         "choices": ["6 months", "1 year", "2 years", "Until symptoms resolve"],
                         "correct_answer": "1 year",
                         "explanation": "Maintenance therapy should be continued for at least 1 year and until the patient's CD4 count is greater than 100/µL with an undetectable viral load."
+                    }                    
+                ]
+            },
+            {
+                "name": "Tick-borne disease",
+                "questions": [
+                    {
+                        "question": "What is the treatment of choice for human monocytic ehrlichiosis [HME] and human granulocytic anaplasmosis [HGA]?",
+                        "choices": ["Azithromycin", "Ceftriaxone", "Doxycycline", "Amoxicillin"],
+                        "correct_answer": "Doxycycline",
+                        "explanation": "Doxycycline is the treatment of choice for both human monocytic ehrlichiosis [HME] and human granulocytic anaplasmosis [HGA]."
                     }
-                    
-                    
                     
                 ]
             }
