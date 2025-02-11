@@ -257,8 +257,11 @@ document.addEventListener("DOMContentLoaded", () => {
 
 function adjustDivWidth() {
     const div = document.getElementById('content');  // Select #content
+    const internalMedicine = document.getElementById('internal-medicine'); // Select h1
+
     if (div) {  // Ensure the element exists
         if (window.innerWidth > 768) {
+            // Apply styles for desktop screens (greater than 768px)
             div.style.width = '50%';
             div.style.margin = '20px auto';
             div.style.background = 'white';
@@ -266,11 +269,29 @@ function adjustDivWidth() {
             div.style.borderRadius = '10px';
             div.style.boxShadow = '0px 0px 10px gray';
             div.style.textAlign = 'left';
+
+            if (internalMedicine) {
+                internalMedicine.style.textAlign = 'left';  // Ensure h1 is left-aligned on desktop
+            }
         } else {
+            // Apply styles for mobile screens (768px or smaller)
             div.style.width = '100%';
+
+            if (internalMedicine) {
+                internalMedicine.style.textAlign = 'center';  // Center h1 on mobile
+            }
+
+            // Remove the extra desktop styles for mobile
+            div.style.margin = '';
+            div.style.background = '';
+            div.style.padding = '';
+            div.style.borderRadius = '';
+            div.style.boxShadow = '';
+            div.style.textAlign = '';  // Reset to default on mobile
         }
     }
 }
 
 window.addEventListener('resize', adjustDivWidth);
 window.addEventListener('load', adjustDivWidth);
+
