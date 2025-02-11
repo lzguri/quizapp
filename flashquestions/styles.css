@@ -17,9 +17,9 @@ body {
 /* Media query for mobile devices */
 @media (max-width: 768px) {
     .container {
-      height: 100vh; /* Sets the height to 100% viewport height */
+      width: 100%; /* Sets the height to 100% viewport height */
     }
-  }
+}
 
 .button-choice {
     display: block;
