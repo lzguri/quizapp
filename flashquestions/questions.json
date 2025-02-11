@@ -87,5 +87,34 @@
                 ]
             }
         ]
+    },
+    {
+        "name": "Infectious Disease",
+        "subtopics": [
+            {
+                "name": "Antibiotics",
+                "questions": [
+                    {
+                        "question": "Which of the following antibiotics does NOT cover methicillin-resistant Staphylococcus aureus [MRSA]?",
+                        "choices": ["Linezolid", "Vancomycin", "Ceftriaxone", "Daptomycin"],
+                        "correct_answer": "Ceftriaxone",
+                        "explanation": "Linezolid, vancomycin, and daptomycin cover MRSA. Ceftriaxone does not."
+                    },
+                    {
+                        "question": "Which of the following antibiotics gets inactivated by lung surfactant?",
+                        "choices": ["Ceftriaxone", "Azithromycin", "Daptomycin", "Vancomycin", "Rifampin"],
+                        "correct_answer": "Daptomycin",
+                        "explanation": "Daptomycin is inactivated by lung surfactant and therefore is ineffective for treating pneumonia."
+                    },
+                    {
+                        "question": "Which of the following antibiotics should be used to treat methicillin-susceptible Staphylococcus aureus (MSSA)?",
+                        "choices": ["Vancomycin", "Nafcillin", "Rifampin", "Azithromycin"],
+                        "correct_answer": "Nafcillin",
+                        "explanation": "Nafcillin and cefazolin are the preferred treatments for MSSA due to superior efficacy. Vancomycin can treat MSSA but is less effective than beta-lactams like nafcillin or cefazolin."
+                    }
+                    
+                ]
+            }
+        ]
     }
 ]
