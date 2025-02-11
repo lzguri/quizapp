@@ -23,7 +23,7 @@ body {
 
 #scorePage {
     width: 100%;
-    text-align: center;
+    text-align:left;
 }
 .score-result {
     text-align: center;

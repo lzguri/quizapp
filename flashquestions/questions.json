@@ -47,13 +47,25 @@
                 ]
             },
             {
-                "name": "Wilson Disease",
+                "name": "Acute pancreatitis",
                 "questions": [
                     {
-                        "question": "What is the primary biochemical abnormality in Wilson disease?",
-                        "choices": ["Copper accumulation", "Iron overload", "Zinc deficiency", "Calcium imbalance"],
-                        "correct_answer": "Copper accumulation",
-                        "explanation": "Wilson disease is caused by defective copper excretion, leading to toxic accumulation."
+                        "question": "What is the most common cause of acute pancreatitis?",
+                        "choices": ["Hypertriglyceridemia", "Alcohol consumption", "Drug-induced", "Scorpion sting"],
+                        "correct_answer": "Alcohol consumption",
+                        "explanation": "Alcohol consumption along with gallstones are the most common cause of acute pancreatitis"
+                    },
+                    {
+                        "question": "Which of the following cause of acute pancreatitis is associted with hyponatremia",
+                        "choices": ["Hypercalcemia", "Hypertriglyceridemia", "Gallstones", "Endoscopic retrograde cholangiopancreatography"],
+                        "correct_answer": "Hypertriglyceridemia",
+                        "explanation": "Hypertriglyceridemia causes pseudohyponatremia by interfering with laboratory measurements in certain assays, leading to falsely low sodium levels due to plasma water displacement by excess lipids"
+                    },
+                    {
+                        "question": "Which of the following is not a criteria for diagnosis of acute pancreatitis",
+                        "choices": ["Epigastric abdominal pain", "Elevated lipase level 3x upper of normal  limit", "Imaging findings of acute pancreatitis", "Fever"],
+                        "correct_answer": "Fever",
+                        "explanation": "Acute pancreatits is diagnosed if the patient meets 2/3 of the criteria (a) epigastric abdominal pain, (b) lipase 3 upper of normal limit, (c) imaging showing acute pancreatitis"
                     }
                 ]
             }
