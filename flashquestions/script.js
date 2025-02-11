@@ -191,7 +191,7 @@ document.addEventListener("DOMContentLoaded", () => {
         let percentage = ((correctAnswers / selectedQuestions.length) * 100).toFixed(2);
     
         scoreDetails.innerHTML = `
-            <h2>Score: ${correctAnswers} / ${selectedQuestions.length} (${percentage}%)</h2>
+            <h2 class="score-result">Score: ${correctAnswers} / ${selectedQuestions.length} (${percentage}%)</h2>
             <table>
                 <thead>
                     <tr>
