@@ -53,20 +53,20 @@
                         "question": "What is the most common cause of acute pancreatitis?",
                         "choices": ["Hypertriglyceridemia", "Alcohol consumption", "Drug-induced", "Scorpion sting"],
                         "correct_answer": "Alcohol consumption",
-                        "explanation": "Alcohol consumption along with gallstones are the most common cause of acute pancreatitis"
+                        "explanation": "Alcohol consumption along with gallstones is the most common cause of acute pancreatitis."
                     },
                     {
-                        "question": "Which of the following cause of acute pancreatitis is associted with hyponatremia",
+                        "question": "Which of the following causes of acute pancreatitis is associated with hyponatremia?",
                         "choices": ["Hypercalcemia", "Hypertriglyceridemia", "Gallstones", "Endoscopic retrograde cholangiopancreatography"],
                         "correct_answer": "Hypertriglyceridemia",
-                        "explanation": "Hypertriglyceridemia causes pseudohyponatremia by interfering with laboratory measurements in certain assays, leading to falsely low sodium levels due to plasma water displacement by excess lipids"
+                        "explanation": "Hypertriglyceridemia causes pseudohyponatremia by interfering with laboratory measurements in certain assays, leading to falsely low sodium levels due to plasma water displacement by excess lipids."
                     },
                     {
-                        "question": "Which of the following is not a criteria for diagnosis of acute pancreatitis",
-                        "choices": ["Epigastric abdominal pain", "Elevated lipase level 3x upper of normal  limit", "Imaging findings of acute pancreatitis", "Fever"],
+                        "question": "Which of the following is NOT a criterion for the diagnosis of acute pancreatitis?",
+                        "choices": ["Epigastric abdominal pain", "Elevated lipase level 3x upper limit of normal", "Imaging findings of acute pancreatitis", "Fever"],
                         "correct_answer": "Fever",
-                        "explanation": "Acute pancreatits is diagnosed if the patient meets 2/3 of the criteria (a) epigastric abdominal pain, (b) lipase 3 upper of normal limit, (c) imaging showing acute pancreatitis"
-                    }
+                        "explanation": "Acute pancreatitis is diagnosed if the patient meets 2 out of 3 criteria: (a) epigastric abdominal pain, (b) lipase elevated 3x upper limit of normal, (c) imaging showing acute pancreatitis."
+                    }                    
                 ]
             }
         ]
