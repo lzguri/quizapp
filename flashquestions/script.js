@@ -17,6 +17,8 @@ document.addEventListener("DOMContentLoaded", () => {
     const generateQuizButton = document.getElementById("generateQuiz");
     const scoreDetails = document.getElementById("scoreDetails");
     const questionCountDisplay = document.getElementById("questionCount");
+    const progressBar = document.getElementById("progressBar"); // Progress bar element
+
 
     fetch("questions.json")
         .then(response => response.json())
@@ -26,7 +28,21 @@ document.addEventListener("DOMContentLoaded", () => {
         })
         .catch(error => console.error("Error loading JSON:", error));
 
+    function shuffle(array) {
+        for (let i = array.length - 1; i > 0; i--) {
+            const j = Math.floor(Math.random() * (i + 1));
+            [array[i], array[j]] = [array[j], array[i]]; // Swap elements
+        }
+        return array;
+    }
         
+
+    // Update progress bar, this function is called with showquiz    
+    function updateProgressBar() {
+        const progress = (currentQuestionIndex / (selectedQuestions.length - 1)) * 100;
+        progressBar.style.width = `${progress}%`;
+    }
+    
     function renderTopics() {
         topicsDiv.innerHTML = "";
         topicsData.forEach((topic, index) => {
@@ -109,7 +125,8 @@ document.addEventListener("DOMContentLoaded", () => {
 
     generateQuizButton.addEventListener("click", () => {
         let selectedQuestionsSet = updateQuestionCount();
-        selectedQuestions = Array.from(selectedQuestionsSet).map(JSON.parse);
+        selectedQuestions = shuffle(Array.from(selectedQuestionsSet).map(JSON.parse));
+
 
         if (selectedQuestions.length === 0) {
             alert("Please select at least one topic or subtopic.");
@@ -135,7 +152,8 @@ document.addEventListener("DOMContentLoaded", () => {
         questionTitle.style.fontSize = "20px";
         answerChoices.innerHTML = "";
 
-        questionData.choices.forEach((choice, index) => {
+        let shuffledChoices = shuffle(questionData.choices);
+            shuffledChoices.forEach((choice, index) => {
             let choiceDiv = document.createElement("div");
             choiceDiv.style.fontSize = "20px";
             choiceDiv.innerHTML = `
@@ -158,6 +176,7 @@ document.addEventListener("DOMContentLoaded", () => {
         }
 
         updateButtons();
+        updateProgressBar();
     }
 
     function updateButtons() {
@@ -218,7 +237,7 @@ document.addEventListener("DOMContentLoaded", () => {
     <h2>Your score is ${correctAnswers} / ${selectedQuestions.length} (${percentage}%)</h2>
     ${selectedQuestions.map((question, index) => `
         <div style="border: 1px solid ${userAnswers[index] === question.correct_answer ? "green" : "red"}; border-radius: 3px; padding: 4px; margin: 3px 0; background-color: ${userAnswers[index] === question.correct_answer ? "#d4edda" : "#f8d7da"}; font-size: 14px; line-height: 1.2;">
-            <p style="margin: 2px 0;"><strong>Question ${index + 1}:</strong> ${userAnswers[index] === question.correct_answer ? "Answered correctly" : "Answered wrong"}</p>
+            <p style="margin: 2px 0;"><strong>Question ${index + 1}:</strong> ${userAnswers[index] === question.correct_answer ? "Answered correctly" : "Answered incorrectly"}</p>
             <p style="margin: 2px 0;"><strong>Question:</strong> ${question.question}</p>
             <p style="margin: 2px 0;"><strong>Explanation:</strong> ${question.explanation}</p>
         </div>
@@ -254,7 +273,7 @@ document.addEventListener("DOMContentLoaded", () => {
     });
 });
 
-
+// Adjust interface according to screen size
 function adjustDivWidth() {
     const div = document.getElementById('content');  // Select #content
     const internalMedicine = document.getElementById('internal-medicine'); // Select h1
