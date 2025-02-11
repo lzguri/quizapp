@@ -151,34 +151,57 @@ document.addEventListener("DOMContentLoaded", () => {
         questionTitle.style.fontWeight = "normal";
         questionTitle.style.fontSize = "20px";
         answerChoices.innerHTML = "";
-
+    
         let shuffledChoices = shuffle(questionData.choices);
-            shuffledChoices.forEach((choice, index) => {
+        shuffledChoices.forEach((choice, index) => {
             let choiceDiv = document.createElement("div");
-            choiceDiv.style.fontSize = "20px";
-            choiceDiv.innerHTML = `
-                <input class="button-choice" type="button" name="answer" id="choice-${index}" value="${choice}" 
-                    ${userAnswers[currentQuestionIndex] !== null ? "checked disabled" : ""}>
-                <label for="choice-${index}"></label>
-            `;
+            choiceDiv.classList.add("button-choice");
+            choiceDiv.setAttribute("id", `choice-${index}`);
+            choiceDiv.textContent = choice;
+    
+            // Check if the user has already answered this question
+            if (userAnswers[currentQuestionIndex] !== null) {
+                if (choice === userAnswers[currentQuestionIndex]) {
+                    choiceDiv.classList.add(choice === questionData.correct_answer ? "correct-choice" : "incorrect-choice");
+                }
+                if (choice === questionData.correct_answer && choice !== userAnswers[currentQuestionIndex]) {
+                    choiceDiv.classList.add("correct-choice"); // Ensure the correct answer is highlighted
+                }
+            }
+    
             choiceDiv.addEventListener("click", () => {
                 if (userAnswers[currentQuestionIndex] === null) {
                     userAnswers[currentQuestionIndex] = choice;
                     displayExplanation(questionData, choice);
                     disableChoices();
+    
+                    // Highlight the clicked choice
+                    choiceDiv.classList.add(choice === questionData.correct_answer ? "correct-choice" : "incorrect-choice");
+    
+                    // Highlight the correct answer if the user picked an incorrect one
+                    if (choice !== questionData.correct_answer) {
+                        shuffledChoices.forEach((correctChoice, correctIndex) => {
+                            if (correctChoice === questionData.correct_answer) {
+                                document.querySelector(`#choice-${correctIndex}`).classList.add("correct-choice");
+                            }
+                        });
+                    }
                 }
             });
+    
             answerChoices.appendChild(choiceDiv);
         });
-
+    
         if (userAnswers[currentQuestionIndex] !== null) {
             displayExplanation(questionData, userAnswers[currentQuestionIndex]);
         }
-
+    
         updateButtons();
         updateProgressBar();
     }
-
+    
+    
+    
     function updateButtons() {
         prevButton.style.display = currentQuestionIndex > 0 ? "inline-block" : "none";
         nextButton.textContent = currentQuestionIndex === selectedQuestions.length - 1 ? "Submit Quiz" : "Next";
@@ -192,7 +215,8 @@ document.addEventListener("DOMContentLoaded", () => {
         explanationDiv.style.backgroundColor = "lightgreen";
         explanationDiv.style.border = '1px solid black';
         explanationDiv.style.padding = '5px';
-        explanationDiv.style.backgroundColor = choice === questionData.correct_answer ? "lightgreen" : "#ff8282";
+        //explanationDiv.style.backgroundColor = choice === questionData.correct_answer ? "lightgreen" : "lightcoral";
+        explanationDiv.style.backgroundColor = '#90d5ff'
         answerChoices.appendChild(explanationDiv);
     }
 

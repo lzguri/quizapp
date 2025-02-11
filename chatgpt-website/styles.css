@@ -47,8 +47,23 @@ body {
     cursor: pointer;
     text-align: left;
     transition: background-color 0.3s, border-color 0.3s;
-    width: 100%;
+    width: calc(100% - 0px); /* Adjust width to account for padding */
+    box-sizing: border-box;  /* Ensures padding and border are included in the width */
     font-size: 14px;
+    overflow: hidden;        /* Prevents content overflow */
+}
+
+
+.correct-choice {
+    background-color: #d4edda;
+    border-color: #28a745;
+    color: #155724;
+}
+
+.incorrect-choice {
+    background-color: #f8d7da;
+    border-color: #dc3545;
+    color: #721c24;
 }
 
 .topic {
@@ -79,6 +94,7 @@ button {
     background-color: #848184;
     color: white;
     font-size: 16px;
+    text-align: left;
 }
 
 .tableExplanation {
