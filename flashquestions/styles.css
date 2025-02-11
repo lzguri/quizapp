@@ -14,41 +14,44 @@ body {
     box-shadow: 0px 0px 10px gray;
 }
 
-#homepage, #quizContainer, #scorePage {
-    margin: 20px auto; /* Keep some margin on larger screens */
-    width: 50%;         /* Keep the 50% width on larger screens */
-    background: white;
+body {
+    margin: 0;
+    /* You might *not* need height: 100vh here unless you want the body to *always*
+       be full viewport height, even on larger screens.  Often, it's better to let
+       the body's height be determined by its content. */
+    display: flex;
+    flex-direction: column;
+}
+
+#my-div { /* Or your selector */
+    width: 100%; /* Default width */
+    /* Other default styles */
+    background-color: lightgreen;
     padding: 20px;
-    border-radius: 10px;
-    box-shadow: 0px 0px 10px gray;
-    box-sizing: border-box; /* Important: Include padding and border in width */
+    box-sizing: border-box;
 }
 
-/* Media query for smaller screens (typically phones) */
+/* Media query for smaller screens (phones and tablets) */
 @media (max-width: 768px) { /* Adjust 768px as needed */
-    #homepage, #quizContainer, #scorePage {
-        width: 95%; /* Occupy almost the entire width */
-        margin: 10px auto; /* Reduce margins on smaller screens */
-        padding: 15px; /* Adjust padding as needed */
+    #my-div {
+        flex-grow: 1; /* Take up available space on smaller screens */
+        /* You might want to adjust padding or other styles here */
+        padding: 15px;
+    }
+
+    /* If you *do* want the body to be full viewport height *only* on smaller screens: */
+    body {
+        height: 100vh;
     }
 }
 
-/* Optional: If you want the content to truly take up the *entire* screen (no margins)
-   on very small screens, you can add another media query: */
-@media (max-width: 400px) { /* Adjust 400px as needed */
-    #homepage, #quizContainer, #scorePage {
-        width: 100%;
-        margin: 0; /* Remove all margins */
-        padding: 10px; /* Adjust padding as needed */
-        border-radius: 0; /* Optional: Remove border radius on very small screens */
+/* Optional: Another media query for even smaller screens (phones) */
+@media (max-width: 400px) {  /* Adjust 400px as needed */
+    #my-div {
+        padding: 10px;
     }
 }
 
-/* Optional: Add some basic responsiveness for the content *inside* the containers */
-#homepage > *, #quizContainer > *, #scorePage > * {
-    max-width: 100%; /* Prevent content from overflowing on small screens */
-    box-sizing: border-box; /* Include padding and borders in the content's width */
-}
 .button-choice {
     display: block;
     margin: 10px 0;
