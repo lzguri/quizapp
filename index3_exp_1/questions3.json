@@ -1,0 +1,182 @@
+[
+    {
+        "addNote":  ["<strong>History of Present Illness:</strong>A 36-year-old male who presented to the emergency department with a 2-day history of nausea, nonbloody vomiting, and diffuse abdominal pain. He reported generalized weakness, fatigue, and increased thirst. He admitted to not taking his insulin during this period due to fear of hypoglycemia, as he had been unable to eat adequately. The patient has a history of recurrent episodes of nausea and vomiting, which were previously managed with metoclopramide, though he has not used it recently. His symptoms had been getting worse over the past 48 hours. He also described occasional tingling sensations in his hands and feet, along with mild difficulty with balance and persistent fatigue. He denied fever, chills, and chest pain but reported shortness of breath. He also denied recent infections, changes in bowel habits, or trauma",
+        "<strong>Past Medical History: </strong> Type 1 DM, Hypothyroidism",
+        "<strong>Medications:</strong> Insulin glargine 18 UI at bedtime, sliding scale insulin, levothyroxine",
+        "<strong>Social History:</strong>  Denies alcohol consumption and illicit drug use.",
+        "<strong>Family History:</strong>  None reported",
+        "<strong>Vital Signs:</strong> Blood Pressure 89/40 mmHg, Heart Rate 130 beats/min, Temperature 98.2°F, Respiratory Rate 31 breaths/min, Spo2 95% on room air",
+        "<strong>Physical Examination:</strong><br>General: Thin male appearing dehydrated and fatigued.<br>Skin: Pallor noted with depigmented patches, characterized by sharply demarcated areas of hypopigmentation on the hands and forearms.<br>HEENT: Dry mucous membranes, pale conjunctiva.<br>Abdomen: Mild diffuse tenderness without rebound or guarding.<br>Cardiovascular: Tachycardic with a regular rhythm, no murmurs, rubs, or gallops.<br>Pulmonary: Clear breath sounds bilaterally.<br>Neurological: Alert but fatigued; grossly intact cranial nerves and motor function"
+        ],
+        "question": "Given the presentation which one is most likely diagnosis in this patient?",
+        "answers": [
+            "Myxedema coma",
+            "Hyperosmolar hyperglycemic state",
+            "Diabetic ketoacidosis",
+            "Acute appendicitis",
+            "Acute pancreatitis"
+        ],
+        "rightChoice": 2,
+        "explanation": "The most likely diagnosis is diabetic ketoacidosis, given the patient's history of type 1 diabetes mellitus, recent insulin omission, symptoms of dehydration, metabolic acidosis, and elevated respiratory rate. The other conditions are less consistent with the presentation. While hyperosmolar hyperglycemic state can occur in type 1 diabetes mellitus, it is far less common. Myxedema coma is unlikely given that it typically presents with bradycardia, hypothermia, and a depressed respiratory rate, opposite to what we are seeing in this case",
+        "addQuestionTable": {
+            "header": [],
+            "rows": [[ ]]
+        },
+        "addLabs": {
+            "header": ["Test", "Result", "Reference Range"],
+            "rows": [
+                ["WBC", "18.3 K/μL", "4.0-10.0 K/μL"],
+                ["RBC", "4.8 M/μL", "4.7-6.1 M/μL"],
+                ["Hemoglobin", "17.1 g/dL", "13.5-17.5 g/dL"],
+                ["MCV", "105 fL", "80-100 fL"],
+                ["Platelets", "220 K/μL", "150-450 K/μL"],
+                ["Creatinine", "1.9 mg/dL", "0.6-1.2 mg/dL"],
+                ["BUN", "30 mg/dL", "7-20 mg/dL"],
+                ["Albumin", "3.4 g/dL", "3.5-5.0 g/dL"],
+                ["AST", "20 U/L", "10-40 U/L"],
+                ["ALT", "18 U/L", "7-56 U/L"],
+                ["Glucose", "420 mg/dL", "70-100 mg/dL"],
+                ["Sodium", "130 mmol/L", "135-145 mmol/L"],
+                ["Potassium", "5.7 mmol/L", "3.5-5.0 mmol/L"],
+                ["Chloride", "90 mmol/L", "96-106 mmol/L"],
+                ["Bicarbonate", "15 mmol/L", "22-28 mmol/L"],
+                ["Anion Gap", "32 mmol/L", "8-12 mmol/L"],
+                ["pH (arterial)", "7.22", "7.35-7.45"],
+                ["pCO2", "29 mmHg", "35-45 mmHg"]
+            ]
+        }
+      },
+      {
+        "question": "After reviewing the case and labs your next step is to?",
+        "answers": [
+          "Check β-Hydroxybutyrate",
+          "Check lactic acid",
+          "Start intravenous fluids",
+          "Start vasopressors",
+          "Start bicarbonate drip"
+        ],
+        "rightChoice": 2,
+        "explanation": "In an acutely hypotensive patient [BP 89/40 mmHg, MAP ~56 mmHg], the immediate priority is to address circulation with fluid resuscitation. Given the patient's vomiting and hyperglycemia, his hypotension is very likely due to dehydration, making volume repletion essential. While additional tests [e.g., beta-hydroxybutyrate] and interventions may be indicated, restoring adequate blood pressure ensures organ perfusion and follows the <span class='highlight'>ABCs of emergency management (Airway, Breathing, Circulation)</span>. If the patient does not respond sufficiently to fluids, vasopressors may be added to maintain hemodynamic stability.",
+        "addProgress": [
+          "A 36-year-old male with a history of Type 1 diabetes mellitus and hypothyroidism presented with a 2-day history of nausea, vomiting, abdominal pain, fatigue, and increased thirst. He admitted to not taking insulin due to inadequate food intake. On examination, he was dehydrated, tachycardic, hypotensive, and fatigued. Labs revealed hyperglycemia [420 mg/dL], metabolic acidosis [pH 7.22, bicarbonate 15 mmol/L, pCO2 29 mmHg], hyperkalemia [5.7 mmol/L], elevated creatinine [1.9 mg/dL], and an anion gap of 32 mmol/L."
+        ]
+      }, 
+      {
+        "question": "What kind of acid-base disorder does this patient have?",
+        "answers": [
+          "High-anion-gap metabolic acidosis with appropriate respiratory compensation only",
+          "High-anion-gap metabolic acidosis plus primary respiratory alkalosis",
+          "High-anion-gap metabolic acidosis plus metabolic alkalosis",
+          "Normal-anion-gap metabolic acidosis",
+          "Primary respiratory alkalosis"
+        ],
+        "rightChoice": 2,
+        "explanation": "Step-by-step analysis:<br><ol><li>The low pH (7.22) and low HCO3- (15 mmol/L) confirm metabolic acidosis.</li><li>The anion gap of 32 mmol/L indicates a high-anion-gap metabolic acidosis.</li><li>Winter's formula for expected pCO2 is about 28.5–32.5 mmHg, so the actual pCO2 of 29 mmHg is an appropriate compensatory response (no primary respiratory alkalosis or acidosis).</li><li>The delta gap (32 - 12 = 20) is used to see if there's an additional metabolic process. The normal anion gap is about 12 mmol/L. Subtracting 12 from the patient's anion gap of 32 gives a delta gap of 20. If the only disorder were a high-anion-gap metabolic acidosis, the bicarbonate would have dropped by about 20 mmol/L from normal (~24 mmol/L), leaving an expected HCO3- of around 4 mmol/L. Since the actual HCO3- is 15 mmol/L, this ‘extra’ bicarbonate indicates a concurrent metabolic alkalosis.</li></ol><span class='highlight'>Conclusion: The patient has a high-anion-gap metabolic acidosis plus metabolic alkalosis, with appropriate respiratory compensation. Metabolic alkalosis is very likely due to vomiting</span>",
+        "addProgress": [
+          "Patient has been diagnosed with Diabetic ketoacidosis.<br><br>IV fluids [bolus] has been started to correct low BP and dehydration."
+        ]
+      },
+      {
+        "question": "You have correctly diagnosed this patient with DKA and have started resuscitation with IV fluids. What is the next step in management?",
+        "answers": [
+          "Start intravenous insulin",
+          "Start subcutaneous insulin",
+          "Start D5W",
+          "Start bicarbonate infusion"
+        ],
+        "rightChoice": 0,
+        "explanation": "In severe DKA, the next critical step after initial fluid resuscitation is to start an intravenous insulin infusion [insulin drip]. Subcutaneous insulin can be considered only in mild DKA, but not in severe cases."
+      },
+      {
+        "question": "After starting an insulin drip, you are considering maintenance fluids for this patient. Which would be best?",
+        "answers": [
+          "Albumin infusion",
+          "Lactated Ringer",
+          "Normal Saline",
+          "Bicarbonate infusion"
+        ],
+        "rightChoice": 1,
+        "explanation": "Lactated Ringer [LR] is preferred for maintenance fluids in severe DKA because its <span class='highlight'>pH is around 6.5 and its lactate is metabolized by the liver into bicarbonate,</span> helping to buffer acidity. In contrast, Normal Saline [NS] has a <span class='highlight'>pH of approximately 5.0 and can contribute to a hyperchloremic metabolic acidosis</span> in a patient already experiencing significant acidemia. Albumin infusion is not indicated here, and bicarbonate infusion is typically reserved for patients with a very low pH [e.g., <6.9].",
+        "addProgress": "Insulin infusion has been initiated in accordance with the hospital’s titration protocol."
+      },      
+      {
+        "question": "The nurse caring for the patient is concerned about a patient breathing too fast and asks if the patient should be intubated due to the risk of respiratory arrest. What is your response?",
+        "answers": [
+          "Great idea, let's intubate immediately!",
+          "The patient doesn’t require intubation at the moment.",
+          "The patient is hyperventilating due to anxiety and needs sedation."
+        ],
+        "rightChoice": 1,
+        "explanation": "The patient doesn’t require intubation at this time. The rapid breathing is due to metabolic acidosis, where the body compensates by blowing off more CO2. This is a normal compensatory mechanism. Concern should arise if a patient with marked metabolic acidosis is not breathing fast enough. Remember to use Winter's formula to calculate the expected CO2 in metabolic acidosis . <span class='highlight'>Intubation should be avoided</span> in DKA as it interferes with the compensatory mechanism, and matching the patient’s respiratory effort on a ventilator is challenging.",
+        "addProgress": "Lactated ringer has been started as maintenance fluids"
+      },
+      {
+        "question": "As part of your hospital protocol, you have ordered a BMP every 4 hours and point-of-care glucose checks every hour. What is the ideal rate of glucose reduction per hour during DKA treatment?",
+        "answers": [
+          "25–50 mg/dL per hour",
+          "50–75 mg/dL per hour",
+          "Doesn't make any difference",
+          "Greater than 200 mg/dL per hour"
+        ],
+        "rightChoice": 1,
+        "explanation": "The recommended rate of glucose reduction in DKA management is approximately 50–75 mg/dL per hour. A slower drop may prolong hyperglycemia, while a more rapid drop increases the <span class='highlight'>risk of cerebral edema.</span>",
+        "addProgress": "BMP every 4 hours and point-of-care glucose checks every hour ordered"
+      },      
+      {
+        "question": "Regarding hyperkalemia. Which statement is correct?",
+        "answers": [
+          "Total body potassium level is elevated",
+          "Despite high serum potassium, total body potassium is very likely low",
+          "Can't make a determination"
+        ],
+        "rightChoice": 1,
+        "explanation": "Although serum potassium may be high in a hyperglycemic, acidotic state, total body potassium is usually depleted. This occurs because <span class='highlight'>acidosis shifts potassium out of cells,</span> raising serum levels, while <span class='highlight'>osmotic diuresis from hyperglycemia causes significant potassium losses in urine</span>. As a result, patients with diabetic ketoacidosis [DKA] who appear to have a normal or high serum potassium level still require potassium supplementation to prevent dangerous hypokalemia during treatment. In fact, potassium supplementation is usually started if the patient’s serum potassium is below 5.3 mEq/L to avoid a drop to dangerously low levels once insulin therapy begins"
+      },  
+      {
+        "question": "Another BMP shows improvement in bicarbonate and a lower anion gap. Potassium is now 4.7, and you have added potassium supplements to the LR. The nurse notifies you that the POC glucose is 200 mg/dL. Your next step is to?",
+        "answers": [
+          "Continue current management",
+          "Add D5W to the fluids",
+          "Switch to normal saline",
+          "Discontinue insulin"
+        ],
+        "rightChoice": 1,
+        "explanation": "Although the glucose has decreased to 200 mg/dL, the acidosis has not fully resolved. Insulin must be continued to correct the underlying metabolic derangements, so adding dextrose [D5W] to the fluids helps prevent hypoglycemia while allowing ongoing insulin therapy. Threshold for starting dextrose intravenous is around 200-250 mg/dL"
+      },            
+      {
+        "question": "Off topic here but how do SGLT-2 inhibitors increase the risk for euglycemic DKA?",
+        "answers": [
+            "Increase in insulin secretion when using SGLT2 inhibitors",
+            "Decrease in glucagon secretion",
+            "Indirectly promoting β-oxidation",
+            "SGLT-2 inhibitors directly promote ketogenesis"
+        ],
+        "rightChoice":2,
+        "explanation": "SGLT2 inhibitors lower blood glucose by promoting glucose excretion in urine, leading to normal or near-normal blood glucose levels. However, this will <span class='highlight'>reduce insulin secretion and increase glucagon levels,</span> promoting lipolysis and ketogenesis [β-oxidation is the process], which results in ketoacidosis with a high anion gap",
+        "addProgress": "Dextrose 5% in water [D5W] was added to the maintenance fluids as the patient's glucose level fell below 250 mg/dL"
+      },
+      {
+        "question": "You have successfully resolved the patient's DKA and transitioned to long-acting insulin. The patient is feeling better and tolerating a diet, but now reports difficulty walking and a sense of imbalance. What is your next step?",
+        "answers": [
+          "It's likely diabetic neuropathy; continue home medications",
+          "Order an MRI to rule out stroke",
+          "Check vitamin B12 levels",
+          "Check lead levels"
+        ],
+        "rightChoice": 2,
+        "explanation": "The patient has a history of autoimmune disorders [type 1 diabetes, hypothyroidism, and likely vitiligo given white patches], raising suspicion for pernicious anemia—a condition that can cause vitamin B12 deficiency. Low B12 levels can lead to gait disturbances and neurologic symptoms, so checking vitamin B12 is essential."
+      },
+      {
+        "question": "The patient's vitamin B12 level is < 200 pg/mL. What is your next step?",
+        "answers": [
+          "Check methylmalonic acid (MMA) level",
+          "Check intrinsic factor antibodies",
+          "Check IgA level",
+          "Check gastrin level"
+        ],
+        "rightChoice": 1,
+        "explanation": "Because the patient's B12 level is < 200 pg/mL—and given the presence of multiple autoimmune conditions (raising suspicion for pernicious anemia)—the best next step is to order intrinsic factor antibodies. A positive test is highly specific for pernicious anemia. In cases where the B12 level is borderline [e.g., 200–300 pg/mL], measuring methylmalonic acid [MMA] would be more appropriate to confirm true B12 deficiency. Checking IgA levels could be helpful if celiac disease were suspected, and gastrin levels might help identify other gastric pathologies, but these are lower-yield tests here. Intrinsic factor antibody testing is the most likely to confirm pernicious anemia in this clinical context."
+      }
+      
+      
+]

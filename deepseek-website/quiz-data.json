@@ -1,0 +1,18 @@
+[
+  {
+    "topic": "Gastroenterology",
+    "subtopic": "Hemochromatosis",
+    "question": "What is the primary cause of hemochromatosis?",
+    "choices": ["Iron overload", "Vitamin deficiency", "Bacterial infection", "Genetic mutation"],
+    "correctAnswer": "Genetic mutation",
+    "explanation": "Hemochromatosis is primarily caused by a genetic mutation leading to excessive iron absorption."
+  },
+  {
+    "topic": "Gastroenterology",
+    "subtopic": "Wilson Disease",
+    "question": "Which metal accumulates in Wilson's disease?",
+    "choices": ["Iron", "Copper", "Zinc", "Magnesium"],
+    "correctAnswer": "Copper",
+    "explanation": "Wilson's disease is characterized by excessive copper accumulation in the body."
+  }
+]

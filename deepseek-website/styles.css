@@ -1,0 +1,24 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 20px;
+  }
+  
+  .topic h3 {
+    cursor: pointer;
+    color: blue;
+  }
+  
+  .subtopics {
+    display: none;
+    margin-left: 20px;
+  }
+  
+  .question {
+    margin-bottom: 20px;
+  }
+  
+  #explanation {
+    margin-top: 10px;
+    padding: 10px;
+    background-color: #f0f0f0;
+  }

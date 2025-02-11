@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Medical Quiz</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+    <!-- Homepage -->
+    <div id="homepage">
+        <h1>Internal Medicine</h1>
+        
+
+        
+        <div id="topics"></div>
+        <strong><p id="questionCount">Questions Selected: 0</p></strong>
+        <button id="generateQuiz">Generate Quiz</button>
+    </div>
+
+    <!-- Quiz Section -->
+    <div id="quizContainer" style="display: none;">
+        <div id="progressContainer">
+            <div id="progressBar"></div>
+        </div>
+        
+        <h2 id="questionTitle"></h2>
+        <div id="answerChoices"></div>
+        <button id="prevQuestion">Previous</button>
+        <button id="nextQuestion">Next</button>
+        <button id="resetQuiz">Reset</button>
+        <button id="returnHome">Return to Homepage</button>
+    </div>
+
+    <!-- Score Page -->
+    <div id="scorePage" style="display: none;">
+        <h2>Your Score</h2>
+        <table>
+            <thead>
+                <tr>
+                    <th>Your Answer</th>
+                    <th>Correct Answer</th>
+                    <th>Explanation</th>
+                </tr>
+            </thead>
+            <tbody id="scoreDetails"></tbody>
+        </table>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>

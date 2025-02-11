@@ -1,0 +1,89 @@
+[
+    {
+        "name": "Cardiology",
+        "subtopics": [
+            {
+                "name": "Heart Failure",
+                "questions": [
+                    {
+                        "question": "What is the most common cause of hospitalization?",
+                        "choices": ["Heart Failure", "Atrial Fibrillation", "Myocardial Infarction"],
+                        "correct_answer": "Heart Failure",
+                        "explanation": "Heart failure is the most common cause of hospitalization."
+                    },
+                    {
+                        "question": "Which drug improves survival in heart failure with reduced ejection fraction?",
+                        "choices": ["Furosemide", "Metoprolol", "Amlodipine", "Digoxin"],
+                        "correct_answer": "Metoprolol",
+                        "explanation": "Beta-blockers like Metoprolol improve survival in HFrEF by reducing sympathetic activity."
+                    }
+                ]
+            },
+            {
+                "name": "Arrhythmia",
+                "questions": [
+                    {
+                        "question": "Which arrhythmia is characterized by an irregularly irregular rhythm?",
+                        "choices": ["Atrial Flutter", "Atrial Fibrillation", "Ventricular Tachycardia", "Sinus Arrhythmia"],
+                        "correct_answer": "Atrial Fibrillation",
+                        "explanation": "Atrial fibrillation is characterized by an irregularly irregular heart rhythm with no P waves."
+                    }
+                ]
+            }
+        ]
+    },
+    {
+        "name": "Gastroenterology",
+        "subtopics": [
+            {
+                "name": "Hemochromatosis",
+                "questions": [
+                    {
+                        "question": "Which organ is most commonly affected in hereditary hemochromatosis?",
+                        "choices": ["Liver", "Kidney", "Lungs", "Spleen"],
+                        "correct_answer": "Liver",
+                        "explanation": "The liver is the most commonly affected organ in hereditary hemochromatosis, leading to cirrhosis."
+                    }
+                ]
+            },
+            {
+                "name": "Wilson Disease",
+                "questions": [
+                    {
+                        "question": "What is the primary biochemical abnormality in Wilson disease?",
+                        "choices": ["Copper accumulation", "Iron overload", "Zinc deficiency", "Calcium imbalance"],
+                        "correct_answer": "Copper accumulation",
+                        "explanation": "Wilson disease is caused by defective copper excretion, leading to toxic accumulation."
+                    }
+                ]
+            }
+        ]
+    },
+    {
+        "name": "Pulmonology",
+        "subtopics": [
+            {
+                "name": "Chronic obstructive pulmonary dsisease",
+                "questions": [
+                    {
+                        "question": "AAT deficiency usually involve which lobes of the lung?",
+                        "choices": ["Upper lobes", "Lower lobes", "Doesnt affect the lung at all"],
+                        "correct_answer": "Lower lobes",
+                        "explanation": "The liver is the most commonly affected organ in hereditary hemochromatosis, leading to cirrhosis."
+                    }
+                ]
+            },
+            {
+                "name": "IPF",
+                "questions": [
+                    {
+                        "question": "What is the primary biochemical abnormality in IPF?",
+                        "choices": ["Lungs", "Iron overload", "Zinc deficiency", "Calcium imbalance"],
+                        "correct_answer": "Lungs",
+                        "explanation": "Wilson disease is caused by defective copper excretion, leading to toxic accumulation."
+                    }
+                ]
+            }
+        ]
+    }
+]
