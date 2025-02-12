@@ -146,6 +146,51 @@
         ]
     },
     {
+        "name": "Neurology",
+        "subtopics": [
+            {
+                "name": "Stroke",
+                "questions": [
+                    {
+                        "question": "What is the next step in a patient who presents with right-sided weakness that started 30 minutes ago?",
+                        "choices": ["CT head without contrast", "Chest x-ray", "Complete blood count", "CT angiogram of the chest"],
+                        "correct_answer": "CT head without contrast",
+                        "explanation": "The first step in stroke evaluation is a head CT scan without contrast, which is crucial for distinguishing ischemic from hemorrhagic stroke. This imaging rules out intracranial hemorrhage, a necessary step before considering thrombolytic therapy."
+                    },
+                    {
+                        "question": "What is the next step in a patient who presents with right-sided weakness that started 30 minutes ago?",
+                        "choices": ["MRI of the brain", "CT head with contrast", "Basic metabolic panel", "Fingerstick glucose"],
+                        "correct_answer": "Fingerstick glucose",
+                        "explanation": "A fingerstick glucose check should be performed to promptly rule out hypoglycemia, a stroke mimic, as the cause of neurological abnormalities. Since hypoglycemia is a readily reversible condition, early identification is crucial."
+                    },
+                    {
+                        "question": "In a patient suspected of having a stroke, which imaging modality is the most sensitive for detection?",
+                        "choices": ["CT head without contrast", "CT angiogram of head and neck", "MRI of the brain without contrast", "D-dimer"],
+                        "correct_answer": "MRI of the brain without contrast",
+                        "explanation": "MRI is the most sensitive imaging modality for detecting acute ischemic strokes because it can reveal cytotoxic edema, a critical sign of early infarction, within minutes of stroke onset."
+                    },
+                    {
+                        "question": "In a patient presenting with right-sided weakness, dysphagia, and aphasia, with an unknown time of last known well and not amenable to endovascular therapy, what is the next best step in management?",
+                        "choices": ["Oral aspirin", "Normalize blood pressure", "Acetaminophen", "Rectal aspirin"],
+                        "correct_answer": "Rectal aspirin",
+                        "explanation": "Aspirin is recommended within 24 to 48 hours of symptom onset in patients with acute ischemic stroke. In cases where dysphagia poses a risk for aspiration, rectal aspirin should be administered."
+                    }                                          
+                ]
+            },
+            {
+                "name": "Parkinson Disease",
+                "questions": [
+                    {
+                        "question": "Which of the following signs or symptoms is required for the diagnosis of Parkinson's disease?",
+                        "choices": ["Muscle rigidity", "Bradykinesia", "Resting tremor", "Hallucinations"],
+                        "correct_answer": "Bradykinesia",
+                        "explanation": "For the diagnosis of Parkinson’s disease, the patient must exhibit bradykinesia, which is essential. In addition, at least one of the following must also be present: rigidity and/or resting tremor."
+                    }             
+                ]
+            }
+        ]
+    },
+    {
         "name": "Infectious Disease",
         "subtopics": [
             {
