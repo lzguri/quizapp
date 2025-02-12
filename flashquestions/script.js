@@ -28,6 +28,7 @@ document.addEventListener("DOMContentLoaded", () => {
         })
         .catch(error => console.error("Error loading JSON:", error));
 
+    // This function shuffles question and answer choices
     function shuffle(array) {
         for (let i = array.length - 1; i > 0; i--) {
             const j = Math.floor(Math.random() * (i + 1));
@@ -43,6 +44,7 @@ document.addEventListener("DOMContentLoaded", () => {
         progressBar.style.width = `${progress}%`;
     }
     
+    // This function allows for the user to pick topic and subtopics
     function renderTopics() {
         topicsDiv.innerHTML = "";
         topicsData.forEach((topic, index) => {
@@ -209,13 +211,14 @@ document.addEventListener("DOMContentLoaded", () => {
 
     function displayExplanation(questionData, choice) {
         let explanationDiv = document.createElement("p");
-        explanationDiv.textContent = questionData.explanation;
+        explanationDiv.textContent =  questionData.explanation;
         explanationDiv.style.fontWeight = "normal";
         explanationDiv.style.marginTop = "10px";
         explanationDiv.style.backgroundColor = "lightgreen";
         explanationDiv.style.border = '1px solid #003759';
-        explanationDiv.style.padding = '5px';
+        explanationDiv.style.padding = '10px';
         explanationDiv.style.fontSize = "14px"
+        explanationDiv.style.borderRadius = "5px"
         //explanationDiv.style.backgroundColor = choice === questionData.correct_answer ? "lightgreen" : "lightcoral";
         explanationDiv.style.backgroundColor = '#90E8FF'
         answerChoices.appendChild(explanationDiv);

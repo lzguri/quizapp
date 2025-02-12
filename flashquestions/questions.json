@@ -18,7 +18,7 @@
                         "explanation": "To prevent nitrate tachyphylaxis, it is important to establish a nitrate-free period of 8 to 12 hours per day, typically overnight, during which nitrates are not used."
                     },
                     {
-                        "question": "A patient with symptomatic coronary artery disease who is already on β-blockers and nitrates, BP at target, which other medication should be added?",
+                        "question": "A patient with symptomatic coronary artery disease who is already on β-blockers and nitrates, BP at target, which other antianginal medication should be added?",
                         "choices": ["Ranolazine", "Furosemide", "Aspirin", "HCTZ"],
                         "correct_answer": "Ranolazine",
                         "explanation": "Ranolazine should be considered for patients with coronary artery disease who remain symptomatic despite optimal doses of β-blockers and nitrates"
@@ -28,8 +28,13 @@
                         "choices": ["In patients with uncontrolled hypertension", "In patients with a history of seizures", "In patients with liver cirrhosis", "In patients with QT prolongation"],
                         "correct_answer": "In patients with QT prolongation",
                         "explanation": "Ranolazine should be avoided in patients with bradycardia or prolonged QT interval, as it can exacerbate these conditions by further prolonging the QT interval and affecting heart rate."
-                    }
-                                                
+                    },
+                    {
+                        "question": "Which of the following is NOT part of the four major classes of antianginal medications for stable angina?",
+                        "choices": ["β-blockers", "Nitrates", "Calcium channel blockers", "Ranolazine", "ACE inhibitors"],
+                        "correct_answer": "ACE inhibitors",
+                        "explanation": "The four major classes of antianginal medications for stable angina are β-blockers, nitrates, calcium channel blockers, and ranolazine. ACE inhibitors  are not considered antianginal medications."
+                    }                          
                 ]
             },
             {
@@ -41,6 +46,45 @@
                         "correct_answer": "Atrial Fibrillation",
                         "explanation": "Atrial fibrillation is characterized by an irregularly irregular heart rhythm with no P waves."
                     }
+                ]
+            }
+        ]
+    },
+    {
+        "name": "Rheumatology",
+        "subtopics": [
+            {
+                "name": "Eosinophilic granulomatosis with polyangiitis",
+                "questions": [
+                    {
+                        "question": "The prodromal phase of eosinophilic granulomatosis with polyangiitis [EGPA] is characterized by which of the following?",
+                        "choices": ["Asthma and eosinophilia", "Hemoptysis and weight loss", "Rash and fever", "Joint pain and fatigue"],
+                        "correct_answer": "Asthma and eosinophilia",
+                        "explanation": "The prodromal phase of eosinophilic granulomatosis with polyangiitis [EGPA] is typically characterized by asthma and eosinophilia. This phase may precede the more severe vasculitic features of the disease."
+                    },
+                    {
+                        "question": "Eosinophilic granulomatosis with polyangiitis (EGPA) is characterized by all of the following phases except for which?",
+                        "choices": ["Prodromal phase", "Eosinophilic phase", "Vasculitic phase", "Lung phase"],
+                        "correct_answer": "Lung phase",
+                        "explanation": "Lung phase is not a recognized phase of EGPA, though pulmonary involvement occurs during other phases. EGPA phases occur as follows: 1. Prodromal phase characterized by asthma and eosinophilia. 2. Eosinophilic phase marked by tissue eosinophilia and systemic symptoms like fever and weight loss. 3. Vasculitic phase involves small-vessel vasculitis. "
+                    },
+                    {
+                        "question": "Which of the following serologic markers is associated with eosinophilic granulomatosis with polyangiitis (EGPA)?",
+                        "choices": ["p-ANCA [anti-MPO]", "c-ANCA [anti-PR3]", "ANA", "Anti-dsDNA"],
+                        "correct_answer": "p-ANCA [anti-MPO]",
+                        "explanation": "p-ANCA [anti-MPO] is associated with EGPA, although only about half of patients are positive for this marker."
+                    }                   
+                ]
+            },
+            {
+                "name": "Systemic lupus erythematosus",
+                "questions": [
+                    {
+                        "question": "In the diagnosis of lupus, what is the significance of an ANA test?",
+                        "choices": ["ANA is positive in most lupus patients", "ANA is a specific marker for lupus", "ANA negative confirms lupus", "ANA is always negative in lupus"],
+                        "correct_answer": "ANA is positive in most lupus patients",
+                        "explanation": "In lupus, more than 95% of patients are ANA positive. If ANA is negative, it is unlikely to be lupus, as ANA is a sensitive but not specific marker for the disease."
+                    }                    
                 ]
             }
         ]
