@@ -309,7 +309,7 @@ function adjustDivWidth() {
     if (div) {  // Ensure the element exists
         if (window.innerWidth > 768) {
             // Apply styles for desktop screens (greater than 768px)
-            div.style.width = '50%';
+            div.style.width = '60%';
             div.style.margin = '20px auto';
             div.style.background = 'white';
             div.style.padding = '20px';
