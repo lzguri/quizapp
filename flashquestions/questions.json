@@ -38,6 +38,24 @@
                 ]
             },
             {
+                "name": "Chest pain",
+                "questions": [
+                    {
+                        "question": "A patient recently diagnosed with colon cancer, currently undergoing chemotherapy, presents to the ED with squeezing chest pain. Which medication may have contributed to this?",
+                        "choices": ["Leucovorin", "5-Fluorouracil", "Oxaliplatin", "Zofran"],
+                        "correct_answer": "5-Fluorouracil",
+                        "explanation": "FOLFOX is a common chemotherapy regimen for colorectal cancer that includes leucovorin (folinic acid), 5-Fluorouracil (5-FU), and oxaliplatin. One of its components, 5-FU, can cause coronary vasospasms leading to myocardial ischemia. Patients may present with ECG changes such as ST-segment elevation and elevated troponin levels, indicating myocardial injury, even when angiography shows no occlusive coronary artery disease."
+                    },
+                    {
+                        "question": "A young patient presents to the emergency department with chest pain and ST elevation on the initial ECG. After administration of aspirin and nitroglycerin, he is sent for cardiac catheterization. The patient exhibits anxiety, diaphoresis, tachycardia, and hypertension, and admits to recent cocaine use. What is the next best step?",
+                        "choices": ["Thrombolytics", "Lorazepam IV", "Zofran", "Lisinopril"],
+                        "correct_answer": "Lorazepam IV",
+                        "explanation": "Lorazepam or other benzodiazepines are the treatment of choice for managing cocaine-induced chest pain and associated symptoms. They reduce anxiety, sympathetic hyperactivity, and the risk of arrhythmias or hypertension. Avoid beta-blockers as they can exacerbate coronary vasospasm."
+                    }                    
+                    
+                ]
+            },
+            {
                 "name": "Arrhythmia",
                 "questions": [
                     {
