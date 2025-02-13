@@ -231,7 +231,7 @@
                         "explanation": "SGLT2 inhibitors are recommended for patients with heart failure as they have shown to reduce hospitalization rates and improve outcomes in heart failure patients, in addition to their effects on blood glucose control."
                     },
                     {
-                        "question": "Which of the following medications should be considered in patients with established atherosclerotic cardiovascular disease (ASCVD) or at increased risk for ASCVD in a patient with diabetes mellitus?",
+                        "question": "Which of the following medications should be considered in diabetic patients with established atherosclerotic cardiovascular disease (ASCVD) or at increased risk for ASCVD?",
                         "choices": ["Metformin", "GLP-1 receptor agonist", "Insulin", "Sulfonylureas"],
                         "correct_answer": "GLP-1 receptor agonist",
                         "explanation": "GLP-1 receptor agonists and SGLT2 inhibitors have been shown to reduce cardiovascular events in patients with established ASCVD or those at high risk, making them preferred treatment options in these populations."
