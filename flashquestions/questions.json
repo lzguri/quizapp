@@ -93,7 +93,14 @@
                         "choices": ["Give Cardizem IV", "Cardioversion", "Defibrillation", "Give Metoprolol IV"],
                         "correct_answer": "Cardioversion",
                         "explanation": "In a patient with atrial fibrillation and signs of hemodynamic instability (e.g., hypotension, lightheadedness), immediate cardioversion is indicated to restore sinus rhythm and stabilize the patient."
-                    }
+                    },
+                    {
+                        "question": "A patient with newly diagnosed atrial fibrillation is found to have severe mitral stenosis on the echocardiogram. You decide to start the patient on anticoagulation. Which agent would you use?",
+                        "choices": ["Rivaroxaban", "Warfarin", "Apixaban", "Dabigatran", "Edoxaban"],
+                        "correct_answer": "Warfarin",
+                        "explanation": "For patients with atrial fibrillation and severe mitral stenosis or a mechanical valve, warfarin is the only recommended anticoagulant due to its proven efficacy in these populations. Direct oral anticoagulants (DOACs) are not recommended due to the increased risk of thromboembolism."
+                      }
+                      
                 ]
             }
         ]
