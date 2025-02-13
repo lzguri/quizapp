@@ -56,14 +56,33 @@
                 ]
             },
             {
-                "name": "Arrhythmia",
+                "name": "Atrial fibrillation/flutter",
                 "questions": [
                     {
                         "question": "Which arrhythmia is characterized by an irregularly irregular rhythm?",
                         "choices": ["Atrial Flutter", "Atrial Fibrillation", "Ventricular Tachycardia", "Sinus Arrhythmia"],
                         "correct_answer": "Atrial Fibrillation",
                         "explanation": "Atrial fibrillation is characterized by an irregularly irregular heart rhythm with no P waves."
-                    }
+                    },
+                    {
+                        "question": "Which of the following agents is NOT used for RATE CONTROL in a patient with atrial fibrillation?",
+                        "choices": ["β-blockers", "Calcium channel blockers", "Digoxin", "Diuretics"],
+                        "correct_answer": "Diuretics",
+                        "explanation": "Rate control in atrial fibrillation is achieved by blocking the AV node, which can be done with β-blockers, calcium channel blockers, and digoxin. This slows the heart rate but does not convert the patient to sinus rhythm, which is typically achieved by rhythm control strategies."
+                    },
+                    {
+                        "question": "How does digoxin achieve AV node blockage?",
+                        "choices": ["Increases sympathetic tone", "Enhances vagal activity", "Blocks calcium channels", "Inhibits beta-receptors"],
+                        "correct_answer": "Enhances vagal activity",
+                        "explanation": "Digoxin slows AV node conduction by increasing parasympathetic (vagal) tone, reducing the heart rate."
+                    },
+                    {
+                        "question": "A patient undergoing a routine ECG for unrelated reasons is found to have atrial fibrillation with rapid ventricular response (HR > 100 bpm). What complication may arise if the heart rate is not controlled?",
+                        "choices": ["Mitral stenosis", "Ventricular septal defect", "Tachyarrhythmia-induced cardiomyopathy", "Pulmonary embolism"],
+                        "correct_answer": "Tachyarrhythmia-induced cardiomyopathy",
+                        "explanation": "Persistent rapid ventricular response in atrial fibrillation can lead to tachyarrhythmia-induced cardiomyopathy, characterized by left ventricular dysfunction due to sustained high heart rates."
+                      }                      
+                       
                 ]
             }
         ]
