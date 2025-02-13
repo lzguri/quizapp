@@ -259,9 +259,13 @@
                         "choices": ["Lisinopril", "Losartan", "Empagliflozin", "Finerenone", "Hydrochlorothiazide"],
                         "correct_answer": "Hydrochlorothiazide",
                         "explanation": "Hydrochlorothiazide is not used for the treatment of diabetic nephropathy and can potentially cause hyperglycemia. Lisinopril (ACE inhibitor), Losartan (ARB), Empagliflozin (SGLT2 inhibitor), and Finerenone (nonsteroidal mineralocorticoid receptor antagonist) are all used to manage diabetic nephropathy by reducing albuminuria and slowing disease progression."
-                     }
-                      
-                      
+                    },
+                    {
+                        "question": "Which of the following medications increases the risk for developing diabetes mellitus?",
+                        "choices": ["Ondansetron", "Aspirin", "Amlodipine", "Atorvastatin"],
+                        "correct_answer": "Atorvastatin",
+                        "explanation": "Atorvastatin and other statins are associated with an increased risk of developing diabetes mellitus, particularly in patients with preexisting risk factors. Ondansetron (antiemetic), Aspirin (antiplatelet), and Amlodipine (calcium channel blocker) are not associated with an increased risk of diabetes."
+                    } 
                 ]
             }
         ]
