@@ -241,10 +241,13 @@
                         "choices": ["Immediately after diagnosis", "1 year after diagnosis", "5 years after diagnosis", "10 years after diagnosis"],
                         "correct_answer": "5 years after diagnosis",
                         "explanation": "Screening for complications such as retinopathy, nephropathy, and neuropathy should begin 5 years after the diagnosis of type 1 diabetes, as these complications typically develop later in the course of the disease. Screening should start immediately after diagnosis in type 2 DM."
+                    },
+                    {
+                        "question": "A patient presents to your office with polyuria, polydipsia, and fatigue. You check a serum glucose level and it’s 221 mg/dL. What do you tell the patient?",
+                        "choices": ["You have diabetes mellitus for sure", "You need further testing", "Come back tomorrow to get tested again", "You don’t have diabetes mellitus"],
+                        "correct_answer": "You have diabetes mellitus for sure",
+                        "explanation": "Hyperglycemic symptoms such as polyuria, polydipsia, and fatigue with a random plasma glucose level ≥200 mg/dL with is diagnostic of diabetes mellitus"
                     }
-                      
-                      
-                     
                 ]
             }
         ]
