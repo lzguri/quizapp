@@ -80,8 +80,14 @@
                         "question": "A patient undergoing a routine ECG for unrelated reasons is found to have atrial fibrillation with rapid ventricular response (HR > 100 bpm). What complication may arise if the heart rate is not controlled?",
                         "choices": ["Mitral stenosis", "Ventricular septal defect", "Tachyarrhythmia-induced cardiomyopathy", "Pulmonary embolism"],
                         "correct_answer": "Tachyarrhythmia-induced cardiomyopathy",
-                        "explanation": "Persistent rapid ventricular response in atrial fibrillation can lead to tachyarrhythmia-induced cardiomyopathy, characterized by left ventricular dysfunction due to sustained high heart rates."
-                      }                      
+                        "explanation": "Persistent rapid ventricular response in atrial fibrillation can lead to tachyarrhythmia-induced cardiomyopathy, characterized by left ventricular dysfunction due to sustained high heart rates. Although pulmonary emboism can happen with atrial fibrillation, it's very rare"
+                    },
+                    {
+                        "question": "In a patient with atrial fibrillation and no significant valvular abnormality, how do you assess the need for anticoagulation?",
+                        "choices": ["All patients need anticoagulation", "CHA2DS2-VASc score", "HEART score", "HAS-BLED score"],
+                        "correct_answer": "CHA2DS2-VASc score",
+                        "explanation": "The CHA2DS2-VASc score is used to assess stroke risk and guide the need for anticoagulation in patients with non-valvular atrial fibrillation."
+                    }                                            
                        
                 ]
             }
