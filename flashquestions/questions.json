@@ -87,8 +87,13 @@
                         "choices": ["All patients need anticoagulation", "CHA2DS2-VASc score", "HEART score", "HAS-BLED score"],
                         "correct_answer": "CHA2DS2-VASc score",
                         "explanation": "The CHA2DS2-VASc score is used to assess stroke risk and guide the need for anticoagulation in patients with non-valvular atrial fibrillation."
-                    }                                            
-                       
+                    },
+                    {
+                        "question": "A patient with atrial fibrillation comes to the ER complaining of lightheadedness. HR is 167 bpm and BP is 70/56 mmHg. What is your next step?",
+                        "choices": ["Give Cardizem IV", "Cardioversion", "Defibrillation", "Give Metoprolol IV"],
+                        "correct_answer": "Cardioversion",
+                        "explanation": "In a patient with atrial fibrillation and signs of hemodynamic instability (e.g., hypotension, lightheadedness), immediate cardioversion is indicated to restore sinus rhythm and stabilize the patient."
+                    }
                 ]
             }
         ]
