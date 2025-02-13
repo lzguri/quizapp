@@ -201,6 +201,55 @@
         ]
     },
     {
+        "name": "Endocrinology",
+        "subtopics": [
+            {
+                "name": "Diabetes mellitus",
+                "questions": [
+                    {
+                        "question": "Which of the following diabetes medications causes vitamin B12 deficiency?",
+                        "choices": ["Glipizide", "Metformin", "Empagliflozin", "Insulin glargine", "Semaglutide"],
+                        "correct_answer": "Metformin",
+                        "explanation": "Metformin is associated with vitamin B12 deficiency, particularly in long-term use. This is thought to be due to its effect on the small intestine, potentially impairing vitamin B12 absorption."
+                    },
+                    {
+                        "question": "What is the hemoglobin A1c range for prediabetes?",
+                        "choices": ["4.5%-5.6%", "5.7%-6.4%", "6.5%-7.0%", "7.1%-8.0%"],
+                        "correct_answer": "5.7%-6.4%",
+                        "explanation": "A hemoglobin A1c range of 5.7%-6.4% is indicative of prediabetes. A value of 6.5% or higher is diagnostic for diabetes."
+                    },
+                    {
+                        "question": "In which of the following conditions will hemoglobin A1c be falsely low?",
+                        "choices": ["Hemolytic anemia", "Hyperthyroidism", "Obesity", "Vitamin D deficiency"],
+                        "correct_answer": "Hemolytic anemia",
+                        "explanation": "Hemoglobin A1c can be falsely low in patients with hemolytic anemia because the shortened lifespan of red blood cells reduces the time available for glucose to attach to hemoglobin."
+                    },
+                    {
+                        "question": "Which of the following antidiabetic medications is recommended for patients with heart failure?",
+                        "choices": ["Metformin", "Sulfonylureas", "SGLT2 inhibitors", "DPP-4 inhibitors"],
+                        "correct_answer": "SGLT2 inhibitors",
+                        "explanation": "SGLT2 inhibitors are recommended for patients with heart failure as they have shown to reduce hospitalization rates and improve outcomes in heart failure patients, in addition to their effects on blood glucose control."
+                    },
+                    {
+                        "question": "Which of the following medications should be considered in patients with established atherosclerotic cardiovascular disease (ASCVD) or at increased risk for ASCVD?",
+                        "choices": ["Metformin", "GLP-1 receptor agonist", "Insulin", "Sulfonylureas"],
+                        "correct_answer": "GLP-1 receptor agonist",
+                        "explanation": "GLP-1 receptor agonists and SGLT2 inhibitors have been shown to reduce cardiovascular events in patients with established ASCVD or those at high risk, making them preferred treatment options in these populations."
+                    },
+                    {
+                        "question": "When should screening for complications in patients with type 1 diabetes begin?",
+                        "choices": ["Immediately after diagnosis", "1 year after diagnosis", "5 years after diagnosis", "10 years after diagnosis"],
+                        "correct_answer": "5 years after diagnosis",
+                        "explanation": "Screening for complications such as retinopathy, nephropathy, and neuropathy should begin 5 years after the diagnosis of type 1 diabetes, as these complications typically develop later in the course of the disease."
+                    }
+                      
+                      
+                     
+                ]
+            }
+        ]
+    },
+    {
         "name": "Neurology",
         "subtopics": [
             {
