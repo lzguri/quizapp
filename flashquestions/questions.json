@@ -265,7 +265,14 @@
                         "choices": ["Ondansetron", "Aspirin", "Amlodipine", "Atorvastatin"],
                         "correct_answer": "Atorvastatin",
                         "explanation": "Atorvastatin and other statins are associated with an increased risk of developing diabetes mellitus, particularly in patients with preexisting risk factors. Ondansetron (antiemetic), Aspirin (antiplatelet), and Amlodipine (calcium channel blocker) are not associated with an increased risk of diabetes."
-                    } 
+                    },
+                    {
+                        "question": "A patient with long-standing diabetes mellitus presents with early satiety, nausea, and vomiting. She reports experiencing similar symptoms in the past and is currently taking gabapentin for diabetic neuropathy. What is the appropriate treatment for her current condition?",
+                        "choices": ["Lansoprazole", "Metoclopramide", "Propranolol", "Aspirin"],
+                        "correct_answer": "Metoclopramide",
+                        "explanation": "Metoclopramide is the first-line agent for diabetic gastroparesis. It works by blocking dopamine receptors and stimulating motility in the upper gastrointestinal tract, which promotes gastric emptying and reduces nausea."
+                    }
+                      
                 ]
             }
         ]
