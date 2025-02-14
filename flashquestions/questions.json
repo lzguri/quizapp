@@ -271,7 +271,14 @@
                         "choices": ["Lansoprazole", "Metoclopramide", "Propranolol", "Aspirin"],
                         "correct_answer": "Metoclopramide",
                         "explanation": "Metoclopramide is the first-line agent for diabetic gastroparesis. It works by blocking dopamine receptors and stimulating motility in the upper gastrointestinal tract, which promotes gastric emptying and reduces nausea."
+                    },
+                    {
+                        "question": "Patients on sodium-glucose cotransporter-2 (SGLT-2) inhibitors are at increased risk for which of the following conditions?",
+                        "choices": ["Diabetic ketoacidosis", "Hyperosmolar hyperglycemic state ", "Heart failure exacerbation", "Diabetic gastroparesis"],
+                        "correct_answer": "Diabetic ketoacidosis",
+                        "explanation": "SGLT-2 inhibitors increase the risk of euglycemic diabetic ketoacidosis (DKA) by promoting urinary glucose excretion, which can lower plasma glucose levels and possibly decrease insulin secretion promoting ketogenesis. This can lead to an accumulation of ketones despite relatively normal glucose levels, resulting in euglycemic DKA."
                     }
+                      
                       
                 ]
             }
