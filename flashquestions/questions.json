@@ -287,7 +287,7 @@
                 "questions": [
                     {
                         "question": "Addison disease results in loss of which of the following hormones?",
-                        "choices": ["Cortisol only", "Cortisol and aldosterone only", "Aldosterone only", "Cortisol, aldosterone, and adrenal androgen", "Cortisol and adrenal androgen"],
+                        "choices": ["Cortisol only", "Cortisol and aldosterone only", "Aldosterone only", "Cortisol, aldosterone, and adrenal androgen", "Cortisol and adrenal androgen only"],
                         "correct_answer": "Cortisol, aldosterone, and adrenal androgen",
                         "explanation": "Addison disease is another name for primary adrenal insufficiency, which affects all three layers of the adrenal cortex. This results in deficiencies of cortisol, aldosterone, and adrenal androgens."
                     },
@@ -308,7 +308,14 @@
                         "choices": ["Hyponatremia", "Hypoglycemia", "Hyperammonemia", "Hyperkalemia", "Eosinophilia"],
                         "correct_answer": "Hyperammonemia",
                         "explanation": "Hyperammonemia is not usually seen in adrenal failure. However, hyponatremia, hypoglycemia, hyperkalemia, and eosinophilia are common findings in adrenal insufficiency due to hormonal imbalances."
+                    },
+                    {
+                        "question": "Hyperpigmentation is seen in?",
+                        "choices": ["Primary adrenal insufficiency", "Secondary adrenal insufficiency", "Seen equally in both disorders"],
+                        "correct_answer": "Primary adrenal insufficiency",
+                        "explanation": "Hyperpigmentation is seen in primary adrenal insufficiency due to increased production of proopiomelanocortin (POMC), which is converted into corticotropin (ACTH) and melanocyte-stimulating hormone (MSH). MSH stimulates melanocytes, leading to hyperpigmentation."
                     }
+                      
                            
                 ]
             }
