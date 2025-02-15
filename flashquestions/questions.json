@@ -281,6 +281,36 @@
                       
                       
                 ]
+            },
+            {
+                "name": "Adrenal gland disorders",
+                "questions": [
+                    {
+                        "question": "Addison disease results in loss of which of the following hormones?",
+                        "choices": ["Cortisol only", "Cortisol and aldosterone only", "Aldosterone only", "Cortisol, aldosterone, and adrenal androgen", "Cortisol and adrenal androgen"],
+                        "correct_answer": "Cortisol, aldosterone, and adrenal androgen",
+                        "explanation": "Addison disease is another name for primary adrenal insufficiency, which affects all three layers of the adrenal cortex. This results in deficiencies of cortisol, aldosterone, and adrenal androgens."
+                    },
+                    {
+                        "question": "The most common cause of primary adrenal insufficiency is which etiology?",
+                        "choices": ["Autoimmune", "Ischemic", "Traumatic", "Senile"],
+                        "correct_answer": "Autoimmune",
+                        "explanation": "The most common cause of primary adrenal insufficiency is autoimmune,."
+                    },
+                    {
+                        "question": "You are seeing a patient in the emergency with hypotension. You are suspecting adrenal insufficiency. After giving IV fluids, which of the following agents should be administered next?",
+                        "choices": ["Hydrocortisone", "Dexamethasone", "Prednisone", "Methylprednisolone", "IV fluids is enough"],
+                        "correct_answer": "Dexamethasone",
+                        "explanation": "In suspected adrenal insufficiency, dexamethasone is preferred in the acute setting, as it will not interfere with serum AM cortisol testing. While hydrocortisone is the preferred treatment for adrenal failure, it can affect cortisol testing."
+                    },
+                    {
+                        "question": "Which of the following laboratory findings is not usually caused by adrenal failure?",
+                        "choices": ["Hyponatremia", "Hypoglycemia", "Hyperammonemia", "Hyperkalemia", "Eosinophilia"],
+                        "correct_answer": "Hyperammonemia",
+                        "explanation": "Hyperammonemia is not usually seen in adrenal failure. However, hyponatremia, hypoglycemia, hyperkalemia, and eosinophilia are common findings in adrenal insufficiency due to hormonal imbalances."
+                    }
+                           
+                ]
             }
         ]
     },
