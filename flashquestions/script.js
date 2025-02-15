@@ -218,9 +218,9 @@ document.addEventListener("DOMContentLoaded", () => {
         explanationDiv.style.border = '1px solid #003759';
         explanationDiv.style.padding = '10px';
         explanationDiv.style.fontSize = "14px"
-        explanationDiv.style.borderRadius = "5px"
+        //explanationDiv.style.borderRadius = "5px"
         //explanationDiv.style.backgroundColor = choice === questionData.correct_answer ? "lightgreen" : "lightcoral";
-        explanationDiv.style.backgroundColor = '#90E8FF'
+        explanationDiv.style.backgroundColor = '#dcdcdc'
         answerChoices.appendChild(explanationDiv);
     }
 
