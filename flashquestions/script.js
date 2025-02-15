@@ -291,6 +291,11 @@ document.addEventListener("DOMContentLoaded", () => {
         }
     });
 
+    resetButton.addEventListener("click", startQuiz);
+    returnHomeButton.addEventListener("click", () => location.reload());
+
+    
+
     nextButton.addEventListener("click", () => {
         if (currentQuestionIndex < selectedQuestions.length - 1) {
             currentQuestionIndex++;

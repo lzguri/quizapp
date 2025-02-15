@@ -70,13 +70,14 @@ body {
     cursor: pointer;
     font-weight: bold;
     margin: 10px 0;
-    background:#f1f1f1;
+    background:#dedddd;
     padding: 10px;
-    border-radius: 5px;
+    border-radius: 3px;
 }
 
 #questionCount {
-    margin-left: 10px;
+    margin-left: 0px;
+    text-align: center;
 }
 
 .subtopics {
@@ -87,7 +88,7 @@ body {
 
 button {
     padding: 10px;
-    margin: 10px;
+    margin-right: 10px;
     cursor: pointer;
     border: none;
     border-radius: 3px;
@@ -96,8 +97,10 @@ button {
     font-size: 16px;
     font-weight: bold;
     text-align: left;
-    box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.3);
+    box-shadow: rgba(0, 0, 0, 0.15) 2.4px 2.4px 3.2px;
 }
+
+
 
 .tableExplanation {
     border: 1px solid black;
