@@ -187,7 +187,7 @@ document.addEventListener("DOMContentLoaded", () => {
                         }
                     
                     if (choice !== questionData.correct_answer) {
-                            let correctSound = new Audio("incorrect.wav"); 
+                            let correctSound = new Audio("incorrect1.wav"); 
                             correctSound.play();
                             }
     
