@@ -179,6 +179,17 @@ document.addEventListener("DOMContentLoaded", () => {
     
                     // Highlight the clicked choice
                     choiceDiv.classList.add(choice === questionData.correct_answer ? "correct-choice" : "incorrect-choice");
+
+                    // Play correct answer sound if the choice is correct
+                    if (choice === questionData.correct_answer) {
+                        let correctSound = new Audio("correct.wav"); 
+                        correctSound.play();
+                        }
+                    
+                    if (choice !== questionData.correct_answer) {
+                            let correctSound = new Audio("incorrect.wav"); 
+                            correctSound.play();
+                            }
     
                     // Highlight the correct answer if the user picked an incorrect one
                     if (choice !== questionData.correct_answer) {
