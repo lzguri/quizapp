@@ -24,11 +24,18 @@ document.addEventListener("DOMContentLoaded", () => {
         .then(response => response.json())
         .then(data => {
             topicsData = data;
+            console.log(topicsData)
             renderTopics();
             
         })
         .catch(error => console.error("Error loading JSON:", error));
-        
+
+
+
+    
+    let experimentalDiv = document.getElementById("experimental")
+    experimentalDiv.innerHTML = "Still experimental"
+    experimentalDiv.style.color = "red"
 
     // This function shuffles question and answer choices
     function shuffle(array) {
