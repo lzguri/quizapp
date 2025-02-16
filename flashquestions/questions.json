@@ -318,6 +318,56 @@
                       
                            
                 ]
+            },
+            {
+                "name": "Hypercalcemia",
+                "questions": [
+                    {
+                        "question": "What is the mechanism of lithium-induced hypercalcemia?",
+                        "choices": ["Increase in PTH level", "Increase in 1,25(OH)₂ vitamin D level", "Direct effect on bone resorption", "Stimulates release of calcium from striated muscle"],
+                        "correct_answer": "Increase in PTH level",
+                        "explanation": "Lithium-induced hypercalcemia occurs due to increased secretion of parathyroid hormone (PTH). Lithium raises the set point at which calcium suppresses PTH release, leading to elevated PTH levels and subsequent hypercalcemia."
+                    },
+                    {
+                        "question": "Which antihypertensive is preferred in patients with hypercalciuria and recurrent calcium nephrolithiasis?",
+                        "choices": ["Lisinopril", "Indapamide", "Metoprolol", "Hydralazine"],
+                        "correct_answer": "Indapamide",
+                        "explanation": "Thiazide diuretics, such as indapamide, reduce urinary calcium excretion by increasing calcium reabsorption in the distal tubule, making them the preferred choice for patients with hypercalciuria and recurrent calcium nephrolithiasis."
+                    }, 
+                    {
+                        "question": "Hypercalcemia, metabolic alkalosis, and renal insufficiency are seen in?",
+                        "choices": ["Overdose with calcium carbonate", "Overdose with famotidine", "Alcohol intoxication", "Removal of parathyroid glands"],
+                        "correct_answer": "Overdose with calcium carbonate",
+                        "explanation": "Excessive intake of calcium carbonate can lead to milk-alkali syndrome, characterized by hypercalcemia, metabolic alkalosis, and renal insufficiency."
+                    },
+                    {
+                        "question": "Tertiary hyperparathyroidism occurs due to?",
+                        "choices": ["Chronic hypocalcemia", "Adenoma of the parathyroid glands", "Hypothalamus producing PTH", "Increase in vitamin D synthesis"],
+                        "correct_answer": "Chronic hypocalcemia",
+                        "explanation": "Long-standing hypocalcemia leads to a persistent increase in parathyroid hormone (PTH) secretion, initially causing secondary hyperparathyroidism. Over time, continuous stimulation results in parathyroid gland hyperplasia and autonomous PTH production, leading to tertiary hyperparathyroidism."
+                    },
+                      
+                    {
+                        "question": "Hyperpigmentation is seen in?",
+                        "choices": ["Primary adrenal insufficiency", "Secondary adrenal insufficiency", "Seen equally in both disorders"],
+                        "correct_answer": "Primary adrenal insufficiency",
+                        "explanation": "Hyperpigmentation is seen in primary adrenal insufficiency due to increased production of proopiomelanocortin (POMC), which is converted into corticotropin (ACTH) and melanocyte-stimulating hormone (MSH). MSH stimulates melanocytes, leading to hyperpigmentation."
+                    },
+                    {
+                        "question": "What is the primary defect in familial hypocalciuric hypercalcemia (FHH)?",
+                        "choices": [
+                          "Gain-of-function mutation in the calcium-sensing receptor",
+                          "Loss-of-function mutation in the calcium-sensing receptor",
+                          "Increased renal calcium excretion",
+                          "Excess parathyroid hormone (PTH) secretion due to parathyroid adenoma"
+                        ],
+                        "correct_answer": "Loss-of-function mutation in the calcium-sensing receptor",
+                        "explanation": "Familial hypocalciuric hypercalcemia (FHH) is caused by a loss-of-function mutation in the calcium-sensing receptor on parathyroid cells and in the kidneys. This results in higher than normal serum calcium concentrations being required to suppress PTH release, leading to mild hypercalcemia, hypocalciuria, and normal to slightly elevated PTH levels."
+                      }
+                      
+                      
+                           
+                ]
             }
         ]
     },

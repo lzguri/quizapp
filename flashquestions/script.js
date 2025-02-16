@@ -25,8 +25,10 @@ document.addEventListener("DOMContentLoaded", () => {
         .then(data => {
             topicsData = data;
             renderTopics();
+            
         })
         .catch(error => console.error("Error loading JSON:", error));
+        
 
     // This function shuffles question and answer choices
     function shuffle(array) {
@@ -99,6 +101,8 @@ document.addEventListener("DOMContentLoaded", () => {
             topicsDiv.appendChild(topicDiv);
         });
     }
+
+
 
     function updateQuestionCount() {
         let selectedQuestionsSet = new Set();
@@ -186,6 +190,7 @@ document.addEventListener("DOMContentLoaded", () => {
                         correctSound.play();
                         }
                     
+                    // Play incorrect answer sound if the choice is incorrect
                     if (choice !== questionData.correct_answer) {
                             let correctSound = new Audio("incorrect2.mp3"); 
                             correctSound.play();
