@@ -33,9 +33,9 @@ document.addEventListener("DOMContentLoaded", () => {
 
 
     
-    let experimentalDiv = document.getElementById("experimental")
-    experimentalDiv.innerHTML = "Still experimental"
-    experimentalDiv.style.color = "red"
+    //let experimentalDiv = document.getElementById("experimental")
+    //experimentalDiv.innerHTML = "this" + JSON.stringify(topicsData.subtopic)
+    //experimentalDiv.style.color = "red"
 
     // This function shuffles question and answer choices
     function shuffle(array) {
@@ -289,8 +289,8 @@ document.addEventListener("DOMContentLoaded", () => {
     ${selectedQuestions.map((question, index) => `
         <div style="border: 1px solid ${userAnswers[index] === question.correct_answer ? "green" : "red"}; border-radius: 3px; padding: 4px; margin: 3px 0; background-color: ${userAnswers[index] === question.correct_answer ? "#d4edda" : "#f8d7da"}; font-size: 14px; line-height: 1.2;">
             <p style="margin: 2px 0;"><strong>Question ${index + 1}:</strong> ${userAnswers[index] === question.correct_answer ? "Answered correctly" : "Answered incorrectly"}</p>
-            <p style="margin: 2px 0;"><strong>Question:</strong> ${question.question}</p>
-            <p style="margin: 2px 0;"><strong>Explanation:</strong> ${question.explanation}</p>
+            <!--<p style="margin: 2px 0;"><strong>Question:</strong> ${question.question}</p>-->
+            <p style="margin: 2px 0;"><strong>Concept: </strong> ${question.explanation}</p>
         </div>
 
     `).join("")}

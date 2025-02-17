@@ -484,5 +484,52 @@
             }
             
         ]
+    },
+    {
+        "name": "Clinical Pharmacology",
+        "subtopics": [
+            {
+                "name": "Anticoagulants",
+                "questions": [
+                    {
+                        "question": "Which of the following anticoagulants is safe to use in patients with end-stage renal disease ?",
+                        "choices": [
+                          "Enoxaparin",
+                          "Unfractionated heparin",
+                          "Fondaparinux",
+                          "Dabigatran"
+                        ],
+                        "correct_answer": "Unfractionated heparin",
+                        "explanation": "Unfractionated heparin is the preferred anticoagulant in patients with end-stage renal disease because it does not require renal clearance. In contrast, enoxaparin (low molecular weight heparin), fondaparinux, and dabigatran are primarily excreted by the kidneys, leading to an increased risk of bleeding in ESRD patients."
+                    },
+                    {
+                        "question": "What is the primary mechanism of action of enoxaparin?",
+                        "choices": [
+                          "Directly inhibits thrombin (Factor IIa)",
+                          "Activates antithrombin III, primarily inhibiting Factor Xa",
+                          "Inhibits vitamin K-dependent clotting factors",
+                          "Directly binds to platelet receptors to prevent aggregation"
+                        ],
+                        "correct_answer": "Activates antithrombin III, primarily inhibiting Factor Xa",
+                        "explanation": "Enoxaparin is a low molecular weight heparin (LMWH) that enhances the activity of antithrombin III, leading to the inhibition of Factor Xa with some effect on thrombin (Factor IIa)."
+                    },
+                    {
+                        "question": "Which of the following is the antidote for dabigatran?",
+                        "choices": [
+                          "Protamine sulfate",
+                          "Idarucizumab",
+                          "Andexanet alfa",
+                          "Vitamin K"
+                        ],
+                        "correct_answer": "Idarucizumab",
+                        "explanation": "Idarucizumab is a monoclonal antibody that specifically binds to dabigatran, neutralizing its anticoagulant effect. \n\n The other choices: Protamine sulfate → unfractionated heparin\n Andexanet alfa → apixaban, rivaroxaban\nVitamin K and 4-PCC → warfarin"
+                    }
+                      
+                      
+                      
+                    
+                ]
+            }
+        ]
     }
 ]
