@@ -354,6 +354,8 @@ function adjustDivWidth() {
 
             if (internalMedicine) {
                 internalMedicine.style.textAlign = 'center';  // Center h1 on mobile
+                internalMedicine.style.padding = "5px"
+                internalMedicine.style.border = 
             }
 
             // Remove the extra desktop styles for mobile
