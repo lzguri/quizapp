@@ -5,7 +5,7 @@
 body {
     font-family: 'Roboto', Arial, sans-serif;
     background-color: #f4f4f4;
-    padding: 0px;
+    padding: 20px;
 }
 
 .internal-medicine {
@@ -70,10 +70,9 @@ body {
     cursor: pointer;
     font-weight: bold;
     margin: 10px 0;
-    background:#CADCFC;
+    background:#dedddd;
     padding: 10px;
     border-radius: 3px;
-    color: #00246B
 }
 
 #questionCount {
@@ -129,7 +128,7 @@ button:hover {
 .internal-medicine {
     cursor: pointer;
     font-weight: bold;
-    margin: 0;
+    margin: 10px 0;
     background:#dedddd;
     padding: 10px;
     border-radius: 3px;

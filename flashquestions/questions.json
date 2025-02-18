@@ -429,7 +429,7 @@
                           "Vancomycin",
                           "Metronidazole"
                         ],
-                        "correct_answer": "Linezolid (PO)",
+                        "correct_answer": "Linezolid",
                         "explanation": "Linezolid can cause reversible thrombocytopenia, especially with prolonged use (≥10 days). This occurs due to bone marrow suppression.. Monitoring complete blood counts is recommended in patients receiving extended therapy. None of the other choices covers MRSA. Vancomycin PO does not get absorbed systemically."
                     },
                     {
