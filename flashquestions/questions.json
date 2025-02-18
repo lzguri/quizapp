@@ -433,6 +433,17 @@
                         "explanation": "Linezolid can cause reversible thrombocytopenia, especially with prolonged use (≥10 days). This occurs due to bone marrow suppression.. Monitoring complete blood counts is recommended in patients receiving extended therapy. None of the other choices covers MRSA. Vancomycin PO does not get absorbed systemically."
                     },
                     {
+                        "question": "Which of the following bacteria does metronidazole cover?",
+                        "choices": [
+                          "Gram-positive",
+                          "Gram-negative",
+                          "Anaerobes",
+                          "Atypicals"
+                        ],
+                        "correct_answer": "Anaerobes",
+                        "explanation": "Metronidazole is effective against anaerobic bacteria and certain protozoa. It is not active against typical gram-positive or gram-negative aerobes or atypical bacteria like Mycoplasma or Chlamydia."
+                    },
+                    {
                         "question": "A patient presents to the ED in shock due to necrotizing fasciitis. Broad-spectrum antibiotics have been started, but your colleague suggests adding clindamycin. However, the patient declines due to a history of multiple Clostridioides difficile infections. Which other antibiotic acts similarly to clindamycin for the treatment of this condition?",
                         "choices": [
                           "Doxycycline",
