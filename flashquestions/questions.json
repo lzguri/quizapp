@@ -524,8 +524,23 @@
                         "correct_answer": "Idarucizumab",
                         "explanation": "Idarucizumab is a monoclonal antibody that specifically binds to dabigatran, neutralizing its anticoagulant effect. \n\n The other choices: Protamine sulfate → unfractionated heparin\n Andexanet alfa → apixaban, rivaroxaban\nVitamin K and 4-PCC → warfarin"
                     }
-                      
-                      
+                ]
+            },
+            {
+                "name": "Antiepileptics",
+                "questions": [
+                    {
+                        "question": "A patient presents with encephalopathy in the ED and was recently started on valproic acid. His valproic acid blood level is within the therapeutic range. What is the next best test to check?",
+                        "choices": [
+                          "Urinalysis",
+                          "Urine drug screen",
+                          "Ammonia level",
+                          "Salicylate level",
+                          "Acetaminophen level"
+                        ],
+                        "correct_answer": "Ammonia level",
+                        "explanation": "Valproic acid can cause hyperammonemia by inhibiting carbamoyl phosphate synthetase I, a key enzyme in the urea cycle. This leads to impaired ammonia clearance, resulting in valproate-induced hyperammonemic encephalopathy, even when drug levels are within the therapeutic range."
+                      }
                       
                     
                 ]

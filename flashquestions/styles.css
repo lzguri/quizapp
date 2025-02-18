@@ -5,7 +5,7 @@
 body {
     font-family: 'Roboto', Arial, sans-serif;
     background-color: #f4f4f4;
-    padding: 20px;
+    padding: 0px;
 }
 
 .internal-medicine {
@@ -66,23 +66,14 @@ body {
     color: #721c24;
 }
 
-.internal-medicine {
-    cursor: pointer;
-    font-weight: bold;
-    background:#215fac;
-    padding: 10px;
-    border-radius: 3px;
-    color: white;
-
-}
-
 .topic {
     cursor: pointer;
     font-weight: bold;
     margin: 10px 0;
-    background:#dedddd;
+    background:#CADCFC;
     padding: 10px;
     border-radius: 3px;
+    color: #00246B
 }
 
 #questionCount {
@@ -135,11 +126,19 @@ button:hover {
     margin-bottom: 20px;
 }
 
+.internal-medicine {
+    cursor: pointer;
+    font-weight: bold;
+    margin: 0;
+    background:#dedddd;
+    padding: 10px;
+    border-radius: 3px;
+
+}
+
 #progressBar {
     height: 10px;
     width: 0%;
-    background: linear-gradient(to right, #4A90E2, #0961cc); /* Light blue to dark blue */
+    background-color: #0961cc;
     border-radius: 5px;
-    transition: width 0.3s ease-in-out;
 }
-
