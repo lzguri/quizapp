@@ -422,6 +422,29 @@
                         "explanation": "Linezolid, vancomycin, and daptomycin cover MRSA. Ceftriaxone does not."
                     },
                     {
+                        "question": "A patient with an MRSA infection who was started on an oral antibiotic approximately 10 days ago is found to have low platelets on a routine blood check. Which antibiotic was most likely used?",
+                        "choices": [
+                          "Cefdinir",
+                          "Linezolid",
+                          "Vancomycin",
+                          "Metronidazole"
+                        ],
+                        "correct_answer": "Linezolid (PO)",
+                        "explanation": "Linezolid can cause reversible thrombocytopenia, especially with prolonged use (≥10 days). This occurs due to bone marrow suppression.. Monitoring complete blood counts is recommended in patients receiving extended therapy. None of the other choices covers MRSA. Vancomycin PO does not get absorbed systemically."
+                    },
+                    {
+                        "question": "A patient presents to the ED in shock due to necrotizing fasciitis. Broad-spectrum antibiotics have been started, but your colleague suggests adding clindamycin. However, the patient declines due to a history of multiple Clostridioides difficile infections. Which other antibiotic acts similarly to clindamycin for the treatment of this condition?",
+                        "choices": [
+                          "Doxycycline",
+                          "Azithromycin",
+                          "Linezolid",
+                          "Gentamicin",
+                          "Clarithromycin"
+                        ],
+                        "correct_answer": "Linezolid",
+                        "explanation": "Like clindamycin, linezolid inhibits bacterial protein synthesis by binding to the 50S ribosomal subunit. In necrotizing fasciitis, protein synthesis inhibitors like clindamycin and linezolid are used to suppress bacterial toxin production, particularly in toxin-mediated infections caused by Group A Streptococcus."
+                     },    
+                    {
                         "question": "Which of the following antibiotics gets inactivated by lung surfactant?",
                         "choices": ["Ceftriaxone", "Azithromycin", "Daptomycin", "Vancomycin", "Rifampin"],
                         "correct_answer": "Daptomycin",
