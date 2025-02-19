@@ -239,7 +239,32 @@
                         ],
                         "correct_answer": "Hypokalemia",
                         "explanation": "Multiple beta-agonist treatments, such as albuterol, stimulate the Na/K-ATPase and cause potassium to shift into cells, resulting in hypokalemia. Remember albuterol can be used in the treatment of hyperkalemia."
+                    },
+                    {
+                        "question": "Digoxin toxicity will cause which of the following electrolyte disturbances?",
+                        "choices": [
+                          "Hyperkalemia",
+                          "Hypernatremia",
+                          "Hypercalcemia",
+                          "Hyperglycemia"
+                        ],
+                        "correct_answer": "Hyperkalemia",
+                        "explanation": "Digoxin toxicity inhibits the Na+/K+ ATPase pump, leading to an increase in extracellular potassium levels and resulting in hyperkalemia."
+                    },
+                    {
+                        "question": "Hypokalemia can cause all of the following conditions except for?",
+                        "choices": [
+                          "Rhabdomyolysis",
+                          "Cardiac arrhythmia",
+                          "Ileus",
+                          "Respiratory muscle weakness",
+                          "Seizures"
+                        ],
+                        "correct_answer": "Seizures",
+                        "explanation": "Potassium is essential for the proper generation and conduction of action potentials in smooth, striated, and cardiac muscles. Hypokalemia can lead to conditions such as rhabdomyolysis, cardiac arrhythmias, ileus, and respiratory muscle weakness. However, seizures are not typically a direct consequence of hypokalemia."
                     }
+                      
+                      
                       
                       
                       
