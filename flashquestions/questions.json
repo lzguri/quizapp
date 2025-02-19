@@ -263,7 +263,19 @@
                         ],
                         "correct_answer": "Hepatic encephalopathy",
                         "explanation": "TIPS creates a shunt that bypasses the liver, reducing its ability to detoxify neurotoxins such as ammonia. This predisposes patients to hepatic encephalopathy, a common complication following the procedure."
+                    },
+                    {
+                        "question": "A patient with liver cirrhosis comes to the ED complaining of weakness. His creatinine is 2.3 mg/dL (baseline 0.9 mg/dL) and he is currently on diuretics for ascites. What is the next step in management?",
+                        "choices": [
+                          "Stop diuretics and trial albumin and volume expansion",
+                          "Start midodrine",
+                          "Perform paracentesis",
+                          "This is hepatorenal syndrome"
+                        ],
+                        "correct_answer": "Stop diuretics and trial albumin and volume expansion",
+                        "explanation": "In patients with cirrhosis, worsening renal function (as evidenced by an increase in creatinine) may indicate hepatorenal syndrome but volume depletion is more common. Diuretics can exacerbate renal hypoperfusion in this setting. Therefore, the appropriate management is to stop diuretics and initiate a trial of albumin and volume expansion, then repeat labs to assess for improvement."
                     }
+                      
                       
                       
                       
