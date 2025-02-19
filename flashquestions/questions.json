@@ -159,6 +159,73 @@
                 ]
             },
             {
+                "name": "Liver cirrhosis",
+                "questions": [
+                    {
+                        "question": "Which of the following is the least common cause of cirrhosis?",
+                        "choices": [
+                          "Alcohol",
+                          "Metabolic dysfunction-associated steatotic liver disease",
+                          "Chronic viral hepatitis",
+                          "Alpha-1 antitrypsin deficiency"
+                        ],
+                        "correct_answer": "Alpha-1 antitrypsin deficiency",
+                        "explanation": "Alpha-1 antitrypsin deficiency is a rare genetic disorder that can lead to cirrhosis, while alcohol, metabolic dysfunction-associated steatotic liver disease (formerly NAFLD), and chronic viral hepatitis are much more common causes."
+                    },
+                    {
+                        "question": "In decompensated liver cirrhosis, you can find all of the following abnormalities except for?",
+                        "choices": [
+                          "Hypoalbuminemia",
+                          "Hyperammonemia",
+                          "Elevated INR",
+                          "High BUN",
+                          "Thrombocytopenia"
+                        ],
+                        "correct_answer": "High BUN",
+                        "explanation": "Decompensated liver cirrhosis typically presents with hypoalbuminemia, hyperammonemia, elevated INR, and thrombocytopenia due to decreased liver synthetic function and portal hypertension. High BUN is not common because the liver's impaired ability to synthesize urea usually results in lower BUN levels."
+                    },
+                    {
+                        "question": "A patient with liver cirrhosis and ascites was placed on furosemide and spironolactone and subsequently developed painful gynecomastia. What is your next step?",
+                        "choices": [
+                          "Stop spironolactone and increase the dose of furosemide",
+                          "Switch spironolactone to eplerenone",
+                          "Stop both diuretics",
+                          "Switch furosemide to hydrochlorothiazide"
+                        ],
+                        "correct_answer": "Switch spironolactone to eplerenone",
+                        "explanation": "Spironolactone can cause gynecomastia due to its anti-androgen effects. Eplerenone is a selective aldosterone antagonist with less anti-androgen activity, making it a better alternative in patients who develop this side effect."
+                    },
+                    {
+                        "question": "Which is the correct treatment for ascites?",
+                        "choices": [
+                          "Furosemide alone",
+                          "Spironolactone with furosemide",
+                          "Propranolol",
+                          "Indapamide"
+                        ],
+                        "correct_answer": "Spironolactone with furosemide",
+                        "explanation": "The standard treatment for ascites in liver cirrhosis is a combination of spironolactone and furosemide. Spironolactone, an aldosterone antagonist, helps reduce sodium retention and fluid accumulation."
+                    },
+                    {
+                        "question": "Which of the following medications should be avoided in liver cirrhosis complicated by ascites?",
+                        "choices": [
+                          "NSAIDs",
+                          "Amlodipine",
+                          "Hydralazine",
+                          "Hydrocodone"
+                        ],
+                        "correct_answer": "NSAIDs",
+                        "explanation": "NSAIDs should be avoided in patients with liver cirrhosis and ascites because they inhibit prostaglandin synthesis, leading to reduced renal blood flow. This can worsen renal function and increase the risk of hepatorenal syndrome."
+                    }
+                      
+                      
+                      
+                      
+                      
+                    
+                ]
+            },
+            {
                 "name": "Acute pancreatitis",
                 "questions": [
                     {
