@@ -274,7 +274,19 @@
                         ],
                         "correct_answer": "Stop diuretics and trial albumin and volume expansion",
                         "explanation": "In patients with cirrhosis, worsening renal function (as evidenced by an increase in creatinine) may indicate hepatorenal syndrome but volume depletion is more common. Diuretics can exacerbate renal hypoperfusion in this setting. Therefore, the appropriate management is to stop diuretics and initiate a trial of albumin and volume expansion, then repeat labs to assess for improvement."
+                    },
+                    {
+                        "question": "Which of the following agents is preferred for prophylaxis in patients with liver cirrhosis who have a history of spontaneous bacterial peritonitis?",
+                        "choices": [
+                          "Aminoglycosides",
+                          "Fluoroquinolones",
+                          "Clindamycin",
+                          "No need for prophylaxis"
+                        ],
+                        "correct_answer": "Fluoroquinolones",
+                        "explanation": "Fluoroquinolones (such as norfloxacin or ciprofloxacin) are preferred for prophylaxis in cirrhotic patients with a history of spontaneous bacterial peritonitis, as they effectively reduce the risk of recurrence."
                     }
+                      
                       
                       
                       
