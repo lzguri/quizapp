@@ -285,7 +285,48 @@
                         ],
                         "correct_answer": "Fluoroquinolones",
                         "explanation": "Fluoroquinolones (such as norfloxacin or ciprofloxacin) are preferred for prophylaxis in cirrhotic patients with a history of spontaneous bacterial peritonitis, as they effectively reduce the risk of recurrence."
+                    },
+                    {
+                        "questions": [
+                          {
+                            "question": "A patient with newly diagnosed liver cirrhosis undergoes endoscopy and grade I varices are found. What is the next step in management?",
+                            "choices": [
+                              "Start lactulose",
+                              "Start carvedilol",
+                              "No further intervention",
+                              "Start rifaximin",
+                              "Start ciprofloxacin"
+                            ],
+                            "correct_answer": "Start carvedilol",
+                            "explanation": "Non-selective beta-blockers such as carvedilol, nadolol, or propranolol are used for primary prophylaxis to reduce the risk of variceal bleeding in cirrhotic patients with varices."
+                          },
+                          {
+                            "question": "Which of the following abnormalities contributes to the development of hepatic encephalopathy?",
+                            "choices": [
+                              "Hypokalemia",
+                              "Leukopenia",
+                              "Hyperbilirubinemia",
+                              "Coagulopathy"
+                            ],
+                            "correct_answer": "Hypokalemia",
+                            "explanation": "Hypokalemia increases renal ammoniagenesis, thereby elevating serum ammonia levels which contribute to the development of hepatic encephalopathy. "
+                          },
+                          {
+                            "question": "A patient with a history of liver cirrhosis comes to the ED with abdominal distention. Ultrasound is suggestive of cirrhosis and ascites. Paracentesis reveals an ascitic fluid protein of 3 g/dL and a serum-ascites albumin gradient (SAAG) of 2.1. Which of the following is the most likely cause of the ascites?",
+                            "choices": [
+                              "Liver cirrhosis",
+                              "Nephrotic syndrome",
+                              "Malignancy",
+                              "Heart failure",
+                              "Tuberculosis"
+                            ],
+                            "correct_answer": "Heart failure",
+                            "explanation": "A SAAG greater than 1.1 indicates portal hypertension, while an ascitic fluid protein level greater than 2.5 g/dL is more characteristic of cardiac ascites from heart failure rather than cirrhotic ascites, which is typically low in protein. In right-sided heart failure, elevated hydrostatic pressure leads to high-protein ascitic fluid."
+                          }
+                          
+                        ]
                     }
+                      
                       
                       
                       
