@@ -216,7 +216,58 @@
                         ],
                         "correct_answer": "NSAIDs",
                         "explanation": "NSAIDs should be avoided in patients with liver cirrhosis and ascites because they inhibit prostaglandin synthesis, leading to reduced renal blood flow. This can worsen renal function and increase the risk of hepatorenal syndrome."
+                    },
+                    {
+                        "question": "A patient with a history of liver cirrhosis presents with hematemesis. He is tachycardic but otherwise vitally stable. He has been started on pantoprazole and GI has been consulted for endoscopy. What is the next step in management?",
+                        "choices": [
+                          "Start octreotide only",
+                          "Start ceftriaxone only",
+                          "Start octreotide and ceftriaxone",
+                          "Start famotidine",
+                          "Start norepinephrine"
+                        ],
+                        "correct_answer": "Start octreotide and ceftriaxone",
+                        "explanation": "In cirrhotic patients with suspected variceal bleeding, management includes the use of octreotide to reduce portal pressure via splanchnic vasoconstriction, and prophylactic antibiotics (such as ceftriaxone) to prevent bacterial infections, which are common and can worsen outcomes in variceal hemorrhage."
+                    },
+                    {
+                        "question": "A patient with esophageal varices presents with hematemesis. He is at risk for developing all of the following complications EXCEPT for:",
+                        "choices": [
+                          "Hepatic encephalopathy",
+                          "Hemorrhagic shock",
+                          "Aspiration pneumonitis",
+                          "Infection",
+                          "Heart failure"
+                        ],
+                        "correct_answer": "Heart failure",
+                        "explanation": "Variceal bleeding in cirrhotic patients can lead to complications such as hepatic encephalopathy (due to increased nitrogen load), hemorrhagic shock (from blood loss), aspiration pneumonitis (due to vomiting and encephalopathy), and infection (from bacterial translocation). Heart failure is not a typical complication associated with variceal bleeding."
+                    },
+                    {
+                        "question": "A patient with refractory ascites, despite being on maximal therapy with furosemide and spironolactone, requires therapeutic paracentesis almost every week. What is the next step in management?",
+                        "choices": [
+                          "Transjugular Intrahepatic Portosystemic Shunt (TIPS)",
+                          "Continue with paracentesis",
+                          "Place a catheter in the abdomen",
+                          "Add amiloride to the current regimen",
+                          "Start nadolol"
+                        ],
+                        "correct_answer": "Transjugular Intrahepatic Portosystemic Shunt (TIPS)",
+                        "explanation": "In patients with refractory ascites who require frequent paracentesis despite maximal diuretic therapy, a Transjugular Intrahepatic Portosystemic Shunt (TIPS) procedure is indicated to reduce portal hypertension and decrease the formation of ascites."
+                    },
+                    {
+                        "question": "A cirrhotic patient underwent a Transjugular Intrahepatic Portosystemic Shunt (TIPS) procedure for refractory ascites and recurrent esophageal variceal bleeding. You inform the patient he is at increased risk for which of the following?",
+                        "choices": [
+                          "Hepatic encephalopathy",
+                          "Acute renal failure",
+                          "Pulmonary embolism",
+                          "Portal vein thrombosis"
+                        ],
+                        "correct_answer": "Hepatic encephalopathy",
+                        "explanation": "TIPS creates a shunt that bypasses the liver, reducing its ability to detoxify neurotoxins such as ammonia. This predisposes patients to hepatic encephalopathy, a common complication following the procedure."
                     }
+                      
+                      
+                      
+                      
                       
                       
                       
