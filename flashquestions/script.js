@@ -3,6 +3,7 @@ document.addEventListener("DOMContentLoaded", () => {
     let selectedQuestions = [];
     let currentQuestionIndex = 0;
     let userAnswers = [];
+    let soundEnabled = true;
 
     const homepage = document.getElementById("homepage");
     const quizContainer = document.getElementById("quizContainer");
@@ -18,6 +19,7 @@ document.addEventListener("DOMContentLoaded", () => {
     const scoreDetails = document.getElementById("scoreDetails");
     const questionCountDisplay = document.getElementById("questionCount");
     const progressBar = document.getElementById("progressBar"); // Progress bar element
+    
 
 
     fetch("questions.json")
@@ -26,15 +28,17 @@ document.addEventListener("DOMContentLoaded", () => {
             topicsData = data;
             console.log(topicsData)
             renderTopics();
+            updateGnerateQuizButton();
             
         })
         .catch(error => console.error("Error loading JSON:", error));
 
+        
 
 
     
-    //let experimentalDiv = document.getElementById("experimental")
-    //experimentalDiv.innerHTML = "this" + JSON.stringify(topicsData.subtopic)
+    let experimentalDiv = document.getElementById("experimental")
+    experimentalDiv.innerHTML = countKeyOccurrences(topicsData, "question")
     //experimentalDiv.style.color = "red"
 
     // This function shuffles question and answer choices
@@ -52,6 +56,34 @@ document.addEventListener("DOMContentLoaded", () => {
         const progress = (currentQuestionIndex / (selectedQuestions.length - 1)) * 100;
         progressBar.style.width = `${progress}%`;
     }
+
+    // This function will count the number of questions from json file
+    function countKeyOccurrences(obj, keyName) {
+        let count = 0;
+    
+        function recurse(currentObj) {
+            if (Array.isArray(currentObj)) {
+                currentObj.forEach(item => recurse(item));
+            } else if (typeof currentObj === 'object' && currentObj !== null) {
+                for (let key in currentObj) {
+                    if (key === keyName) {
+                        count++;
+                    }
+                    recurse(currentObj[key]); // Recursively check nested objects and arrays
+                }
+            }
+        }
+    
+        recurse(obj);
+        return count;
+    }
+    
+
+    
+    
+    
+    
+    
     
     // This function allows for the user to pick topic and subtopics
     function renderTopics() {

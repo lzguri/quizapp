@@ -201,6 +201,54 @@
         ]
     },
     {
+        "name": "Nephrology",
+        "subtopics": [
+            {
+                "name": "Electrolyte abnormalities",
+                "questions": [
+                    {
+                        "question": "A patient presents to the hospital with severe hypokalemia. Which of the following fluids should be avoided in this patient?",
+                        "choices": [
+                          "Lactated Ringer's solution",
+                          "Normal Saline",
+                          "Dextrose 5% Water",
+                          "Albumin Infusion"
+                        ],
+                        "correct_answer": "Dextrose 5% Water",
+                        "explanation": "Dextrose 5% Water should be avoided in patients with severe hypokalemia because the dextrose stimulates insulin secretion, which drives potassium into cells, further lowering serum potassium levels."
+                    },
+                    {
+                        "question": "Which of the following abnormalities can be seen in patients taking omeprazole?",
+                        "choices": [
+                          "Hyponatremia",
+                          "Hypoammonemia",
+                          "Hypomagnesemia",
+                          "Metabolic acidosis",
+                          "Respiratory acidosis"
+                        ],
+                        "correct_answer": "Hypomagnesemia",
+                        "explanation": "Omeprazole, a proton pump inhibitor, has been associated with hypomagnesemia due to decreased intestinal magnesium absorption."
+                    },
+                    {
+                        "question": "A patient comes in with respiratory distress due to a COPD exacerbation. EMS has provided multiple breathing treatments for the patient. Which of the following abnormalities is most likely to be found on the patient's labs?",
+                        "choices": [
+                          "Increase in creatinine",
+                          "Increase in pH",
+                          "Hypokalemia",
+                          "Metabolic acidosis"
+                        ],
+                        "correct_answer": "Hypokalemia",
+                        "explanation": "Multiple beta-agonist treatments, such as albuterol, stimulate the Na/K-ATPase and cause potassium to shift into cells, resulting in hypokalemia. Remember albuterol can be used in the treatment of hyperkalemia."
+                    }
+                      
+                      
+                      
+                    
+                ]
+            }
+        ]
+    },
+    {
         "name": "Endocrinology",
         "subtopics": [
             {
