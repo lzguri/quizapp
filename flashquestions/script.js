@@ -37,8 +37,8 @@ document.addEventListener("DOMContentLoaded", () => {
 
 
     
-    let experimentalDiv = document.getElementById("experimental")
-    experimentalDiv.innerHTML = countKeyOccurrences(topicsData, "question")
+    //let experimentalDiv = document.getElementById("experimental")
+    //experimentalDiv.innerHTML = countKeyOccurrences(topicsData, "question")
     //experimentalDiv.style.color = "red"
 
     // This function shuffles question and answer choices
