@@ -367,8 +367,8 @@ function showScore() {
             
             return `
                 <div class="score-item ${status}" style="border: 1px solid ${status === 'correct' ? 'green' : (status === 'incorrect' ? 'red' : 'gray')};
-                    border-radius: 3px; padding: 4px; margin: 3px 0; background-color: ${status === 'correct' ? '#d4edda' : (status === 'incorrect' ? '#f8d7da' : '#f0f0f0')};">
-                    <p><strong>Question ${index + 1}:</strong> <a href="#" class="review-question" data-index="${index}">Go to the question</a></p>
+                    border-radius: 0px; padding: 4px; margin: 3px 0; background-color: ${status === 'correct' ? '#d4edda' : (status === 'incorrect' ? '#f8d7da' : '#f0f0f0')};">
+                    <p><strong>Question ${index + 1}: ${userAnswer || "Unanswered"}  ${question.correct_answer || "Answered correctly"}</strong> <a href="#" class="review-question" data-index="${index}">Go to the question</a></p>
                     <p><strong>Concept:</strong> ${question.explanation}</p>
                 </div>
             `;
