@@ -4,6 +4,9 @@ document.addEventListener("DOMContentLoaded", () => {
     let currentQuestionIndex = 0;
     let userAnswers = [];
     let soundEnabled = true;
+    let totalQuestions = 0; // ADDED: Store the total number of questions
+
+
 
     const homepage = document.getElementById("homepage");
     const quizContainer = document.getElementById("quizContainer");
@@ -26,19 +29,36 @@ document.addEventListener("DOMContentLoaded", () => {
         .then(response => response.json())
         .then(data => {
             topicsData = data;
+            totalQuestions = countTotalQuestions(topicsData)
             console.log(topicsData)
             renderTopics();
-            updateGnerateQuizButton();
+            updateGenerateQuizButton(0);
             
         })
         .catch(error => console.error("Error loading JSON:", error));
 
-        
 
+        // ADDED: Function to count the total number of questions
+    function countTotalQuestions(data) {
+            let count = 0;
+            data.forEach(topic => {
+                topic.subtopics.forEach(subtopic => {
+                    count += subtopic.questions.length;
+                });
+            });
+            return count;
+        }
+    
+    
+
+    function updateGenerateQuizButton() {
+            let selectedCount = updateQuestionCount();
+            generateQuizButton.textContent = `Create test (Total: ${totalQuestions} questions)`;
+        }
 
     
-    //let experimentalDiv = document.getElementById("experimental")
-    //experimentalDiv.innerHTML = countKeyOccurrences(topicsData, "question")
+   // let experimentalDiv = document.getElementById("experimental")
+    //experimentalDiv.innerHTML = updateQuestionCount().size
     //experimentalDiv.style.color = "red"
 
     // This function shuffles question and answer choices
@@ -79,12 +99,7 @@ document.addEventListener("DOMContentLoaded", () => {
     }
     
 
-    
-    
-    
-    
-    
-    
+
     // This function allows for the user to pick topic and subtopics
     function renderTopics() {
         topicsDiv.innerHTML = "";
@@ -164,7 +179,8 @@ document.addEventListener("DOMContentLoaded", () => {
             topicsData[topicIndex].subtopics[subtopicIndex].questions.forEach(q => selectedQuestionsSet.add(JSON.stringify(q)));
         });
 
-        questionCountDisplay.textContent = `Questions Selected: ${selectedQuestionsSet.size}`;
+        questionCountDisplay.textContent = `(Selected: ${selectedQuestionsSet.size}/${totalQuestions} questions)`;
+        generateQuizButton.textContent = "Create test " +  questionCountDisplay.textContent
         return selectedQuestionsSet;
     }
 
