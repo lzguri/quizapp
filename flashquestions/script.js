@@ -368,14 +368,16 @@ function showScore() {
             return `
                 <div class="score-item ${status}" style="border: 1px solid ${status === 'correct' ? 'green' : (status === 'incorrect' ? 'red' : 'gray')};
                     border-radius: 3px; padding: 4px; margin: 3px 0; background-color: ${status === 'correct' ? '#d4edda' : (status === 'incorrect' ? '#f8d7da' : '#f0f0f0')};">
-                    <p><strong>Question ${index + 1}:</strong> <a href="#" class="review-question" data-index="${index}">${question.question}</a></p>
-                    <p><strong>Your Answer:</strong> ${userAnswer || "No answer"}</p>
-                    <p><strong>Correct Answer:</strong> ${question.correct_answer}</p>
-                    <p><strong>Explanation:</strong> ${question.explanation}</p>
+                    <p><strong>Question ${index + 1}:</strong> <a href="#" class="review-question" data-index="${index}">Go to the question</a></p>
+                    <p><strong>Concept:</strong> ${question.explanation}</p>
                 </div>
             `;
         }).join("");
     }
+
+    // <p><strong>Question ${index + 1}:</strong> <a href="#" class="review-question" data-index="${index}">${question.question}</a></p>
+    //<p><strong>Your Answer:</strong> ${userAnswer || "Unanswered"}</p><p><strong>Correct Answer:</strong> ${question.correct_answer}</p>
+    //                     <p><strong>Your Answer:</strong> ${userAnswer || "Unanswered"}  <strong>Correct Answer:</strong> ${question.correct_answer}</p>
 
     document.getElementById("filterCorrect").addEventListener("change", renderScoreDetails);
     document.getElementById("filterIncorrect").addEventListener("change", renderScoreDetails);
