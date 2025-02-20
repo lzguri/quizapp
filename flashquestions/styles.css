@@ -165,20 +165,33 @@ button:active {
     color: #155724;
 }
 
+#filterCorrect {
+    background-color: #d4edda;
+    border-color: #28a745;
+    color: #155724;
+}
+
 .incorrect-choice {
     background-color: #f8d7da;
     border-color: #dc3545;
     color: #721c24;
 }
 
+#score-item {
+    margin-top: 4px;
+    margin-bottom: 0px;
+    padding-top: 0px;
+}
+
 /* Score Page */
 #scorePage {
     width: 100%;
     text-align: left;
+    padding-top: 1px;
 }
 
 .score-result {
-    text-align: right;
+    text-align: center;
 }
 
 /* Media Query for Mobile Devices */

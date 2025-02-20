@@ -33,6 +33,7 @@ document.addEventListener("DOMContentLoaded", () => {
             console.log(topicsData)
             renderTopics();
             updateGenerateQuizButton();
+            sortTopicsAndSubtopics();
             
         })
         .catch(error => console.error("Error loading JSON:", error));
@@ -48,6 +49,18 @@ document.addEventListener("DOMContentLoaded", () => {
             });
             return count;
         }
+
+    function sortTopicsAndSubtopics(data) {
+            // Sort main topics alphabetically by 'name'
+            data.sort((a, b) => a.name.localeCompare(b.name));
+          
+            // For each topic, sort its subtopics by 'name'
+            data.forEach(topic => {
+              topic.subtopics.sort((a, b) => a.name.localeCompare(b.name));
+            });
+          
+            return data;
+          }
     
     
 
@@ -338,15 +351,17 @@ function showScore() {
     let percentage = ((correctAnswers / selectedQuestions.length) * 100).toFixed(2);
 
     let scoreFilter = `
-        <h2>Your score is ${correctAnswers} / ${selectedQuestions.length} (${percentage}%)</h2>
-        <label><input type="checkbox" id="filterCorrect" checked> Correctly Answered</label>
-        <label><input type="checkbox" id="filterIncorrect" checked> Incorrectly Answered</label>
+        <h2 style="text-align: center;">Your score is ${percentage}%</h2>
+        <label ><input type="checkbox" id="filterCorrect" checked> Correct</label>
+        <br>
+        <label><input type="checkbox" id="filterIncorrect" checked> Incorrect</label>
+        <br>
         <label><input type="checkbox" id="filterUnanswered" checked> Unanswered</label>
         <div id="scoreDetailsContainer"></div>
         <button id="resetQuizFinal">Reset Quiz</button>
         <button id="returnHomeFinal">Return to Homepage</button>
     `;
-    
+
     scoreDetails.innerHTML = scoreFilter;
 
     function renderScoreDetails() {
@@ -366,18 +381,20 @@ function showScore() {
             }
             
             return `
-                <div class="score-item ${status}" style="border: 1px solid ${status === 'correct' ? 'green' : (status === 'incorrect' ? 'red' : 'gray')};
-                    border-radius: 0px; padding: 4px; margin: 3px 0; background-color: ${status === 'correct' ? '#d4edda' : (status === 'incorrect' ? '#f8d7da' : '#f0f0f0')};">
-                    <p><strong>Question ${index + 1}: ${userAnswer || "Unanswered"}  ${question.correct_answer || "Answered correctly"}</strong> <a href="#" class="review-question" data-index="${index}">Go to the question</a></p>
-                    <p><strong>Concept:</strong> ${question.explanation}</p>
+                <div id="score-item" class="score-item ${status}" style="border: 1px solid ${status === 'correct' ? 'green' : (status === 'incorrect' ? 'red' : 'gray')};
+                    border-radius: 0px; padding: 4px; padding-top: 3px; margin: 3px 0; background-color: ${status === 'correct' ? '#d4edda' : (status === 'incorrect' ? '#f8d7da' : '#f0f0f0')};">
+                    
+                    <p><strong>Question ${index + 1}. concept:</strong> ${question.explanation}<a href="#" class="review-question" data-index="${index}"> [Go to the question]</a></p>
                 </div>
             `;
         }).join("");
     }
-
+    //<p><strong>Question ${index + 1}: ${userAnswer || "Unanswered"}  ${question.correct_answer || "Answered correctly"}</strong> <a href="#" class="review-question" data-index="${index}">Go to the question</a></p>
     // <p><strong>Question ${index + 1}:</strong> <a href="#" class="review-question" data-index="${index}">${question.question}</a></p>
     //<p><strong>Your Answer:</strong> ${userAnswer || "Unanswered"}</p><p><strong>Correct Answer:</strong> ${question.correct_answer}</p>
     //                     <p><strong>Your Answer:</strong> ${userAnswer || "Unanswered"}  <strong>Correct Answer:</strong> ${question.correct_answer}</p>
+
+    //document.getElementById("score-item").style.paddingTop = "0px"
 
     document.getElementById("filterCorrect").addEventListener("change", renderScoreDetails);
     document.getElementById("filterIncorrect").addEventListener("change", renderScoreDetails);
