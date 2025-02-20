@@ -197,6 +197,72 @@
                 ]
             },
             {
+                "name": "Giant cell arteritis",
+                "questions": [
+                    {
+                        "question": "A 67-year-old male presents with headache, jaw claudication, scalp tenderness and vision change. Which laboratory finding is most characteristic of this condition?",
+                        "choices": [
+                          "ESR > 50 mm/hr",
+                          "Normal ESR",
+                          "Low ESR",
+                          "Elevated white blood cell count only"
+                        ],
+                        "correct_answer": "ESR > 50 mm/hr",
+                        "explanation": "Headache, jaw claudication, scalp tenderness and vision change is suggestive of Giant Cell Arteritis, which is typically associated with a markedly elevated ESR, often greater than 50 mm/hr, indicating significant systemic inflammation."
+                    },
+                    {
+                        "question": "Which of the following conditions is most commonly associated with giant cell arteritis?",
+                        "choices": [
+                          "Polymyalgia rheumatica",
+                          "Granulomatosis with polyangiitis",
+                          "Systemic lupus erythematosus",
+                          "Rheumatoid arthritis"
+                        ],
+                        "correct_answer": "Polymyalgia rheumatica",
+                        "explanation": "Giant cell arteritis is most commonly associated with polymyalgia rheumatica, which is characterized by proximal muscle pain and stiffness, particularly in the shoulders and hips."
+                    },
+                    {
+                        "question": "Giant cell arteritis can be diagnosed with a biopsy. Is the biopsy 100% accurate?",
+                        "choices": [
+                          "Yes",
+                          "No"
+                        ],
+                        "correct_answer": "No",
+                        "explanation": "Temporal artery biopsy is diagnostic for giant cell arteritis, but it is not 100% accurate due to the presence of skip lesions that may result in false-negative findings."
+                    },
+                    {
+                        "question": "What is the correct treatment for giant cell arteritis?",
+                        "choices": [
+                          "Corticosteroids",
+                          "Carboplatin",
+                          "Tacrolimus",
+                          "Sirolimus",
+                          "Adalimumab"
+                        ],
+                        "correct_answer": "Corticosteroids",
+                        "explanation": "Corticosteroids are the mainstay of treatment for giant cell arteritis. High-dose steroids are used promptly to prevent serious complications, such as vision loss."
+                    },
+                    {
+                        "question": "In patients with suspected giant cell arteritis, what should a lack of clinical improvement with high-dose corticosteroids prompt?",
+                        "choices": [
+                          "Reconsideration of the diagnosis",
+                          "Increase the steroid dose",
+                          "Immediate addition of tocilizumab",
+                          "Discontinue all treatment",
+                          "Continue the same regimen"
+                        ],
+                        "correct_answer": "Reconsideration of the diagnosis",
+                        "explanation": "Giant cell arteritis typically responds rapidly to high-dose corticosteroids. A lack of response should prompt reconsideration of the diagnosis, as it may indicate an alternative underlying condition."
+                      }
+                      
+                      
+                      
+                      
+                      
+                    
+                ]
+            },
+            {
                 "name": "Systemic lupus erythematosus",
                 "questions": [
                     {
