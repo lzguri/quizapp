@@ -143,7 +143,19 @@
                         ],
                         "correct_answer": "Seronegative spondyloarthritis",
                         "explanation": "HLA-B27 is a genetic marker strongly associated with seronegative spondyloarthropathies, including ankylosing spondylitis, reactive arthritis, psoriatic arthritis, and enteropathic arthritis."
+                    },
+                    {
+                        "question": "Which of the following antibodies is most strongly associated with scleroderma renal crisis?",
+                        "choices": [
+                          "Anti-Scl-70",
+                          "Anti-centromere",
+                          "Anti-RNA polymerase III",
+                          "Anti-U1 RNP"
+                        ],
+                        "correct_answer": "Anti-RNA polymerase III",
+                        "explanation": "Anti-RNA polymerase III antibodies are highly associated with scleroderma renal crisis, a severe complication of diffuse cutaneous systemic sclerosis."
                     }
+                      
                       
                                             
                     
