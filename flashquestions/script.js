@@ -206,7 +206,7 @@ document.addEventListener("DOMContentLoaded", () => {
         showQuestion();
     }
 
-    function showQuestion() {
+    function showQuestion(isReview = false) {
         let questionData = selectedQuestions[currentQuestionIndex];
         questionTitle.textContent = `${currentQuestionIndex + 1}. ${questionData.question}`;
         questionTitle.style.fontWeight = "normal";
@@ -221,9 +221,10 @@ document.addEventListener("DOMContentLoaded", () => {
             choiceDiv.textContent = choice;
     
             // Check if the user has already answered this question
-            if (userAnswers[currentQuestionIndex] !== null) {
+            if (isReview || userAnswers[currentQuestionIndex] !== null) {
                 if (choice === userAnswers[currentQuestionIndex]) {
                     choiceDiv.classList.add(choice === questionData.correct_answer ? "correct-choice" : "incorrect-choice");
+                    choiceDiv.style.pointerEvents = "none"
                 }
                 if (choice === questionData.correct_answer && choice !== userAnswers[currentQuestionIndex]) {
                     choiceDiv.classList.add("correct-choice"); // Ensure the correct answer is highlighted
@@ -268,6 +269,16 @@ document.addEventListener("DOMContentLoaded", () => {
         if (userAnswers[currentQuestionIndex] !== null) {
             displayExplanation(questionData, userAnswers[currentQuestionIndex]);
         }
+
+        if (isReview) {
+            let backToScoreButton = document.createElement("button");
+            backToScoreButton.textContent = "Back to Score Page";
+            backToScoreButton.addEventListener("click", () => {
+                quizContainer.style.display = "none";
+                scorePage.style.display = "block";
+            });
+            answerChoices.appendChild(backToScoreButton);
+        }
     
         updateButtons();
         updateProgressBar();
@@ -302,57 +313,74 @@ document.addEventListener("DOMContentLoaded", () => {
         });
     }
 
-    function showScore() {
-        quizContainer.style.display = "none";
-        scorePage.style.display = "block";
-    
-        let correctAnswers = userAnswers.filter((answer, index) => answer === selectedQuestions[index].correct_answer).length;
-        let percentage = ((correctAnswers / selectedQuestions.length) * 100).toFixed(2);
-    
-       /* scoreDetails.innerHTML = `
-        <h2 class="score-result">Score: ${correctAnswers} / ${selectedQuestions.length} (${percentage}%)</h2>
-        <table class="tableExplanation">
-            <thead>
-                <tr>
-                    <th>Your Answer</th>
-                    <th>Correct Answer</th>
-                    <th>Explanation</th>
-                </tr>
-            </thead>
-            <tbody>
-                ${selectedQuestions.map((question, index) => `
-                    <tr style="background-color: ${userAnswers[index] === question.correct_answer ? "lightgreen" : "lightcoral"};">
-                        <td>${userAnswers[index] || "No answer"}</td>
-                        <td>${question.correct_answer}</td>
-                        <td>${question.explanation}</td>
-                    </tr>
-                `).join("")}
-            </tbody>
-        </table>
+// Modify the showScore function to include checkboxes for filtering
+function showScore() {
+    quizContainer.style.display = "none";
+    scorePage.style.display = "block";
+
+    let correctAnswers = userAnswers.filter((answer, index) => answer === selectedQuestions[index].correct_answer).length;
+    let percentage = ((correctAnswers / selectedQuestions.length) * 100).toFixed(2);
+
+    let scoreFilter = `
+        <h2>Your score is ${correctAnswers} / ${selectedQuestions.length} (${percentage}%)</h2>
+        <label><input type="checkbox" id="filterCorrect" checked> Correctly Answered</label>
+        <label><input type="checkbox" id="filterIncorrect" checked> Incorrectly Answered</label>
+        <label><input type="checkbox" id="filterUnanswered" checked> Unanswered</label>
+        <div id="scoreDetailsContainer"></div>
         <button id="resetQuizFinal">Reset Quiz</button>
         <button id="returnHomeFinal">Return to Homepage</button>
-    `;*/
-    scoreDetails.innerHTML = `
-    <h2>Your score is ${correctAnswers} / ${selectedQuestions.length} (${percentage}%)</h2>
-    ${selectedQuestions.map((question, index) => `
-        <div style="border: 1px solid ${userAnswers[index] === question.correct_answer ? "green" : "red"}; border-radius: 3px; padding: 4px; margin: 3px 0; background-color: ${userAnswers[index] === question.correct_answer ? "#d4edda" : "#f8d7da"}; font-size: 14px; line-height: 1.2;">
-            <p style="margin: 2px 0;"><strong>Question ${index + 1}:</strong> ${userAnswers[index] === question.correct_answer ? "Answered correctly" : "Answered incorrectly"}</p>
-            <!--<p style="margin: 2px 0;"><strong>Question:</strong> ${question.question}</p>-->
-            <p style="margin: 2px 0;"><strong>Concept: </strong> ${question.explanation}</p>
-        </div>
-
-    `).join("")}
-     <button id="resetQuizFinal">Reset Quiz</button>
-     <button id="returnHomeFinal">Return to Homepage</button>
-`;
-
-
-
-
+    `;
     
-        document.getElementById("resetQuizFinal").addEventListener("click", startQuiz);
-        document.getElementById("returnHomeFinal").addEventListener("click", () => location.reload());
+    scoreDetails.innerHTML = scoreFilter;
+
+    function renderScoreDetails() {
+        let scoreDetailsContainer = document.getElementById("scoreDetailsContainer");
+        scoreDetailsContainer.innerHTML = selectedQuestions.map((question, index) => {
+            let userAnswer = userAnswers[index];
+            let status = userAnswer === question.correct_answer ? "correct" : (userAnswer ? "incorrect" : "unanswered");
+            
+            let showCorrect = document.getElementById("filterCorrect").checked;
+            let showIncorrect = document.getElementById("filterIncorrect").checked;
+            let showUnanswered = document.getElementById("filterUnanswered").checked;
+
+            if ((status === "correct" && !showCorrect) || 
+                (status === "incorrect" && !showIncorrect) || 
+                (status === "unanswered" && !showUnanswered)) {
+                return "";
+            }
+            
+            return `
+                <div class="score-item ${status}" style="border: 1px solid ${status === 'correct' ? 'green' : (status === 'incorrect' ? 'red' : 'gray')};
+                    border-radius: 3px; padding: 4px; margin: 3px 0; background-color: ${status === 'correct' ? '#d4edda' : (status === 'incorrect' ? '#f8d7da' : '#f0f0f0')};">
+                    <p><strong>Question ${index + 1}:</strong> <a href="#" class="review-question" data-index="${index}">${question.question}</a></p>
+                    <p><strong>Your Answer:</strong> ${userAnswer || "No answer"}</p>
+                    <p><strong>Correct Answer:</strong> ${question.correct_answer}</p>
+                    <p><strong>Explanation:</strong> ${question.explanation}</p>
+                </div>
+            `;
+        }).join("");
     }
+
+    document.getElementById("filterCorrect").addEventListener("change", renderScoreDetails);
+    document.getElementById("filterIncorrect").addEventListener("change", renderScoreDetails);
+    document.getElementById("filterUnanswered").addEventListener("change", renderScoreDetails);
+    renderScoreDetails();
+
+    document.getElementById("resetQuizFinal").addEventListener("click", startQuiz);
+    document.getElementById("returnHomeFinal").addEventListener("click", () => location.reload());
+
+    document.getElementById("scoreDetailsContainer").addEventListener("click", function(event) {
+        if (event.target.classList.contains("review-question")) {
+            event.preventDefault();
+            let questionIndex = parseInt(event.target.getAttribute("data-index"));
+            currentQuestionIndex = questionIndex;
+            scorePage.style.display = "none";
+            quizContainer.style.display = "block";
+            showQuestion(true);
+        }
+    });
+}
+
     
 
     prevButton.addEventListener("click", () => {
