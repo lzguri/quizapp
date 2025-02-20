@@ -177,11 +177,47 @@ button:active {
     color: #721c24;
 }
 
-#score-item {
-    margin-top: 4px;
-    margin-bottom: 0px;
-    padding-top: 0px;
-}
+.checkbox-filter-container {
+    border: 1px solid #ccc;      /* Gray border */
+    background-color: #f9f9f9;   /* Light gray background */
+    padding: 10px;               /* Space inside the box */
+    margin: 10px 0;              /* Space above/below the box */
+    border-radius: 5px;          /* Rounded corners, optional */
+  }
+  
+
+/* Generic styling for the score-item container */
+.score-item {
+    padding-top: 0px !important;
+    padding-left: 3px;          /* <= reduce the padding here */
+    margin: 3px 0;
+    border-radius: 0;
+  }
+
+  .score-item {
+    padding: 2px 4px; /* 2px top/bottom, 4px left/right */
+  }
+  
+  /* Correct answer styling */
+  .score-item.correct {
+    border: 1px solid green;
+    background-color: #d4edda;
+    padding-top: 0px !important;
+  }
+  
+  /* Incorrect answer styling */
+  .score-item.incorrect {
+    border: 1px solid red;
+    background-color: #f8d7da;
+    padding-top: 0px !important;
+  }
+  
+  /* Unanswered styling */
+  .score-item.unanswered {
+    border: 1px solid gray;
+    background-color: #f0f0f0;
+  }
+  
 
 /* Score Page */
 #scorePage {

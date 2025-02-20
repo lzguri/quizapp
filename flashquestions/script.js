@@ -28,7 +28,8 @@ document.addEventListener("DOMContentLoaded", () => {
     fetch("questions.json")
         .then(response => response.json())
         .then(data => {
-            topicsData = data;
+            topicsData = sortTopicsAndSubtopics(data);
+            //topicsData = data;
             totalQuestions = countTotalQuestions(topicsData)
             console.log(topicsData)
             renderTopics();
@@ -51,16 +52,17 @@ document.addEventListener("DOMContentLoaded", () => {
         }
 
     function sortTopicsAndSubtopics(data) {
-            // Sort main topics alphabetically by 'name'
+            // Sort the main topics by 'name'
             data.sort((a, b) => a.name.localeCompare(b.name));
           
-            // For each topic, sort its subtopics by 'name'
+            // Sort each topic’s subtopics by 'name'
             data.forEach(topic => {
               topic.subtopics.sort((a, b) => a.name.localeCompare(b.name));
             });
-          
+            
             return data;
           }
+          
     
     
 
@@ -352,11 +354,22 @@ function showScore() {
 
     let scoreFilter = `
         <h2 style="text-align: center;">Your score is ${percentage}%</h2>
-        <label ><input type="checkbox" id="filterCorrect" checked> Correct</label>
+    
+        <!-- Add a container around the three checkboxes -->
+        <div class="checkbox-filter-container">
+        <label>
+            <input type="checkbox" id="filterCorrect" checked> Correct
+        </label>
         <br>
-        <label><input type="checkbox" id="filterIncorrect" checked> Incorrect</label>
+        <label>
+            <input type="checkbox" id="filterIncorrect" checked> Incorrect
+        </label>
         <br>
-        <label><input type="checkbox" id="filterUnanswered" checked> Unanswered</label>
+        <label>
+            <input type="checkbox" id="filterUnanswered" checked> Unanswered
+        </label>
+        </div>
+
         <div id="scoreDetailsContainer"></div>
         <button id="resetQuizFinal">Reset Quiz</button>
         <button id="returnHomeFinal">Return to Homepage</button>
@@ -381,12 +394,14 @@ function showScore() {
             }
             
             return `
-                <div id="score-item" class="score-item ${status}" style="border: 1px solid ${status === 'correct' ? 'green' : (status === 'incorrect' ? 'red' : 'gray')};
-                    border-radius: 0px; padding: 4px; padding-top: 3px; margin: 3px 0; background-color: ${status === 'correct' ? '#d4edda' : (status === 'incorrect' ? '#f8d7da' : '#f0f0f0')};">
-                    
-                    <p><strong>Question ${index + 1}. concept:</strong> ${question.explanation}<a href="#" class="review-question" data-index="${index}"> [Go to the question]</a></p>
-                </div>
-            `;
+  <div class="score-item ${status}">
+    <p>
+      <strong>Question ${index + 1}. concept:</strong> 
+      ${question.explanation}
+      <a href="#" class="review-question" data-index="${index}"> [Go to the question]</a>
+    </p>
+  </div>
+`;
         }).join("");
     }
     //<p><strong>Question ${index + 1}: ${userAnswer || "Unanswered"}  ${question.correct_answer || "Answered correctly"}</strong> <a href="#" class="review-question" data-index="${index}">Go to the question</a></p>
