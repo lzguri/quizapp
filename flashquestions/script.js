@@ -276,6 +276,10 @@ document.addEventListener("DOMContentLoaded", () => {
             backToScoreButton.addEventListener("click", () => {
                 quizContainer.style.display = "none";
                 scorePage.style.display = "block";
+                prevButton.disabled = true;
+                nextButton.disabled = true;
+                resetButton.disabled = true;
+                returnHomeButton.disabled = true;
             });
             answerChoices.appendChild(backToScoreButton);
         }
@@ -446,4 +450,3 @@ function adjustDivWidth() {
 
 window.addEventListener('resize', adjustDivWidth);
 window.addEventListener('load', adjustDivWidth);
-
