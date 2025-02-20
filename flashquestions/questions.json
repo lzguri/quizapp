@@ -109,6 +109,47 @@
         "name": "Rheumatology",
         "subtopics": [
             {
+                "name": "Diagnostics",
+                "questions": [
+                    {
+                        "question": "HLA-B51 is most strongly associated with which of the following conditions?",
+                        "choices": [
+                          "Behçet disease",
+                          "Ankylosing spondylitis",
+                          "Rheumatoid arthritis",
+                          "Systemic lupus erythematosus"
+                        ],
+                        "correct_answer": "Behçet disease",
+                        "explanation": "HLA-B51 is strongly associated with Behçet disease, a multisystem inflammatory disorder characterized by recurrent oral and genital ulcers, uveitis, and skin lesions."
+                    },
+                    {
+                        "question": "Which of the following statements about anti-cyclic citrullinated peptide (anti-CCP) antibodies is true?",
+                        "choices": [
+                          "They are highly specific for rheumatoid arthritis and are associated with a poor prognosis",
+                          "They are present in many autoimmune diseases",
+                          "They have lower specificity than rheumatoid factor",
+                          "They are not useful in predicting disease severity"
+                        ],
+                        "correct_answer": "They are highly specific for rheumatoid arthritis and are associated with a poor prognosis",
+                        "explanation": "Anti-CCP antibodies are highly specific for rheumatoid arthritis and their presence is associated with a more aggressive disease course and poor prognosis."
+                    },
+                    {
+                        "question": "HLA-B27 is most strongly associated with which of the following conditions?",
+                        "choices": [
+                          "Seronegative spondyloarthritis",
+                          "Seropositive rheumatoid arthritis",
+                          "Systemic lupus erythematosus",
+                          "Sjögren's syndrome"
+                        ],
+                        "correct_answer": "Seronegative spondyloarthritis",
+                        "explanation": "HLA-B27 is a genetic marker strongly associated with seronegative spondyloarthropathies, including ankylosing spondylitis, reactive arthritis, psoriatic arthritis, and enteropathic arthritis."
+                    }
+                      
+                                            
+                    
+                ]
+            },
+            {
                 "name": "Eosinophilic granulomatosis with polyangiitis",
                 "questions": [
                     {
