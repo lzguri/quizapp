@@ -29,6 +29,10 @@ body {
     }
 }
 
+#generateQuiz {
+
+}
+
 #scorePage {
     width: 100%;
     text-align:left;
@@ -70,10 +74,31 @@ body {
     cursor: pointer;
     font-weight: bold;
     margin: 10px 0;
-    background:#dedddd;
-    padding: 10px;
-    border-radius: 3px;
+    background: linear-gradient(to right, #f5f5f5, #dedddd); /* Subtle gradient */
+    padding: 12px 16px;
+    border-radius: 8px;
+    box-shadow: 2px 2px 6px rgba(0, 0, 0, 0.1);
+    transition: all 0.3s ease-in-out;
+    border: 1px solid #ccc;
+    color: #333;
+    display: flex;
+    align-items: center;
+    gap: 8px;
 }
+
+/* Hover effect */
+.topic:hover {
+    background: linear-gradient(to right, #e0e0e0, #cfcfcf);
+    box-shadow: 3px 3px 8px rgba(0, 0, 0, 0.15);
+    transform: translateY(-2px);
+}
+
+/* Active (clicked) effect */
+.topic:active {
+    transform: scale(0.98);
+    box-shadow: none;
+}
+
 
 #questionCount {
     margin-left: 10px;

@@ -373,7 +373,7 @@ function adjustDivWidth() {
             div.style.margin = '20px auto';
             div.style.background = 'white';
             div.style.padding = '20px';
-            div.style.borderRadius = '10px';
+            div.style.borderRadius = '5px';
             div.style.boxShadow = '0px 0px 10px gray';
             div.style.textAlign = 'left';
 
