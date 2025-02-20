@@ -271,18 +271,30 @@ document.addEventListener("DOMContentLoaded", () => {
         }
 
         if (isReview) {
+            prevButton.disabled = true;
+            prevButton.style.backgroundColor = "#648cc4";
+            nextButton.disabled = true;
+            nextButton.style.backgroundColor = "#648cc4";
+            resetButton.disabled = true;
+            resetButton.style.backgroundColor  = "#648cc4";
+            returnHomeButton.disabled = true;
+            returnHomeButton.style.backgroundColor = "#648cc4";
+        
             let backToScoreButton = document.createElement("button");
             backToScoreButton.textContent = "Back to Score Page";
             backToScoreButton.addEventListener("click", () => {
                 quizContainer.style.display = "none";
                 scorePage.style.display = "block";
-                prevButton.disabled = true;
-                nextButton.disabled = true;
-                resetButton.disabled = true;
-                returnHomeButton.disabled = true;
+        
+                // Re-enable buttons when returning to the score page
+                prevButton.disabled = false;
+                nextButton.disabled = false;
+                resetButton.disabled = false;
+                returnHomeButton.disabled = false;
             });
             answerChoices.appendChild(backToScoreButton);
         }
+        
     
         updateButtons();
         updateProgressBar();
