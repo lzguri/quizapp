@@ -32,7 +32,7 @@ document.addEventListener("DOMContentLoaded", () => {
             totalQuestions = countTotalQuestions(topicsData)
             console.log(topicsData)
             renderTopics();
-            updateGenerateQuizButton(0);
+            updateGenerateQuizButton();
             
         })
         .catch(error => console.error("Error loading JSON:", error));
@@ -179,8 +179,8 @@ document.addEventListener("DOMContentLoaded", () => {
             topicsData[topicIndex].subtopics[subtopicIndex].questions.forEach(q => selectedQuestionsSet.add(JSON.stringify(q)));
         });
 
-        questionCountDisplay.textContent = `(Selected: ${selectedQuestionsSet.size}/${totalQuestions} questions)`;
-        generateQuizButton.textContent = "Create test " +  questionCountDisplay.textContent
+        questionCountDisplay.textContent = ""
+        generateQuizButton.textContent = "Create test " +  `(Selected: ${selectedQuestionsSet.size}/${totalQuestions} questions)`;
         return selectedQuestionsSet;
     }
 
