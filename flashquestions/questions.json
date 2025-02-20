@@ -154,7 +154,19 @@
                         ],
                         "correct_answer": "Anti-RNA polymerase III",
                         "explanation": "Anti-RNA polymerase III antibodies are highly associated with scleroderma renal crisis, a severe complication of diffuse cutaneous systemic sclerosis."
+                    },
+                    {
+                        "question": "Which of the following antibodies is most strongly associated with Granulomatosis with polyangiitis?",
+                        "choices": [
+                          "c-ANCA (anti-PR3 antibody)",
+                          "p-ANCA (anti-MPO antibody)",
+                          "Anti-dsDNA",
+                          "Anti-Smith"
+                        ],
+                        "correct_answer": "c-ANCA (anti-PR3 antibody)",
+                        "explanation": "c-ANCA, also known as anti-proteinase 3 (anti-PR3) antibody, is strongly associated with Granulomatosis with polyangiitis (formerly known as Wegener's granulomatosis) and serves as a key diagnostic marker for the condition."
                     }
+                      
                       
                       
                                             
