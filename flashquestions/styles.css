@@ -120,6 +120,15 @@ button {
     width: 100%;
 }
 
+/* Container for navigation buttons */
+.button-container {
+    display: flex;
+    justify-content: space-between; /* Places Previous on left & Next on right */
+    align-items: center;
+    margin-top: 20px;
+    gap: 20px; /* Adds space between the buttons */
+}
+
 button:hover {
     background-color: #648cc4;
     transform: translateY(-2px);
