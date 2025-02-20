@@ -1,63 +1,155 @@
-
 @import url('https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap');
-
 
 body {
     font-family: 'Roboto', Arial, sans-serif;
     background-color: #f4f4f4;
     padding: 20px;
+    margin: 0;
+    color: #333;
 }
 
+/* Title Styling */
 .internal-medicine {
     text-align: center;
+    font-size: 26px;
+    font-weight: bold;
+    color: #030f3d;
+    padding: 15px;
+    margin-bottom: 20px;
+    background: linear-gradient(to right, #e3f2fd, #bbdefb);
+    border-radius: 8px;
+    box-shadow: 2px 2px 6px rgba(0, 0, 0, 0.1);
+    border-bottom: 4px solid #0073e6;
 }
 
-/*#homepage, #quizContainer {
-    margin: 20px auto;
-    width: 50%;
+/* Main Content Containers */
+.container {
+    max-width: 800px;
+    margin: auto;
     background: white;
     padding: 20px;
     border-radius: 10px;
-    box-shadow: 0px 0px 10px gray;
-    text-align: left;
-}*/
-
-/* Media query for mobile devices */
-@media (max-width: 768px) {
-    .container {
-      width: 100%; /* Sets the height to 100% viewport height */
-    }
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
 }
 
-#generateQuiz {
-
-}
-
-#scorePage {
+/* Progress Bar */
+#progressContainer {
     width: 100%;
-    text-align:left;
-}
-.score-result {
-    text-align: right;
+    background-color: #ddd;
+    border-radius: 5px;
+    margin-bottom: 20px;
+    overflow: hidden;
 }
 
+#progressBar {
+    height: 10px;
+    width: 0%;
+    background: linear-gradient(to right, #00a2ff, #0073e6, #003d99);
+    border-radius: 5px;
+    transition: width 0.5s ease-in-out;
+}
+
+/* Topic Styling */
+.topic {
+    cursor: pointer;
+    font-weight: bold;
+    margin: 10px 0;
+    background: linear-gradient(to right, #f5f5f5, #dedddd);
+    padding: 14px;
+    border-radius: 6px;
+    box-shadow: 2px 2px 6px rgba(0, 0, 0, 0.1);
+    transition: all 0.3s ease-in-out;
+    border: 1px solid #ccc;
+    color: #333;
+    display: block;
+    position: relative;
+}
+
+.topic:hover {
+    background: linear-gradient(to right, #e0e0e0, #cfcfcf);
+    box-shadow: 3px 3px 8px rgba(0, 0, 0, 0.15);
+    transform: translateY(-2px);
+}
+
+.topic:active {
+    transform: scale(0.98);
+    box-shadow: none;
+}
+
+/* Subtopics */
+.subtopics {
+    display: none;
+    padding-left: 20px;
+    padding-top: 5px;
+    margin-top: 5px;
+}
+
+.topic.active .subtopics {
+    display: block;
+}
+
+/* Individual subtopic styling */
+.subtopic {
+    background: #ececec;
+    padding: 8px 14px;
+    border-radius: 6px;
+    margin: 4px 0;
+    border-left: 4px solid #0073e6;
+    transition: background 0.3s;
+}
+
+.subtopic:hover {
+    background: #d9d9d9;
+    cursor: pointer;
+}
+
+/* Buttons */
+button {
+    padding: 12px 16px;
+    margin: 10px 0;
+    cursor: pointer;
+    border: none;
+    border-radius: 5px;
+    background-color: #215fac;
+    color: white;
+    font-size: 16px;
+    font-weight: bold;
+    text-align: center;
+    box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.2);
+    transition: background 0.3s, transform 0.2s;
+    width: 100%;
+}
+
+button:hover {
+    background-color: #648cc4;
+    transform: translateY(-2px);
+}
+
+button:active {
+    transform: scale(0.98);
+}
+
+/* Quiz Choices */
 .button-choice {
     display: block;
     margin: 10px 0;
-    padding: 10px;
+    padding: 12px;
     border: 1px solid #ddd;
     border-radius: 5px;
     background: #f9f9f9;
     cursor: pointer;
     text-align: left;
     transition: background-color 0.3s, border-color 0.3s;
-    width: calc(100% - 0px); /* Adjust width to account for padding */
-    box-sizing: border-box;  /* Ensures padding and border are included in the width */
+    width: 100%;
+    box-sizing: border-box;
     font-size: 14px;
-    overflow: hidden;        /* Prevents content overflow */
 }
 
+.button-choice:hover {
+    background-color: #e0e0e0;
+}
 
+/* Correct and Incorrect Answers */
 .correct-choice {
     background-color: #d4edda;
     border-color: #28a745;
@@ -70,101 +162,29 @@ body {
     color: #721c24;
 }
 
-.topic {
-    cursor: pointer;
-    font-weight: bold;
-    margin: 10px 0;
-    background: linear-gradient(to right, #f5f5f5, #dedddd); /* Subtle gradient */
-    padding: 12px 16px;
-    border-radius: 8px;
-    box-shadow: 2px 2px 6px rgba(0, 0, 0, 0.1);
-    transition: all 0.3s ease-in-out;
-    border: 1px solid #ccc;
-    color: #333;
-    display: flex;
-    align-items: center;
-    gap: 8px;
-}
-
-/* Hover effect */
-.topic:hover {
-    background: linear-gradient(to right, #e0e0e0, #cfcfcf);
-    box-shadow: 3px 3px 8px rgba(0, 0, 0, 0.15);
-    transform: translateY(-2px);
-}
-
-/* Active (clicked) effect */
-.topic:active {
-    transform: scale(0.98);
-    box-shadow: none;
-}
-
-
-#questionCount {
-    margin-left: 10px;
-}
-
-.subtopics {
-    margin-left: 20px;
-    display: none;
-    font-weight: lighter;
-}
-
-button {
-    padding: 10px;
-    margin-right: 10px;
-    margin-top: 10px;
-    cursor: pointer;
-    border: none;
-    border-radius: 3px;
-    background-color: #215fac;
-    color: white;
-    font-size: 16px;
-    font-weight: bold;
-    text-align: left;
-    box-shadow: rgba(0, 0, 0, 0.15) 2.4px 2.4px 3.2px;
-}
-
-
-
-.tableExplanation {
-    border: 1px solid black;
-}
-
-button:hover {
-    background-color: #648cc4;
-}
-
-.correct {
-    background-color: lightgreen !important;
-}
-
-.incorrect {
-    background-color: lightcoral !important;
-}
-
-#progressContainer {
+/* Score Page */
+#scorePage {
     width: 100%;
-    background-color: #ddd;
-    border-radius: 5px;
-    margin-bottom: 20px;
+    text-align: left;
 }
 
-.internal-medicine {
-    cursor: pointer;
-    font-weight: bold;
-    margin: 10px 0;
-    background:#dedddd;
-    padding: 10px;
-    border-radius: 3px;
-
+.score-result {
+    text-align: right;
 }
 
-#progressBar {
-    height: 10px;
-    width: 0%;
-    background: linear-gradient(to right, #00a2ff, #0073e6, #003d99);
-    border-radius: 5px;
-    transition: width 0.5s ease-in-out;
-}
+/* Media Query for Mobile Devices */
+@media (max-width: 768px) {
+    .container {
+        width: 100%;
+        padding: 15px;
+    }
 
+    .internal-medicine {
+        font-size: 22px;
+        padding: 10px;
+    }
+
+    button {
+        padding: 10px;
+    }
+}
