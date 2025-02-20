@@ -874,6 +874,45 @@
                 ]
             },
             {
+                "name": "Soft tissue infection",
+                "questions": [
+                    {
+                        "question": "A cirrhotic patient presents with sepsis, rapidly progressive cellulitis, and hemorrhagic bullae after exposure to saltwater fish. Which organism is most likely responsible for this clinical presentation?",
+                        "choices": [
+                          "Vibrio vulnificus",
+                          "Staphylococcus aureus",
+                          "Streptococcus pyogenes",
+                          "Clostridium perfringens"
+                        ],
+                        "correct_answer": "Vibrio vulnificus",
+                        "explanation": "Cirrhotic patients are at high risk for Vibrio vulnificus infection after exposure to saltwater fish or shellfish, which can lead to sepsis, rapidly progressive cellulitis, and hemorrhagic bullae."
+                    },
+                    {
+                        "question": "An asplenic patient develops severe sepsis after a dog bite. Which organism is the most likely cause?",
+                        "choices": [
+                          "Capnocytophaga canimorsus",
+                          "Pasteurella multocida",
+                          "Streptococcus pyogenes",
+                          "Staphylococcus aureus"
+                        ],
+                        "correct_answer": "Capnocytophaga canimorsus",
+                        "explanation": "Capnocytophaga canimorsus is a gram-negative rod that can cause severe sepsis in asplenic individuals following a dog bite due to impaired bacterial clearance by the spleen."
+                    },
+                    {
+                        "question": "All of the following are risk factors for repeated cellulitis EXCEPT:",
+                        "choices": [
+                          "Lymphedema",
+                          "Tinea pedis",
+                          "Chronic venous insufficiency",
+                          "Hyperthyroidism"
+                        ],
+                        "correct_answer": "Hyperthyroidism",
+                        "explanation": "Risk factors for recurrent cellulitis include tinea pedis, lymphedema, and chronic venous insufficiency, as they create conditions that promote skin barrier disruption and bacterial entry. Hyperthyroidism is not a recognized risk factor for recurrent cellulitis."
+                    }
+                       
+                ]
+            },
+            {
                 "name": "Tick-borne disease",
                 "questions": [
                     {

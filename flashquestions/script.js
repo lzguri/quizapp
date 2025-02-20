@@ -22,6 +22,7 @@ document.addEventListener("DOMContentLoaded", () => {
     const scoreDetails = document.getElementById("scoreDetails");
     const questionCountDisplay = document.getElementById("questionCount");
     const progressBar = document.getElementById("progressBar"); // Progress bar element
+    const endTestButton = document.getElementById("endTest");
     
 
 
@@ -286,14 +287,16 @@ document.addEventListener("DOMContentLoaded", () => {
         }
 
         if (isReview) {
-            prevButton.disabled = true;
-            prevButton.style.backgroundColor = "#648cc4";
+            prevButton.remove();
+            prevButton.style.display = "none";
             nextButton.disabled = true;
-            nextButton.style.backgroundColor = "#648cc4";
+            nextButton.style.display = "none";
             resetButton.disabled = true;
-            resetButton.style.backgroundColor  = "#648cc4";
+            resetButton.style.display = "none";
             returnHomeButton.disabled = true;
-            returnHomeButton.style.backgroundColor = "#648cc4";
+            returnHomeButton.style.display = "none";
+            endTestButton.disabled = true;
+            endTestButton.style.display = "none";
         
             let backToScoreButton = document.createElement("button");
             backToScoreButton.textContent = "Back to Score Page";
@@ -315,7 +318,9 @@ document.addEventListener("DOMContentLoaded", () => {
         updateProgressBar();
     }
     
-    
+    endTestButton.addEventListener("click", () => {
+        showScore(); 
+      });
     
     function updateButtons() {
         prevButton.style.display = currentQuestionIndex > 0 ? "inline-block" : "none";
