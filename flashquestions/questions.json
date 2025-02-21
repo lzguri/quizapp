@@ -317,7 +317,19 @@
                         ],
                         "correct_answer": "To synchronize the shock with the R wave and avoid inducing ventricular fibrillation",
                         "explanation": "In atrial fibrillation, synchronized cardioversion is used to time the electrical shock with the R wave to prevent inducing ventricular fibrillation. If a shock is delivered during the T wave (the vulnerable period of repolarization), it can trigger ventricular arrhythmias such as ventricular fibrillation."
+                    },
+                    {
+                        "question": "In a patient with polymorphic ventricular tachycardia (VT) and a normal baseline QT interval, what is the most likely cause?",
+                        "choices": [
+                          "Myocardial ischemia",
+                          "Electrolyte abnormalities",
+                          "Congenital long QT syndrome",
+                          "Drug-induced QT prolongation"
+                        ],
+                        "correct_answer": "Myocardial ischemia",
+                        "explanation": "Polymorphic VT with a normal baseline QT interval is most commonly caused by myocardial ischemia. Unlike torsades de pointes, which is associated with QT prolongation, ischemic polymorphic VT results from electrical instability due to inadequate myocardial perfusion. After stabilizing the patient, urgent coronary angiography is recommended to identify and treat any underlying coronary artery disease."
                     }
+                      
                       
                       
                       
