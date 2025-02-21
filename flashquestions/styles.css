@@ -177,6 +177,15 @@ button:active {
     color: #721c24;
 }
 
+#explanation-text {
+    padding: 5px;
+    border-radius: 0px;
+    font-size: 14px;
+    margin-top: 0px;
+    line-height: 1.2;
+}
+
+
 .checkbox-filter-container {
     border: 1px solid #ccc;      /* Gray border */
     background-color: #f9f9f9;   /* Light gray background */

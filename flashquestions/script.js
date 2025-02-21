@@ -220,6 +220,14 @@ document.addEventListener("DOMContentLoaded", () => {
         currentQuestionIndex = 0;
         userAnswers = Array(selectedQuestions.length).fill(null);
         showQuestion();
+
+        // Ensure navigation buttons are re-enabled when restarting
+        prevButton.style.display = "none";  // Hide "Previous" at first question
+        nextButton.style.display = "inline-block";
+        resetButton.style.display = "inline-block";
+        returnHomeButton.style.display = "inline-block";
+        endTestButton.style.display = "inline-block";
+        endTestButton.disabled = false; // Ensure it's clickable
     }
 
     function showQuestion(isReview = false) {
@@ -361,6 +369,7 @@ function showScore() {
         <h2 style="text-align: center;">Your score is ${percentage}%</h2>
     
         <!-- Add a container around the three checkboxes -->
+        <h2 style="text-align: center;">Key concepts</h2>
         <div class="checkbox-filter-container">
         <label>
             <input type="checkbox" id="filterCorrect" checked> Correct
@@ -374,7 +383,7 @@ function showScore() {
             <input type="checkbox" id="filterUnanswered" checked> Unanswered
         </label>
         </div>
-
+        
         <div id="scoreDetailsContainer"></div>
         <button id="resetQuizFinal">Reset Quiz</button>
         <button id="returnHomeFinal">Return to Homepage</button>
@@ -399,11 +408,10 @@ function showScore() {
             }
             
             return `
-  <div class="score-item ${status}">
+  <div id="explanation-text" class="score-item ${status}">
     <p>
-      <strong>Question ${index + 1}. concept:</strong> 
-      ${question.explanation}
-      <a href="#" class="review-question" data-index="${index}"> [Go to the question]</a>
+      
+      <strong><a href="#" class="review-question" data-index="${index}">Question ${index + 1}: </a></strong>${question.explanation}
     </p>
   </div>
 `;

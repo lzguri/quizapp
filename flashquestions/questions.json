@@ -50,8 +50,32 @@
                         "question": "A young patient presents to the emergency department with chest pain and ST elevation on the initial ECG. After administration of aspirin and nitroglycerin, he is sent for cardiac catheterization. The patient exhibits anxiety, diaphoresis, tachycardia, and hypertension, and admits to recent cocaine use. What is the next best step?",
                         "choices": ["Thrombolytics", "Lorazepam IV", "Zofran", "Lisinopril"],
                         "correct_answer": "Lorazepam IV",
-                        "explanation": "Lorazepam or other benzodiazepines are the treatment of choice for managing cocaine-induced chest pain and associated symptoms. They reduce anxiety, sympathetic hyperactivity, and the risk of arrhythmias or hypertension. Avoid beta-blockers as they can exacerbate coronary vasospasm."
-                    }                    
+                        "explanation": "<span class='highlight'>Lorazepam or other benzodiazepines<span> are the treatment of choice for managing cocaine-induced chest pain and associated symptoms. They reduce anxiety, sympathetic hyperactivity, and the risk of arrhythmias or hypertension. Avoid beta-blockers as they can exacerbate coronary vasospasm."
+                    },
+                    {
+                        "question": "A 70-year-old male with a history of untreated hypertension presents with sudden-onset, tearing chest pain radiating to the back. Which of the following diagnoses is most likely?",
+                        "choices": [
+                          "Aortic dissection",
+                          "Myocardial infarction",
+                          "Pulmonary embolism",
+                          "Pneumothorax"
+                        ],
+                        "correct_answer": "Aortic dissection",
+                        "explanation": "Aortic dissection classically presents with sudden, severe, tearing chest pain radiating to the back, particularly in patients with hypertension, which is a major risk factor. Immediate imaging with CT angiography is required for diagnosis."
+                    },
+                    {
+                        "question": "A 30-year-old male with no prior medical history presents with sharp chest pain. He avoids taking deep breaths due to the pain. He had flu-like symptoms approximately 10 days ago, which have now resolved. The chest pain will most likely worsen with which of the following?",
+                        "choices": [
+                          "Laying flat",
+                          "Eating food",
+                          "Pressing on the chest",
+                          "Drinking alcohol"
+                        ],
+                        "correct_answer": "Laying flat",
+                        "explanation": "Pericarditis often follows a viral infection. Pericarditis-related chest pain is sharp typically worsens when lying flat/deep breaths and improves when sitting up and leaning forward."
+                    }
+                      
+                                          
                     
                 ]
             },
@@ -908,8 +932,29 @@
                         ],
                         "correct_answer": "Hyperthyroidism",
                         "explanation": "Risk factors for recurrent cellulitis include tinea pedis, lymphedema, and chronic venous insufficiency, as they create conditions that promote skin barrier disruption and bacterial entry. Hyperthyroidism is not a recognized risk factor for recurrent cellulitis."
-                    }
-                       
+                    },
+                    {
+                        "question": "Which clinical feature differentiates erysipelas from cellulitis?",
+                        "choices": [
+                          "Raised, well-demarcated border",
+                          "Deeper skin involvement",
+                          "Only caused by Streptococcus",
+                          "Always has systemic symptoms"
+                        ],
+                        "correct_answer": "Raised, well-demarcated border",
+                        "explanation": "Erysipelas is a superficial skin infection that presents as a bright red, well-demarcated, raised lesion, typically caused by Streptococcus pyogenes. Cellulitis, in contrast, involves deeper layers of the skin and presents with more diffuse, indistinct borders."
+                    },
+                    {
+                        "question": "Erysipelas is caused by which of the following organisms?",
+                        "choices": [
+                          "Beta-hemolytic streptococci",
+                          "Pseudomonas aeruginosa",
+                          "Clostridium difficile",
+                          "Helicobacter pylori"
+                        ],
+                        "correct_answer": "Beta-hemolytic streptococci",
+                        "explanation": "Erysipelas is almost exclusively caused by beta-hemolytic streptococci, while cellulitis is typically caused by beta-hemolytic streptococci but can also be due to Staphylococcus aureus."
+                    }   
                 ]
             },
             {
