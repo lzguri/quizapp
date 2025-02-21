@@ -189,6 +189,142 @@
                         "explanation": "The presence of NSVT in a patient with pericarditis raises concern for myocardial involvement (myocarditis). Myocarditis can lead to ventricular arrhythmias and heart failure."
                     }
                 ]
+            },
+            {
+                "name": "Acute coronary syndrome",
+                "questions": [
+                    {
+                        "question": "Acute coronary syndrome (ACS) includes all of the following conditions EXCEPT:",
+                        "choices": [
+                          "ST-elevation myocardial infarction (STEMI)",
+                          "Non-ST elevation myocardial infarction (NSTEMI)",
+                          "Unstable angina",
+                          "Stable angina"
+                        ],
+                        "correct_answer": "Stable angina",
+                        "explanation": "Acute coronary syndrome (ACS) consists of STEMI, NSTEMI, and unstable angina, all of which result from acute plaque rupture and myocardial ischemia. Stable angina, on the other hand, is caused by fixed coronary artery stenosis and is not part of ACS."
+                    }
+                ]
+            },
+            {
+                "name": "Heart failure",
+                "questions": [
+                    {
+                        "question": "All of the following medications reduce mortality in heart failure with reduced ejection fraction (HFrEF) EXCEPT:",
+                        "choices": [
+                          "Carvedilol",
+                          "Atenolol",
+                          "Bisoprolol",
+                          "Metoprolol succinate"
+                        ],
+                        "correct_answer": "Atenolol",
+                        "explanation": "Only certain beta-blockers (carvedilol, bisoprolol, and metoprolol succinate) have been shown to reduce mortality in HFrEF. Unlike ACE inhibitors, which provide a class effect, beta-blockers do not; atenolol has not demonstrated the same survival benefit in these patients."
+                    }
+                ]
+            },
+            {
+                "name": "Syncope",
+                "questions": [
+                    {
+                        "question": "A 78-year-old male with a history of BPH was recently started on an unknown medication by his urologist. He presents to the ED after an episode of syncope. What is the next best step in evaluation?",
+                        "choices": [
+                          "Orthostatic signs",
+                          "Echocardiogram",
+                          "CTA chest",
+                          "D-dimer",
+                          "Troponin"
+                        ],
+                        "correct_answer": "Orthostatic signs",
+                        "explanation": "Alpha-blockers (such as tamsulosin) are commonly prescribed for BPH and can cause orthostatic hypotension, leading to syncope. Checking orthostatic vital signs is the appropriate next step in evaluating the cause of syncope in this patient."
+                    }
+                      
+                ]
+            },
+            {
+                "name": "Heart block",
+                "questions": [
+                    {
+                        "question": "Which of the following medications is NOT known to cause bradycardia?",
+                        "choices": [
+                          "Beta-blockers",
+                          "Donepezil",
+                          "Pyridostigmine",
+                          "Nondihydropyridine calcium channel blockers",
+                          "Dihydropyridine calcium channel blockers"
+                        ],
+                        "correct_answer": "Dihydropyridine calcium channel blockers",
+                        "explanation": "Dihydropyridine calcium channel blockers (e.g., amlodipine) primarily act on vascular smooth muscle, causing vasodilation without significant effects on heart rate. In contrast, beta-blockers, donepezil, pyridostigmine, and nondihydropyridine calcium channel blockers (e.g., verapamil, diltiazem) can all cause bradycardia."
+                    }
+                      
+                ]
+            },
+            {
+                "name": "Ventricular tachycardia",
+                "questions": [
+                    {
+                        "question": "Which of the following characteristics is NOT typical of non-sustained ventricular tachycardia (NSVT)?",
+                        "choices": [
+                          "Three or more consecutive ventricular beats",
+                          "Rate of >100 beats per minute",
+                          "Duration of more than 30 seconds",
+                          "Originating from the ventricles"
+                        ],
+                        "correct_answer": "Duration of more than 30 seconds",
+                        "explanation": "Non-sustained ventricular tachycardia (NSVT) is defined as three or more consecutive ventricular beats at a rate >100 bpm, lasting less than 30 seconds. If it lasts longer than 30 seconds, it is classified as sustained VT."
+                    },
+                    {
+                        "question": "A patient admitted for heart failure exacerbation develops a wide complex tachycardia while hospitalized. The patient has a pulse, a heart rate of 192 bpm, and a blood pressure of 78/56 mmHg. What is the next step in management?",
+                        "choices": [
+                          "Immediate synchronized cardioversion",
+                          "IV amiodarone",
+                          "IV adenosine",
+                          "Magnesium sulfate",
+                          "Defibrillation"
+                        ],
+                        "correct_answer": "Immediate synchronized cardioversion",
+                        "explanation": "This patient is experiencing unstable wide complex tachycardia (likely ventricular tachycardia) with hypotension. The next step is immediate synchronized cardioversion, as per ACLS guidelines for unstable tachyarrhythmias. Antiarrhythmic medications (e.g., amiodarone) are typically used in stable patients."
+                    },
+                    {
+                        "question": "A patient recently started on antibiotics for pneumonia presents with recurrent episodes of syncope. He is on diltiazem for paroxysmal atrial fibrillation, with a baseline heart rate of ~50 bpm. Telemetry shows intermittent episodes of torsades de pointes. Magnesium has already been administered but failed to control the arrhythmia. What is the next step in management?",
+                        "choices": [
+                          "Discontinue diltiazem and start isoproterenol",
+                          "Immediate defibrillation",
+                          "Administer additional magnesium",
+                          "Start amiodarone",
+                          "Perform synchronized cardioversion"
+                        ],
+                        "correct_answer": "Discontinue diltiazem and start isoproterenol",
+                        "explanation": "Torsades de pointes is commonly associated with QT prolongation, often exacerbated by bradycardia. In this patient, diltiazem (a rate-controlling agent) may be worsening the condition by slowing the heart rate and prolonging the QT interval. After magnesium administration, increasing the heart rate with isoproterenol or temporary pacing is the next step to shorten the QT interval and prevent recurrent episodes."
+                    },
+                    {
+                        "question": "How is pulseless ventricular tachycardia (VT) treated?",
+                        "choices": [
+                          "Same as ventricular fibrillation (VF) with immediate defibrillation",
+                          "Synchronized cardioversion",
+                          "IV amiodarone only",
+                          "IV magnesium sulfate"
+                        ],
+                        "correct_answer": "Same as ventricular fibrillation (VF) with immediate defibrillation",
+                        "explanation": "Pulseless VT is treated the same way as ventricular fibrillation (VF) using immediate defibrillation."
+                    },
+                    {
+                        "question": "Why do we perform synchronized cardioversion instead of defibrillation for atrial fibrillation in a hemodynamically unstable patient?",
+                        "choices": [
+                          "To synchronize the shock with the R wave and avoid inducing ventricular fibrillation",
+                          "Defibrillation is ineffective for atrial fibrillation",
+                          "Atrial fibrillation always resolves on its own",
+                          "Synchronized cardioversion has no risks compared to defibrillation"
+                        ],
+                        "correct_answer": "To synchronize the shock with the R wave and avoid inducing ventricular fibrillation",
+                        "explanation": "In atrial fibrillation, synchronized cardioversion is used to time the electrical shock with the R wave to prevent inducing ventricular fibrillation. If a shock is delivered during the T wave (the vulnerable period of repolarization), it can trigger ventricular arrhythmias such as ventricular fibrillation."
+                    }
+                      
+                      
+                      
+                      
+                      
+                      
+                ]
             }
         ]
     },
