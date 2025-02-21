@@ -154,9 +154,9 @@ button:active {
     font-size: 14px;
 }
 
-.button-choice:hover {
+/*.button-choice:hover {
     background-color: #e0e0e0;
-}
+}*/
 
 #questionLimitContainer {
     margin-top: 10px;

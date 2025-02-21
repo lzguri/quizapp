@@ -70,23 +70,14 @@ document.addEventListener("DOMContentLoaded", () => {
     
 
     function updateGenerateQuizButton() {
-            let selectedQuestionsSet = updateQuestionCount(); // Get selected questions as a Set
-            let selectedCount = selectedQuestionsSet.size; // Correctly count selected questions
-        
-            // ✅ Ensure limit input doesn't exceed selected questions
+            let selectedQuestionsSet = updateQuestionCount();
+            let selectedCount = selectedQuestionsSet.size;
+    
             questionLimitInput.max = selectedCount;
-        
-            // ✅ If limit is checked, use the user input, otherwise use selectedCount
-            let limit = limitQuestionsCheckbox.checked 
-                ? Math.min(parseInt(questionLimitInput.value) || 1, selectedCount) // Ensure at least 1, max selectedCount
-                : selectedCount; // If unchecked, use selected count
-        
-            // ✅ Apply correct conditional logic for button text
-            if (limitQuestionsCheckbox.checked) {
-                generateQuizButton.textContent = `Create test (Selected: ${limit}/${totalQuestions} questions)`;
-            } else {
-                generateQuizButton.textContent = `Create test (Selected: ${selectedCount}/${totalQuestions} questions)`;
-            }
+    
+            let limit = limitQuestionsCheckbox.checked ? Math.min(parseInt(questionLimitInput.value) || 1, selectedCount) : selectedCount;
+    
+            generateQuizButton.textContent = `Create test (Selected: ${selectedCount}/${totalQuestions} questions)`;
         }
         
         
@@ -227,23 +218,24 @@ document.addEventListener("DOMContentLoaded", () => {
 
     function updateQuestionCount() {
         let selectedQuestionsSet = new Set();
-
+    
         document.querySelectorAll(".topic-checkbox:checked").forEach(checkbox => {
             let topicIndex = parseInt(checkbox.id.split("-")[1]);
             topicsData[topicIndex].subtopics.forEach(subtopic => {
                 subtopic.questions.forEach(q => selectedQuestionsSet.add(JSON.stringify(q)));
             });
         });
-
+    
         document.querySelectorAll(".subtopic-checkbox:checked").forEach(checkbox => {
             let topicIndex = parseInt(checkbox.dataset.topic);
             let subtopicIndex = parseInt(checkbox.dataset.subtopic);
             topicsData[topicIndex].subtopics[subtopicIndex].questions.forEach(q => selectedQuestionsSet.add(JSON.stringify(q)));
         });
-
-        questionCountDisplay.textContent = "";
+    
+        questionCountDisplay.textContent = `Questions Selected: ${selectedQuestionsSet.size}`;
         return selectedQuestionsSet;
     }
+    
 
     generateQuizButton.addEventListener("click", () => {
         let selectedQuestionsSet = updateQuestionCount();
