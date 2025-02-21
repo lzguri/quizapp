@@ -339,7 +339,7 @@
                           "Supraventricular tachycardia with an accessory pathway"
                         ],
                         "correct_answer": "Atrial flutter",
-                        "explanation": "Wide complex tachycardia is usually caused by ventricular tachycardia, supraventricular tachycardia (SVT) with aberrancy (e.g., bundle branch block), SVT with an accessory pathway (e.g., Wolff-Parkinson-White syndrome), or torsades de pointes. Atrial flutter typically presents with a narrow QRS complex unless there is an underlying conduction abnormality. When in doubt, wide complex tachycardia should be treated as ventricular tachycardia until proven otherwise, as VT is the most life-threatening possibility."
+                        "explanation": "Wide complex tachycardia is usually caused by ventricular tachycardia (polymorphic and monomorphic), supraventricular tachycardia (SVT) with aberrancy (e.g., bundle branch block), SVT with an accessory pathway (e.g., Wolff-Parkinson-White syndrome). Atrial flutter typically presents with a narrow QRS complex unless there is an underlying conduction abnormality. When in doubt, wide complex tachycardia should be treated as ventricular tachycardia until proven otherwise, as VT is the most life-threatening possibility."
                     }
                       
                       

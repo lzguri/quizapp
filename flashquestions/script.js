@@ -21,6 +21,8 @@ document.addEventListener("DOMContentLoaded", () => {
     const generateQuizButton = document.getElementById("generateQuiz");
     const scoreDetails = document.getElementById("scoreDetails");
     const questionCountDisplay = document.getElementById("questionCount");
+    const limitQuestionsCheckbox = document.getElementById("limitQuestionsCheckbox");
+    const questionLimitInput = document.getElementById("questionLimitInput");
     const progressBar = document.getElementById("progressBar"); // Progress bar element
     const endTestButton = document.getElementById("endTest");
     
@@ -68,10 +70,53 @@ document.addEventListener("DOMContentLoaded", () => {
     
 
     function updateGenerateQuizButton() {
-            let selectedCount = updateQuestionCount();
-            generateQuizButton.textContent = `Create test (Total: ${totalQuestions} questions)`;
+            let selectedQuestionsSet = updateQuestionCount(); // Get selected questions as a Set
+            let selectedCount = selectedQuestionsSet.size; // Correctly count selected questions
+        
+            // ✅ Ensure limit input doesn't exceed selected questions
+            questionLimitInput.max = selectedCount;
+        
+            // ✅ If limit is checked, use the user input, otherwise use selectedCount
+            let limit = limitQuestionsCheckbox.checked 
+                ? Math.min(parseInt(questionLimitInput.value) || 1, selectedCount) // Ensure at least 1, max selectedCount
+                : selectedCount; // If unchecked, use selected count
+        
+            // ✅ Apply correct conditional logic for button text
+            if (limitQuestionsCheckbox.checked) {
+                generateQuizButton.textContent = `Create test (Selected: ${limit}/${totalQuestions} questions)`;
+            } else {
+                generateQuizButton.textContent = `Create test (Selected: ${selectedCount}/${totalQuestions} questions)`;
+            }
         }
+        
+        
+        
+        
+    questionLimitInput.addEventListener("input", () => {
+            let selectedCount = updateQuestionCount().size; // Get the number of selected questions
+        
+            if (parseInt(questionLimitInput.value) > selectedCount) {
+                questionLimitInput.value = selectedCount; // Prevent exceeding selected count
+            }
+        
+            updateGenerateQuizButton();
+        });
 
+    limitQuestionsCheckbox.addEventListener("change", () => {
+            let selectedCount = updateQuestionCount().size;
+        
+            questionLimitInput.disabled = !limitQuestionsCheckbox.checked;
+        
+            if (!limitQuestionsCheckbox.checked) {
+                questionLimitInput.value = selectedCount; // Reset to all selected questions
+            } else {
+                questionLimitInput.value = Math.min(parseInt(questionLimitInput.value) || 0, selectedCount);
+            }
+        
+            updateGenerateQuizButton();
+        });
+        
+        
     
    // let experimentalDiv = document.getElementById("experimental")
     //experimentalDiv.innerHTML = updateQuestionCount().size
@@ -193,28 +238,24 @@ document.addEventListener("DOMContentLoaded", () => {
         document.querySelectorAll(".subtopic-checkbox:checked").forEach(checkbox => {
             let topicIndex = parseInt(checkbox.dataset.topic);
             let subtopicIndex = parseInt(checkbox.dataset.subtopic);
-
-            let parentTopicCheckbox = document.getElementById(`topic-${topicIndex}`);
-            parentTopicCheckbox.checked = false;
-            parentTopicCheckbox.disabled = true;
-
             topicsData[topicIndex].subtopics[subtopicIndex].questions.forEach(q => selectedQuestionsSet.add(JSON.stringify(q)));
         });
 
-        questionCountDisplay.textContent = ""
-        generateQuizButton.textContent = "Create test " +  `(Selected: ${selectedQuestionsSet.size}/${totalQuestions} questions)`;
+        questionCountDisplay.textContent = "";
         return selectedQuestionsSet;
     }
 
     generateQuizButton.addEventListener("click", () => {
         let selectedQuestionsSet = updateQuestionCount();
-        selectedQuestions = shuffle(Array.from(selectedQuestionsSet).map(JSON.parse));
+        let allQuestions = shuffle(Array.from(selectedQuestionsSet).map(JSON.parse));
 
-
-        if (selectedQuestions.length === 0) {
+        if (allQuestions.length === 0) {
             alert("Please select at least one topic or subtopic.");
             return;
         }
+
+        // Apply question limit if checkbox is checked
+        selectedQuestions = limitQuestionsCheckbox.checked ? allQuestions.slice(0, parseInt(questionLimitInput.value)) : allQuestions;
 
         startQuiz();
     });

@@ -158,6 +158,20 @@ button:active {
     background-color: #e0e0e0;
 }
 
+#questionLimitContainer {
+    margin-top: 10px;
+    padding: 10px;
+    background: #f0f0f0;
+    border-radius: 5px;
+    text-align: center;
+}
+
+#questionLimitInput {
+    width: 50px;
+    margin-left: 10px;
+}
+
+
 /* Correct and Incorrect Answers */
 .correct-choice {
     background-color: #d4edda;
