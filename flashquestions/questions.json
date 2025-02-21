@@ -44,13 +44,13 @@
                         "question": "A patient recently diagnosed with colon cancer, currently undergoing chemotherapy, presents to the ED with squeezing chest pain. Which medication may have contributed to this?",
                         "choices": ["Leucovorin", "5-Fluorouracil", "Oxaliplatin", "Zofran"],
                         "correct_answer": "5-Fluorouracil",
-                        "explanation": "FOLFOX is a common chemotherapy regimen for colorectal cancer that includes leucovorin (folinic acid), 5-Fluorouracil (5-FU), and oxaliplatin. One of its components, 5-FU, can cause coronary vasospasms leading to myocardial ischemia. Patients may present with ECG changes such as ST-segment elevation and elevated troponin levels, indicating myocardial injury, even when angiography shows no occlusive coronary artery disease."
+                        "explanation": "FOLFOX, a chemotherapy regimen for colorectal cancer, includes leucovorin, 5-FU, and oxaliplatin, with 5-FU potentially causing coronary vasospasms, leading to myocardial ischemia, ST-segment elevation, and elevated troponins despite no occlusive coronary disease on angiography"
                     },
                     {
                         "question": "A young patient presents to the emergency department with chest pain and ST elevation on the initial ECG. After administration of aspirin and nitroglycerin, he is sent for cardiac catheterization. The patient exhibits anxiety, diaphoresis, tachycardia, and hypertension, and admits to recent cocaine use. What is the next best step?",
                         "choices": ["Thrombolytics", "Lorazepam IV", "Zofran", "Lisinopril"],
                         "correct_answer": "Lorazepam IV",
-                        "explanation": "<span class='highlight'>Lorazepam or other benzodiazepines<span> are the treatment of choice for managing cocaine-induced chest pain and associated symptoms. They reduce anxiety, sympathetic hyperactivity, and the risk of arrhythmias or hypertension. Avoid beta-blockers as they can exacerbate coronary vasospasm."
+                        "explanation": "Lorazepam or other benzodiazepines<span> are the treatment of choice for managing cocaine-induced chest pain and associated symptoms. They reduce anxiety, sympathetic hyperactivity, and the risk of arrhythmias or hypertension. Avoid beta-blockers as they can exacerbate coronary vasospasm."
                     },
                     {
                         "question": "A 70-year-old male with a history of untreated hypertension presents with sudden-onset, tearing chest pain radiating to the back. Which of the following diagnoses is most likely?",
@@ -125,6 +125,69 @@
                         "explanation": "For patients with atrial fibrillation and severe mitral stenosis or a mechanical valve, warfarin is the only recommended anticoagulant due to its proven efficacy in these populations. Direct oral anticoagulants (DOACs) are not recommended due to the increased risk of thromboembolism."
                       }
                       
+                ]
+            },
+            {
+                "name": "Acute pericarditis",
+                "questions": [
+                    {
+                        "question": "Acute pericarditis is diagnosed by meeting at least two of four criteria. Which of the following is NOT part of the diagnostic criteria?",
+                        "choices": [
+                          "Typical chest pain for pericarditis",
+                          "Pericardial friction rub",
+                          "Pericardial effusion",
+                          "Typical ECG changes for pericarditis",
+                          "Elevated CRP"
+                        ],
+                        "correct_answer": "Elevated CRP",
+                        "explanation": "The four diagnostic criteria for acute pericarditis include typical chest pain, pericardial friction rub, pericardial effusion, and typical ECG changes (such as diffuse ST elevation and PR depression). While CRP may be elevated in pericarditis, it is not a formal diagnostic criterion."
+                    },
+                    {
+                        "question": "A patient with a recent myocardial infarction presents with sharp chest pain and is diagnosed with acute pericarditis. What is the correct treatment?",
+                        "choices": [
+                          "Aspirin",
+                          "Ibuprofen",
+                          "Indomethacin",
+                          "Prednisone",
+                          "No need for treatment"
+                        ],
+                        "correct_answer": "Aspirin",
+                        "explanation": "In post-myocardial infarction pericarditis, aspirin is the preferred treatment. NSAIDs like ibuprofen and indomethacin should be avoided as they may impair myocardial healing"
+                    },
+                    {
+                        "question": "A patient with a viral syndrome a week ago presents with acute pericarditis. What is the correct treatment?",
+                        "choices": [
+                          "Ibuprofen and colchicine",
+                          "Aspirin alone",
+                          "Prednisone",
+                          "No treatment needed",
+                          "Antibiotics"
+                        ],
+                        "correct_answer": "Ibuprofen and colchicine",
+                        "explanation": "Viral or idiopathic pericarditis is typically treated with NSAIDs (such as ibuprofen) and colchicine to reduce inflammation and prevent recurrence. Corticosteroids are generally reserved for refractory or contraindicated cases."
+                    },
+                    {
+                        "question": "Why are corticosteroids not the first-line treatment for viral or idiopathic acute pericarditis?",
+                        "choices": [
+                          "They increase the risk of recurrence",
+                          "They are ineffective in reducing inflammation",
+                          "They cause immediate hemodynamic instability",
+                          "They are contraindicated in all cardiac conditions"
+                        ],
+                        "correct_answer": "They increase the risk of recurrence",
+                        "explanation": "Corticosteroids are not first-line treatment for viral or idiopathic acute pericarditis because they have been associated with an increased risk of recurrence."
+                    },
+                    {
+                        "question": "A patient diagnosed with pericarditis is hospitalized and started on treatment. While on telemetry, non-sustained ventricular tachycardia (NSVT) is observed. What is the next step?",
+                        "choices": [
+                          "Evaluate for myocarditis",
+                          "Increase NSAID dose",
+                          "Start antiarrhythmic therapy",
+                          "No further workup is needed"
+                        ],
+                        "correct_answer": "Evaluate for myocarditis",
+                        "explanation": "The presence of NSVT in a patient with pericarditis raises concern for myocardial involvement (myocarditis). Myocarditis can lead to ventricular arrhythmias and heart failure."
+                    }
                 ]
             }
         ]
@@ -208,8 +271,8 @@
                     },
                     {
                         "question": "Eosinophilic granulomatosis with polyangiitis (EGPA) is characterized by all of the following phases except for which?",
-                        "choices": ["Prodromal phase", "Eosinophilic phase", "Vasculitic phase", "Lung phase"],
-                        "correct_answer": "Lung phase",
+                        "choices": ["Prodromal phase", "Eosinophilic phase", "Vasculitic phase", "Pulmonary phase"],
+                        "correct_answer": "Pulmonary phase",
                         "explanation": "Lung phase is not a recognized phase of EGPA, though pulmonary involvement occurs during other phases. EGPA phases occur as follows: 1. Prodromal phase characterized by asthma and eosinophilia. 2. Eosinophilic phase marked by tissue eosinophilia and systemic symptoms like fever and weight loss. 3. Vasculitic phase involves small-vessel vasculitis. "
                     },
                     {
@@ -240,7 +303,8 @@
                           "Polymyalgia rheumatica",
                           "Granulomatosis with polyangiitis",
                           "Systemic lupus erythematosus",
-                          "Rheumatoid arthritis"
+                          "Rheumatoid arthritis",
+                          "Polymyositis"
                         ],
                         "correct_answer": "Polymyalgia rheumatica",
                         "explanation": "Giant cell arteritis is most commonly associated with polymyalgia rheumatica, which is characterized by proximal muscle pain and stiffness, particularly in the shoulders and hips."
@@ -356,7 +420,8 @@
                           "Furosemide alone",
                           "Spironolactone with furosemide",
                           "Propranolol",
-                          "Indapamide"
+                          "Indapamide",
+                          "Pantoprazole"
                         ],
                         "correct_answer": "Spironolactone with furosemide",
                         "explanation": "The standard treatment for ascites in liver cirrhosis is a combination of spironolactone and furosemide. Spironolactone, an aldosterone antagonist, helps reduce sodium retention and fluid accumulation."
@@ -364,13 +429,13 @@
                     {
                         "question": "Which of the following medications should be avoided in liver cirrhosis complicated by ascites?",
                         "choices": [
-                          "NSAIDs",
+                          "ACE inhibitors",
                           "Amlodipine",
                           "Hydralazine",
                           "Hydrocodone"
                         ],
-                        "correct_answer": "NSAIDs",
-                        "explanation": "NSAIDs should be avoided in patients with liver cirrhosis and ascites because they inhibit prostaglandin synthesis, leading to reduced renal blood flow. This can worsen renal function and increase the risk of hepatorenal syndrome."
+                        "correct_answer": "ACE inhibitors",
+                        "explanation": "With worsening cirrhosis, systemic blood pressure declines, triggering renin-angiotensin activation and vasoconstrictor release to counteract nitric oxide–induced vasodilation, making ACEIs and ARBs unsuitable for patients with ascites."
                     },
                     {
                         "question": "A patient with a history of liver cirrhosis presents with hematemesis. He is tachycardic but otherwise vitally stable. He has been started on pantoprazole and GI has been consulted for endoscopy. What is the next step in management?",
@@ -385,6 +450,17 @@
                         "explanation": "In cirrhotic patients with suspected variceal bleeding, management includes the use of octreotide to reduce portal pressure via splanchnic vasoconstriction, and prophylactic antibiotics (such as ceftriaxone) to prevent bacterial infections, which are common and can worsen outcomes in variceal hemorrhage."
                     },
                     {
+                        "question": "Why should NSAIDs be avoided in patients with liver cirrhosis and ascites?",
+                        "choices": [
+                          "They inhibit prostaglandins",
+                          "They cause renal vasodilation",
+                          "They directly lead to cirrhosis",
+                          "They induce systemic hypertension"
+                        ],
+                        "correct_answer": "They inhibit prostaglandins",
+                        "explanation": "NSAIDs inhibit prostaglandin production, causing renal vasoconstriction, reduced diuretic efficacy, and a higher risk of acute kidney injury, while also increasing the likelihood of gastrointestinal bleeding in cirrhotic patients."
+                    },
+                    {
                         "question": "A patient with esophageal varices presents with hematemesis. He is at risk for developing all of the following complications EXCEPT for:",
                         "choices": [
                           "Hepatic encephalopathy",
@@ -394,7 +470,7 @@
                           "Heart failure"
                         ],
                         "correct_answer": "Heart failure",
-                        "explanation": "Variceal bleeding in cirrhotic patients can lead to complications such as hepatic encephalopathy (due to increased nitrogen load), hemorrhagic shock (from blood loss), aspiration pneumonitis (due to vomiting and encephalopathy), and infection (from bacterial translocation). Heart failure is not a typical complication associated with variceal bleeding."
+                        "explanation": "Variceal bleeding in cirrhotic patients can lead to complications such as hepatic encephalopathy (due to increased nitrogen load from blood in the gut), hemorrhagic shock (from blood loss), aspiration pneumonitis (due to vomiting and encephalopathy), and infection (from bacterial translocation). Heart failure is not a typical complication associated with variceal bleeding."
                     },
                     {
                         "question": "A patient with refractory ascites, despite being on maximal therapy with furosemide and spironolactone, requires therapeutic paracentesis almost every week. What is the next step in management?",
@@ -428,7 +504,7 @@
                           "This is hepatorenal syndrome"
                         ],
                         "correct_answer": "Stop diuretics and trial albumin and volume expansion",
-                        "explanation": "In patients with cirrhosis, worsening renal function (as evidenced by an increase in creatinine) may indicate hepatorenal syndrome but volume depletion is more common. Diuretics can exacerbate renal hypoperfusion in this setting. Therefore, the appropriate management is to stop diuretics and initiate a trial of albumin and volume expansion, then repeat labs to assess for improvement."
+                        "explanation": "In patients with cirrhosis, worsening renal function (as evidenced by an increase in creatinine) may indicate hepatorenal syndrome but volume depletion is a more common cause. Diuretics can exacerbate renal hypoperfusion in this setting. Therefore, the appropriate management is to stop diuretics and initiate a trial of albumin and volume expansion, then repeat labs to assess for improvement."
                     },
                     {
                         "question": "Which of the following agents is preferred for prophylaxis in patients with liver cirrhosis who have a history of spontaneous bacterial peritonitis?",
@@ -901,7 +977,7 @@
                 "name": "Soft tissue infection",
                 "questions": [
                     {
-                        "question": "A cirrhotic patient presents with sepsis, rapidly progressive cellulitis, and hemorrhagic bullae after exposure to saltwater fish. Which organism is most likely responsible for this clinical presentation?",
+                        "question": "A cirrhotic patient presents with sepsis, rapidly progressive cellulitis, and hemorrhagic bullae after consuming raw fish. Which organism is most likely responsible for this clinical presentation?",
                         "choices": [
                           "Vibrio vulnificus",
                           "Staphylococcus aureus",
@@ -912,12 +988,13 @@
                         "explanation": "Cirrhotic patients are at high risk for Vibrio vulnificus infection after exposure to saltwater fish or shellfish, which can lead to sepsis, rapidly progressive cellulitis, and hemorrhagic bullae."
                     },
                     {
-                        "question": "An asplenic patient develops severe sepsis after a dog bite. Which organism is the most likely cause?",
+                        "question": "An asplenic patient develops severe sepsis after a dog bite. Peripheral smear is showing fusiform gram-negative organisms within the cytoplasm of leukocytes. Which organism is the most likely cause?",
                         "choices": [
                           "Capnocytophaga canimorsus",
                           "Pasteurella multocida",
                           "Streptococcus pyogenes",
-                          "Staphylococcus aureus"
+                          "Staphylococcus aureus",
+                          "Pseudomonas aeruginosa"
                         ],
                         "correct_answer": "Capnocytophaga canimorsus",
                         "explanation": "Capnocytophaga canimorsus is a gram-negative rod that can cause severe sepsis in asplenic individuals following a dog bite due to impaired bacterial clearance by the spleen."
