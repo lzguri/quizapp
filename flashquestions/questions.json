@@ -328,7 +328,21 @@
                         ],
                         "correct_answer": "Myocardial ischemia",
                         "explanation": "Polymorphic VT with a normal baseline QT interval is most commonly caused by myocardial ischemia. Unlike torsades de pointes, which is associated with QT prolongation, ischemic polymorphic VT results from electrical instability due to inadequate myocardial perfusion. After stabilizing the patient, urgent coronary angiography is recommended to identify and treat any underlying coronary artery disease."
+                    },
+                    {
+                        "question": "All of the following conditions cause wide complex tachycardia EXCEPT:",
+                        "choices": [
+                          "Ventricular tachycardia",
+                          "Supraventricular tachycardia with aberrancy",
+                          "Torsades de pointes",
+                          "Atrial flutter",
+                          "Supraventricular tachycardia with an accessory pathway"
+                        ],
+                        "correct_answer": "Atrial flutter",
+                        "explanation": "Wide complex tachycardia is usually caused by ventricular tachycardia, supraventricular tachycardia (SVT) with aberrancy (e.g., bundle branch block), SVT with an accessory pathway (e.g., Wolff-Parkinson-White syndrome), or torsades de pointes. Atrial flutter typically presents with a narrow QRS complex unless there is an underlying conduction abnormality. When in doubt, wide complex tachycardia should be treated as ventricular tachycardia until proven otherwise, as VT is the most life-threatening possibility."
                     }
+                      
+                      
                       
                       
                       

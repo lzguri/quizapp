@@ -118,38 +118,44 @@ document.addEventListener("DOMContentLoaded", () => {
 
     // This function allows for the user to pick topic and subtopics
     function renderTopics() {
-        topicsDiv.innerHTML = "";
+        topicsDiv.innerHTML = ""; // Clear existing content
+    
         topicsData.forEach((topic, index) => {
+            let topicQuestionCount = topic.subtopics.reduce((sum, subtopic) => sum + subtopic.questions.length, 0);
+    
             let topicDiv = document.createElement("div");
             topicDiv.classList.add("topic");
             topicDiv.innerHTML = `
                 <input type="checkbox" class="topic-checkbox" id="topic-${index}">
-                <label for="topic-${index}" class="topic-label">${topic.name}</label>
+                <label for="topic-${index}" class="topic-label">${topic.name} [${topicQuestionCount}]</label>
                 <div class="subtopics" style="display: none;"></div>
             `;
+    
             let subtopicsDiv = topicDiv.querySelector(".subtopics");
             let topicCheckbox = topicDiv.querySelector(".topic-checkbox");
-
+    
             topic.subtopics.forEach((subtopic, subIndex) => {
+                let subtopicQuestionCount = subtopic.questions.length;
+    
                 let subtopicDiv = document.createElement("div");
                 subtopicDiv.innerHTML = `
                     <input type="checkbox" class="subtopic-checkbox" id="subtopic-${index}-${subIndex}" data-topic="${index}" data-subtopic="${subIndex}">
-                    <label for="subtopic-${index}-${subIndex}">${subtopic.name}</label>
+                    <label for="subtopic-${index}-${subIndex}">${subtopic.name} [${subtopicQuestionCount}]</label>
                 `;
                 subtopicsDiv.appendChild(subtopicDiv);
             });
-
+    
             topicDiv.querySelector(".topic-label").addEventListener("click", () => {
                 subtopicsDiv.style.display = subtopicsDiv.style.display === "none" ? "block" : "none";
             });
-
+    
             topicCheckbox.addEventListener("change", (e) => {
                 let checked = e.target.checked;
                 subtopicsDiv.querySelectorAll(".subtopic-checkbox").forEach(subCheckbox => {
                     subCheckbox.checked = checked;
                     subCheckbox.disabled = checked;
                 });
-
+    
                 if (checked) {
                     subtopicsDiv.querySelectorAll(".subtopic-checkbox").forEach(subCheckbox => {
                         subCheckbox.checked = false;
@@ -158,7 +164,7 @@ document.addEventListener("DOMContentLoaded", () => {
                 }
                 updateQuestionCount();
             });
-
+    
             subtopicsDiv.querySelectorAll(".subtopic-checkbox").forEach(subCheckbox => {
                 subCheckbox.addEventListener("change", () => {
                     let anySubtopicChecked = [...subtopicsDiv.querySelectorAll(".subtopic-checkbox")].some(cb => cb.checked);
@@ -167,11 +173,11 @@ document.addEventListener("DOMContentLoaded", () => {
                     updateQuestionCount();
                 });
             });
-
+    
             topicsDiv.appendChild(topicDiv);
         });
     }
-
+    
 
 
     function updateQuestionCount() {
