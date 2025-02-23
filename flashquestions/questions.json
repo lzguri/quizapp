@@ -1105,7 +1105,7 @@
                         "explanation": "Daptomycin can cause muscle toxicity, including rhabdomyolysis, so creatine kinase [CK] levels should be monitored weekly during therapy."
                     },
                     {
-                        "question": "A 45-year-old female with paraplegia due to a prior gunshot wound (GSW) to the spine has a neurogenic bladder and performs intermittent self-catheterization. She presents to the ED with fever and malaise. Urinalysis is positive for pyuria, and she has a history of a Pseudomonas urinary tract infection (UTI) approximately four months ago. You are planning to discharge her with oral antibiotics. Which is the most appropriate antibiotic choice?",
+                        "question": "A 35-year-old female with paraplegia due to a prior gunshot wound (GSW) to the spine has a neurogenic bladder and performs intermittent self-catheterization. She presents to the ED with fever and malaise. Urinalysis is positive for pyuria, and she has a history of a Pseudomonas urinary tract infection (UTI) approximately four months ago. You are planning to discharge her with oral antibiotics. Which is the most appropriate antibiotic choice?",
                         "choices": [
                           "Levofloxacin",
                           "Cefepime",
@@ -1115,7 +1115,20 @@
                         ],
                         "correct_answer": "Levofloxacin",
                         "explanation": "Levofloxacin is an appropriate oral antibiotic for a Pseudomonas UTI, making it the best option for outpatient treatment. Cefepime, ceftazidime, piperacillin-tazobactam, and meropenem all have Pseudomonas coverage but are only available in intravenous form, which is not suitable for outpatient therapy."
-                    }
+                    },
+                    {
+                        "question": "Which of the following is NOT true about aminoglycosides?",
+                        "choices": [
+                          "Causes ototoxicity",
+                          "Causes nephrotoxicity",
+                          "Cannot be used with myasthenia gravis",
+                          "Not good for abscess",
+                          "Causes tendon rupture"
+                        ],
+                        "correct_answer": "Causes tendon rupture",
+                        "explanation": "Aminoglycosides are associated with ototoxicity, nephrotoxicity, and neuromuscular blockade, making them contraindicated in myasthenia gravis. They also have poor penetration into abscesses due to their hydrophilic nature and they dont have a good activity in acidic pH."
+                      }
+                      
                        
                 ]
             },
