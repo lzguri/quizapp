@@ -1103,7 +1103,20 @@
                         "choices": ["Liver function tests", "Creatine kinase", "Complete blood count", "Serum potassium"],
                         "correct_answer": "Creatine kinase",
                         "explanation": "Daptomycin can cause muscle toxicity, including rhabdomyolysis, so creatine kinase [CK] levels should be monitored weekly during therapy."
-                    } 
+                    },
+                    {
+                        "question": "A 45-year-old female with paraplegia due to a prior gunshot wound (GSW) to the spine has a neurogenic bladder and performs intermittent self-catheterization. She presents to the ED with fever and malaise. Urinalysis is positive for pyuria, and she has a history of a Pseudomonas urinary tract infection (UTI) approximately four months ago. You are planning to discharge her with oral antibiotics. Which is the most appropriate antibiotic choice?",
+                        "choices": [
+                          "Levofloxacin",
+                          "Cefepime",
+                          "Ceftazidime",
+                          "Piperacillin-tazobactam",
+                          "Meropenem"
+                        ],
+                        "correct_answer": "Levofloxacin",
+                        "explanation": "Levofloxacin is an appropriate oral antibiotic for a Pseudomonas UTI, making it the best option for outpatient treatment. Cefepime, ceftazidime, piperacillin-tazobactam, and meropenem all have Pseudomonas coverage but are only available in intravenous form, which is not suitable for outpatient therapy."
+                    }
+                       
                 ]
             },
             {
