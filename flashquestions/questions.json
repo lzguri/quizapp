@@ -1127,7 +1127,19 @@
                         ],
                         "correct_answer": "Causes tendon rupture",
                         "explanation": "Aminoglycosides are associated with ototoxicity, nephrotoxicity, and neuromuscular blockade, making them contraindicated in myasthenia gravis. They also have poor penetration into abscesses due to their hydrophilic nature and they dont have a good activity in acidic pH."
-                      }
+                    },
+                    {
+                        "question": "Cefepime causes encephalopathy via which mechanism?",
+                        "choices": [
+                          "Inhibition of GABA receptors",
+                          "Increased dopamine release",
+                          "Direct neurotoxicity to neurons",
+                          "Blockade of NMDA receptors"
+                        ],
+                        "correct_answer": "Inhibition of GABA receptors",
+                        "explanation": "Cefepime-induced encephalopathy occurs due to inhibition of GABA receptors, leading to neuroexcitation and symptoms such as confusion, myoclonus, and seizures. This adverse effect is more common in patients with renal impairment but is overall not very common."
+                    }
+                      
                       
                        
                 ]
