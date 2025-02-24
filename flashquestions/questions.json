@@ -821,7 +821,71 @@
                         "correct_answer": "Seizures",
                         "explanation": "Potassium is essential for the proper generation and conduction of action potentials in smooth, striated, and cardiac muscles. Hypokalemia can lead to conditions such as rhabdomyolysis, cardiac arrhythmias, ileus, and respiratory muscle weakness. However, seizures are not typically a direct consequence of hypokalemia."
                     }
-                      
+                           
+                ]
+            },
+            {
+                "name": "Glomerulonephritis with nephritic syndrome",
+                "questions": [
+                    {
+                        "question": "Which of the following characteristics is NOT typical for nephritic syndrome?",
+                        "choices": [
+                          "Hematuria",
+                          "Dysmorphic RBCs",
+                          "RBC casts",
+                          "Rise in serum creatinine",
+                          "Proteinuria",
+                          "Oliguria",
+                          "Lipiduria"
+                        ],
+                        "correct_answer": "Lipiduria",
+                        "explanation": "Nephritic syndrome is characterized by hematuria, dysmorphic RBCs, RBC casts, rising serum creatinine, proteinuria (usually <3.5 g/day), and oliguria. Lipiduria is more characteristic of nephrotic syndrome, where significant protein loss leads to fatty casts in the urine."
+                    },
+                    {
+                        "question": "All of the following conditions cause pauci-immune glomerulonephritis EXCEPT:",
+                        "choices": [
+                          "Granulomatosis with polyangiitis",
+                          "Microscopic polyangiitis",
+                          "Eosinophilic granulomatosis with polyangiitis",
+                          "Lupus nephritis"
+                        ],
+                        "correct_answer": "Lupus nephritis",
+                        "explanation": "Pauci-immune glomerulonephritis refers to minimal or absent immune complex deposition on immunofluorescence microscopy. Pauci-immune glomerulonephritis is associated with ANCA-associated vasculitides, including granulomatosis with polyangiitis, microscopic polyangiitis, and eosinophilic granulomatosis with polyangiitis. Lupus nephritis, on the other hand, is an immune-complex mediated glomerulonephritis with significant immune complex deposition on immunofluorescence.[complement levels will be normal]"
+                    },
+                    {
+                        "question": "Complement levels will be low in all of the following causes of glomerulonephritis EXCEPT:",
+                        "choices": [
+                          "Post-infectious glomerulonephritis",
+                          "Membranoproliferative glomerulonephritis",
+                          "Lupus nephritis",
+                          "Cryoglobulinemic glomerulonephritis",
+                          "IgA nephropathy"
+                        ],
+                        "correct_answer": "IgA nephropathy",
+                        "explanation": "Complement levels are low in immune-complex mediated glomerulonephritis due to excessive consumption of complement factors during immune activation. Conditions such as post-infectious glomerulonephritis, membranoproliferative glomerulonephritis, lupus nephritis, and cryoglobulinemic glomerulonephritis involve immune complex deposition, triggering complement activation. In contrast, IgA nephropathy primarily involves mesangial IgA deposition with minimal complement activation, so complement levels remain normal."
+                    },
+                    {
+                        "question": "Which of the following laboratory findings is characteristic of acute postinfectious glomerulonephritis?",
+                        "choices": [
+                          "Increased C3 levels",
+                          "Increased ASO titer",
+                          "Decreased ASO titer",
+                          "Normal C3 levels"
+                        ],
+                        "correct_answer": "Increased ASO titer",
+                        "explanation": "APGN is associated with an increased anti-streptolysin O (ASO) titer, indicating a recent streptococcal infection, and decreased C3 levels due to complement activation."
+                    },
+                    {
+                        "question": "How do complement levels help differentiate IgA nephropathy from poststreptococcal glomerulonephritis (PSGN)?",
+                        "choices": [
+                          "PSGN has low C3 levels, while IgA nephropathy has normal complement levels",
+                          "IgA nephropathy has low C3 levels, while PSGN has normal complement levels",
+                          "Both conditions are associated with low C3 levels",
+                          "Both conditions have normal complement levels"
+                        ],
+                        "correct_answer": "PSGN has low C3 levels, while IgA nephropathy has normal complement levels",
+                        "explanation": "Poststreptococcal glomerulonephritis (PSGN) is associated with low C3 levels due to complement activation, whereas IgA nephropathy does not significantly affect complement levels, keeping C3 levels normal."
+                    }
                       
                       
                       
