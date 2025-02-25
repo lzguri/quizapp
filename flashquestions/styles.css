@@ -172,6 +172,55 @@ button:active {
 }
 
 
+/* Menu Button */
+#menuContainer {
+    position: absolute;
+    top: 10px;
+    left: 10px;
+    z-index: 100;
+}
+
+#menuButton {
+    background: #0073e6;
+    color: white;
+    border: none;
+    padding: 8px 12px;
+    cursor: pointer;
+    border-radius: 5px;
+    font-size: 16px;
+}
+
+#menuDropdown {
+    display: none;
+    position: absolute;
+    background: white;
+    padding: 10px;
+    border-radius: 5px;
+    box-shadow: 0px 2px 8px rgba(0, 0, 0, 0.2);
+    margin-top: 5px;
+    width: 120px;
+}
+
+#menuDropdown label {
+    display: block;
+    margin-bottom: 10px;
+}
+
+#menuDropdown button {
+    background: red;
+    color: white;
+    border: none;
+    padding: 5px;
+    cursor: pointer;
+    border-radius: 3px;
+    width: 100%;
+}
+
+#menuDropdown button:hover {
+    background: darkred;
+}
+
+
 /* Correct and Incorrect Answers */
 .correct-choice {
     background-color: #d4edda;
