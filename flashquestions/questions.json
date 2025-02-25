@@ -446,6 +446,45 @@
                 ]
             },
             {
+                "name": "Cryoglobulinemia",
+                "questions": [
+                    {
+                        "question": "Which of the following best describes type I cryoglobulinemia?",
+                        "choices": [
+                          "Monoclonal immunoglobulins, typically IgG or IgM",
+                          "Mixed polyclonal and monoclonal immunoglobulins",
+                          "Only IgA immunoglobulins are involved",
+                          "Primarily caused by hepatitis C infection"
+                        ],
+                        "correct_answer": "Monoclonal immunoglobulins, typically IgG or IgM",
+                        "explanation": "Type I cryoglobulinemia consists of monoclonal immunoglobulins, most commonly IgG or IgM, and is associated with monoclonal gammopathies and B-cell malignancies."
+                    },
+                     {
+                        "question": "Type I cryoglobulinemia is most commonly associated with which of the following conditions?",
+                        "choices": [
+                          "Multiple myeloma",
+                          "Hepatitis C",
+                          "Rheumatoid arthritis",
+                          "Systemic lupus erythematosus"
+                        ],
+                        "correct_answer": "Multiple myeloma",
+                        "explanation": "Type I cryoglobulinemia develops in the setting of monoclonal gammopathies such as multiple myeloma, Waldenström macroglobulinemia, and chronic lymphocytic leukemia, rather than infections like hepatitis C, which is associated with mixed cryoglobulinemia (type II and III)."
+                    },
+                    {
+                        "question": "Which of the following infections is most commonly associated with cryoglobulinemia?",
+                        "choices": [
+                          "Hepatitis C",
+                          "HIV",
+                          "Tuberculosis",
+                          "Streptococcal pharyngitis"
+                        ],
+                        "correct_answer": "Hepatitis C",
+                        "explanation": "Hepatitis C virus (HCV) is the most common infection associated with mixed cryoglobulinemia (type II and III). This condition is characterized by immune complex deposition, leading to vasculitis, renal involvement (membranoproliferative glomerulonephritis), arthralgias, and purpura."
+                      }
+                          
+                ]
+            },
+            {
                 "name": "Giant cell arteritis",
                 "questions": [
                     {
