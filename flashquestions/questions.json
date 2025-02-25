@@ -480,7 +480,43 @@
                         ],
                         "correct_answer": "Hepatitis C",
                         "explanation": "Hepatitis C virus (HCV) is the most common infection associated with mixed cryoglobulinemia (type II and III). This condition is characterized by immune complex deposition, leading to vasculitis, renal involvement (membranoproliferative glomerulonephritis), arthralgias, and purpura."
-                      }
+                    },
+                    {
+                        "question": "What are cryoglobulins?",
+                        "choices": [
+                          "Immunoglobulins that precipitate in cold temperatures",
+                          "Proteins that dissolve in cold temperatures",
+                          "Coagulation factors that cause clotting",
+                          "Enzymes that break down fibrin"
+                        ],
+                        "correct_answer": "Immunoglobulins that precipitate in cold temperatures",
+                        "explanation": "Cryoglobulins are immunoglobulins that precipitate at temperatures below 37°C. They can cause inflammation by forming immune complexes that deposit in blood vessels, leading to vasculitis and complement activation."
+                    },
+                    {
+                        "question": "What characterizes Type III cryoglobulinemia?",
+                        "choices": [
+                          "Polyclonal IgG and polyclonal IgM",
+                          "Monoclonal IgM only",
+                          "Monoclonal IgG and monoclonal IgM",
+                          "Polyclonal IgA and IgE"
+                        ],
+                        "correct_answer": "Polyclonal IgG and polyclonal IgM",
+                        "explanation": "Type III cryoglobulinemia consists of cryoglobulins composed of a mixture of polyclonal IgG (all isotypes) and polyclonal IgM, leading to immune complex deposition and associated vasculitis. typically associated with chronic infections, autoimmune diseases, and certain malignancies"
+                    },
+                    {
+                        "question": "What characterizes Type II cryoglobulinemia?",
+                        "choices": [
+                          "Monoclonal IgM and polyclonal IgG",
+                          "Polyclonal IgM and polyclonal IgG",
+                          "Monoclonal IgG and monoclonal IgM",
+                          "Polyclonal IgA and IgE"
+                        ],
+                        "correct_answer": "Monoclonal IgM and polyclonal IgG",
+                        "explanation": "Type II cryoglobulinemia consists of monoclonal IgM (usually with rheumatoid factor activity) and polyclonal IgG. The monoclonal IgM binds to the Fc portion of IgG, forming immune complexes that deposit in small- to medium-sized blood vessels, leading to vasculitis and inflammation."
+                    }
+                      
+                      
+                      
                           
                 ]
             },
