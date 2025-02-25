@@ -26,10 +26,7 @@ document.addEventListener("DOMContentLoaded", () => {
     const questionLimitInput = document.getElementById("questionLimitInput");
     const progressBar = document.getElementById("progressBar"); // Progress bar element
     const endTestButton = document.getElementById("endTest");
-    const menuButton = document.getElementById("menuButton");
-    const menuDropdown = document.getElementById("menuDropdown");
-    const toggleSoundCheckbox = document.getElementById("toggleSound");
-    const exitAppButton = document.getElementById("exitApp");
+    
     
 
 
@@ -69,29 +66,28 @@ document.addEventListener("DOMContentLoaded", () => {
             
             return data;
           }
-
-    menuButton.addEventListener("click", () => {
-            menuDropdown.style.display = menuDropdown.style.display === "block" ? "none" : "block";
-        });
-    
-        // Toggle Sound
-    toggleSoundCheckbox.addEventListener("change", () => {
-            soundEnabled = !toggleSoundCheckbox.checked;
-        });
-    
-        // Exit App (Close Browser Tab/Window)
-    exitAppButton.addEventListener("click", () => {
-            window.close(); // Closes the browser window
-        });
           
     
-    // Modify Quiz Sound Logic
+        
+    
     function playSound(isCorrect) {
-        if (!soundEnabled) return; // Stop if sound is disabled
-
-        let sound = new Audio(isCorrect ? "correct.wav" : "incorrect2.mp3");
-        sound.play();
-    }
+            if (!soundEnabled) return; // Stop if sound is disabled
+        
+            // Create an Audio object
+            let sound = new Audio(isCorrect ? "correct.wav" : "incorrect2.mp3");
+        
+            // Check if the browser allows audio playback
+            let playPromise = sound.play();
+        
+            if (playPromise !== undefined) {
+                playPromise.catch(error => {
+                    console.log("Chrome Mobile blocked autoplay. Waiting for user interaction...");
+                    // Workaround: Wait for the first user interaction (tap)
+                    document.addEventListener("click", () => sound.play(), { once: true });
+                });
+            }
+        }
+        
         
 
     function updateGenerateQuizButton() {
@@ -114,7 +110,7 @@ document.addEventListener("DOMContentLoaded", () => {
         
         
         
-        
+    
         
     questionLimitInput.addEventListener("input", () => {
             let selectedCount = updateQuestionCount().size; // Get the number of selected questions
@@ -336,21 +332,20 @@ document.addEventListener("DOMContentLoaded", () => {
                     displayExplanation(questionData, choice);
                     disableChoices();
     
-                    // Highlight the clicked choice
                     let isCorrect = choice === questionData.correct_answer;
-            choiceDiv.classList.add(isCorrect ? "correct-choice" : "incorrect-choice");
-
-            playSound(isCorrect); // ✅ Play sound based on correctness
-
-            if (!isCorrect) {
-                shuffledChoices.forEach((correctChoice, correctIndex) => {
-                    if (correctChoice === questionData.correct_answer) {
-                        document.querySelector(`#choice-${correctIndex}`).classList.add("correct-choice");
-                                }
-                            });
-                        }
+                    choiceDiv.classList.add(isCorrect ? "correct-choice" : "incorrect-choice");
+            
+                    playSound(isCorrect); // ✅ Play sound based on correctness
+            
+                    if (!isCorrect) {
+                        shuffledChoices.forEach((correctChoice, correctIndex) => {
+                            if (correctChoice === questionData.correct_answer) {
+                                document.querySelector(`#choice-${correctIndex}`).classList.add("correct-choice");
+                            }
+                        });
                     }
-                });
+                }
+            });
     
             answerChoices.appendChild(choiceDiv);
         });
@@ -390,6 +385,8 @@ document.addEventListener("DOMContentLoaded", () => {
         updateButtons();
         updateProgressBar();
     }
+
+    
     
     endTestButton.addEventListener("click", () => {
         showScore(); 
@@ -533,6 +530,8 @@ function showScore() {
     });
 });
 
+
+
 // Adjust interface according to screen size
 function adjustDivWidth() {
     const div = document.getElementById('content');  // Select #content
@@ -571,6 +570,7 @@ function adjustDivWidth() {
         }
     }
 }
+
 
 window.addEventListener('resize', adjustDivWidth);
 window.addEventListener('load', adjustDivWidth);
