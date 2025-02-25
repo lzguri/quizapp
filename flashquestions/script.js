@@ -22,6 +22,7 @@ document.addEventListener("DOMContentLoaded", () => {
     const scoreDetails = document.getElementById("scoreDetails");
     const questionCountDisplay = document.getElementById("questionCount");
     const limitQuestionsCheckbox = document.getElementById("limitQuestionsCheckbox");
+    const allQuestionsCheckbox = document.getElementById("questionAllContainer");
     const questionLimitInput = document.getElementById("questionLimitInput");
     const progressBar = document.getElementById("progressBar"); // Progress bar element
     const endTestButton = document.getElementById("endTest");
@@ -70,15 +71,22 @@ document.addEventListener("DOMContentLoaded", () => {
     
 
     function updateGenerateQuizButton() {
-            let selectedQuestionsSet = updateQuestionCount();
-            let selectedCount = selectedQuestionsSet.size;
-    
+            let selectedQuestionsSet = updateQuestionCount(); // Get selected questions
+            let selectedCount = selectedQuestionsSet.size; // Total selected questions by user
+            let limitChecked = limitQuestionsCheckbox.checked; // Is limit enabled?
+            let questionLimit = parseInt(questionLimitInput.value) || 1; // Get limit input value
+            let displayLimit = limitChecked ? Math.min(questionLimit, selectedCount) : selectedCount; // Use min if limited
+            
+        
+            // Set the max limit to the total selected questions
             questionLimitInput.max = selectedCount;
-    
-            let limit = limitQuestionsCheckbox.checked ? Math.min(parseInt(questionLimitInput.value) || 1, selectedCount) : selectedCount;
-    
-            generateQuizButton.textContent = `Create test (Selected: ${selectedCount}/${totalQuestions} questions)`;
+        
+            // Update button text based on whether the limit is checked
+            generateQuizButton.textContent = limitChecked
+                ? `Create test (Selected: ${displayLimit} / ${totalQuestions} Questions)`
+                : `Create test (Selected: ${selectedCount} / ${totalQuestions} Questions)`;
         }
+        
         
         
         
@@ -216,7 +224,7 @@ document.addEventListener("DOMContentLoaded", () => {
     
 
 
-    function updateQuestionCount() {
+    function updateQuestionCount(questionsSelected = false) {
         let selectedQuestionsSet = new Set();
     
         document.querySelectorAll(".topic-checkbox:checked").forEach(checkbox => {
