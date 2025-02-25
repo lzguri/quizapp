@@ -479,7 +479,7 @@
                           "Streptococcal pharyngitis"
                         ],
                         "correct_answer": "Hepatitis C",
-                        "explanation": "Hepatitis C virus (HCV) is the most common infection associated with mixed cryoglobulinemia (type II and III). This condition is characterized by immune complex deposition, leading to vasculitis, renal involvement (membranoproliferative glomerulonephritis), arthralgias, and purpura."
+                        "explanation": "Hepatitis C virus (HCV) is the most common infection associated with mixed cryoglobulinemia (type II and III). This condition is characterized by immune complex deposition, leading to vasculitis, renal involvement (membranoproliferative glomerulonephritis often), arthralgias, and purpura."
                     },
                     {
                         "question": "What are cryoglobulins?",
@@ -513,7 +513,19 @@
                         ],
                         "correct_answer": "Monoclonal IgM and polyclonal IgG",
                         "explanation": "Type II cryoglobulinemia consists of monoclonal IgM (usually with rheumatoid factor activity) and polyclonal IgG. The monoclonal IgM binds to the Fc portion of IgG, forming immune complexes that deposit in small- to medium-sized blood vessels, leading to vasculitis and inflammation."
+                    },
+                    {
+                        "question": "What is the treatment for cryoglobulinemia?",
+                        "choices": [
+                          "Glucocorticoids, and rituximab for vasculitis",
+                          "Only symptomatic treatment",
+                          "Plasma exchange as first-line therapy",
+                          "NSAIDs and antihistamines"
+                        ],
+                        "correct_answer": "Glucocorticoids, and rituximab for vasculitis",
+                        "explanation": "The treatment of cryoglobulinemia involves addressing the underlying cause of the disease. Vasculitis associated with cryoglobulinemia is typically managed with glucocorticoids and rituximab to suppress immune complex deposition and inflammation."
                     }
+                      
                       
                       
                       
