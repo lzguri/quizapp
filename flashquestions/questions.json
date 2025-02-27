@@ -220,7 +220,20 @@
                         ],
                         "correct_answer": "Colonoscopy",
                         "explanation": "Clostridium septicum bacteremia is strongly associated with occult gastrointestinal malignancies, particularly colon cancer. A colonoscopy should be performed to evaluate for underlying neoplasia or mucosal disruption. Similarly, Streptococcus bovis (now reclassified as Streptococcus gallolyticus) bacteremia is also associated with colon cancer and warrants a colonoscopy."
+                    },
+                    {
+                        "question": "A patient diagnosed with endocarditis is receiving vancomycin and cefepime while awaiting blood culture results. Telemetry reveals a wide QRS, and an ECG shows a new left bundle branch block (LBBB). What is the next step in management?",
+                        "choices": [
+                          "Perform transesophageal echocardiogram",
+                          "Activate cardiac catheterization",
+                          "No further intervention",
+                          "Transcutaneous pacing",
+                          "Defibrillation"
+                        ],
+                        "correct_answer": "Perform transesophageal echocardiogram",
+                        "explanation": "A new left bundle branch block (LBBB) in a patient with infective endocarditis raises concern for perivalvular abscess, which can lead to conduction abnormalities. A transesophageal echocardiogram (TEE) is the preferred imaging modality to evaluate for abscess formation and potential structural complications."
                     }
+                      
                       
                 ]
             },
