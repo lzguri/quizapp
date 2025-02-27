@@ -1307,6 +1307,17 @@
                         "explanation": "Linezolid, vancomycin, and daptomycin cover MRSA. Ceftriaxone does not."
                     },
                     {
+                        "question": "A 52-year-old male with lymphoma is admitted for neutropenic fever. You correctly start the patient on gram-negative coverage with cefepime. Why is gram-negative coverage prioritized in this scenario?",
+                        "choices": [
+                          "Mucositis",
+                          "Skin is the most likely source",
+                          "Acute cholecystitis is common in neutropenic fever",
+                          "Pneumonia is the most common cause"
+                        ],
+                        "correct_answer": "Mucositis",
+                        "explanation": "In neutropenic fever, gram-negative bacteria, particularly Pseudomonas aeruginosa, are the most concerning pathogens due to their rapid progression and high mortality risk. Mucositis from chemotherapy disrupts the gastrointestinal mucosal barrier, allowing translocation of gram-negative bacteria into the bloodstream, making broad-spectrum gram-negative coverage essential."
+                    }, 
+                    {
                         "question": "A patient with an MRSA infection who was started on an oral antibiotic approximately 10 days ago is found to have low platelets on a routine blood check. Which antibiotic was most likely used?",
                         "choices": [
                           "Cefdinir",
