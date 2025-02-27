@@ -479,8 +479,56 @@
                           "Streptococcal pharyngitis"
                         ],
                         "correct_answer": "Hepatitis C",
-                        "explanation": "Hepatitis C virus (HCV) is the most common infection associated with mixed cryoglobulinemia (type II and III). This condition is characterized by immune complex deposition, leading to vasculitis, renal involvement (membranoproliferative glomerulonephritis), arthralgias, and purpura."
-                      }
+                        "explanation": "Hepatitis C virus (HCV) is the most common infection associated with mixed cryoglobulinemia (type II and III). This condition is characterized by immune complex deposition, leading to vasculitis, renal involvement (membranoproliferative glomerulonephritis often), arthralgias, and purpura."
+                    },
+                    {
+                        "question": "What are cryoglobulins?",
+                        "choices": [
+                          "Immunoglobulins that precipitate in cold temperatures",
+                          "Proteins that dissolve in cold temperatures",
+                          "Coagulation factors that cause clotting",
+                          "Enzymes that break down fibrin"
+                        ],
+                        "correct_answer": "Immunoglobulins that precipitate in cold temperatures",
+                        "explanation": "Cryoglobulins are immunoglobulins that precipitate at temperatures below 37°C. They can cause inflammation by forming immune complexes that deposit in blood vessels, leading to vasculitis and complement activation."
+                    },
+                    {
+                        "question": "What characterizes Type III cryoglobulinemia?",
+                        "choices": [
+                          "Polyclonal IgG and polyclonal IgM",
+                          "Monoclonal IgM only",
+                          "Monoclonal IgG and monoclonal IgM",
+                          "Polyclonal IgA and IgE"
+                        ],
+                        "correct_answer": "Polyclonal IgG and polyclonal IgM",
+                        "explanation": "Type III cryoglobulinemia consists of cryoglobulins composed of a mixture of polyclonal IgG (all isotypes) and polyclonal IgM, leading to immune complex deposition and associated vasculitis. typically associated with chronic infections, autoimmune diseases, and certain malignancies"
+                    },
+                    {
+                        "question": "What characterizes Type II cryoglobulinemia?",
+                        "choices": [
+                          "Monoclonal IgM and polyclonal IgG",
+                          "Polyclonal IgM and polyclonal IgG",
+                          "Monoclonal IgG and monoclonal IgM",
+                          "Polyclonal IgA and IgE"
+                        ],
+                        "correct_answer": "Monoclonal IgM and polyclonal IgG",
+                        "explanation": "Type II cryoglobulinemia consists of monoclonal IgM (usually with rheumatoid factor activity) and polyclonal IgG. The monoclonal IgM binds to the Fc portion of IgG, forming immune complexes that deposit in small- to medium-sized blood vessels, leading to vasculitis and inflammation."
+                    },
+                    {
+                        "question": "What is the treatment for cryoglobulinemia?",
+                        "choices": [
+                          "Glucocorticoids, and rituximab for vasculitis",
+                          "Only symptomatic treatment",
+                          "Plasma exchange as first-line therapy",
+                          "NSAIDs and antihistamines"
+                        ],
+                        "correct_answer": "Glucocorticoids, and rituximab for vasculitis",
+                        "explanation": "The treatment of cryoglobulinemia involves addressing the underlying cause of the disease. Vasculitis associated with cryoglobulinemia is typically managed with glucocorticoids and rituximab to suppress immune complex deposition and inflammation."
+                    }
+                      
+                      
+                      
+                      
                           
                 ]
             },
@@ -849,18 +897,126 @@
                         "explanation": "Digoxin toxicity inhibits the Na+/K+ ATPase pump, leading to an increase in extracellular potassium levels and resulting in hyperkalemia."
                     },
                     {
+                        "question": "A patient with chronic kidney disease and a prior history of peptic ulcer disease presents to the ED with hematemesis. Which of the following electrolyte abnormalities is MOST likely to occur in this patient?",
+                        "choices": [
+                          "Hyperkalemia",
+                          "Hypocalcemia",
+                          "Hypernatremia",
+                          "Hypophosphatemia"
+                        ],
+                        "correct_answer": "Hyperkalemia",
+                        "explanation": "Hematemesis can lead to the breakdown of blood in the gastrointestinal tract. This breakdown releases intracellular potassium into the bloodstream, further exacerbating the risk of hyperkalemia in a patient with already compromised renal function."
+                    },
+                    {
                         "question": "Hypokalemia can cause all of the following conditions except for?",
                         "choices": [
                           "Rhabdomyolysis",
                           "Cardiac arrhythmia",
-                          "Ileus",
+                          "Paralytic ileus",
                           "Respiratory muscle weakness",
                           "Seizures"
                         ],
                         "correct_answer": "Seizures",
                         "explanation": "Potassium is essential for the proper generation and conduction of action potentials in smooth, striated, and cardiac muscles. Hypokalemia can lead to conditions such as rhabdomyolysis, cardiac arrhythmias, ileus, and respiratory muscle weakness. However, seizures are not typically a direct consequence of hypokalemia."
+                    },
+                    {
+                        "question": "A patient with a history of anorexia is started on nutritional support and subsequently develops weakness, respiratory failure, and confusion. Which electrolyte abnormality is most likely responsible for these symptoms?",
+                        "choices": [
+                          "Hyperkalemia",
+                          "Hypocalcemia",
+                          "Hypophosphatemia",
+                          "Hypermagnesemia"
+                        ],
+                        "correct_answer": "Hypophosphatemia",
+                        "explanation": "Patients with anorexia or severe malnutrition are at risk for hypophosphatemia (refeeding syndrome) when reintroduced to nutrition. Increased insulin secretion shifts phosphate into cells, leading to ATP depletion and complications such as muscle weakness, respiratory failure, and cardiac dysfunction."
+                    },
+                    {
+                        "question": "An ESRD patient undergoes parathyroidectomy for secondary hyperparathyroidism. Shortly after surgery, he develops muscle cramps, paresthesias. Which condition is the most likely cause of these symptoms?",
+                        "choices": [
+                          "Hungry bone syndrome",
+                          "Refeeding syndrome",
+                          "Vitamin D deficiency",
+                          "Chronic kidney disease"
+                        ],
+                        "correct_answer": "Hungry bone syndrome",
+                        "explanation": "Hungry bone syndrome occurs after parathyroidectomy when the sudden drop in PTH leads to excessive bone uptake of calcium, phosphorus, and magnesium. This results in hypocalcemia, causing muscle cramps, paresthesias, and other neuromuscular symptoms. It is more pronounced in patients with ESRD due to prolonged bone turnover abnormalities."
+                    },
+                    {
+                        "question": "Which of the following sodium changes is most concerning for the patient?",
+                        "choices": [
+                          "Drop from 130 to 125 over 5 days",
+                          "Drop from 136 to 119 over a month",
+                          "Drop from 135 to 124 in two days"
+                        ],
+                        "correct_answer": "Drop from 135 to 124 in two days",
+                        "explanation": "Acute hyponatremia (developing in <48 hours) is more dangerous than chronic hyponatremia because the brain has inadequate time to adapt to changes in sodium levels. This can lead to cerebral edema and life-threatening neurological complications."
                     }
+                      
+                      
+                      
+                      
                            
+                ]
+            },
+            {
+                "name": "Acute kidney injury",
+                "questions": [
+                    {
+                        "question": "A patient with dementia and benign prostatic hyperplasia (BPH) presents to the ED after a fall. Imaging is negative for fractures. Lab results show a creatinine level of 3.2 mg/dL, whereas his baseline creatinine is reportedly normal. What is the next step in management?",
+                        "choices": [
+                          "Order FeNa",
+                          "Order urine osmolarity",
+                          "IV fluids for hydration",
+                          "Renal biopsy",
+                          "Bladder scan"
+                        ],
+                        "correct_answer": "Bladder scan",
+                        "explanation": "In a patient with BPH and acute kidney injury, post-renal obstruction should be suspected. A bladder scan is the next step to assess for urinary retention, which may require catheterization for relief. Patients with dementia may not provide a reliable history, making bedside assessment, including a bladder scan, crucial for diagnosis."
+                    },
+                    {
+                        "question": "In a 45-year-old male, which of the following acute creatinine increases would be more concerning?",
+                        "choices": [
+                          "Increase from 1.2 to 1.8 mg/dL",
+                          "Increase from 2.2 to 3.2 mg/dL",
+                          "Increase from 3.2 to 4.9 mg/dL",
+                          "Increase from 4.9 to 6 mg/dL"
+                        ],
+                        "correct_answer": "Increase from 1.2 to 1.8 mg/dL",
+                        "explanation": "The relationship between creatinine and glomerular filtration rate (GFR) is not linear. A rise in creatinine from 1.2 to 1.8 mg/dL represents an approximate 40% decline in GFR, making it more concerning than an equivalent absolute increase at higher baseline creatinine levels. At higher creatinine values, the relative drop in GFR is smaller."
+                    }         
+                ]
+            },
+            {
+                "name": "Chronic kidney disease",
+                "questions": [
+                    {
+                        "question": "Secondary hyperparathyroidism is the result of?",
+                        "choices": [
+                          "Chronic kidney disease",
+                          "Parathyroid adenoma",
+                          "Excessive calcium intake",
+                          "Primary parathyroid hyperplasia"
+                        ],
+                        "correct_answer": "Chronic kidney disease",
+                        "explanation": "Secondary hyperparathyroidism occurs due to chronic kidney disease, where reduced renal function leads to phosphate retention and decreased vitamin D activation, resulting in hypocalcemia and increased parathyroid hormone (PTH) secretion as a compensatory response."
+                    }         
+                ]
+            },
+            {
+                "name": "Hypocalcemia",
+                "questions": [
+                    {
+                        "question": "A 25-year-old male presents to the ED after a motor vehicle accident (MVA). He has a splenic rupture and is in hemorrhagic shock. Massive transfusion has been initiated. Which of the following complications can potentially occur after receiving multiple blood transfusions?",
+                        "choices": [
+                          "Hypocalcemia",
+                          "Hypernatremia",
+                          "Metabolic alkalosis",
+                          "Polycythemia"
+                        ],
+                        "correct_answer": "Hypocalcemia",
+                        "explanation": "Massive blood transfusion can lead to hypocalcemia due to the citrate anticoagulant in stored blood, which binds to calcium and lowers ionized calcium levels. This can cause symptoms such as tetany, hypotension, and QT prolongation."
+                    }
+                         
                 ]
             },
             {
@@ -925,11 +1081,6 @@
                         "correct_answer": "PSGN has low C3 levels, while IgA nephropathy has normal complement levels",
                         "explanation": "Poststreptococcal glomerulonephritis (PSGN) is associated with low C3 levels due to complement activation, whereas IgA nephropathy does not significantly affect complement levels, keeping C3 levels normal."
                     }
-                      
-                      
-                      
-                      
-                    
                 ]
             }
         ]

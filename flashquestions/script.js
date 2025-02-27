@@ -22,9 +22,11 @@ document.addEventListener("DOMContentLoaded", () => {
     const scoreDetails = document.getElementById("scoreDetails");
     const questionCountDisplay = document.getElementById("questionCount");
     const limitQuestionsCheckbox = document.getElementById("limitQuestionsCheckbox");
+    const allQuestionsCheckbox = document.getElementById("questionAllContainer");
     const questionLimitInput = document.getElementById("questionLimitInput");
     const progressBar = document.getElementById("progressBar"); // Progress bar element
     const endTestButton = document.getElementById("endTest");
+    
     
 
 
@@ -33,8 +35,7 @@ document.addEventListener("DOMContentLoaded", () => {
         .then(data => {
             topicsData = sortTopicsAndSubtopics(data);
             //topicsData = data;
-            totalQuestions = countTotalQuestions(topicsData)
-            console.log(topicsData)
+            totalQuestions = countTotalQuestions(topicsData);
             renderTopics();
             updateGenerateQuizButton();
             sortTopicsAndSubtopics();
@@ -67,21 +68,49 @@ document.addEventListener("DOMContentLoaded", () => {
           }
           
     
+        
     
+    function playSound(isCorrect) {
+            if (!soundEnabled) return; // Stop if sound is disabled
+        
+            // Create an Audio object
+            let sound = new Audio(isCorrect ? "correct.wav" : "incorrect2.mp3");
+        
+            // Check if the browser allows audio playback
+            let playPromise = sound.play();
+        
+            if (playPromise !== undefined) {
+                playPromise.catch(error => {
+                    console.log("Chrome Mobile blocked autoplay. Waiting for user interaction...");
+                    // Workaround: Wait for the first user interaction (tap)
+                    document.addEventListener("click", () => sound.play(), { once: true });
+                });
+            }
+        }
+        
+        
 
     function updateGenerateQuizButton() {
-            let selectedQuestionsSet = updateQuestionCount();
-            let selectedCount = selectedQuestionsSet.size;
-    
+            let selectedQuestionsSet = updateQuestionCount(); // ✅ Get selected questions
+            let selectedCount = selectedQuestionsSet.size; // ✅ Get total count
+            let limitChecked = limitQuestionsCheckbox.checked; // ✅ Check if limit is enabled
+            let questionLimit = parseInt(questionLimitInput.value) || 1; // ✅ Get limit input
+            let displayLimit = limitChecked ? Math.min(questionLimit, selectedCount) : selectedCount; // ✅ Ensure limit is applied correctly
+        
+            // ✅ Update the button text
+            generateQuizButton.textContent = limitChecked
+                ? `Create test (Selected: ${displayLimit} / ${totalQuestions} Questions)`
+                : `Create test (Selected: ${selectedCount} / ${totalQuestions} Questions)`;
+        
+            // ✅ Ensure question limit input reflects the max possible value
             questionLimitInput.max = selectedCount;
-    
-            let limit = limitQuestionsCheckbox.checked ? Math.min(parseInt(questionLimitInput.value) || 1, selectedCount) : selectedCount;
-    
-            generateQuizButton.textContent = `Create test (Selected: ${selectedCount}/${totalQuestions} questions)`;
         }
         
         
         
+        
+        
+    
         
     questionLimitInput.addEventListener("input", () => {
             let selectedCount = updateQuestionCount().size; // Get the number of selected questions
@@ -109,8 +138,8 @@ document.addEventListener("DOMContentLoaded", () => {
         
         
     
-   // let experimentalDiv = document.getElementById("experimental")
-    //experimentalDiv.innerHTML = updateQuestionCount().size
+   //let experimentalDiv = document.getElementById("experimental")
+    //experimentalDiv.innerHTML = updateQuestionCount(false, true)
     //experimentalDiv.style.color = "red"
 
     // This function shuffles question and answer choices
@@ -216,7 +245,7 @@ document.addEventListener("DOMContentLoaded", () => {
     
 
 
-    function updateQuestionCount() {
+    function updateQuestionCount(questionsSelected = false, returnSizeOnly = false) {
         let selectedQuestionsSet = new Set();
     
         document.querySelectorAll(".topic-checkbox:checked").forEach(checkbox => {
@@ -232,8 +261,11 @@ document.addEventListener("DOMContentLoaded", () => {
             topicsData[topicIndex].subtopics[subtopicIndex].questions.forEach(q => selectedQuestionsSet.add(JSON.stringify(q)));
         });
     
-        questionCountDisplay.textContent = `Questions Selected: ${selectedQuestionsSet.size}`;
-        return selectedQuestionsSet;
+        // Ensure the question count is updated
+        // questionCountDisplay.textContent = `Questions Selected: ${selectedQuestionsSet.size}`;
+        generateQuizButton.textContent = `Create test (Selected: ${selectedQuestionsSet.size} / ${totalQuestions} Questions)`
+    
+        return selectedQuestionsSet; // Ensure function returns the correct count
     }
     
 
@@ -300,23 +332,12 @@ document.addEventListener("DOMContentLoaded", () => {
                     displayExplanation(questionData, choice);
                     disableChoices();
     
-                    // Highlight the clicked choice
-                    choiceDiv.classList.add(choice === questionData.correct_answer ? "correct-choice" : "incorrect-choice");
-
-                    // Play correct answer sound if the choice is correct
-                    if (choice === questionData.correct_answer) {
-                        let correctSound = new Audio("correct.wav"); 
-                        correctSound.play();
-                        }
-                    
-                    // Play incorrect answer sound if the choice is incorrect
-                    if (choice !== questionData.correct_answer) {
-                            let correctSound = new Audio("incorrect2.mp3"); 
-                            correctSound.play();
-                            }
-    
-                    // Highlight the correct answer if the user picked an incorrect one
-                    if (choice !== questionData.correct_answer) {
+                    let isCorrect = choice === questionData.correct_answer;
+                    choiceDiv.classList.add(isCorrect ? "correct-choice" : "incorrect-choice");
+            
+                    playSound(isCorrect); // ✅ Play sound based on correctness
+            
+                    if (!isCorrect) {
                         shuffledChoices.forEach((correctChoice, correctIndex) => {
                             if (correctChoice === questionData.correct_answer) {
                                 document.querySelector(`#choice-${correctIndex}`).classList.add("correct-choice");
@@ -364,6 +385,8 @@ document.addEventListener("DOMContentLoaded", () => {
         updateButtons();
         updateProgressBar();
     }
+
+    
     
     endTestButton.addEventListener("click", () => {
         showScore(); 
@@ -507,6 +530,8 @@ function showScore() {
     });
 });
 
+
+
 // Adjust interface according to screen size
 function adjustDivWidth() {
     const div = document.getElementById('content');  // Select #content
@@ -545,6 +570,7 @@ function adjustDivWidth() {
         }
     }
 }
+
 
 window.addEventListener('resize', adjustDivWidth);
 window.addEventListener('load', adjustDivWidth);

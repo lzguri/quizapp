@@ -7,11 +7,15 @@
     <link rel="stylesheet" href="styles.css">
 </head>
 <body>
+    <!-- Menu Button -->
+    
+
 
     <!-- Homepage -->
      <div id="experimental"></div>
     <div id="content">
         <div id="homepage">
+            <input type="checkbox" id="toggleSound"> Disable Sound
             <p>[Select topics/subtopics]</p>
             <div id="topics"></div>
             <div id="questionLimitContainer">
@@ -19,7 +23,7 @@
                 <label for="limitQuestionsCheckbox">Limit number of questions</label>
                 <input type="number" id="questionLimitInput" min="1" value="10" disabled>
             </div>            
-            <button id="generateQuiz">Create test</button><p id="questionCount">Questions Selected: 0</p>
+            <button id="generateQuiz">Create test</button>
         </div>
 
         <!-- Quiz Section -->
