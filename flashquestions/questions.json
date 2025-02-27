@@ -207,10 +207,10 @@
                 ]
             },
             {
-                "name": "Infectious Endocarditis",
+                "name": "Infective Endocarditis",
                 "questions": [
                     {
-                        "question": "A 67-year-old male is admitted to the hospital for sepsis. Blood cultures are positive for *Clostridium septicum*, and the patient is on appropriate antibiotics. What should be considered next in this patient?",
+                        "question": "A 67-year-old male is admitted to the hospital for sepsis. Blood cultures are positive for Clostridium septicum, and the patient is on appropriate antibiotics. What should be considered next in this patient?",
                         "choices": [
                           "Colonoscopy",
                           "Cystoscopy",
@@ -219,7 +219,7 @@
                           "Cardiac MRI"
                         ],
                         "correct_answer": "Colonoscopy",
-                        "explanation": "*Clostridium septicum* bacteremia is strongly associated with occult gastrointestinal malignancies, particularly colon cancer. A colonoscopy should be performed to evaluate for underlying neoplasia or mucosal disruption. Similarly, Streptococcus bovis (now reclassified as *Streptococcus gallolyticus*) bacteremia is also associated with colon cancer and warrants a colonoscopy."
+                        "explanation": "Clostridium septicum bacteremia is strongly associated with occult gastrointestinal malignancies, particularly colon cancer. A colonoscopy should be performed to evaluate for underlying neoplasia or mucosal disruption. Similarly, Streptococcus bovis (now reclassified as Streptococcus gallolyticus) bacteremia is also associated with colon cancer and warrants a colonoscopy."
                     }
                       
                 ]
