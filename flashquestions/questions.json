@@ -716,7 +716,21 @@
                         ],
                         "correct_answer": "Proctitis",
                         "explanation": "Radiation proctitis is a common long-term complication of pelvic radiation therapy, including treatment for prostate cancer. It can cause chronic mucosal damage leading to friability and telangiectasias, resulting in intermittent lower GI bleeding, often years after treatment."
+                    },
+                    {
+                        "question": "A patient presents with multiple episodes of hematemesis that started approximately 1 hour ago. Which of the following is NOT true?",
+                        "choices": [
+                          "Hemoglobin canl be low",
+                          "Type and screen needed",
+                          "Hemoglobin can be normal",
+                          "Emergent endoscopy is needed",
+                          "Insertion of NG tube is indicated"
+                        ],
+                        "correct_answer": "Insertion of NG tube is indicated",
+                        "explanation": "Insertion of NG tube is not indicated. In acute GI bleeding, hemoglobin may initially remain normal because blood loss is occurring without immediate plasma volume replacement. Hemoglobin levels drop over time as the body compensates by shifting fluid into the vascular space (hemodilution), making it a late marker of blood loss. A type and screen is necessary for potential transfusion, and emergent endoscopy is required to identify and manage the bleeding source."
                     }
+                      
+                      
                                          
                 ]
             },
