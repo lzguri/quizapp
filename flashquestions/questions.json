@@ -246,7 +246,7 @@
                         "explanation": "The most common cause of death in infective endocarditis is congestive heart failure. Valvular destruction and dysfunction from the infection lead to significant hemodynamic compromise and acute heart failure, which is the predominant cause of mortality in these patients."
                     },                     
                     {
-                        "question": "A patient diagnosed with endocarditis is receiving vancomycin and cefepime while awaiting blood culture results. Telemetry reveals a wide QRS, and an ECG shows a new left bundle branch block (LBBB). What is the next step in management?",
+                        "question": "A patient diagnosed with endocarditis is receiving vancomycin and cefepime while awaiting blood culture results. Telemetry reveals a wide QRS, and an ECG shows a new left bundle branch block. What is the next step in management?",
                         "choices": [
                           "Perform transesophageal echocardiogram",
                           "Activate cardiac catheterization",
@@ -744,7 +744,7 @@
                     {
                         "question": "A patient presents with multiple episodes of hematemesis that started approximately 1 hour ago. Which of the following is NOT true?",
                         "choices": [
-                          "Hemoglobin canl be low",
+                          "Hemoglobin can be low",
                           "Type and screen needed",
                           "Hemoglobin can be normal",
                           "Emergent endoscopy is needed",
