@@ -705,7 +705,19 @@
                         ],
                         "correct_answer": "Elevated bilirubin",
                         "explanation": "Upper gastrointestinal bleeding (UGIB) can lead to an elevated blood urea nitrogen (BUN) due to the breakdown of blood, which is protein-rich, in the gastrointestinal tract. This results in increased nitrogen absorption. Additionally, normocytic anemia may develop due to blood loss, and reactive thrombocytosis can occur as a compensatory response. While hemoglobin is expected to decrease, bilirubin levels are not typically elevated unless there is concurrent liver disease or hemolysis."
-                    }                    
+                    },
+                    {
+                        "question": "A patient with a history of prostate cancer, treated non-surgically approximately 10 years ago, presents to the hospital with hematochezia. He reports a history of lower GI bleeding. What is the most likely cause?",
+                        "choices": [
+                          "Proctitis",
+                          "Diverticulosis",
+                          "Colon cancer",
+                          "Hemorrhoids"
+                        ],
+                        "correct_answer": "Proctitis",
+                        "explanation": "Radiation proctitis is a common long-term complication of pelvic radiation therapy, including treatment for prostate cancer. It can cause chronic mucosal damage leading to friability and telangiectasias, resulting in intermittent lower GI bleeding, often years after treatment."
+                    }
+                                         
                 ]
             },
             {
