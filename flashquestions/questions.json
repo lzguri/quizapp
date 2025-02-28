@@ -1152,7 +1152,7 @@
                 ]
             },
             {
-                "name": "Glomerulonephritis with nephritic syndrome",
+                "name": "Glomerulonephritis",
                 "questions": [
                     {
                         "question": "Which of the following characteristics is NOT typical for nephritic syndrome?",
@@ -1168,6 +1168,18 @@
                         "correct_answer": "Lipiduria",
                         "explanation": "Nephritic syndrome is characterized by hematuria, dysmorphic RBCs, RBC casts, rising serum creatinine, proteinuria (usually <3.5 g/day), and oliguria. Lipiduria is more characteristic of nephrotic syndrome, where significant protein loss leads to fatty casts in the urine."
                     },
+                    {
+                        "question": "A patient recently diagnosed with membranous glomerulonephritis presents with flank pain and hematuria. What is the most likely cause of this presentation?",
+                        "choices": [
+                          "Renal vein thrombosis",
+                          "Pyelonephritis",
+                          "Nephrolithiasis",
+                          "IgA nephropathy",
+                          "Acute interstitial nephritis"
+                        ],
+                        "correct_answer": "Renal vein thrombosis",
+                        "explanation": "Membranous glomerulonephritis is strongly associated with an increased risk of renal vein thrombosis due to hypercoagulability caused by nephrotic syndrome (loss of antithrombotic proteins such as antithrombin III). Renal vein thrombosis can present with flank pain, hematuria, and worsening renal function."
+                    },                      
                     {
                         "question": "All of the following conditions cause pauci-immune glomerulonephritis EXCEPT:",
                         "choices": [
