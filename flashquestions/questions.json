@@ -658,6 +658,57 @@
                 ]
             },
             {
+                "name": "Gastrointestinal bleeding",
+                "questions": [
+                    {
+                        "question": "Which of the following medications increases the risk of gastrointestinal hemorrhage?",
+                        "choices": [
+                          "Sertraline",
+                          "Quetiapine",
+                          "Trazodone",
+                          "Lorazepam",
+                          "Haloperidol"
+                        ],
+                        "correct_answer": "Sertraline",
+                        "explanation": "Selective serotonin reuptake inhibitors (SSRIs), such as sertraline, increase the risk of gastrointestinal hemorrhage by inhibiting platelet serotonin uptake, which impairs platelet aggregation. This effect is particularly significant in patients taking other anticoagulant or antiplatelet medications."
+                    },
+                    {
+                        "question": "What is Heyde syndrome?",
+                        "choices": [
+                          "Aortic stenosis with gastrointestinal bleeding from angiodysplasia",
+                          "Mitral stenosis leading to atrial fibrillation and stroke",
+                          "Aortic regurgitation with infective endocarditis",
+                          "Pulmonary hypertension due to left heart failure"
+                        ],
+                        "correct_answer": "Aortic stenosis with gastrointestinal bleeding from angiodysplasia",
+                        "explanation": "Heyde syndrome refers to the association between aortic stenosis and gastrointestinal bleeding from angiodysplasia. The turbulent blood flow through a stenotic aortic valve leads to von Willebrand factor degradation, increasing the risk of bleeding from vascular malformations in the GI tract."
+                    },
+                    {
+                        "question": "A patient presents to the ED with hematochezia. Which of the following statements is INCORRECT?",
+                        "choices": [
+                          "Diverticulosis is a common cause",
+                          "It's impossible to be an upper GI bleed",
+                          "CTA is helpful in case of hemodynamic instability",
+                          "Type and screen should be ordered"
+                        ],
+                        "correct_answer": "It's impossible to be an upper GI bleed",
+                        "explanation": "Hematochezia (bright red or maroon-colored blood per rectum) is most commonly due to lower GI bleeding, with diverticulosis being a frequent cause. However, a brisk upper GI bleed (e.g., peptic ulcer, variceal bleed) can present as hematochezia. CTA is useful for localizing active bleeding in hemodynamically unstable patients, and type and screen should be ordered in case transfusion is needed."
+                    },
+                    {
+                        "question": "A patient presents to the ED with hematemesis and melena. Which of the following lab findings would NOT be expected?",
+                        "choices": [
+                          "Elevated BUN",
+                          "Normocytic anemia",
+                          "Thrombocytosis",
+                          "Elevated bilirubin",
+                          "Low hemoglobin"
+                        ],
+                        "correct_answer": "Elevated bilirubin",
+                        "explanation": "Upper gastrointestinal bleeding (UGIB) can lead to an elevated blood urea nitrogen (BUN) due to the breakdown of blood, which is protein-rich, in the gastrointestinal tract. This results in increased nitrogen absorption. Additionally, normocytic anemia may develop due to blood loss, and reactive thrombocytosis can occur as a compensatory response. While hemoglobin is expected to decrease, bilirubin levels are not typically elevated unless there is concurrent liver disease or hemolysis."
+                    }                    
+                ]
+            },
+            {
                 "name": "Liver cirrhosis",
                 "questions": [
                     {
