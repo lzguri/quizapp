@@ -1492,7 +1492,7 @@
                           "Pneumonia is the most common cause"
                         ],
                         "correct_answer": "Mucositis",
-                        "explanation": "In neutropenic fever, gram-negative bacteria, particularly Pseudomonas aeruginosa, are the most concerning pathogens due to their rapid progression and high mortality risk. Mucositis from chemotherapy disrupts the gastrointestinal mucosal barrier, allowing translocation of gram-negative bacteria into the bloodstream, making broad-spectrum gram-negative coverage essential."
+                        "explanation": "In neutropenic fever, gram-negative bacteria, especially Pseudomonas, pose high mortality risk. Chemotherapy-induced mucositis disrupts the gut barrier, allowing bacterial translocation, necessitating broad-spectrum gram-negative coverage"
                     }, 
                     {
                         "question": "A patient with an MRSA infection who was started on an oral antibiotic approximately 10 days ago is found to have low platelets on a routine blood check. Which antibiotic was most likely used?",
@@ -1503,7 +1503,7 @@
                           "Metronidazole"
                         ],
                         "correct_answer": "Linezolid",
-                        "explanation": "Linezolid can cause reversible thrombocytopenia, especially with prolonged use (≥10 days). This occurs due to bone marrow suppression.. Monitoring complete blood counts is recommended in patients receiving extended therapy. None of the other choices covers MRSA. Vancomycin PO does not get absorbed systemically."
+                        "explanation": "Linezolid can cause reversible thrombocytopenia, especially with ≥10 days of use, due to bone marrow suppression. CBC monitoring is recommended for extended therapy. Other options don’t cover MRSA, and PO vancomycin lacks systemic absorption."
                     },
                     {
                         "question": "A 64-year-old male with lymphoma currently on chemotherapy presents to the ED with sepsis. He has severe leukopenia and thrombocytopenia. Blood cultures are positive for gram-positive cocci, with vanA/B genes detected (vancomycin-resistant). Which of the following antibiotics would be appropriate for treatment?",
@@ -1515,7 +1515,7 @@
                           "Ceftriaxone"
                         ],
                         "correct_answer": "Daptomycin",
-                        "explanation": "Vancomycin-resistant enterococci (VRE) with vanA/B genes are resistant to vancomycin. Linezolid, while effective against VRE, is associated with thrombocytopenia and is not ideal for this patient. Daptomycin is the preferred option for treating VRE in patients with thrombocytopenia, as it does not carry the same hematologic risks as linezolid. Cefepime and ceftriaxone do not cover VRE."
+                        "explanation": "Enterococci with vanA/B genes resist vancomycin by altering D-Ala-D-Ala to D-Ala-D-Lac, reducing binding. Linezolid treats VRE but causes thrombocytopenia, making daptomycin preferred in this scenario. Cefepime and ceftriaxone lack VRE coverage."
                     },                      
                     {
                         "question": "Which of the following bacteria does metronidazole cover?",
@@ -1550,7 +1550,7 @@
                         "question": "Which of the following antibiotics should be used to treat methicillin-susceptible Staphylococcus aureus (MSSA)?",
                         "choices": ["Vancomycin", "Nafcillin", "Rifampin", "Azithromycin"],
                         "correct_answer": "Nafcillin",
-                        "explanation": "Nafcillin and cefazolin are the preferred treatments for MSSA due to superior efficacy. Vancomycin can treat MSSA but is less effective than beta-lactams like nafcillin or cefazolin."
+                        "explanation": "Nafcillin and cefazolin are preferred for MSSA due to superior efficacy. If cultures confirm MSSA, deescalate from vancomycin to nafcillin or cefazolin."
                     },
                     {
                         "question": "A patient is on daptomycin for MRSA endocarditis. Which laboratory test should be monitored?",
