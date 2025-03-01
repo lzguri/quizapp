@@ -1179,7 +1179,40 @@
                         ],
                         "correct_answer": "Renal vein thrombosis",
                         "explanation": "Membranous glomerulonephritis is strongly associated with an increased risk of renal vein thrombosis due to hypercoagulability caused by nephrotic syndrome (loss of antithrombotic proteins such as antithrombin III). Renal vein thrombosis can present with flank pain, hematuria, and worsening renal function."
-                    },                      
+                    }, 
+                    {
+                        "question": "Primary membranous nephropathy is associated with which type of antibodies?",
+                        "choices": [
+                          "Anti-phospholipase A2 receptor",
+                          "Anti-dsDNA",
+                          "Anti-GBM",
+                          "Anti-neutrophil cytoplasmic antibody (ANCA)"
+                        ],
+                        "correct_answer": "Anti-phospholipase A2 receptor",
+                        "explanation": "Primary membranous nephropathy is strongly associated with anti-phospholipase A2 receptor (PLA2R) antibodies, which target podocytes and contribute to the pathogenesis of the disease. This distinguishes it from secondary causes, which may be linked to infections, malignancies, or autoimmune diseases."
+                    }, 
+                    {
+                        "question": "A patient with type 2 diabetes mellitus diagnosed approximately 4 years ago is found to have proteinuria of 4+ on urinalysis. He is up to date with screening for diabetic complications and does not have any evidence of neuropathy or retinopathy. Which of the following is true for this patient?",
+                        "choices": [
+                          "Proteinuria is due to diabetic nephropathy",
+                          "Further workup is needed to diagnose the cause of proteinuria",
+                          "This is orthostatic proteinuria",
+                          "Urinalysis is false positive"
+                        ],
+                        "correct_answer": "Further workup is needed to diagnose the cause of proteinuria",
+                        "explanation": "Diabetic nephropathy typically develops gradually over time and is often preceded by microalbuminuria. The absence of other diabetic complications, such as retinopathy and neuropathy, raises suspicion for an alternative cause of proteinuria. Further workup, including quantification of proteinuria, assessment of kidney function, and possible renal biopsy, may be warranted."
+                    },   
+                    {
+                        "question": "A patient presents with acute kidney injury and has a positive anti-GBM antibody test. What can be concluded?",
+                        "choices": [
+                          "Patient has anti-GBM disease",
+                          "Patient has Goodpasture syndrome",
+                          "Patient has granulomatosis with polyangiitis",
+                          "Patient has microscopic polyangiitis"
+                        ],
+                        "correct_answer": "Patient has anti-GBM disease",
+                        "explanation": "A positive anti-GBM antibody test confirms the diagnosis of anti-GBM disease, which can manifest as isolated glomerulonephritis.  When glomerular involvement is accompanied by pulmonary hemorrhage, it is called Goodpasture syndrome. The presence of lung involvement must be determined clinically. Granulomatosis with polyangiitis and microscopic polyangiitis are ANCA-associated vasculitides, not related to anti-GBM antibodies."
+                    },                               
                     {
                         "question": "All of the following conditions cause pauci-immune glomerulonephritis EXCEPT:",
                         "choices": [
