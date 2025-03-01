@@ -1559,7 +1559,7 @@
                         "explanation": "Daptomycin can cause muscle toxicity, including rhabdomyolysis, so creatine kinase [CK] levels should be monitored weekly during therapy."
                     },
                     {
-                        "question": "A 35-year-old female with paraplegia due to a prior gunshot wound (GSW) to the spine has a neurogenic bladder and performs intermittent self-catheterization. She presents to the ED with fever and malaise. Urinalysis is positive for pyuria, and she has a history of a Pseudomonas urinary tract infection (UTI) approximately four months ago. You are planning to discharge her with oral antibiotics. Which is the most appropriate antibiotic choice?",
+                        "question": "A 35-year-old female with paraplegia due to a prior gunshot wound to the spine has a neurogenic bladder and performs intermittent self-catheterization. She presents to the ED with fever and malaise. Urinalysis is positive for pyuria, and she has a history of a Pseudomonas urinary tract infection approximately four months ago. You are planning to discharge her with oral antibiotics. Which is the most appropriate antibiotic choice?",
                         "choices": [
                           "Levofloxacin",
                           "Cefepime",
@@ -1580,7 +1580,7 @@
                           "Causes tendon rupture"
                         ],
                         "correct_answer": "Causes tendon rupture",
-                        "explanation": "Aminoglycosides are associated with ototoxicity, nephrotoxicity, and neuromuscular blockade, making them contraindicated in myasthenia gravis. They also have poor penetration into abscesses due to their hydrophilic nature and they dont have a good activity in acidic pH."
+                        "explanation": "Aminoglycosides cause ototoxicity, nephrotoxicity, and neuromuscular blockade, making them contraindicated in myasthenia gravis. They also poorly penetrate abscesses and have reduced activity in acidic pH."
                     },
                     {
                         "question": "Cefepime causes encephalopathy via which mechanism?",
