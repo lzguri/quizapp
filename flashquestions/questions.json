@@ -954,7 +954,18 @@
                         ],
                         "correct_answer": "Ultrasound of the abdomen",
                         "explanation": "The next step in acute pancreatitis evaluation is abdominal ultrasound to assess for gallstones, a leading cause. Calcium and triglycerides help identify underlying causes, but imaging confirms biliary etiology. CT abdomen is reserved for unclear cases or complications after 48 hours."
-                    },                      
+                    }, 
+                    {
+                        "question": "A patient had acute pancreatitis two weeks ago and now presents to the ED with flank pain. A CT scan performed for suspected kidney stones reveals a large pancreatic pseudocyst. What is the next step in management?",
+                        "choices": [
+                          "Arrange for percutaneous drainage of the pseudocyst",
+                          "Arrange for endoscopic drainage of the pseudocyst",
+                          "Surgical removal of the pseudocyst",
+                          "Observation"
+                        ],
+                        "correct_answer": "Observation",
+                        "explanation": "Pancreatic pseudocysts often resolve spontaneously and are managed conservatively unless they become symptomatic (e.g., infection, hemorrhage, or compression of surrounding structures). Asymptomatic pseudocysts are typically observed with serial imaging. Endoscopic or percutaneous drainage is only indicated for symptomatic, infected, or enlarging pseudocysts."
+                    },                    
                     {
                         "question": "Which of the following causes of acute pancreatitis is associated with hyponatremia?",
                         "choices": ["Hypercalcemia", "Hypertriglyceridemia", "Gallstones", "Endoscopic retrograde cholangiopancreatography"],
