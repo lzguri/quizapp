@@ -945,6 +945,17 @@
                         "explanation": "Alcohol consumption along with gallstones is the most common cause of acute pancreatitis."
                     },
                     {
+                        "question": "A patient presents with epigastric pain and has an elevated serum lipase level greater than 3 times the upper normal limit. What is the next step in evaluation?",
+                        "choices": [
+                          "CT abdomen with contrast",
+                          "Ultrasound of the abdomen",
+                          "Check calcium level",
+                          "Check triglyceride level"
+                        ],
+                        "correct_answer": "Ultrasound of the abdomen",
+                        "explanation": "The next step in acute pancreatitis evaluation is abdominal ultrasound to assess for gallstones, a leading cause. Calcium and triglycerides help identify underlying causes, but imaging confirms biliary etiology. CT abdomen is reserved for unclear cases or complications after 48 hours."
+                    },                      
+                    {
                         "question": "Which of the following causes of acute pancreatitis is associated with hyponatremia?",
                         "choices": ["Hypercalcemia", "Hypertriglyceridemia", "Gallstones", "Endoscopic retrograde cholangiopancreatography"],
                         "correct_answer": "Hypertriglyceridemia",
