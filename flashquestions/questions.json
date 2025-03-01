@@ -222,7 +222,7 @@
                         "explanation": "Clostridium septicum bacteremia is strongly associated with occult gastrointestinal malignancies, particularly colon cancer. A colonoscopy should be performed to evaluate for underlying neoplasia or mucosal disruption. Similarly, Streptococcus bovis (now reclassified as Streptococcus gallolyticus) bacteremia is also associated with colon cancer and warrants a colonoscopy."
                     },
                     {
-                        "question": "A 35-year-old male with a history of intravenous drug use (IVDU) is admitted for infective endocarditis. He is on vancomycin for *Staphylococcus aureus* bacteremia. His clinical course is complicated by atrial fibrillation, and he is started on heparin. After two days, he develops an intracranial hemorrhage (ICH). What is the most likely cause of his ICH?",
+                        "question": "A 35-year-old male with a history of intravenous drug use (IVDU) is admitted for infective endocarditis. He is on vancomycin for Staphylococcus aureus bacteremia. His clinical course is complicated by atrial fibrillation, and he is started on heparin. After two days, he develops an intracranial hemorrhage (ICH). What is the most likely cause of his ICH?",
                         "choices": [
                           "Mycotic aneurysm",
                           "Berry aneurysm",
@@ -689,7 +689,7 @@
                         "choices": [
                           "Sertraline",
                           "Quetiapine",
-                          "Trazodone",
+                          "Midazolam",
                           "Lorazepam",
                           "Haloperidol"
                         ],
@@ -1771,6 +1771,26 @@
                         "correct_answer": "Ammonia level",
                         "explanation": "Valproic acid can cause hyperammonemia by inhibiting carbamoyl phosphate synthetase I, a key enzyme in the urea cycle. This leads to impaired ammonia clearance, resulting in valproate-induced hyperammonemic encephalopathy, even when drug levels are within the therapeutic range."
                       }
+                      
+                    
+                ]
+            },
+            {
+                "name": "Cardiac glycosides",
+                "questions": [
+                    {
+                        "question": "A patient presents with digoxin toxicity due to acute kidney injury and has a potassium level of 6.0 mEq/L. Which of the following interventions should be avoided?",
+                        "choices": [
+                          "IV calcium",
+                          "IV sodium bicarbonate",
+                          "Glucose + insulin",
+                          "Hemodialysis"
+                        ],
+                        "correct_answer": "IV calcium",
+                        "explanation": "IV calcium should be avoided in digoxin toxicity because it can potentiate digoxin's effects on cardiac myocytes, increasing the risk of fatal arrhythmias ('stone heart' phenomenon). Digoxin toxicity leads to excessive intracellular calcium accumulation due to Na+/K+ ATPase inhibition, and additional calcium administration may exacerbate this effect. Alternative treatments for hyperkalemia, such as sodium bicarbonate, glucose + insulin, and hemodialysis, can be used safely in this setting."
+                    }
+                      
+                      
                       
                     
                 ]
