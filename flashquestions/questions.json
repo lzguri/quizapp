@@ -1696,7 +1696,19 @@
                         "choices": ["Azithromycin", "Ceftriaxone", "Doxycycline", "Amoxicillin"],
                         "correct_answer": "Doxycycline",
                         "explanation": "Doxycycline is the treatment of choice for both human monocytic ehrlichiosis [HME] and human granulocytic anaplasmosis [HGA]."
+                    },
+                    {
+                        "question": "Human granulocytic anaplasmosis is transmitted by the same vector as which of the following infections, making co-infection possible?",
+                        "choices": [
+                          "Lyme disease and babesiosis",
+                          "Rocky Mountain spotted fever and ehrlichiosis",
+                          "Malaria and dengue",
+                          "Leptospirosis and Q fever"
+                        ],
+                        "correct_answer": "Lyme disease and babesiosis",
+                        "explanation": "HGA is transmitted by the Ixodes scapularis tick, the same vector responsible for Lyme disease (Borrelia burgdorferi) and babesiosis (Babesia microti). This makes double or triple infections possible, particularly in endemic areas."
                     }
+                      
                     
                 ]
             }
