@@ -374,7 +374,7 @@
                         "explanation": "In atrial fibrillation, synchronized cardioversion is used to time the electrical shock with the R wave to prevent inducing ventricular fibrillation. If a shock is delivered during the T wave (the vulnerable period of repolarization), it can trigger ventricular arrhythmias such as ventricular fibrillation."
                     },
                     {
-                        "question": "In a patient with polymorphic ventricular tachycardia (VT) and a normal baseline QT interval, what is the most likely cause?",
+                        "question": "In a patient with intermittent polymorphic ventricular tachycardia and an EKG showing normal QT interval, what is the most likely cause?",
                         "choices": [
                           "Myocardial ischemia",
                           "Electrolyte abnormalities",
@@ -1789,10 +1789,6 @@
                         "correct_answer": "IV calcium",
                         "explanation": "IV calcium should be avoided in digoxin toxicity because it can potentiate digoxin's effects on cardiac myocytes, increasing the risk of fatal arrhythmias ('stone heart' phenomenon). Digoxin toxicity leads to excessive intracellular calcium accumulation due to Na+/K+ ATPase inhibition, and additional calcium administration may exacerbate this effect. Alternative treatments for hyperkalemia, such as sodium bicarbonate, glucose + insulin, and hemodialysis, can be used safely in this setting."
                     }
-                      
-                      
-                      
-                    
                 ]
             }
         ]
