@@ -959,6 +959,50 @@
                     ]
             },
             {
+                "name": "Celiac disease",
+                "questions": [
+                    {
+                        "question": "Which of the following is NOT associated with celiac disease?",
+                        "choices": [
+                          "Risk for small bowel lymphoma",
+                          "Osteoporosis",
+                          "Iron deficiency anemia",
+                          "Dermatitis herpetiformis",
+                          "Elevated liver enzymes",
+                          "Chronic steatorrhea",
+                          "Bloody diarrhea"
+                        ],
+                        "correct_answer": "Bloody diarrhea",
+                        "explanation": "Celiac disease is associated with small bowel lymphoma, osteoporosis, iron deficiency anemia, dermatitis herpetiformis, elevated liver enzymes, and chronic steatorrhea. However, bloody diarrhea is not a typical feature of celiac disease and is more commonly seen in inflammatory bowel disease (e.g., ulcerative colitis)."
+                    },
+                    {
+                        "question": "In a patient suspected of having celiac disease based on clinical presentation, you check anti-tTG IgA, which is negative. What is the next step?",
+                        "choices": [
+                          "You don’t have celiac disease",
+                          "You need an upper endoscopy",
+                          "Further blood tests are needed",
+                          "We will monitor you for now",
+                          "It is very likely you have ulcerative colitis"
+                        ],
+                        "correct_answer": "Further blood tests are needed",
+                        "explanation": "A negative anti-tTG IgA test does not rule out celiac disease, as some patients have IgA deficiency. Further testing with alternative celiac serologies, such as anti-DGP IgG or anti-tTG IgG antibodies, is needed to confirm or rule out the diagnosis."
+                    },
+                    {
+                        "question": "A patient diagnosed with celiac disease who reports adherence to a gluten-free diet presents with worsening symptoms. What is the next step in evaluation?",
+                        "choices": [
+                          "Look for other diagnoses",
+                          "Check anti-tTG IgA titers",
+                          "Perform colonoscopy",
+                          "Check hemoglobin levels"
+                        ],
+                        "correct_answer": "Check anti-tTG IgA titers",
+                        "explanation": "For patients with celiac disease who report adherence to a gluten-free diet but continue to have symptoms, checking anti-tTG IgA titers is the next step. Persistently elevated titers suggest ongoing gluten exposure. If serologies are normal, further evaluation for other causes of symptoms (e.g., microscopic colitis, small intestinal bacterial overgrowth) may be necessary."
+                    }
+                      
+                    
+                ]
+            },
+            {
                 "name": "Acute pancreatitis",
                 "questions": [
                     {
