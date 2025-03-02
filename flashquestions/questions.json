@@ -1077,27 +1077,39 @@
                 "name": "Primary biliary cholangitis",
                 "questions": [
                     {
-                        "question": "A 40-year-old female presents with pruritus and jaundice. Her liver enzymes show significantly elevated alkaline phosphatase and a slight increase in bilirubin. What is the most likely diagnosis?",
+                        "question": "A 40-year-old female presents with pruritus and jaundice. Her liver enzymes show significantly elevated alkaline phosphatase and a slight increase in bilirubin. Which of the following will most likely be elevated?",
                         "choices": [
-                          "Primary sclerosing cholangitis",
-                          "Primary biliary cholangitis",
-                          "Acetaminophen toxicity",
-                          "Autoimmune hepatitis"
-                        ],
-                        "correct_answer": "Primary biliary cholangitis",
-                        "explanation": "Primary biliary cholangitis typically presents in middle-aged women with pruritus, jaundice, and a cholestatic liver enzyme pattern (elevated ALP and mildly increased bilirubin). It is an autoimmune condition that primarily affects intrahepatic bile ducts."
-                    },
-                    {
-                        "question": "Which of the following antibodies is associated with primary biliary cholangitis?",
-                        "choices": [
-                          "Antimitochondrial antibodies",
-                          "Anti-smooth muscle antibodies",
-                          "Anti-dsDNA antibodies",
-                          "Anti-centromere antibodies"
+                            "Antimitochondrial antibodies",
+                            "Anti-smooth muscle antibodies",
+                            "Anti-dsDNA antibodies",
+                            "Anti-centromere antibodies"
                         ],
                         "correct_answer": "Antimitochondrial antibodies",
-                        "explanation": "Primary biliary cholangitis is strongly associated with antimitochondrial antibodies, which are present in approximately 95% of cases and serve as a key diagnostic marker."
+                        "explanation": "Primary biliary cholangitis typically presents in middle-aged women with pruritus, jaundice, and a cholestatic liver enzyme pattern (elevated ALP and mildly increased bilirubin). It is an autoimmune condition that primarily affects intrahepatic bile ducts, and the most specific serologic marker is the presence of antimitochondrial antibodies."
                     },
+                    {
+                        "question": "A 47-year-old female presents with fatigue and pruritus for the past few months. Her alkaline phosphatase is 235, and antimitochondrial antibody test is positive. What is the next step in management?",
+                        "choices": [
+                          "Diagnose patient with primary biliary cholangitis",
+                          "Perform liver biopsy",
+                          "CT abdomen with contrast",
+                          "Order ANA"
+                        ],
+                        "correct_answer": "Diagnose patient with primary biliary cholangitis",
+                        "explanation": "A positive antimitochondrial antibody test in a patient with elevated alkaline phosphatase (at least 1.5 times the upper limit of normal) and clinical symptoms is diagnostic of primary biliary cholangitis. A liver biopsy is typically not required unless the diagnosis is unclear."
+                    },
+                    {
+                        "question": "Which of the following serum levels will be elevated in primary biliary cholangitis (PBC)?",
+                        "choices": [
+                          "Triglycerides",
+                          "Vitamin D",
+                          "Calcium level",
+                          "Hemoglobin",
+                          "Creatinine"
+                        ],
+                        "correct_answer": "Triglycerides",
+                        "explanation": "Patients with primary biliary cholangitis (PBC) often have hyperlipidemia, with elevated triglycerides and cholesterol levels. Despite the dyslipidemia, PBC is not strongly associated with an increased risk of cardiovascular disease. Vitamin D levels are usually low due to fat malabsorption, while calcium, hemoglobin, and creatinine levels are not characteristically elevated in PBC."
+                    },                      
                     {
                         "question": "Which of the following tests should be ordered in patients with primary biliary cholangitis?",
                         "choices": [
