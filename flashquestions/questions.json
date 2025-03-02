@@ -997,7 +997,20 @@
                         ],
                         "correct_answer": "Check anti-tTG IgA titers",
                         "explanation": "For patients with celiac disease who report adherence to a gluten-free diet but continue to have symptoms, checking anti-tTG IgA titers is the next step. Persistently elevated titers suggest ongoing gluten exposure. If serologies are normal, further evaluation for other causes of symptoms (e.g., microscopic colitis, small intestinal bacterial overgrowth) may be necessary."
+                    },
+                    {
+                        "question": "A patient with celiac disease has developed dermatitis herpetiformis. You are asked to start the patient on treatment. Before starting treatment, what should be checked?",
+                        "choices": [
+                          "Check G6PD deficiency",
+                          "No further testing is needed",
+                          "Check hemoglobin level",
+                          "Check methemoglobin level",
+                          "Check uric acid"
+                        ],
+                        "correct_answer": "Check G6PD deficiency",
+                        "explanation": "Dermatitis herpetiformis, a skin manifestation of celiac disease, is treated with dapsone. However, dapsone can cause hemolysis in patients with G6PD deficiency, so G6PD levels should be checked before initiating treatment."
                     }
+                      
                       
                     
                 ]
