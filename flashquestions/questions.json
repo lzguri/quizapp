@@ -979,6 +979,56 @@
                         "explanation": "Acute pancreatitis is diagnosed if the patient meets 2 out of 3 criteria: (a) epigastric abdominal pain, (b) lipase elevated 3x upper limit of normal, (c) imaging showing acute pancreatitis."
                     }                    
                 ]
+            },
+            {
+                "name": "Primary biliary cholangitis",
+                "questions": [
+                    {
+                        "question": "A 40-year-old female presents with pruritus and jaundice. Her liver enzymes show significantly elevated alkaline phosphatase (ALP) and a slight increase in bilirubin. What is the most likely diagnosis?",
+                        "choices": [
+                          "Primary sclerosing cholangitis",
+                          "Primary biliary cholangitis",
+                          "Acetaminophen toxicity",
+                          "Autoimmune hepatitis"
+                        ],
+                        "correct_answer": "Primary biliary cholangitis",
+                        "explanation": "Primary biliary cholangitis (PBC) typically presents in middle-aged women with pruritus, jaundice, and a cholestatic liver enzyme pattern (elevated ALP and mildly increased bilirubin). It is an autoimmune condition that primarily affects intrahepatic bile ducts."
+                    },
+                    {
+                        "question": "Which of the following antibodies is associated with primary biliary cholangitis?",
+                        "choices": [
+                          "Antimitochondrial antibodies",
+                          "Anti-smooth muscle antibodies",
+                          "Anti-dsDNA antibodies",
+                          "Anti-centromere antibodies"
+                        ],
+                        "correct_answer": "Antimitochondrial antibodies",
+                        "explanation": "Primary biliary cholangitis is strongly associated with antimitochondrial antibodies (AMA), which are present in approximately 95% of cases and serve as a key diagnostic marker."
+                    },
+                    {
+                        "question": "Which of the following tests should be ordered in patients with primary biliary cholangitis?",
+                        "choices": [
+                          "DEXA scanning",
+                          "CT abdomen",
+                          "Colonoscopy",
+                          "Serum protein electrophoresis"
+                        ],
+                        "correct_answer": "DEXA scanning",
+                        "explanation": "Patients with PBC are at increased risk of osteoporosis due to chronic cholestasis and impaired vitamin D absorption. A DEXA scan is recommended to assess bone mineral density."
+                    },
+                    {
+                        "question": "What is the treatment of choice for primary biliary cholangitis?",
+                        "choices": [
+                          "Ursodeoxycholic acid",
+                          "Prednisone",
+                          "Azathioprine",
+                          "Rituximab"
+                        ],
+                        "correct_answer": "Ursodeoxycholic acid",
+                        "explanation": "Ursodeoxycholic acid (UDCA) is the first-line treatment for PBC, as it improves bile flow, delays disease progression, and increases survival."
+                    }
+                    
+                ]
             }
         ]
     },
