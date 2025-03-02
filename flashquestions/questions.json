@@ -773,6 +773,29 @@
                         "explanation": "Alpha-1 antitrypsin deficiency is a rare genetic disorder that can lead to cirrhosis, while alcohol, metabolic dysfunction-associated steatotic liver disease (formerly NAFLD), and chronic viral hepatitis are much more common causes."
                     },
                     {
+                        "question": "Why are platelets low in patients with liver cirrhosis?",
+                        "choices": [
+                          "Hypersplenism",
+                          "Sequestration in the liver",
+                          "Autoimmune destruction",
+                          "Decreased production"
+                        ],
+                        "correct_answer": "Hypersplenism",
+                        "explanation": "Thrombocytopenia in liver cirrhosis is primarily due to hypersplenism, which results from portal hypertension causing splenic congestion and increased platelet sequestration. Additionally, decreased thrombopoietin production by the liver can contribute to reduced platelet levels."
+                    },
+                    {
+                        "question": "Which of the following laboratory values are used to predict mortality in patients with liver cirrhosis?",
+                        "choices": [
+                          "Bilirubin",
+                          "INR",
+                          "Creatinine",
+                          "Sodium",
+                          "Alkaline phosphatase"
+                        ],
+                        "correct_answer": "Alkaline phosphatase",
+                        "explanation": "The Model for End-Stage Liver Disease (MELD) score, which predicts mortality in cirrhosis, is based on bilirubin, INR, creatinine, and sodium. Alkaline phosphatase is not included in the MELD score and is not used for mortality prediction in liver cirrhosis."
+                    },                    
+                    {
                         "question": "In decompensated liver cirrhosis, you can find all of the following abnormalities except for?",
                         "choices": [
                           "Hypoalbuminemia",
@@ -984,7 +1007,7 @@
                 "name": "Primary biliary cholangitis",
                 "questions": [
                     {
-                        "question": "A 40-year-old female presents with pruritus and jaundice. Her liver enzymes show significantly elevated alkaline phosphatase (ALP) and a slight increase in bilirubin. What is the most likely diagnosis?",
+                        "question": "A 40-year-old female presents with pruritus and jaundice. Her liver enzymes show significantly elevated alkaline phosphatase and a slight increase in bilirubin. What is the most likely diagnosis?",
                         "choices": [
                           "Primary sclerosing cholangitis",
                           "Primary biliary cholangitis",
@@ -992,7 +1015,7 @@
                           "Autoimmune hepatitis"
                         ],
                         "correct_answer": "Primary biliary cholangitis",
-                        "explanation": "Primary biliary cholangitis (PBC) typically presents in middle-aged women with pruritus, jaundice, and a cholestatic liver enzyme pattern (elevated ALP and mildly increased bilirubin). It is an autoimmune condition that primarily affects intrahepatic bile ducts."
+                        "explanation": "Primary biliary cholangitis typically presents in middle-aged women with pruritus, jaundice, and a cholestatic liver enzyme pattern (elevated ALP and mildly increased bilirubin). It is an autoimmune condition that primarily affects intrahepatic bile ducts."
                     },
                     {
                         "question": "Which of the following antibodies is associated with primary biliary cholangitis?",
@@ -1003,7 +1026,7 @@
                           "Anti-centromere antibodies"
                         ],
                         "correct_answer": "Antimitochondrial antibodies",
-                        "explanation": "Primary biliary cholangitis is strongly associated with antimitochondrial antibodies (AMA), which are present in approximately 95% of cases and serve as a key diagnostic marker."
+                        "explanation": "Primary biliary cholangitis is strongly associated with antimitochondrial antibodies, which are present in approximately 95% of cases and serve as a key diagnostic marker."
                     },
                     {
                         "question": "Which of the following tests should be ordered in patients with primary biliary cholangitis?",
