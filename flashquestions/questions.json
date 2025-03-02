@@ -1009,7 +1009,20 @@
                         ],
                         "correct_answer": "Check G6PD deficiency",
                         "explanation": "Dermatitis herpetiformis, a skin manifestation of celiac disease, is treated with dapsone. However, dapsone can cause hemolysis in patients with G6PD deficiency, so G6PD levels should be checked before initiating treatment."
+                    },
+                    {
+                        "question": "Patients with celiac disease are at increased risk for which of the following conditions?",
+                        "choices": [
+                          "Colon cancer",
+                          "Infection with encapsulated bacteria",
+                          "Hypertriglyceridemia",
+                          "Renal vein thrombosis",
+                          "Unstable angina"
+                        ],
+                        "correct_answer": "Infection with encapsulated bacteria",
+                        "explanation": "Patients with celiac disease are at increased risk for infection with encapsulated bacteria due to functional hyposplenism. The chronic immune activation and autoimmunity associated with celiac disease can lead to splenic atrophy, increasing susceptibility to infections from encapsulated organisms such as Streptococcus pneumoniae, Haemophilus influenzae, and Neisseria meningitidis."
                     }
+                      
                       
                       
                     
