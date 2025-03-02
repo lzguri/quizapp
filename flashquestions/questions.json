@@ -1074,6 +1074,24 @@
                 ]
             },
             {
+                "name": "Autoimmune hepatitis",
+                "questions": [
+                    {
+                        "question": "Autoimmune hepatitis may present as all of the following EXCEPT:",
+                        "choices": [
+                          "Asymptomatic elevated liver enzymes",
+                          "Liver cirrhosis",
+                          "Acute liver failure",
+                          "Acute hepatitis",
+                          "Suprahepatic vein thrombosis"
+                        ],
+                        "correct_answer": "Suprahepatic vein thrombosis",
+                        "explanation": "Autoimmune hepatitis can present with a spectrum of liver disease, ranging from asymptomatic elevation of liver enzymes to acute hepatitis, liver cirrhosis, or even acute liver failure. However, it is not associated with suprahepatic vein thrombosis (Budd-Chiari syndrome), which is typically caused by hypercoagulable states, myeloproliferative disorders, or malignancies."
+                    }
+                      
+                ]
+            },
+            {
                 "name": "Primary biliary cholangitis",
                 "questions": [
                     {
