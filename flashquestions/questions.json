@@ -1069,7 +1069,7 @@
                         "question": "Which of the following is NOT a criterion for the diagnosis of acute pancreatitis?",
                         "choices": ["Epigastric abdominal pain", "Elevated lipase level 3x upper limit of normal", "Imaging findings of acute pancreatitis", "Fever"],
                         "correct_answer": "Fever",
-                        "explanation": "Acute pancreatitis is diagnosed if the patient meets 2 out of 3 criteria: (a) epigastric abdominal pain, (b) lipase elevated 3x upper limit of normal, (c) imaging showing acute pancreatitis."
+                        "explanation": "Acute pancreatitis is diagnosed if the patient meets 2 out of 3 criteria: **epigastric abdominal pain** **lipase elevated 3x upper limit of normal** **imaging showing acute pancreatitis**"
                     }                    
                 ]
             },
