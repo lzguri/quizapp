@@ -448,40 +448,102 @@ document.addEventListener("DOMContentLoaded", () => {
         });
     }
 
-// Modify the showScore function to include checkboxes for filtering
-function showScore() {
-    quizContainer.style.display = "none";
-    scorePage.style.display = "block";
 
-    let correctAnswers = userAnswers.filter((answer, index) => answer === selectedQuestions[index].correct_answer).length;
-    let percentage = ((correctAnswers / selectedQuestions.length) * 100).toFixed(2);
 
-    let scoreFilter = `
-        <h2 style="text-align: center;">Your score is ${percentage}% (${correctAnswers}/${selectedQuestions.length})</h2>
+
+    function showScore() {
+        quizContainer.style.display = "none";
+        scorePage.style.display = "block";
+    
+        let correctAnswers = userAnswers.filter((answer, index) => answer === selectedQuestions[index].correct_answer).length;
+        let percentage = ((correctAnswers / selectedQuestions.length) * 100).toFixed(2);
+    
+        let topicScores = {};
+    
+        // Calculate per-topic and per-subtopic scores
+        selectedQuestions.forEach((question, index) => {
+            let userAnswer = userAnswers[index];
+            let isCorrect = userAnswer === question.correct_answer;
+    
+            let topicName = "Unknown Topic";
+            let subtopicName = "Unknown Subtopic";
+    
+            // Find the corresponding topic and subtopic from topicsData
+            topicsData.forEach(topic => {
+                topic.subtopics.forEach(subtopic => {
+                    if (subtopic.questions.some(q => q.question === question.question)) {
+                        topicName = topic.name;
+                        subtopicName = subtopic.name;
+                    }
+                });
+            });
+    
+            // Initialize topic and subtopic objects
+            if (!topicScores[topicName]) {
+                topicScores[topicName] = { total: 0, correct: 0, subtopics: {} };
+            }
+            if (!topicScores[topicName].subtopics[subtopicName]) {
+                topicScores[topicName].subtopics[subtopicName] = { total: 0, correct: 0 };
+            }
+    
+            // Increment total questions and correct answers
+            topicScores[topicName].total++;
+            topicScores[topicName].subtopics[subtopicName].total++;
+            if (isCorrect) {
+                topicScores[topicName].correct++;
+                topicScores[topicName].subtopics[subtopicName].correct++;
+            }
+        });
+    
+        // Generate topic-wise and subtopic-wise score summary
+        let topicScoreHTML = "<h3>Score Breakdown by Topic & Subtopic:</h3><ul>";
+        Object.keys(topicScores).forEach(topic => {
+            let topicData = topicScores[topic];
+            let topicPercentage = ((topicData.correct / topicData.total) * 100).toFixed(2);
+            topicScoreHTML += `<li><strong>${topic}:</strong> ${topicData.correct}/${topicData.total} (${topicPercentage}%)</li>`;
+            
+            topicScoreHTML += "<ul>";
+            Object.keys(topicData.subtopics).forEach(subtopic => {
+                let subtopicData = topicData.subtopics[subtopic];
+                let subtopicPercentage = ((subtopicData.correct / subtopicData.total) * 100).toFixed(2);
+                topicScoreHTML += `<li>${subtopic}: ${subtopicData.correct}/${subtopicData.total} (${subtopicPercentage}%)</li>`;
+            });
+            topicScoreHTML += "</ul>";
+        });
+        topicScoreHTML += "</ul>";
+    
+        // Update the score page with topic-wise and subtopic-wise scores
+        let scoreFilter = `
+            <h2 style="text-align: center;">Your overall score: ${percentage}% (${correctAnswers}/${selectedQuestions.length})</h2>
+            ${topicScoreHTML}
+            
+
+                <!-- Add a container around the three checkboxes -->
+            <h2 style="text-align: center;">Key concepts</h2>
+            <div class="checkbox-filter-container">
+            <label>
+                <input type="checkbox" id="filterCorrect" checked> Correct
+            </label>
+            <br>
+            <label>
+                <input type="checkbox" id="filterIncorrect" checked> Incorrect
+            </label>
+            <br>
+            <label>
+                <input type="checkbox" id="filterUnanswered" checked> Unanswered
+            </label>
+            </div>
+            <div id="scoreDetailsContainer"></div>
+            <button id="resetQuizFinal">Reset Quiz</button>
+            <button id="returnHomeFinal">Return to Homepage</button>
+        `;
+    
+        scoreDetails.innerHTML = scoreFilter;
+    
+        document.getElementById("resetQuizFinal").addEventListener("click", startQuiz);
+        document.getElementById("returnHomeFinal").addEventListener("click", () => location.reload());
     
     
-        <!-- Add a container around the three checkboxes -->
-        <h2 style="text-align: center;">Key concepts</h2>
-        <div class="checkbox-filter-container">
-        <label>
-            <input type="checkbox" id="filterCorrect" checked> Correct
-        </label>
-        <br>
-        <label>
-            <input type="checkbox" id="filterIncorrect" checked> Incorrect
-        </label>
-        <br>
-        <label>
-            <input type="checkbox" id="filterUnanswered" checked> Unanswered
-        </label>
-        </div>
-        
-        <div id="scoreDetailsContainer"></div>
-        <button id="resetQuizFinal">Reset Quiz</button>
-        <button id="returnHomeFinal">Return to Homepage</button>
-    `;
-
-    scoreDetails.innerHTML = scoreFilter;
 
 
     
