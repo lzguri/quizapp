@@ -1098,7 +1098,7 @@
                           "Positive anti-Smith antibody"
                         ],
                         "correct_answer": "Positive anti-Smith antibody",
-                        "explanation": "Autoimmune hepatitis is associated with: **elevated IgG levels** **positive ANA**** positive anti-smooth muscle antibody** in **positive anti-liver kidney microsomal (LKM) antibody** However, anti-Smith antibodies are specific for systemic lupus erythematosus (SLE) and are not seen in autoimmune hepatitis."
+                        "explanation": "Autoimmune hepatitis can be associated with: **elevated IgG levels** **positive ANA**** positive anti-smooth muscle antibody** **positive anti-liver kidney microsomal (LKM) antibody** However, anti-Smith antibodies are specific for systemic lupus erythematosus (SLE) and are not seen in autoimmune hepatitis."
                     },
                     {
                         "question": "How is the diagnosis of autoimmune hepatitis established?",
