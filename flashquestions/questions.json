@@ -1142,7 +1142,7 @@
                         "explanation": "A positive antimitochondrial antibody test in a patient with elevated alkaline phosphatase (at least 1.5 times the upper limit of normal) and clinical symptoms is diagnostic of primary biliary cholangitis. A liver biopsy is typically not required unless the diagnosis is unclear."
                     },
                     {
-                        "question": "Which of the following serum levels will be elevated in primary biliary cholangitis (PBC)?",
+                        "question": "Which of the following serum levels will be elevated in primary biliary cholangitis?",
                         "choices": [
                           "Triglycerides",
                           "Vitamin D",
@@ -1151,7 +1151,7 @@
                           "Creatinine"
                         ],
                         "correct_answer": "Triglycerides",
-                        "explanation": "Patients with primary biliary cholangitis (PBC) often have hyperlipidemia, with elevated triglycerides and cholesterol levels. Despite the dyslipidemia, PBC is not strongly associated with an increased risk of cardiovascular disease. Vitamin D levels are usually low due to fat malabsorption, while calcium, hemoglobin, and creatinine levels are not characteristically elevated in PBC."
+                        "explanation": "Patients with primary biliary cholangitis often have hyperlipidemia, with elevated triglycerides and cholesterol levels. Vitamin D levels are usually low due to fat malabsorption, while calcium, hemoglobin, and creatinine levels are not characteristically elevated in PBC."
                     },                      
                     {
                         "question": "Which of the following tests should be ordered in patients with primary biliary cholangitis?",
