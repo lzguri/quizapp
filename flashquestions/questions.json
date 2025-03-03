@@ -1021,11 +1021,7 @@
                         ],
                         "correct_answer": "Infection with encapsulated bacteria",
                         "explanation": "Patients with celiac disease are at increased risk for infection with encapsulated bacteria due to functional hyposplenism. The chronic immune activation and autoimmunity associated with celiac disease can lead to splenic atrophy, increasing susceptibility to infections from encapsulated organisms such as Streptococcus pneumoniae, Haemophilus influenzae, and Neisseria meningitidis."
-                    }
-                      
-                      
-                      
-                    
+                    }                    
                 ]
             },
             {
@@ -1128,7 +1124,7 @@
                             "Anti-centromere antibodies"
                         ],
                         "correct_answer": "Antimitochondrial antibodies",
-                        "explanation": "Primary biliary cholangitis typically presents in middle-aged women with **pruritus, jaundice, and fatigue** **cholestatic liver enzyme pattern (elevated ALP and mildly increased bilirubin)** **antimitochondrial antibodies**It is an autoimmune condition that primarily affects intrahepatic bile ducts. "
+                        "explanation": "Primary biliary cholangitis typically presents in middle-aged women with: **pruritus, jaundice, and fatigue** **cholestatic liver enzyme pattern (elevated ALP and mildly increased bilirubin)** **positive antimitochondrial antibodies**It is an autoimmune condition that primarily affects intrahepatic bile ducts. "
                     },
                     {
                         "question": "A 47-year-old female presents with fatigue and pruritus for the past few months. Her alkaline phosphatase is 235, and antimitochondrial antibody test is positive. What is the next step in management?",
@@ -1139,7 +1135,7 @@
                           "Order ANA"
                         ],
                         "correct_answer": "Diagnose patient with primary biliary cholangitis",
-                        "explanation": "A positive antimitochondrial antibody test in a patient with elevated alkaline phosphatase (at least 1.5 times the upper limit of normal) and clinical symptoms is diagnostic of primary biliary cholangitis. A liver biopsy is typically not required unless the diagnosis is unclear."
+                        "explanation": "A patient with all the three features:  **elevated alkaline phosphatase (at least 1.5 times the upper limit of normal)** **clinical symptoms** **positive antimitochondrial antibody test** is diagnosed with primary biliary cholangitis. A liver biopsy is typically not required unless the diagnosis is unclear"
                     },
                     {
                         "question": "Which of the following serum levels will be elevated in primary biliary cholangitis?",
