@@ -1265,7 +1265,7 @@
                           "Seizures"
                         ],
                         "correct_answer": "Seizures",
-                        "explanation": "Potassium is essential for the proper generation and conduction of action potentials in smooth, striated, and cardiac muscles. Hypokalemia can lead to conditions such as rhabdomyolysis, cardiac arrhythmias, ileus, and respiratory muscle weakness. However, seizures are not typically a direct consequence of hypokalemia."
+                        "explanation": "Potassium is essential for the proper generation and conduction of action potentials in: **smooth muscle → ileus** **striated → generalized and respiratory muscle weakness **cardiac muscles → EKG changes and arrhythmias** However, seizures are not typically a direct consequence of hypokalemia."
                     },
                     {
                         "question": "A patient with a history of anorexia is started on nutritional support and subsequently develops weakness, respiratory failure, and confusion. Which electrolyte abnormality is most likely responsible for these symptoms?",
