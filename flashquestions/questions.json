@@ -1069,7 +1069,7 @@
                         "question": "Which of the following is NOT a criterion for the diagnosis of acute pancreatitis?",
                         "choices": ["Epigastric abdominal pain", "Elevated lipase level 3x upper limit of normal", "Imaging findings of acute pancreatitis", "Fever"],
                         "correct_answer": "Fever",
-                        "explanation": "Acute pancreatitis is diagnosed if the patient meets 2 out of 3 criteria: (a) epigastric abdominal pain, (b) lipase elevated 3x upper limit of normal, (c) imaging showing acute pancreatitis."
+                        "explanation": "Acute pancreatitis is diagnosed if the patient meets 2 out of 3 criteria: **epigastric abdominal pain** **lipase elevated 3x upper limit of normal** **imaging showing acute pancreatitis**"
                     }                    
                 ]
             },
@@ -1442,7 +1442,7 @@
                           "Lupus nephritis"
                         ],
                         "correct_answer": "Lupus nephritis",
-                        "explanation": "Pauci-immune glomerulonephritis refers to minimal or absent immune complex deposition on immunofluorescence microscopy. Pauci-immune glomerulonephritis is associated with ANCA-associated vasculitides, including granulomatosis with polyangiitis, microscopic polyangiitis, and eosinophilic granulomatosis with polyangiitis. Lupus nephritis, on the other hand, is an immune-complex mediated glomerulonephritis with significant immune complex deposition on immunofluorescence."
+                        "explanation": "Pauci-immune glomerulonephritis refers to minimal or absent immune complex deposition on immunofluorescence microscopy. Pauci-immune glomerulonephritis is associated with ANCA-associated vasculitides, including: **granulomatosis with polyangiitis** **microscopic polyangiitis** **eosinophilic granulomatosis with polyangiitis** Lupus nephritis, on the other hand, is an immune-complex mediated glomerulonephritis with significant immune complex deposition on immunofluorescence.[complement levels will be normal]"
                     },
                     {
                         "question": "Complement levels will be low in all of the following causes of glomerulonephritis EXCEPT:",
@@ -1454,7 +1454,7 @@
                           "IgA nephropathy"
                         ],
                         "correct_answer": "IgA nephropathy",
-                        "explanation": "Complement levels are low in immune-complex mediated glomerulonephritis due to excessive consumption of complement factors during immune activation. Conditions such as post-infectious glomerulonephritis, membranoproliferative glomerulonephritis, lupus nephritis, and cryoglobulinemic glomerulonephritis involve immune complex deposition, triggering complement activation. In contrast, IgA nephropathy primarily involves mesangial IgA deposition with minimal complement activation, so complement levels remain normal."
+                        "explanation": "Complement levels are low in immune-complex mediated glomerulonephritis due to excessive consumption of complement factors during immune activation → conditions: **post-infectious glomerulonephritis,** **membranoproliferative glomerulonephritis,** **lupus nephritis,** **cryoglobulinemic glomerulonephritis** In contrast, IgA nephropathy primarily involves mesangial IgA deposition with minimal complement activation, so complement levels remain normal."
                     },
                     {
                         "question": "Which of the following laboratory findings is characteristic of acute postinfectious glomerulonephritis?",
