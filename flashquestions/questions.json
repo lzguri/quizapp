@@ -1454,7 +1454,7 @@
                           "IgA nephropathy"
                         ],
                         "correct_answer": "IgA nephropathy",
-                        "explanation": "Complement levels are low in immune-complex mediated glomerulonephritis due to excessive consumption of complement factors during immune activation. Conditions such as: **post-infectious glomerulonephritis,** **membranoproliferative glomerulonephritis,** **lupus nephritis,** **cryoglobulinemic glomerulonephritis** involve immune complex deposition, triggering complement activation. In contrast, IgA nephropathy primarily involves mesangial IgA deposition with minimal complement activation, so complement levels remain normal."
+                        "explanation": "Complement levels are low in immune-complex mediated glomerulonephritis due to excessive consumption of complement factors during immune activation → conditions: **post-infectious glomerulonephritis,** **membranoproliferative glomerulonephritis,** **lupus nephritis,** **cryoglobulinemic glomerulonephritis** In contrast, IgA nephropathy primarily involves mesangial IgA deposition with minimal complement activation, so complement levels remain normal."
                     },
                     {
                         "question": "Which of the following laboratory findings is characteristic of acute postinfectious glomerulonephritis?",

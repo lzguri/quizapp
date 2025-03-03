@@ -402,13 +402,13 @@ document.addEventListener("DOMContentLoaded", () => {
         explanationDiv.textContent =  questionData.explanation;
         explanationDiv.style.fontWeight = "normal";
         explanationDiv.style.marginTop = "10px";
-        explanationDiv.style.backgroundColor = "lightgreen";
-        explanationDiv.style.border = '1px solid #003759';
+        //explanationDiv.style.backgroundColor = "lightgreen";
+        explanationDiv.style.border = "1px solid #003759";
         explanationDiv.style.padding = '10px';
         explanationDiv.style.fontSize = "14px"
         //explanationDiv.style.borderRadius = "5px"
         //explanationDiv.style.backgroundColor = choice === questionData.correct_answer ? "lightgreen" : "lightcoral";
-        explanationDiv.style.backgroundColor = '#dcdcdc'
+        explanationDiv.style.backgroundColor = "rgb(234, 243, 252)"
 
         let explanationText = questionData.explanation;
         let bulletPattern = /\*\*(.*?)\*\*/g; // Detect words or sentences enclosed in **
