@@ -1087,7 +1087,32 @@
                         ],
                         "correct_answer": "Suprahepatic vein thrombosis",
                         "explanation": "Autoimmune hepatitis can present with a spectrum of liver disease, ranging from asymptomatic elevation of liver enzymes to acute hepatitis, liver cirrhosis, or even acute liver failure. However, it is not associated with suprahepatic vein thrombosis (Budd-Chiari syndrome), which is typically caused by hypercoagulable states, myeloproliferative disorders, or malignancies."
+                    },
+                    {
+                        "question": "All of the following laboratory findings are seen in autoimmune hepatitis EXCEPT:",
+                        "choices": [
+                          "Elevated IgG levels",
+                          "Positive ANA",
+                          "Positive anti-smooth muscle antibody",
+                          "Positive anti-liver kidney microsomal antibody",
+                          "Positive anti-Smith antibody"
+                        ],
+                        "correct_answer": "Positive anti-Smith antibody",
+                        "explanation": "Autoimmune hepatitis is associated with elevated IgG levels, positive ANA, positive anti-smooth muscle antibody, and in some cases, positive anti-liver kidney microsomal (LKM) antibody. However, anti-Smith antibodies are specific for systemic lupus erythematosus (SLE) and are not seen in autoimmune hepatitis."
+                    },
+                    {
+                        "question": "How is the diagnosis of autoimmune hepatitis established?",
+                        "choices": [
+                          "Biopsy of the liver only",
+                          "Positive anti-smooth muscle antibody only",
+                          "Ultrasound of the liver only",
+                          "Elevated IgG levels"
+                        ],
+                        "correct_answer": "Biopsy of the liver only",
+                        "explanation": "The diagnosis of autoimmune hepatitis is established by liver biopsy, which demonstrates characteristic histologic findings such as interface hepatitis and lymphoplasmacytic infiltration. While positive serologic markers (e.g., anti-smooth muscle antibody, ANA, anti-LKM) and elevated IgG levels support the diagnosis, biopsy is necessary for definitive confirmation and to assess disease severity."
                     }
+                      
+                      
                       
                 ]
             },
