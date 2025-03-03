@@ -1442,7 +1442,7 @@
                           "Lupus nephritis"
                         ],
                         "correct_answer": "Lupus nephritis",
-                        "explanation": "Pauci-immune glomerulonephritis refers to minimal or absent immune complex deposition on immunofluorescence microscopy. Pauci-immune glomerulonephritis is associated with ANCA-associated vasculitides, including granulomatosis with polyangiitis, microscopic polyangiitis, and eosinophilic granulomatosis with polyangiitis. Lupus nephritis, on the other hand, is an immune-complex mediated glomerulonephritis with significant immune complex deposition on immunofluorescence.[complement levels will be normal]"
+                        "explanation": "Pauci-immune glomerulonephritis refers to minimal or absent immune complex deposition on immunofluorescence microscopy. Pauci-immune glomerulonephritis is associated with ANCA-associated vasculitides, including granulomatosis with polyangiitis, microscopic polyangiitis, and eosinophilic granulomatosis with polyangiitis. Lupus nephritis, on the other hand, is an immune-complex mediated glomerulonephritis with significant immune complex deposition on immunofluorescence."
                     },
                     {
                         "question": "Complement levels will be low in all of the following causes of glomerulonephritis EXCEPT:",
