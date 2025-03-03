@@ -457,7 +457,8 @@ function showScore() {
     let percentage = ((correctAnswers / selectedQuestions.length) * 100).toFixed(2);
 
     let scoreFilter = `
-        <h2 style="text-align: center;">Your score is ${percentage}%</h2>
+        <h2 style="text-align: center;">Your score is ${percentage}% (${correctAnswers}/${selectedQuestions.length})</h2>
+    
     
         <!-- Add a container around the three checkboxes -->
         <h2 style="text-align: center;">Key concepts</h2>

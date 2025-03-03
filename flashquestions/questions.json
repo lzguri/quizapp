@@ -207,6 +207,61 @@
                 ]
             },
             {
+                "name": "Infective Endocarditis",
+                "questions": [
+                    {
+                        "question": "A 67-year-old male is admitted to the hospital for sepsis. Blood cultures are positive for Clostridium septicum, and the patient is on appropriate antibiotics. What should be considered next in this patient?",
+                        "choices": [
+                          "Colonoscopy",
+                          "Cystoscopy",
+                          "Upper endoscopy",
+                          "CT chest with contrast",
+                          "Cardiac MRI"
+                        ],
+                        "correct_answer": "Colonoscopy",
+                        "explanation": "Clostridium septicum bacteremia is strongly associated with occult gastrointestinal malignancies, particularly colon cancer. A colonoscopy should be performed to evaluate for underlying neoplasia or mucosal disruption. Similarly, Streptococcus bovis (now reclassified as Streptococcus gallolyticus) bacteremia is also associated with colon cancer and warrants a colonoscopy."
+                    },
+                    {
+                        "question": "A 35-year-old male with a history of intravenous drug use (IVDU) is admitted for infective endocarditis. He is on vancomycin for Staphylococcus aureus bacteremia. His clinical course is complicated by atrial fibrillation, and he is started on heparin. After two days, he develops an intracranial hemorrhage (ICH). What is the most likely cause of his ICH?",
+                        "choices": [
+                          "Mycotic aneurysm",
+                          "Berry aneurysm",
+                          "Amyloid angiopathy",
+                          "Brain atrophy",
+                          "Charcot-Bouchard aneurysm"
+                        ],
+                        "correct_answer": "Mycotic aneurysm",
+                        "explanation": "Infective endocarditis can lead to mycotic aneurysms, which are caused by septic emboli weakening the walls of cerebral arteries, increasing the risk of rupture and intracranial hemorrhage. The use of anticoagulation in this setting further exacerbates the bleeding risk. Other causes, such as Charcot-Bouchard aneurysms, are more commonly associated with chronic hypertension, while amyloid angiopathy is seen in older patients."
+                    },
+                    {
+                        "question": "What is the most common cause of death in patients with infective endocarditis?",
+                        "choices": [
+                          "Congestive heart failure",
+                          "Septic shock",
+                          "Cerebrovascular accident",
+                          "Mycotic aneurysm rupture",
+                          "Renal failure"
+                        ],
+                        "correct_answer": "Congestive heart failure",
+                        "explanation": "The most common cause of death in infective endocarditis is congestive heart failure. Valvular destruction and dysfunction from the infection lead to significant hemodynamic compromise and acute heart failure, which is the predominant cause of mortality in these patients."
+                    },                     
+                    {
+                        "question": "A patient diagnosed with endocarditis is receiving vancomycin and cefepime while awaiting blood culture results. Telemetry reveals a wide QRS, and an ECG shows a new left bundle branch block. What is the next step in management?",
+                        "choices": [
+                          "Perform transesophageal echocardiogram",
+                          "Activate cardiac catheterization",
+                          "No further intervention",
+                          "Transcutaneous pacing",
+                          "Defibrillation"
+                        ],
+                        "correct_answer": "Perform transesophageal echocardiogram",
+                        "explanation": "A new left bundle branch block (LBBB) in a patient with infective endocarditis raises concern for perivalvular abscess, which can lead to conduction abnormalities. A transesophageal echocardiogram (TEE) is the preferred imaging modality to evaluate for abscess formation and potential structural complications."
+                    }
+                      
+                      
+                ]
+            },
+            {
                 "name": "Heart failure",
                 "questions": [
                     {
@@ -319,7 +374,7 @@
                         "explanation": "In atrial fibrillation, synchronized cardioversion is used to time the electrical shock with the R wave to prevent inducing ventricular fibrillation. If a shock is delivered during the T wave (the vulnerable period of repolarization), it can trigger ventricular arrhythmias such as ventricular fibrillation."
                     },
                     {
-                        "question": "In a patient with polymorphic ventricular tachycardia (VT) and a normal baseline QT interval, what is the most likely cause?",
+                        "question": "In a patient with intermittent polymorphic ventricular tachycardia and an EKG showing normal QT interval, what is the most likely cause?",
                         "choices": [
                           "Myocardial ischemia",
                           "Electrolyte abnormalities",
@@ -627,6 +682,83 @@
                 ]
             },
             {
+                "name": "Gastrointestinal bleeding",
+                "questions": [
+                    {
+                        "question": "Which of the following medications increases the risk of gastrointestinal hemorrhage?",
+                        "choices": [
+                          "Sertraline",
+                          "Quetiapine",
+                          "Midazolam",
+                          "Lorazepam",
+                          "Haloperidol"
+                        ],
+                        "correct_answer": "Sertraline",
+                        "explanation": "Selective serotonin reuptake inhibitors (SSRIs), such as sertraline, increase the risk of gastrointestinal hemorrhage by inhibiting platelet serotonin uptake, which impairs platelet aggregation. This effect is particularly significant in patients taking other anticoagulant or antiplatelet medications."
+                    },
+                    {
+                        "question": "What is Heyde syndrome?",
+                        "choices": [
+                          "Aortic stenosis with gastrointestinal bleeding from angiodysplasia",
+                          "Mitral stenosis leading to atrial fibrillation and stroke",
+                          "Aortic regurgitation with infective endocarditis",
+                          "Pulmonary hypertension due to left heart failure"
+                        ],
+                        "correct_answer": "Aortic stenosis with gastrointestinal bleeding from angiodysplasia",
+                        "explanation": "Heyde syndrome refers to the association between aortic stenosis and gastrointestinal bleeding from angiodysplasia. The turbulent blood flow through a stenotic aortic valve leads to von Willebrand factor degradation, increasing the risk of bleeding from vascular malformations in the GI tract."
+                    },
+                    {
+                        "question": "A patient presents to the ED with hematochezia. Which of the following statements is INCORRECT?",
+                        "choices": [
+                          "Diverticulosis is a common cause",
+                          "It's impossible to be an upper GI bleed",
+                          "CTA is helpful in case of hemodynamic instability",
+                          "Type and screen should be ordered"
+                        ],
+                        "correct_answer": "It's impossible to be an upper GI bleed",
+                        "explanation": "Hematochezia (bright red or maroon-colored blood per rectum) is most commonly due to lower GI bleeding, with diverticulosis being a frequent cause. However, a brisk upper GI bleed (e.g., peptic ulcer, variceal bleed) can present as hematochezia. CTA is useful for localizing active bleeding in hemodynamically unstable patients, and type and screen should be ordered in case transfusion is needed."
+                    },
+                    {
+                        "question": "A patient presents to the ED with hematemesis and melena. Which of the following lab findings would NOT be expected?",
+                        "choices": [
+                          "Elevated BUN",
+                          "Normocytic anemia",
+                          "Thrombocytosis",
+                          "Elevated bilirubin",
+                          "Low hemoglobin"
+                        ],
+                        "correct_answer": "Elevated bilirubin",
+                        "explanation": "Upper gastrointestinal bleeding (UGIB) can lead to an elevated blood urea nitrogen (BUN) due to the breakdown of blood, which is protein-rich, in the gastrointestinal tract. This results in increased nitrogen absorption. Additionally, normocytic anemia may develop due to blood loss, and reactive thrombocytosis can occur as a compensatory response. While hemoglobin is expected to decrease, bilirubin levels are not typically elevated unless there is concurrent liver disease or hemolysis."
+                    },
+                    {
+                        "question": "A patient with a history of prostate cancer, treated non-surgically approximately 10 years ago, presents to the hospital with hematochezia. He reports a history of lower GI bleeding. What is the most likely cause?",
+                        "choices": [
+                          "Proctitis",
+                          "Diverticulosis",
+                          "Colon cancer",
+                          "Hemorrhoids"
+                        ],
+                        "correct_answer": "Proctitis",
+                        "explanation": "Radiation proctitis is a common long-term complication of pelvic radiation therapy, including treatment for prostate cancer. It can cause chronic mucosal damage leading to friability and telangiectasias, resulting in intermittent lower GI bleeding, often years after treatment."
+                    },
+                    {
+                        "question": "A patient presents with multiple episodes of hematemesis that started approximately 1 hour ago. Which of the following is NOT true?",
+                        "choices": [
+                          "Hemoglobin can be low",
+                          "Type and screen needed",
+                          "Hemoglobin can be normal",
+                          "Emergent endoscopy is needed",
+                          "Insertion of NG tube is indicated"
+                        ],
+                        "correct_answer": "Insertion of NG tube is indicated",
+                        "explanation": "Insertion of NG tube is not indicated. In acute GI bleeding, hemoglobin may initially remain normal because blood loss is occurring without immediate plasma volume replacement. Hemoglobin levels drop over time as the body compensates by shifting fluid into the vascular space (hemodilution), making it a late marker of blood loss. A type and screen is necessary for potential transfusion, and emergent endoscopy is required to identify and manage the bleeding source."
+                    }
+                      
+                      
+                                         
+                ]
+            },
+            {
                 "name": "Liver cirrhosis",
                 "questions": [
                     {
@@ -640,6 +772,29 @@
                         "correct_answer": "Alpha-1 antitrypsin deficiency",
                         "explanation": "Alpha-1 antitrypsin deficiency is a rare genetic disorder that can lead to cirrhosis, while alcohol, metabolic dysfunction-associated steatotic liver disease (formerly NAFLD), and chronic viral hepatitis are much more common causes."
                     },
+                    {
+                        "question": "Why are platelets low in patients with liver cirrhosis?",
+                        "choices": [
+                          "Hypersplenism",
+                          "Sequestration in the liver",
+                          "Autoimmune destruction",
+                          "Decreased production"
+                        ],
+                        "correct_answer": "Hypersplenism",
+                        "explanation": "Thrombocytopenia in liver cirrhosis is primarily due to hypersplenism, which results from portal hypertension causing splenic congestion and increased platelet sequestration. Additionally, decreased thrombopoietin production by the liver can contribute to reduced platelet levels."
+                    },
+                    {
+                        "question": "Which of the following laboratory values are used to predict mortality in patients with liver cirrhosis?",
+                        "choices": [
+                          "Bilirubin",
+                          "INR",
+                          "Creatinine",
+                          "Sodium",
+                          "Alkaline phosphatase"
+                        ],
+                        "correct_answer": "Alkaline phosphatase",
+                        "explanation": "The Model for End-Stage Liver Disease (MELD) score, which predicts mortality in cirrhosis, is based on bilirubin, INR, creatinine, and sodium. Alkaline phosphatase is not included in the MELD score and is not used for mortality prediction in liver cirrhosis."
+                    },                    
                     {
                         "question": "In decompensated liver cirrhosis, you can find all of the following abnormalities except for?",
                         "choices": [
@@ -804,6 +959,76 @@
                     ]
             },
             {
+                "name": "Celiac disease",
+                "questions": [
+                    {
+                        "question": "Which of the following is NOT associated with celiac disease?",
+                        "choices": [
+                          "Risk for small bowel lymphoma",
+                          "Osteoporosis",
+                          "Iron deficiency anemia",
+                          "Dermatitis herpetiformis",
+                          "Elevated liver enzymes",
+                          "Chronic steatorrhea",
+                          "Bloody diarrhea"
+                        ],
+                        "correct_answer": "Bloody diarrhea",
+                        "explanation": "Celiac disease is associated with small bowel lymphoma, osteoporosis, iron deficiency anemia, dermatitis herpetiformis, elevated liver enzymes, and chronic steatorrhea. However, bloody diarrhea is not a typical feature of celiac disease and is more commonly seen in inflammatory bowel disease (e.g., ulcerative colitis)."
+                    },
+                    {
+                        "question": "In a patient suspected of having celiac disease based on clinical presentation, you check anti-tTG IgA, which is negative. What is the next step?",
+                        "choices": [
+                          "You don’t have celiac disease",
+                          "You need an upper endoscopy",
+                          "Further blood tests are needed",
+                          "We will monitor you for now",
+                          "It is very likely you have ulcerative colitis"
+                        ],
+                        "correct_answer": "Further blood tests are needed",
+                        "explanation": "A negative anti-tTG IgA test does not rule out celiac disease, as some patients have IgA deficiency. Further testing with alternative celiac serologies, such as anti-DGP IgG or anti-tTG IgG antibodies, is needed to confirm or rule out the diagnosis."
+                    },
+                    {
+                        "question": "A patient diagnosed with celiac disease who reports adherence to a gluten-free diet presents with worsening symptoms. What is the next step in evaluation?",
+                        "choices": [
+                          "Look for other diagnoses",
+                          "Check anti-tTG IgA titers",
+                          "Perform colonoscopy",
+                          "Check hemoglobin levels"
+                        ],
+                        "correct_answer": "Check anti-tTG IgA titers",
+                        "explanation": "For patients with celiac disease who report adherence to a gluten-free diet but continue to have symptoms, checking anti-tTG IgA titers is the next step. Persistently elevated titers suggest ongoing gluten exposure. If serologies are normal, further evaluation for other causes of symptoms (e.g., microscopic colitis, small intestinal bacterial overgrowth) may be necessary."
+                    },
+                    {
+                        "question": "A patient with celiac disease has developed dermatitis herpetiformis. You are asked to start the patient on treatment. Before starting treatment, what should be checked?",
+                        "choices": [
+                          "Check G6PD deficiency",
+                          "No further testing is needed",
+                          "Check hemoglobin level",
+                          "Check methemoglobin level",
+                          "Check uric acid"
+                        ],
+                        "correct_answer": "Check G6PD deficiency",
+                        "explanation": "Dermatitis herpetiformis, a skin manifestation of celiac disease, is treated with dapsone. However, dapsone can cause hemolysis in patients with G6PD deficiency, so G6PD levels should be checked before initiating treatment."
+                    },
+                    {
+                        "question": "Patients with celiac disease are at increased risk for which of the following conditions?",
+                        "choices": [
+                          "Colon cancer",
+                          "Infection with encapsulated bacteria",
+                          "Hypertriglyceridemia",
+                          "Renal vein thrombosis",
+                          "Unstable angina"
+                        ],
+                        "correct_answer": "Infection with encapsulated bacteria",
+                        "explanation": "Patients with celiac disease are at increased risk for infection with encapsulated bacteria due to functional hyposplenism. The chronic immune activation and autoimmunity associated with celiac disease can lead to splenic atrophy, increasing susceptibility to infections from encapsulated organisms such as Streptococcus pneumoniae, Haemophilus influenzae, and Neisseria meningitidis."
+                    }
+                      
+                      
+                      
+                    
+                ]
+            },
+            {
                 "name": "Acute pancreatitis",
                 "questions": [
                     {
@@ -812,6 +1037,28 @@
                         "correct_answer": "Alcohol consumption",
                         "explanation": "Alcohol consumption along with gallstones is the most common cause of acute pancreatitis."
                     },
+                    {
+                        "question": "A patient presents with epigastric pain and has an elevated serum lipase level greater than 3 times the upper normal limit. What is the next step in evaluation?",
+                        "choices": [
+                          "CT abdomen with contrast",
+                          "Ultrasound of the abdomen",
+                          "Check calcium level",
+                          "Check triglyceride level"
+                        ],
+                        "correct_answer": "Ultrasound of the abdomen",
+                        "explanation": "The next step in acute pancreatitis evaluation is abdominal ultrasound to assess for gallstones, a leading cause. Calcium and triglycerides help identify underlying causes, but imaging confirms biliary etiology. CT abdomen is reserved for unclear cases or complications after 48 hours."
+                    }, 
+                    {
+                        "question": "A patient had acute pancreatitis two weeks ago and now presents to the ED with flank pain. A CT scan performed for suspected kidney stones reveals a large pancreatic pseudocyst. What is the next step in management?",
+                        "choices": [
+                          "Arrange for percutaneous drainage of the pseudocyst",
+                          "Arrange for endoscopic drainage of the pseudocyst",
+                          "Surgical removal of the pseudocyst",
+                          "Observation"
+                        ],
+                        "correct_answer": "Observation",
+                        "explanation": "Pancreatic pseudocysts often resolve spontaneously and are managed conservatively unless they become symptomatic (e.g., infection, hemorrhage, or compression of surrounding structures). Asymptomatic pseudocysts are typically observed with serial imaging. Endoscopic or percutaneous drainage is only indicated for symptomatic, infected, or enlarging pseudocysts."
+                    },                    
                     {
                         "question": "Which of the following causes of acute pancreatitis is associated with hyponatremia?",
                         "choices": ["Hypercalcemia", "Hypertriglyceridemia", "Gallstones", "Endoscopic retrograde cholangiopancreatography"],
@@ -824,6 +1071,111 @@
                         "correct_answer": "Fever",
                         "explanation": "Acute pancreatitis is diagnosed if the patient meets 2 out of 3 criteria: (a) epigastric abdominal pain, (b) lipase elevated 3x upper limit of normal, (c) imaging showing acute pancreatitis."
                     }                    
+                ]
+            },
+            {
+                "name": "Autoimmune hepatitis",
+                "questions": [
+                    {
+                        "question": "Autoimmune hepatitis may present as all of the following EXCEPT:",
+                        "choices": [
+                          "Asymptomatic elevated liver enzymes",
+                          "Liver cirrhosis",
+                          "Acute liver failure",
+                          "Acute hepatitis",
+                          "Suprahepatic vein thrombosis"
+                        ],
+                        "correct_answer": "Suprahepatic vein thrombosis",
+                        "explanation": "Autoimmune hepatitis can present with a spectrum of liver disease, ranging from asymptomatic elevation of liver enzymes to acute hepatitis, liver cirrhosis, or even acute liver failure. However, it is not associated with suprahepatic vein thrombosis (Budd-Chiari syndrome), which is typically caused by hypercoagulable states, myeloproliferative disorders, or malignancies."
+                    },
+                    {
+                        "question": "All of the following laboratory findings are seen in autoimmune hepatitis EXCEPT:",
+                        "choices": [
+                          "Elevated IgG levels",
+                          "Positive ANA",
+                          "Positive anti-smooth muscle antibody",
+                          "Positive anti-liver kidney microsomal antibody",
+                          "Positive anti-Smith antibody"
+                        ],
+                        "correct_answer": "Positive anti-Smith antibody",
+                        "explanation": "Autoimmune hepatitis is associated with elevated IgG levels, positive ANA, positive anti-smooth muscle antibody, and in some cases, positive anti-liver kidney microsomal (LKM) antibody. However, anti-Smith antibodies are specific for systemic lupus erythematosus (SLE) and are not seen in autoimmune hepatitis."
+                    },
+                    {
+                        "question": "How is the diagnosis of autoimmune hepatitis established?",
+                        "choices": [
+                          "Biopsy of the liver only",
+                          "Positive anti-smooth muscle antibody only",
+                          "Ultrasound of the liver only",
+                          "Elevated IgG levels"
+                        ],
+                        "correct_answer": "Biopsy of the liver only",
+                        "explanation": "The diagnosis of autoimmune hepatitis is established by liver biopsy, which demonstrates characteristic histologic findings such as interface hepatitis and lymphoplasmacytic infiltration. While positive serologic markers (e.g., anti-smooth muscle antibody, ANA, anti-LKM) and elevated IgG levels support the diagnosis, biopsy is necessary for definitive confirmation and to assess disease severity."
+                    }
+                      
+                      
+                      
+                ]
+            },
+            {
+                "name": "Primary biliary cholangitis",
+                "questions": [
+                    {
+                        "question": "A 40-year-old female presents with pruritus and jaundice. Her liver enzymes show significantly elevated alkaline phosphatase and a slight increase in bilirubin. Which of the following will most likely be elevated?",
+                        "choices": [
+                            "Antimitochondrial antibodies",
+                            "Anti-smooth muscle antibodies",
+                            "Anti-dsDNA antibodies",
+                            "Anti-centromere antibodies"
+                        ],
+                        "correct_answer": "Antimitochondrial antibodies",
+                        "explanation": "Primary biliary cholangitis typically presents in middle-aged women with pruritus, jaundice, and a cholestatic liver enzyme pattern (elevated ALP and mildly increased bilirubin). It is an autoimmune condition that primarily affects intrahepatic bile ducts, and the most specific serologic marker is the presence of antimitochondrial antibodies."
+                    },
+                    {
+                        "question": "A 47-year-old female presents with fatigue and pruritus for the past few months. Her alkaline phosphatase is 235, and antimitochondrial antibody test is positive. What is the next step in management?",
+                        "choices": [
+                          "Diagnose patient with primary biliary cholangitis",
+                          "Perform liver biopsy",
+                          "CT abdomen with contrast",
+                          "Order ANA"
+                        ],
+                        "correct_answer": "Diagnose patient with primary biliary cholangitis",
+                        "explanation": "A positive antimitochondrial antibody test in a patient with elevated alkaline phosphatase (at least 1.5 times the upper limit of normal) and clinical symptoms is diagnostic of primary biliary cholangitis. A liver biopsy is typically not required unless the diagnosis is unclear."
+                    },
+                    {
+                        "question": "Which of the following serum levels will be elevated in primary biliary cholangitis (PBC)?",
+                        "choices": [
+                          "Triglycerides",
+                          "Vitamin D",
+                          "Calcium level",
+                          "Hemoglobin",
+                          "Creatinine"
+                        ],
+                        "correct_answer": "Triglycerides",
+                        "explanation": "Patients with primary biliary cholangitis (PBC) often have hyperlipidemia, with elevated triglycerides and cholesterol levels. Despite the dyslipidemia, PBC is not strongly associated with an increased risk of cardiovascular disease. Vitamin D levels are usually low due to fat malabsorption, while calcium, hemoglobin, and creatinine levels are not characteristically elevated in PBC."
+                    },                      
+                    {
+                        "question": "Which of the following tests should be ordered in patients with primary biliary cholangitis?",
+                        "choices": [
+                          "DEXA scanning",
+                          "CT abdomen",
+                          "Colonoscopy",
+                          "Serum protein electrophoresis"
+                        ],
+                        "correct_answer": "DEXA scanning",
+                        "explanation": "Patients with PBC are at increased risk of osteoporosis due to chronic cholestasis and impaired vitamin D absorption. A DEXA scan is recommended to assess bone mineral density."
+                    },
+                    {
+                        "question": "What is the treatment of choice for primary biliary cholangitis?",
+                        "choices": [
+                          "Ursodeoxycholic acid",
+                          "Prednisone",
+                          "Azathioprine",
+                          "Rituximab"
+                        ],
+                        "correct_answer": "Ursodeoxycholic acid",
+                        "explanation": "Ursodeoxycholic acid (UDCA) is the first-line treatment for PBC, as it improves bile flow, delays disease progression, and increases survival."
+                    }
+                    
                 ]
             }
         ]
@@ -1020,7 +1372,7 @@
                 ]
             },
             {
-                "name": "Glomerulonephritis with nephritic syndrome",
+                "name": "Glomerulonephritis",
                 "questions": [
                     {
                         "question": "Which of the following characteristics is NOT typical for nephritic syndrome?",
@@ -1036,6 +1388,51 @@
                         "correct_answer": "Lipiduria",
                         "explanation": "Nephritic syndrome is characterized by hematuria, dysmorphic RBCs, RBC casts, rising serum creatinine, proteinuria (usually <3.5 g/day), and oliguria. Lipiduria is more characteristic of nephrotic syndrome, where significant protein loss leads to fatty casts in the urine."
                     },
+                    {
+                        "question": "A patient recently diagnosed with membranous glomerulonephritis presents with flank pain and hematuria. What is the most likely cause of this presentation?",
+                        "choices": [
+                          "Renal vein thrombosis",
+                          "Pyelonephritis",
+                          "Nephrolithiasis",
+                          "IgA nephropathy",
+                          "Acute interstitial nephritis"
+                        ],
+                        "correct_answer": "Renal vein thrombosis",
+                        "explanation": "Membranous glomerulonephritis is strongly associated with an increased risk of renal vein thrombosis due to hypercoagulability caused by nephrotic syndrome (loss of antithrombotic proteins such as antithrombin III). Renal vein thrombosis can present with flank pain, hematuria, and worsening renal function."
+                    }, 
+                    {
+                        "question": "Primary membranous nephropathy is associated with which type of antibodies?",
+                        "choices": [
+                          "Anti-phospholipase A2 receptor",
+                          "Anti-dsDNA",
+                          "Anti-GBM",
+                          "Anti-neutrophil cytoplasmic antibody (ANCA)"
+                        ],
+                        "correct_answer": "Anti-phospholipase A2 receptor",
+                        "explanation": "Primary membranous nephropathy is strongly associated with anti-phospholipase A2 receptor (PLA2R) antibodies, which target podocytes and contribute to the pathogenesis of the disease. This distinguishes it from secondary causes, which may be linked to infections, malignancies, or autoimmune diseases."
+                    }, 
+                    {
+                        "question": "A patient with type 2 diabetes mellitus diagnosed approximately 4 years ago is found to have proteinuria of 4+ on urinalysis. He is up to date with screening for diabetic complications and does not have any evidence of neuropathy or retinopathy. Which of the following is true for this patient?",
+                        "choices": [
+                          "Proteinuria is due to diabetic nephropathy",
+                          "Further workup is needed to diagnose the cause of proteinuria",
+                          "This is orthostatic proteinuria",
+                          "Urinalysis is false positive"
+                        ],
+                        "correct_answer": "Further workup is needed to diagnose the cause of proteinuria",
+                        "explanation": "Diabetic nephropathy typically develops gradually over time and is often preceded by microalbuminuria. The absence of other diabetic complications, such as retinopathy and neuropathy, raises suspicion for an alternative cause of proteinuria. Further workup, including quantification of proteinuria, assessment of kidney function, and possible renal biopsy, may be warranted."
+                    },   
+                    {
+                        "question": "A patient presents with acute kidney injury and has a positive anti-GBM antibody test. What can be concluded?",
+                        "choices": [
+                          "Patient has anti-GBM disease",
+                          "Patient has Goodpasture syndrome",
+                          "Patient has granulomatosis with polyangiitis",
+                          "Patient has microscopic polyangiitis"
+                        ],
+                        "correct_answer": "Patient has anti-GBM disease",
+                        "explanation": "A positive anti-GBM antibody test confirms the diagnosis of anti-GBM disease, which can manifest as isolated glomerulonephritis.  When glomerular involvement is accompanied by pulmonary hemorrhage, it is called Goodpasture syndrome. The presence of lung involvement must be determined clinically. Granulomatosis with polyangiitis and microscopic polyangiitis are ANCA-associated vasculitides, not related to anti-GBM antibodies."
+                    },                               
                     {
                         "question": "All of the following conditions cause pauci-immune glomerulonephritis EXCEPT:",
                         "choices": [
@@ -1307,6 +1704,17 @@
                         "explanation": "Linezolid, vancomycin, and daptomycin cover MRSA. Ceftriaxone does not."
                     },
                     {
+                        "question": "A 52-year-old male with lymphoma is admitted for neutropenic fever. You correctly start the patient on gram-negative coverage with cefepime. Why is gram-negative coverage prioritized in this scenario?",
+                        "choices": [
+                          "Mucositis",
+                          "Skin is the most likely source",
+                          "Acute cholecystitis is common in neutropenic fever",
+                          "Pneumonia is the most common cause"
+                        ],
+                        "correct_answer": "Mucositis",
+                        "explanation": "In neutropenic fever, gram-negative bacteria, especially Pseudomonas, pose high mortality risk. Chemotherapy-induced mucositis disrupts the gut barrier, allowing bacterial translocation, necessitating broad-spectrum gram-negative coverage"
+                    }, 
+                    {
                         "question": "A patient with an MRSA infection who was started on an oral antibiotic approximately 10 days ago is found to have low platelets on a routine blood check. Which antibiotic was most likely used?",
                         "choices": [
                           "Cefdinir",
@@ -1315,8 +1723,20 @@
                           "Metronidazole"
                         ],
                         "correct_answer": "Linezolid",
-                        "explanation": "Linezolid can cause reversible thrombocytopenia, especially with prolonged use (≥10 days). This occurs due to bone marrow suppression.. Monitoring complete blood counts is recommended in patients receiving extended therapy. None of the other choices covers MRSA. Vancomycin PO does not get absorbed systemically."
+                        "explanation": "Linezolid can cause reversible thrombocytopenia, especially with ≥10 days of use, due to bone marrow suppression. CBC monitoring is recommended for extended therapy. Other options don’t cover MRSA, and PO vancomycin lacks systemic absorption."
                     },
+                    {
+                        "question": "A 64-year-old male with lymphoma currently on chemotherapy presents to the ED with sepsis. He has severe leukopenia and thrombocytopenia. Blood cultures are positive for gram-positive cocci, with vanA/B genes detected (vancomycin-resistant). Which of the following antibiotics would be appropriate for treatment?",
+                        "choices": [
+                          "Vancomycin",
+                          "Daptomycin",
+                          "Linezolid",
+                          "Cefepime",
+                          "Ceftriaxone"
+                        ],
+                        "correct_answer": "Daptomycin",
+                        "explanation": "Enterococci with vanA/B genes resist vancomycin by altering D-Ala-D-Ala to D-Ala-D-Lac, reducing binding. Linezolid treats VRE but causes thrombocytopenia, making daptomycin preferred in this scenario. Cefepime and ceftriaxone lack VRE coverage."
+                    },                      
                     {
                         "question": "Which of the following bacteria does metronidazole cover?",
                         "choices": [
@@ -1350,7 +1770,7 @@
                         "question": "Which of the following antibiotics should be used to treat methicillin-susceptible Staphylococcus aureus (MSSA)?",
                         "choices": ["Vancomycin", "Nafcillin", "Rifampin", "Azithromycin"],
                         "correct_answer": "Nafcillin",
-                        "explanation": "Nafcillin and cefazolin are the preferred treatments for MSSA due to superior efficacy. Vancomycin can treat MSSA but is less effective than beta-lactams like nafcillin or cefazolin."
+                        "explanation": "Nafcillin and cefazolin are preferred for MSSA due to superior efficacy. If cultures confirm MSSA, deescalate from vancomycin to nafcillin or cefazolin."
                     },
                     {
                         "question": "A patient is on daptomycin for MRSA endocarditis. Which laboratory test should be monitored?",
@@ -1359,7 +1779,7 @@
                         "explanation": "Daptomycin can cause muscle toxicity, including rhabdomyolysis, so creatine kinase [CK] levels should be monitored weekly during therapy."
                     },
                     {
-                        "question": "A 35-year-old female with paraplegia due to a prior gunshot wound (GSW) to the spine has a neurogenic bladder and performs intermittent self-catheterization. She presents to the ED with fever and malaise. Urinalysis is positive for pyuria, and she has a history of a Pseudomonas urinary tract infection (UTI) approximately four months ago. You are planning to discharge her with oral antibiotics. Which is the most appropriate antibiotic choice?",
+                        "question": "A 35-year-old female with paraplegia due to a prior gunshot wound to the spine has a neurogenic bladder and performs intermittent self-catheterization. She presents to the ED with fever and malaise. Urinalysis is positive for pyuria, and she has a history of a Pseudomonas urinary tract infection approximately four months ago. You are planning to discharge her with oral antibiotics. Which is the most appropriate antibiotic choice?",
                         "choices": [
                           "Levofloxacin",
                           "Cefepime",
@@ -1380,7 +1800,7 @@
                           "Causes tendon rupture"
                         ],
                         "correct_answer": "Causes tendon rupture",
-                        "explanation": "Aminoglycosides are associated with ototoxicity, nephrotoxicity, and neuromuscular blockade, making them contraindicated in myasthenia gravis. They also have poor penetration into abscesses due to their hydrophilic nature and they dont have a good activity in acidic pH."
+                        "explanation": "Aminoglycosides cause ototoxicity, nephrotoxicity, and neuromuscular blockade, making them contraindicated in myasthenia gravis. They also poorly penetrate abscesses and have reduced activity in acidic pH."
                     },
                     {
                         "question": "Cefepime causes encephalopathy via which mechanism?",
@@ -1496,7 +1916,19 @@
                         "choices": ["Azithromycin", "Ceftriaxone", "Doxycycline", "Amoxicillin"],
                         "correct_answer": "Doxycycline",
                         "explanation": "Doxycycline is the treatment of choice for both human monocytic ehrlichiosis [HME] and human granulocytic anaplasmosis [HGA]."
+                    },
+                    {
+                        "question": "Human granulocytic anaplasmosis is transmitted by the same vector as which of the following infections, making co-infection possible?",
+                        "choices": [
+                          "Lyme disease and babesiosis",
+                          "Rocky Mountain spotted fever and ehrlichiosis",
+                          "Malaria and dengue",
+                          "Leptospirosis and Q fever"
+                        ],
+                        "correct_answer": "Lyme disease and babesiosis",
+                        "explanation": "HGA is transmitted by the Ixodes scapularis tick, the same vector responsible for Lyme disease (Borrelia burgdorferi) and babesiosis (Babesia microti). This makes double or triple infections possible, particularly in endemic areas."
                     }
+                      
                     
                 ]
             }
@@ -1561,6 +1993,22 @@
                       }
                       
                     
+                ]
+            },
+            {
+                "name": "Cardiac glycosides",
+                "questions": [
+                    {
+                        "question": "A patient presents with digoxin toxicity due to acute kidney injury and has a potassium level of 6.0 mEq/L. Which of the following interventions should be avoided?",
+                        "choices": [
+                          "IV calcium",
+                          "IV sodium bicarbonate",
+                          "Glucose + insulin",
+                          "Hemodialysis"
+                        ],
+                        "correct_answer": "IV calcium",
+                        "explanation": "IV calcium should be avoided in digoxin toxicity because it can potentiate digoxin's effects on cardiac myocytes, increasing the risk of fatal arrhythmias ('stone heart' phenomenon). Digoxin toxicity leads to excessive intracellular calcium accumulation due to Na+/K+ ATPase inhibition, and additional calcium administration may exacerbate this effect. Alternative treatments for hyperkalemia, such as sodium bicarbonate, glucose + insulin, and hemodialysis, can be used safely in this setting."
+                    }
                 ]
             }
         ]
