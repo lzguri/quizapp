@@ -1038,7 +1038,7 @@
                         "explanation": "Alcohol consumption along with gallstones is the most common cause of acute pancreatitis."
                     },
                     {
-                        "question": "A patient presents with epigastric pain and has an elevated serum lipase level greater than 3 times the upper normal limit. What is the next step in evaluation?",
+                        "question": "A patient presents with epigastric pain that radiates to the back and has an elevated serum lipase level greater than 3 times the upper normal limit. What is the next step in evaluation?",
                         "choices": [
                           "CT abdomen with contrast",
                           "Ultrasound of the abdomen",
@@ -1067,9 +1067,9 @@
                     },
                     {
                         "question": "Which of the following is NOT a criterion for the diagnosis of acute pancreatitis?",
-                        "choices": ["Epigastric abdominal pain", "Elevated lipase level 3x upper limit of normal", "Imaging findings of acute pancreatitis", "Fever"],
+                        "choices": ["Epigastric abdominal pain", "Elevated lipase level three times upper limit of normal", "Imaging findings of acute pancreatitis", "Fever"],
                         "correct_answer": "Fever",
-                        "explanation": "Acute pancreatitis is diagnosed if the patient meets 2 out of 3 criteria: **epigastric abdominal pain** **lipase elevated 3x upper limit of normal** **imaging showing acute pancreatitis**"
+                        "explanation": "Acute pancreatitis is diagnosed if the patient meets 2 out of 3 criteria: **epigastric abdominal pain** **lipase elevated three times  upper limit of normal** **imaging showing acute pancreatitis**"
                     }                    
                 ]
             },
@@ -1442,7 +1442,7 @@
                           "Lupus nephritis"
                         ],
                         "correct_answer": "Lupus nephritis",
-                        "explanation": "Pauci-immune glomerulonephritis refers to minimal or absent immune complex deposition on immunofluorescence microscopy. Pauci-immune glomerulonephritis is associated with ANCA-associated vasculitides, including: **granulomatosis with polyangiitis** **microscopic polyangiitis** **eosinophilic granulomatosis with polyangiitis** Lupus nephritis, on the other hand, is an immune-complex mediated glomerulonephritis with significant immune complex deposition on immunofluorescence.[complement levels will be normal]"
+                        "explanation": "Pauci-immune glomerulonephritis refers to minimal or absent immune complex deposition on immunofluorescence microscopy. Pauci-immune glomerulonephritis is associated with ANCA-associated vasculitides, including: **granulomatosis with polyangiitis** **microscopic polyangiitis** **eosinophilic granulomatosis with polyangiitis** Lupus nephritis, on the other hand, is an immune-complex mediated glomerulonephritis with significant immune complex deposition on immunofluorescence."
                     },
                     {
                         "question": "Complement levels will be low in all of the following causes of glomerulonephritis EXCEPT:",
@@ -1912,10 +1912,10 @@
                 "name": "Tick-borne disease",
                 "questions": [
                     {
-                        "question": "What is the treatment of choice for human monocytic ehrlichiosis [HME] and human granulocytic anaplasmosis [HGA]?",
+                        "question": "What is the treatment of choice for human monocytic ehrlichiosis and human granulocytic anaplasmosis?",
                         "choices": ["Azithromycin", "Ceftriaxone", "Doxycycline", "Amoxicillin"],
                         "correct_answer": "Doxycycline",
-                        "explanation": "Doxycycline is the treatment of choice for both human monocytic ehrlichiosis [HME] and human granulocytic anaplasmosis [HGA]."
+                        "explanation": "Doxycycline is the treatment of choice for both human monocytic ehrlichiosis (HME) and human granulocytic anaplasmosis (HGA)."
                     },
                     {
                         "question": "Human granulocytic anaplasmosis is transmitted by the same vector as which of the following infections, making co-infection possible?",
