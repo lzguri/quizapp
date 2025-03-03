@@ -409,6 +409,35 @@ document.addEventListener("DOMContentLoaded", () => {
         //explanationDiv.style.borderRadius = "5px"
         //explanationDiv.style.backgroundColor = choice === questionData.correct_answer ? "lightgreen" : "lightcoral";
         explanationDiv.style.backgroundColor = '#dcdcdc'
+
+        let explanationText = questionData.explanation;
+        let bulletPattern = /\*\*(.*?)\*\*/g; // Detect words or sentences enclosed in **
+    
+        let parts = explanationText.split(bulletPattern);
+        let finalHTML = "";
+        let inBulletList = false;
+
+        parts.forEach((part, index) => {
+            if (index % 2 === 0) {
+                if (inBulletList) {
+                    finalHTML += "</ul>"; // Close bullet list if it was open
+                    inBulletList = false;
+                }
+                finalHTML += part;
+            } else {
+                if (!inBulletList) {
+                    finalHTML += "<ul style='margin-top: 5px; margin-bottom: 5px;'>"; // Start bullet list
+                    inBulletList = true;
+                }
+                finalHTML += `<li>${part}</li>`;
+            }
+        });
+
+        if (inBulletList) {
+            finalHTML += "</ul>"; // Ensure any open list is closed properly
+        }
+    
+        explanationDiv.innerHTML = finalHTML;
         answerChoices.appendChild(explanationDiv);
     }
 
@@ -452,6 +481,9 @@ function showScore() {
     `;
 
     scoreDetails.innerHTML = scoreFilter;
+
+
+    
 
     function renderScoreDetails() {
         let scoreDetailsContainer = document.getElementById("scoreDetailsContainer");
