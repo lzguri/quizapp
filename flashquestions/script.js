@@ -451,24 +451,24 @@ document.addEventListener("DOMContentLoaded", () => {
 
 
 
+        // Modify the showScore function to apply the requested changes
     function showScore() {
         quizContainer.style.display = "none";
         scorePage.style.display = "block";
-    
+
         let correctAnswers = userAnswers.filter((answer, index) => answer === selectedQuestions[index].correct_answer).length;
         let percentage = ((correctAnswers / selectedQuestions.length) * 100).toFixed(2);
-    
+
         let topicScores = {};
-    
-        // Calculate per-topic and per-subtopic scores
+
         selectedQuestions.forEach((question, index) => {
             let userAnswer = userAnswers[index];
             let isCorrect = userAnswer === question.correct_answer;
-    
+            let status = userAnswer ? (isCorrect ? "correct" : "incorrect") : "unanswered";
+
             let topicName = "Unknown Topic";
             let subtopicName = "Unknown Subtopic";
-    
-            // Find the corresponding topic and subtopic from topicsData
+
             topicsData.forEach(topic => {
                 topic.subtopics.forEach(subtopic => {
                     if (subtopic.questions.some(q => q.question === question.question)) {
@@ -477,153 +477,197 @@ document.addEventListener("DOMContentLoaded", () => {
                     }
                 });
             });
-    
-            // Initialize topic and subtopic objects
+
             if (!topicScores[topicName]) {
                 topicScores[topicName] = { total: 0, correct: 0, subtopics: {} };
             }
             if (!topicScores[topicName].subtopics[subtopicName]) {
-                topicScores[topicName].subtopics[subtopicName] = { total: 0, correct: 0 };
+                topicScores[topicName].subtopics[subtopicName] = { total: 0, correct: 0, questions: [] };
             }
-    
-            // Increment total questions and correct answers
+
             topicScores[topicName].total++;
             topicScores[topicName].subtopics[subtopicName].total++;
+            topicScores[topicName].subtopics[subtopicName].questions.push({ question, index, status });
             if (isCorrect) {
                 topicScores[topicName].correct++;
                 topicScores[topicName].subtopics[subtopicName].correct++;
             }
         });
-    
-        // Generate topic-wise and subtopic-wise score summary
-        let topicScoreHTML = "<h3>Score Breakdown by Topic & Subtopic:</h3><ul>";
+
+        let topicScoreHTML = `<h3 style='text-align: center;'>Score Breakdown by Topic & Subtopic</h3>`;
+        topicScoreHTML += `<div class='topic-list'>`;
+        topicScoreHTML += `<div class='checkbox-filter-container'>
+            <label><input type='checkbox' id='filterCorrect' checked> Correct</label>
+            <label><input type='checkbox' id='filterIncorrect' checked> Incorrect</label>
+            <label><input type='checkbox' id='filterUnanswered' checked> Unanswered</label>
+        </div>`;
+        
         Object.keys(topicScores).forEach(topic => {
             let topicData = topicScores[topic];
             let topicPercentage = ((topicData.correct / topicData.total) * 100).toFixed(2);
-            topicScoreHTML += `<li><strong>${topic}:</strong> ${topicData.correct}/${topicData.total} (${topicPercentage}%)</li>`;
+            let incorrectPercentage = (100 - topicPercentage).toFixed(2);
+
+            topicScoreHTML += `<div class='collapsible'>${topic} (${topicPercentage}%)</div>`;
+            topicScoreHTML += `<div class='content' style='display: none;'>`;
             
-            topicScoreHTML += "<ul>";
+            topicScoreHTML += `<div class='progress-bar-container' style='max-width: 100%;'>
+                <div class='progress-bar-correct' style='width: ${topicPercentage}%;'></div>
+                <div class='progress-bar-incorrect' style='width: ${incorrectPercentage}%;'></div>
+            </div>`;
+            
             Object.keys(topicData.subtopics).forEach(subtopic => {
                 let subtopicData = topicData.subtopics[subtopic];
                 let subtopicPercentage = ((subtopicData.correct / subtopicData.total) * 100).toFixed(2);
-                topicScoreHTML += `<li>${subtopic}: ${subtopicData.correct}/${subtopicData.total} (${subtopicPercentage}%)</li>`;
-            });
-            topicScoreHTML += "</ul>";
-        });
-        topicScoreHTML += "</ul>";
-    
-        // Update the score page with topic-wise and subtopic-wise scores
-        let scoreFilter = `
-            <h2 style="text-align: center;">Your overall score: ${percentage}% (${correctAnswers}/${selectedQuestions.length})</h2>
-            ${topicScoreHTML}
-            
+                let subIncorrectPercentage = (100 - subtopicPercentage).toFixed(2);
 
-                <!-- Add a container around the three checkboxes -->
-            <h2 style="text-align: center;">Key concepts</h2>
-            <div class="checkbox-filter-container">
-            <label>
-                <input type="checkbox" id="filterCorrect" checked> Correct
-            </label>
-            <br>
-            <label>
-                <input type="checkbox" id="filterIncorrect" checked> Incorrect
-            </label>
-            <br>
-            <label>
-                <input type="checkbox" id="filterUnanswered" checked> Unanswered
-            </label>
-            </div>
-            <div id="scoreDetailsContainer"></div>
-            <button id="resetQuizFinal">Reset Quiz</button>
-            <button id="returnHomeFinal">Return to Homepage</button>
+                topicScoreHTML += `<div class='collapsible'>${subtopic} (${subtopicPercentage}%)</div>`;
+                topicScoreHTML += `<div class='content' style='display: none;'>`;
+                topicScoreHTML += `<div class='progress-bar-container' style='max-width: 100%;'>
+                    <div class='progress-bar-correct' style='width: ${subtopicPercentage}%;'></div>
+                    <div class='progress-bar-incorrect' style='width: ${subIncorrectPercentage}%;'></div>
+                </div>`;
+                
+                topicScoreHTML += `<ul>`;
+                subtopicData.questions.forEach(q => {
+                    topicScoreHTML += `<li class='${q.status}'><a href='#' class='review-question' data-index='${q.index}'>${q.question.question}</a></li>`; //(${q.status.charAt(0).toUpperCase() + q.status.slice(1)}) 
+                });
+                topicScoreHTML += `</ul></div>`;
+            });
+            topicScoreHTML += `</div>`;
+        });
+        topicScoreHTML += `</div>`;
+
+        scoreDetails.innerHTML = `
+            <h2 style='text-align: center;'>Your overall score: ${percentage}% (${correctAnswers}/${selectedQuestions.length})</h2>
+            ${topicScoreHTML}
+            <button id='resetQuizFinal'>Reset Quiz</button>
+            <button id='returnHomeFinal'>Return to Homepage</button>
         `;
-    
-        scoreDetails.innerHTML = scoreFilter;
-    
+
+        document.querySelectorAll(".collapsible").forEach(collapsible => {
+            collapsible.addEventListener("click", function() {
+                this.classList.toggle("active");
+                let content = this.nextElementSibling;
+                content.style.display = content.style.display === "block" ? "none" : "block";
+            });
+        });
+
         document.getElementById("resetQuizFinal").addEventListener("click", startQuiz);
         document.getElementById("returnHomeFinal").addEventListener("click", () => location.reload());
-    
-    
+        document.querySelectorAll(".review-question").forEach(link => {
+            link.addEventListener("click", function(event) {
+                event.preventDefault();
+                let questionIndex = parseInt(this.dataset.index);
+                currentQuestionIndex = questionIndex;
+                scorePage.style.display = "none";
+                quizContainer.style.display = "block";
+                showQuestion(true);
+            });
+        });
 
-
-    
-
-    function renderScoreDetails() {
-        let scoreDetailsContainer = document.getElementById("scoreDetailsContainer");
-        scoreDetailsContainer.innerHTML = selectedQuestions.map((question, index) => {
-            let userAnswer = userAnswers[index];
-            let status = userAnswer === question.correct_answer ? "correct" : (userAnswer ? "incorrect" : "unanswered");
-            
-            let showCorrect = document.getElementById("filterCorrect").checked;
-            let showIncorrect = document.getElementById("filterIncorrect").checked;
-            let showUnanswered = document.getElementById("filterUnanswered").checked;
-
-            if ((status === "correct" && !showCorrect) || 
-                (status === "incorrect" && !showIncorrect) || 
-                (status === "unanswered" && !showUnanswered)) {
-                return "";
-            }
-            
-            return `
-  <div id="explanation-text" class="score-item ${status}">
-    <p>
-      
-      <strong><a href="#" class="review-question" data-index="${index}">Question ${index + 1}: </a></strong>${question.explanation}
-    </p>
-  </div>
-`;
-        }).join("");
+        document.getElementById("filterCorrect").addEventListener("change", filterQuestions);
+        document.getElementById("filterIncorrect").addEventListener("change", filterQuestions);
+        document.getElementById("filterUnanswered").addEventListener("change", filterQuestions);
     }
-    //<p><strong>Question ${index + 1}: ${userAnswer || "Unanswered"}  ${question.correct_answer || "Answered correctly"}</strong> <a href="#" class="review-question" data-index="${index}">Go to the question</a></p>
-    // <p><strong>Question ${index + 1}:</strong> <a href="#" class="review-question" data-index="${index}">${question.question}</a></p>
-    //<p><strong>Your Answer:</strong> ${userAnswer || "Unanswered"}</p><p><strong>Correct Answer:</strong> ${question.correct_answer}</p>
-    //                     <p><strong>Your Answer:</strong> ${userAnswer || "Unanswered"}  <strong>Correct Answer:</strong> ${question.correct_answer}</p>
 
-    //document.getElementById("score-item").style.paddingTop = "0px"
+    function filterQuestions() {
+        let showCorrect = document.getElementById("filterCorrect").checked;
+        let showIncorrect = document.getElementById("filterIncorrect").checked;
+        let showUnanswered = document.getElementById("filterUnanswered").checked;
 
-    document.getElementById("filterCorrect").addEventListener("change", renderScoreDetails);
-    document.getElementById("filterIncorrect").addEventListener("change", renderScoreDetails);
-    document.getElementById("filterUnanswered").addEventListener("change", renderScoreDetails);
-    renderScoreDetails();
+        document.querySelectorAll(".correct, .incorrect, .unanswered").forEach(item => {
+            if ((item.classList.contains("correct") && showCorrect) ||
+                (item.classList.contains("incorrect") && showIncorrect) ||
+                (item.classList.contains("unanswered") && showUnanswered)) {
+                item.style.display = "block";
+            } else {
+                item.style.display = "none";
+            }
+        });
 
-    document.getElementById("resetQuizFinal").addEventListener("click", startQuiz);
-    document.getElementById("returnHomeFinal").addEventListener("click", () => location.reload());
 
-    document.getElementById("scoreDetailsContainer").addEventListener("click", function(event) {
-        if (event.target.classList.contains("review-question")) {
-            event.preventDefault();
-            let questionIndex = parseInt(event.target.getAttribute("data-index"));
-            currentQuestionIndex = questionIndex;
-            scorePage.style.display = "none";
-            quizContainer.style.display = "block";
-            showQuestion(true);
+        
+        
+
+
+        
+
+        function renderScoreDetails() {
+            let scoreDetailsContainer = document.getElementById("scoreDetailsContainer");
+            scoreDetailsContainer.innerHTML = selectedQuestions.map((question, index) => {
+                let userAnswer = userAnswers[index];
+                let status = userAnswer === question.correct_answer ? "correct" : (userAnswer ? "incorrect" : "unanswered");
+                
+                let showCorrect = document.getElementById("filterCorrect").checked;
+                let showIncorrect = document.getElementById("filterIncorrect").checked;
+                let showUnanswered = document.getElementById("filterUnanswered").checked;
+
+                if ((status === "correct" && !showCorrect) || 
+                    (status === "incorrect" && !showIncorrect) || 
+                    (status === "unanswered" && !showUnanswered)) {
+                    return "";
+                }
+                
+                return `
+    <div id="explanation-text" class="score-item ${status}">
+        <p>
+        
+        <strong><a href="#" class="review-question" data-index="${index}">Question ${index + 1}: </a></strong>${question.explanation}
+        </p>
+    </div>
+    `;
+            }).join("");
         }
+        //<p><strong>Question ${index + 1}: ${userAnswer || "Unanswered"}  ${question.correct_answer || "Answered correctly"}</strong> <a href="#" class="review-question" data-index="${index}">Go to the question</a></p>
+        // <p><strong>Question ${index + 1}:</strong> <a href="#" class="review-question" data-index="${index}">${question.question}</a></p>
+        //<p><strong>Your Answer:</strong> ${userAnswer || "Unanswered"}</p><p><strong>Correct Answer:</strong> ${question.correct_answer}</p>
+        //                     <p><strong>Your Answer:</strong> ${userAnswer || "Unanswered"}  <strong>Correct Answer:</strong> ${question.correct_answer}</p>
+
+        //document.getElementById("score-item").style.paddingTop = "0px"
+
+        document.getElementById("filterCorrect").addEventListener("change", renderScoreDetails);
+        document.getElementById("filterIncorrect").addEventListener("change", renderScoreDetails);
+        document.getElementById("filterUnanswered").addEventListener("change", renderScoreDetails);
+        renderScoreDetails();
+
+        document.getElementById("resetQuizFinal").addEventListener("click", startQuiz);
+        document.getElementById("returnHomeFinal").addEventListener("click", () => location.reload());
+
+        document.getElementById("scoreDetailsContainer").addEventListener("click", function(event) {
+            if (event.target.classList.contains("review-question")) {
+                event.preventDefault();
+                let questionIndex = parseInt(event.target.getAttribute("data-index"));
+                currentQuestionIndex = questionIndex;
+                scorePage.style.display = "none";
+                quizContainer.style.display = "block";
+                showQuestion(true);
+            }
+        });
+    }
+
+        
+
+        prevButton.addEventListener("click", () => {
+            if (currentQuestionIndex > 0) {
+                currentQuestionIndex--;
+                showQuestion();
+            }
+        });
+
+        resetButton.addEventListener("click", startQuiz);
+        returnHomeButton.addEventListener("click", () => location.reload());
+
+        
+
+        nextButton.addEventListener("click", () => {
+            if (currentQuestionIndex < selectedQuestions.length - 1) {
+                currentQuestionIndex++;
+                showQuestion();
+            } else {
+                showScore();
+            }
+        });
     });
-}
-
-    
-
-    prevButton.addEventListener("click", () => {
-        if (currentQuestionIndex > 0) {
-            currentQuestionIndex--;
-            showQuestion();
-        }
-    });
-
-    resetButton.addEventListener("click", startQuiz);
-    returnHomeButton.addEventListener("click", () => location.reload());
-
-    
-
-    nextButton.addEventListener("click", () => {
-        if (currentQuestionIndex < selectedQuestions.length - 1) {
-            currentQuestionIndex++;
-            showQuestion();
-        } else {
-            showScore();
-        }
-    });
-});
 
 
 

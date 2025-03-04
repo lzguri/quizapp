@@ -200,6 +200,132 @@ button:active {
     margin-top: 0px;
     line-height: 1.2;
 }
+/* Center the score breakdown section */
+.topic-list {
+    width: 70%;
+    margin: auto;
+    list-style: none;
+    padding: 0;
+    text-align: center;
+}
+
+/* Collapsible sections */
+.collapsible {
+    background-color: #f1f1f1;
+    cursor: pointer;
+    padding: 10px;
+    width: 100%;
+    border: none;
+    text-align: left; /* Center topics when not expanded */
+    font-size: 16px;
+    font-weight: bold;
+    transition: background-color 0.3s ease;
+    border-radius: 5px;
+    display: block;
+}
+
+.collapsible:hover {
+    background-color: #ddd;
+}
+
+.content {
+    display: none;
+    padding: 10px;
+    border-left: 3px solid #0073e6;
+    margin-top: 5px;
+    background-color: #f9f9f9;
+    border-radius: 5px;
+    text-align: left;
+    width: 100%;
+}
+
+/* Ensure topic spans same width as expanded subtopics */
+.collapsible.active {
+    text-align: left;
+}
+
+/* Progress bar styles with gradient */
+.progress-bar-container {
+    width: 100%;
+    height: 10px;
+    background-color: #ddd;
+    border-radius: 5px;
+    margin-top: 5px;
+    position: relative;
+    display: flex;
+    overflow: hidden;
+}
+
+.progress-bar-correct {
+    height: 100%;
+    background: linear-gradient(to right, #106e26, #49b861);
+    transition: width 0.5s ease-in-out;
+}
+
+.progress-bar-incorrect {
+    height: 100%;
+    background: linear-gradient(to right, #dc3545, #a20716);
+    transition: width 0.5s ease-in-out;
+}
+
+/* Question categorization styling */
+.correct::before {
+    content: "✔ Correct - ";
+    color: green;
+    font-weight: bold;
+}
+.incorrect::before {
+    content: "✖ Incorrect - ";
+    color: red;
+    font-weight: bold;
+}
+.unanswered::before {
+    content: "❓ Unanswered - ";
+    color: blue;
+    font-weight: bold;
+}
+
+
+/* Checkbox filter container */
+.checkbox-filter-container {
+    border: 1px solid #ccc;
+    background-color: #f9f9f9;
+    padding: 10px;
+    margin: 10px 0;
+    border-radius: 5px;
+    display: flex;
+    justify-content: center;
+    gap: 10px;
+}
+
+.checkbox-filter-container label {
+    display: flex;
+    align-items: center;
+    gap: 5px;
+    font-size: 14px;
+    cursor: pointer;
+}
+
+/* Hide questions based on filter */
+.hidden {
+    display: none;
+}
+
+/* Remove link underline */
+.review-question {
+    text-decoration: none;
+    color: #000000;
+}
+
+.review-question:hover {
+    text-decoration: underline;
+}
+
+
+.review-question:hover {
+    text-decoration: underline;
+}
+
 
 
 .checkbox-filter-container {

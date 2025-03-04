@@ -1025,6 +1025,37 @@
                 ]
             },
             {
+                "name": "Esophagitis",
+                "questions": [
+                    {
+                        "question": "A patient presents with odynophagia and is found to have oral thrush on physical exam. What is the next step in management?",
+                        "choices": [
+                          "Diagnose with candidiasis and proceed with treatment",
+                          "Diagnose with CMV esophagitis and proceed with treatment",
+                          "Ask GI to perform an endoscopy",
+                          "Prescribe amphotericin B"
+                        ],
+                        "correct_answer": "Diagnose with candidiasis and proceed with treatment",
+                        "explanation": "In a patient with odynophagia and oral thrush, Candida esophagitis is the most likely diagnosis. Empiric treatment with oral fluconazole is appropriate. Endoscopy is typically reserved for cases that do not respond to initial antifungal therapy or when an alternative diagnosis (e.g., CMV or HSV esophagitis) is suspected."
+                    },
+                    {
+                        "question": "A patient presents with severe substernal chest pain with swallowing, occurring several hours after taking a prescribed medication. All of the following medications are known to cause this condition EXCEPT:",
+                        "choices": [
+                          "Potassium pills",
+                          "Iron pills",
+                          "Alendronate",
+                          "Ibuprofen",
+                          "Doxycycline",
+                          "Sertraline"
+                        ],
+                        "correct_answer": "Sertraline",
+                        "explanation": "Medication-induced esophagitis is commonly caused by pills that can irritate the esophageal mucosa, including: **potassium pills** **iron supplements** **bisphosphonates (e.g., alendronate)** **NSAIDs (e.g., ibuprofen)* **tetracyclines** Sertraline, an SSRI, is not typically associated with pill-induced esophagitis."
+                    }
+                      
+                      
+                ]
+            },    
+            {
                 "name": "Acute pancreatitis",
                 "questions": [
                     {
