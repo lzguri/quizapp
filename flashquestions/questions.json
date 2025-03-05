@@ -1225,6 +1225,55 @@
         ]
     },
     {
+        "name": "Hematology",
+        "subtopics": [
+            {
+                "name": "Macrocytic anemia",
+                "questions": [
+                    {
+                        "question": "All of the following statements are incorrect about pernicious anemia EXCEPT:",
+                        "choices": [
+                          "Stomach acid production is usually normal",
+                          "Antibodies against intrinsic factor and parietal cells are not present",
+                          "It has no association with other autoimmune disorders",
+                          "Neurologic symptoms can appear years before anemia is diagnosed",
+                          "There is no increased likelihood of developing gastric cancer"
+                        ],
+                        "correct_answer": "Neurologic symptoms can appear years before anemia is diagnosed",
+                        "explanation": "Pernicious anemia causes vitamin B12 deficiency, leading to neurologic symptoms that can precede anemia by years. It is associated with: **achlorhydria** **presence of anti-parietal and anti-intrinsic factor antibodies** **an increased risk of gastric cancer** **autoimmune diseases like type 1 diabetes mellitus**"
+                    },
+                    {
+                        "question": "All of the following features can be seen in megaloblastic anemia EXCEPT:",
+                        "choices": [
+                          "Macro-ovalocytes with MCV >115 fL",
+                          "Anisocytosis and poikilocytosis",
+                          "Hypersegmented neutrophils",
+                          "High reticulocyte count"
+                        ],
+                        "correct_answer": "High reticulocyte count",
+                        "explanation": "An MCV greater than 115 fL is highly suggestive of megaloblastic anemia, which is characterized by macro-ovalocytes, anisocytosis, poikilocytosis, and hypersegmented neutrophils. However, megaloblastic anemia typically presents with a low reticulocyte count due to ineffective erythropoiesis."
+                    },
+                    {
+                        "question": "Which of the following can be found in megaloblastic anemia?",
+                        "choices": [
+                          "Howell-Jolly bodies",
+                          "Heinz bodies",
+                          "Basophilic stippling",
+                          "Target cells",
+                          "Schistocytes"
+                        ],
+                        "correct_answer": "Howell-Jolly bodies",
+                        "explanation": "Howell-Jolly bodies are nuclear remnants seen in red blood cells and can be found in megaloblastic anemia due to ineffective erythropoiesis. They are also seen in asplenia or functional hyposplenism, as the spleen is responsible for removing these nuclear remnants. Heinz bodies are associated with G6PD deficiency, basophilic stippling is seen in lead poisoning, target cells are found in liver disease and thalassemia, and schistocytes are characteristic of microangiopathic hemolytic anemia."
+                    }
+                      
+                      
+                      
+                    
+                ]
+            }
+        ]
+    },
+    {
         "name": "Nephrology",
         "subtopics": [
             {

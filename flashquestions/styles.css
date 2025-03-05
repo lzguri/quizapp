@@ -88,20 +88,6 @@ body {
     display: block;
 }
 
-/* Individual subtopic styling */
-.subtopic {
-    background: #ececec;
-    padding: 8px 14px;
-    border-radius: 6px;
-    margin: 4px 0;
-    border-left: 4px solid #0073e6;
-    transition: background 0.3s;
-}
-
-.subtopic:hover {
-    background: #d9d9d9;
-    cursor: pointer;
-}
 
 /* Buttons */
 button {
@@ -202,58 +188,11 @@ button:active {
 }
 /* Center the score breakdown section */
 .topic-list {
-    width: 70%;
+    width: 100%;
     margin: auto;
     list-style: none;
     padding: 0;
     text-align: center;
-}
-
-/* Collapsible sections */
-.collapsible {
-    background-color: #f1f1f1;
-    cursor: pointer;
-    padding: 10px;
-    width: 100%;
-    border: none;
-    text-align: left; /* Center topics when not expanded */
-    font-size: 16px;
-    font-weight: bold;
-    transition: background-color 0.3s ease;
-    border-radius: 5px;
-    display: block;
-}
-
-.collapsible:hover {
-    background-color: #ddd;
-}
-
-.content {
-    display: none;
-    padding: 10px;
-    border-left: 3px solid #0073e6;
-    margin-top: 5px;
-    background-color: #f9f9f9;
-    border-radius: 5px;
-    text-align: left;
-    width: 100%;
-}
-
-/* Ensure topic spans same width as expanded subtopics */
-.collapsible.active {
-    text-align: left;
-}
-
-/* Progress bar styles with gradient */
-.progress-bar-container {
-    width: 100%;
-    height: 10px;
-    background-color: #ddd;
-    border-radius: 5px;
-    margin-top: 5px;
-    position: relative;
-    display: flex;
-    overflow: hidden;
 }
 
 /* Score tree container for topics & subtopics */
@@ -270,6 +209,8 @@ button:active {
     border: 1px solid #ccc;
     border-radius: 4px;
     margin-bottom: 6px;
+    width: 100%;
+
   }
   
   /* Tree Node header lines for topics & subtopics */
@@ -334,6 +275,7 @@ button:active {
   
   /* Collapsed/expanded classes */
   .tree-node.collapsed .tree-toggle-icon {
+    content: '[ + ]';
     /* typically "▶" */
   }
   .tree-node.expanded .tree-toggle-icon {
@@ -379,11 +321,12 @@ button:active {
     border: 1px solid #ccc;
     background-color: #f9f9f9;
     padding: 10px;
-    margin: 10px 0;
+    margin: 0 auto;
     border-radius: 5px;
     display: flex;
     justify-content: center;
     gap: 10px;
+    width: 90% !important;
 }
 
 .checkbox-filter-container label {
@@ -425,18 +368,9 @@ button:active {
   }
   
 
-/* Generic styling for the score-item container */
-.score-item {
-    padding-top: 0px !important;
-    padding-left: 3px;          /* <= reduce the padding here */
-    margin: 3px 0;
-    border-radius: 0;
-  }
 
-  .score-item {
-    padding: 2px 4px; /* 2px top/bottom, 4px left/right */
-  }
-  
+
+
   /* Correct answer styling */
   .score-item.correct {
     border: 1px solid green;
@@ -458,13 +392,15 @@ button:active {
   }
   
 
-/* Score Page */
-#scorePage {
-    width: 100%;
+  #scorePage {
+    width: 90%;
+    max-width: 1000px;   /* Prevents the container from exceeding 1000px */
+    margin: 0 auto;
     text-align: left;
     padding-top: 1px;
-}
-
+    background-color: rgb(255, 255, 255);
+  }
+  
 .score-result {
     text-align: center;
 }

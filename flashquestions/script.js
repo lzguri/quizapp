@@ -509,7 +509,7 @@ document.addEventListener("DOMContentLoaded", () => {
             // Build a single string of HTML representing the new layout
             function buildTreeView() {
               let html = `
-                <h2 style='text-align: center;'>Your overall score: ${percentage}% (${correctAnswers}/${selectedQuestions.length})</h2>
+                <h2 style='text-align: center;'>Your overall score: ${Math.round(percentage)}% (${correctAnswers}/${selectedQuestions.length})</h2>
           
                 <div class='checkbox-filter-container'>
                   <label><input type='checkbox' id='filterCorrect' checked> Correct</label>
@@ -533,7 +533,7 @@ document.addEventListener("DOMContentLoaded", () => {
                         <span class='tree-toggle-icon'>▶</span>
                         <span class='folder-icon'></span>
                         <span class='tree-label'>
-                          ${topic} (${topicPercentage}%)
+                          ${topic} (${Math.round(topicPercentage)}%)
                         </span>
                       </div>
                       <ul class='subtopic-list' style='display:none;'>
@@ -553,7 +553,7 @@ document.addEventListener("DOMContentLoaded", () => {
                         <span class='tree-toggle-icon'>▶</span>
                         <span class='folder-icon subtopic-folder-icon'></span>
                         <span class='tree-label'>
-                          ${subtopic} (${subtopicPercentage}%)
+                          ${subtopic} (${Math.round(subtopicPercentage)}%)
                         </span>
                       </div>
                       <ul class='question-list' style='display:none;'>
