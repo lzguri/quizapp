@@ -452,139 +452,209 @@ document.addEventListener("DOMContentLoaded", () => {
 
 
         // Modify the showScore function to apply the requested changes
-    function showScore() {
-        quizContainer.style.display = "none";
-        scorePage.style.display = "block";
-
-        let correctAnswers = userAnswers.filter((answer, index) => answer === selectedQuestions[index].correct_answer).length;
-        let percentage = ((correctAnswers / selectedQuestions.length) * 100).toFixed(2);
-
-        let topicScores = {};
-
-        selectedQuestions.forEach((question, index) => {
-            let userAnswer = userAnswers[index];
-            let isCorrect = userAnswer === question.correct_answer;
-            let status = userAnswer ? (isCorrect ? "correct" : "incorrect") : "unanswered";
-
-            let topicName = "Unknown Topic";
-            let subtopicName = "Unknown Subtopic";
-
-            topicsData.forEach(topic => {
-                topic.subtopics.forEach(subtopic => {
-                    if (subtopic.questions.some(q => q.question === question.question)) {
-                        topicName = topic.name;
-                        subtopicName = subtopic.name;
-                    }
+        function showScore() {
+            quizContainer.style.display = "none";
+            scorePage.style.display = "block";
+          
+            let correctAnswers = userAnswers.filter(
+              (answer, index) => answer === selectedQuestions[index].correct_answer
+            ).length;
+            let percentage = ((correctAnswers / selectedQuestions.length) * 100).toFixed(2);
+          
+            let topicScores = {};
+          
+            // Build aggregated data
+            selectedQuestions.forEach((question, index) => {
+              let userAnswer = userAnswers[index];
+              let isCorrect = userAnswer === question.correct_answer;
+              let status = userAnswer ? (isCorrect ? "correct" : "incorrect") : "unanswered";
+          
+              let topicName = "Unknown Topic";
+              let subtopicName = "Unknown Subtopic";
+          
+              // Figure out which topic/subtopic each question belongs to
+              topicsData.forEach((topic) => {
+                topic.subtopics.forEach((subtopic) => {
+                  if (subtopic.questions.some((q) => q.question === question.question)) {
+                    topicName = topic.name;
+                    subtopicName = subtopic.name;
+                  }
                 });
-            });
-
-            if (!topicScores[topicName]) {
+              });
+          
+              if (!topicScores[topicName]) {
                 topicScores[topicName] = { total: 0, correct: 0, subtopics: {} };
-            }
-            if (!topicScores[topicName].subtopics[subtopicName]) {
-                topicScores[topicName].subtopics[subtopicName] = { total: 0, correct: 0, questions: [] };
-            }
-
-            topicScores[topicName].total++;
-            topicScores[topicName].subtopics[subtopicName].total++;
-            topicScores[topicName].subtopics[subtopicName].questions.push({ question, index, status });
-            if (isCorrect) {
+              }
+              if (!topicScores[topicName].subtopics[subtopicName]) {
+                topicScores[topicName].subtopics[subtopicName] = {
+                  total: 0,
+                  correct: 0,
+                  questions: []
+                };
+              }
+          
+              topicScores[topicName].total++;
+              topicScores[topicName].subtopics[subtopicName].total++;
+              topicScores[topicName].subtopics[subtopicName].questions.push({
+                question,
+                index,
+                status
+              });
+              if (isCorrect) {
                 topicScores[topicName].correct++;
                 topicScores[topicName].subtopics[subtopicName].correct++;
-            }
-        });
-
-        let topicScoreHTML = `<h3 style='text-align: center;'>Score Breakdown by Topic & Subtopic</h3>`;
-        topicScoreHTML += `<div class='topic-list'>`;
-        topicScoreHTML += `<div class='checkbox-filter-container'>
-            <label><input type='checkbox' id='filterCorrect' checked> Correct</label>
-            <label><input type='checkbox' id='filterIncorrect' checked> Incorrect</label>
-            <label><input type='checkbox' id='filterUnanswered' checked> Unanswered</label>
-        </div>`;
-        
-        Object.keys(topicScores).forEach(topic => {
-            let topicData = topicScores[topic];
-            let topicPercentage = ((topicData.correct / topicData.total) * 100).toFixed(2);
-            let incorrectPercentage = (100 - topicPercentage).toFixed(2);
-
-            topicScoreHTML += `<div class='collapsible'>${topic} (${topicPercentage}%)</div>`;
-            topicScoreHTML += `<div class='content' style='display: none;'>`;
-            
-            topicScoreHTML += `<div class='progress-bar-container' style='max-width: 100%;'>
-                <div class='progress-bar-correct' style='width: ${topicPercentage}%;'></div>
-                <div class='progress-bar-incorrect' style='width: ${incorrectPercentage}%;'></div>
-            </div>`;
-            
-            Object.keys(topicData.subtopics).forEach(subtopic => {
-                let subtopicData = topicData.subtopics[subtopic];
-                let subtopicPercentage = ((subtopicData.correct / subtopicData.total) * 100).toFixed(2);
-                let subIncorrectPercentage = (100 - subtopicPercentage).toFixed(2);
-
-                topicScoreHTML += `<div class='collapsible'>${subtopic} (${subtopicPercentage}%)</div>`;
-                topicScoreHTML += `<div class='content' style='display: none;'>`;
-                topicScoreHTML += `<div class='progress-bar-container' style='max-width: 100%;'>
-                    <div class='progress-bar-correct' style='width: ${subtopicPercentage}%;'></div>
-                    <div class='progress-bar-incorrect' style='width: ${subIncorrectPercentage}%;'></div>
-                </div>`;
-                
-                topicScoreHTML += `<ul>`;
-                subtopicData.questions.forEach(q => {
-                    topicScoreHTML += `<li class='${q.status}'><a href='#' class='review-question' data-index='${q.index}'>${q.question.question}</a></li>`; //(${q.status.charAt(0).toUpperCase() + q.status.slice(1)}) 
+              }
+            });
+          
+            // Build a single string of HTML representing the new layout
+            function buildTreeView() {
+              let html = `
+                <h2 style='text-align: center;'>Your overall score: ${percentage}% (${correctAnswers}/${selectedQuestions.length})</h2>
+          
+                <div class='checkbox-filter-container'>
+                  <label><input type='checkbox' id='filterCorrect' checked> Correct</label>
+                  <label><input type='checkbox' id='filterIncorrect' checked> Incorrect</label>
+                  <label><input type='checkbox' id='filterUnanswered' checked> Unanswered</label>
+                </div>
+          
+                <ul class='score-tree'>
+              `;
+          
+              Object.keys(topicScores).forEach((topic) => {
+                let topicData = topicScores[topic];
+                let topicPercentage = ((topicData.correct / topicData.total) * 100).toFixed(2);
+          
+                // Build the topic node
+                html += `
+                  <li class='tree-node topic-node collapsed'>
+                    <!-- The entire block below gets a .tree-node-content to unify background for topic + subtopics -->
+                    <div class='tree-node-content'>
+                      <div class='tree-node-header'>
+                        <span class='tree-toggle-icon'>▶</span>
+                        <span class='folder-icon'></span>
+                        <span class='tree-label'>
+                          ${topic} (${topicPercentage}%)
+                        </span>
+                      </div>
+                      <ul class='subtopic-list' style='display:none;'>
+                `;
+          
+                // Subtopics
+                Object.keys(topicData.subtopics).forEach((subtopic) => {
+                  let subtopicData = topicData.subtopics[subtopic];
+                  let subtopicPercentage = (
+                    (subtopicData.correct / subtopicData.total) *
+                    100
+                  ).toFixed(2);
+          
+                  html += `
+                    <li class='tree-node subtopic-node collapsed'>
+                      <div class='tree-node-header'>
+                        <span class='tree-toggle-icon'>▶</span>
+                        <span class='folder-icon subtopic-folder-icon'></span>
+                        <span class='tree-label'>
+                          ${subtopic} (${subtopicPercentage}%)
+                        </span>
+                      </div>
+                      <ul class='question-list' style='display:none;'>
+                  `;
+          
+                  // Individual questions
+                  subtopicData.questions.forEach((q) => {
+                    let { question, index, status } = q;
+                    html += `
+                      <li class='question-item ${status}'>
+                        <a href='#' class='review-question' data-index='${index}'>
+                          ${question.question}
+                        </a>
+                      </li>
+                    `;
+                  });
+          
+                  html += `</ul></li>`; // end subtopic node
                 });
-                topicScoreHTML += `</ul></div>`;
+          
+                html += `</ul></div></li>`; // end topic node
+              });
+          
+              html += `</ul>`; // end .score-tree
+          
+              // "Reset" & "Home" buttons
+              html += `
+                <button id='resetQuizFinal'>Reset Quiz</button>
+                <button id='returnHomeFinal'>Return to Homepage</button>
+              `;
+          
+              return html;
+            }
+          
+            scoreDetails.innerHTML = buildTreeView();
+          
+            // Expand/collapse logic for topic/subtopic
+            document.querySelectorAll(".tree-node-header").forEach((header) => {
+              header.addEventListener("click", function (e) {
+                // Don't collapse if user clicks directly on question link
+                if (e.target.classList.contains("review-question")) return;
+          
+                let node = this.parentElement.parentElement; // .tree-node
+                let toggleIcon = this.querySelector(".tree-toggle-icon");
+                let childUL = node.querySelector("ul");
+          
+                if (node.classList.contains("collapsed")) {
+                  node.classList.remove("collapsed");
+                  node.classList.add("expanded");
+                  toggleIcon.textContent = "▼";
+                  if (childUL) childUL.style.display = "block";
+                } else {
+                  node.classList.remove("expanded");
+                  node.classList.add("collapsed");
+                  toggleIcon.textContent = "▶";
+                  if (childUL) childUL.style.display = "none";
+                }
+              });
             });
-            topicScoreHTML += `</div>`;
-        });
-        topicScoreHTML += `</div>`;
-
-        scoreDetails.innerHTML = `
-            <h2 style='text-align: center;'>Your overall score: ${percentage}% (${correctAnswers}/${selectedQuestions.length})</h2>
-            ${topicScoreHTML}
-            <button id='resetQuizFinal'>Reset Quiz</button>
-            <button id='returnHomeFinal'>Return to Homepage</button>
-        `;
-
-        document.querySelectorAll(".collapsible").forEach(collapsible => {
-            collapsible.addEventListener("click", function() {
-                this.classList.toggle("active");
-                let content = this.nextElementSibling;
-                content.style.display = content.style.display === "block" ? "none" : "block";
-            });
-        });
-
-        document.getElementById("resetQuizFinal").addEventListener("click", startQuiz);
-        document.getElementById("returnHomeFinal").addEventListener("click", () => location.reload());
-        document.querySelectorAll(".review-question").forEach(link => {
-            link.addEventListener("click", function(event) {
+          
+            // Filter logic
+            document.getElementById("filterCorrect").addEventListener("change", filterQuestions);
+            document.getElementById("filterIncorrect").addEventListener("change", filterQuestions);
+            document.getElementById("filterUnanswered").addEventListener("change", filterQuestions);
+          
+            function filterQuestions() {
+              let showCorrect = document.getElementById("filterCorrect").checked;
+              let showIncorrect = document.getElementById("filterIncorrect").checked;
+              let showUnanswered = document.getElementById("filterUnanswered").checked;
+          
+              document.querySelectorAll(".question-item").forEach((item) => {
+                if (
+                  (item.classList.contains("correct") && showCorrect) ||
+                  (item.classList.contains("incorrect") && showIncorrect) ||
+                  (item.classList.contains("unanswered") && showUnanswered)
+                ) {
+                  item.style.display = "list-item";
+                } else {
+                  item.style.display = "none";
+                }
+              });
+            }
+          
+            // “Reset Quiz” & “Return Home”
+            document.getElementById("resetQuizFinal").addEventListener("click", startQuiz);
+            document.getElementById("returnHomeFinal").addEventListener("click", () => location.reload());
+          
+            // Jump back to question
+            document.querySelectorAll(".review-question").forEach((link) => {
+              link.addEventListener("click", function (event) {
                 event.preventDefault();
                 let questionIndex = parseInt(this.dataset.index);
                 currentQuestionIndex = questionIndex;
                 scorePage.style.display = "none";
                 quizContainer.style.display = "block";
                 showQuestion(true);
+              });
             });
-        });
-
-        document.getElementById("filterCorrect").addEventListener("change", filterQuestions);
-        document.getElementById("filterIncorrect").addEventListener("change", filterQuestions);
-        document.getElementById("filterUnanswered").addEventListener("change", filterQuestions);
-    }
-
-    function filterQuestions() {
-        let showCorrect = document.getElementById("filterCorrect").checked;
-        let showIncorrect = document.getElementById("filterIncorrect").checked;
-        let showUnanswered = document.getElementById("filterUnanswered").checked;
-
-        document.querySelectorAll(".correct, .incorrect, .unanswered").forEach(item => {
-            if ((item.classList.contains("correct") && showCorrect) ||
-                (item.classList.contains("incorrect") && showIncorrect) ||
-                (item.classList.contains("unanswered") && showUnanswered)) {
-                item.style.display = "block";
-            } else {
-                item.style.display = "none";
-            }
-        });
-
+        
+          
+          
 
         
         
