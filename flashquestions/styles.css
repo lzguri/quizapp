@@ -130,7 +130,7 @@ button:active {
     margin: 10px 0;
     padding: 12px;
     border: 1px solid #ddd;
-    border-radius: 5px;
+    border-radius: 0px;
     background: #f9f9f9;
     cursor: pointer;
     text-align: left;
@@ -261,6 +261,11 @@ button:active {
   /* Each question item */
   .question-item {
     margin: 4px 0;
+  }
+
+  #scoreTable {
+    width: 100%;
+    align-items: center;
   }
   
   .question-item a {

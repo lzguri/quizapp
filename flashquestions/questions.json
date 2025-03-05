@@ -1654,7 +1654,7 @@
                         "question": "Which of the following medications is NOT used for the treatment of diabetic nephropathy?",
                         "choices": ["Lisinopril", "Losartan", "Empagliflozin", "Finerenone", "Hydrochlorothiazide"],
                         "correct_answer": "Hydrochlorothiazide",
-                        "explanation": "Hydrochlorothiazide is not used for the treatment of diabetic nephropathy and can potentially cause hyperglycemia. Lisinopril (ACE inhibitor), Losartan (ARB), Empagliflozin (SGLT2 inhibitor), and Finerenone (nonsteroidal mineralocorticoid receptor antagonist) are all used to manage diabetic nephropathy by reducing albuminuria and slowing disease progression."
+                        "explanation": "Hydrochlorothiazide is not used for the treatment of diabetic nephropathy and can potentially cause hyperglycemia. All the following are used to manage diabetic nephropathy by reducing albuminuria and slowing disease progression: **ACE inhibitor ⟶ Lisinopril** **ARB ⟶ Losartan** **SGLT2 inhibitor ⟶ Empagliflozin** **Nonsteroidal mineralocorticoid receptor antagonist ⟶ Finerenone** "
                     },
                     {
                         "question": "Which of the following medications increases the risk for developing diabetes mellitus?",
