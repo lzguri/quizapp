@@ -1264,7 +1264,20 @@
                         ],
                         "correct_answer": "Howell-Jolly bodies",
                         "explanation": "Howell-Jolly bodies are nuclear remnants seen in red blood cells and can be found in megaloblastic anemia due to ineffective erythropoiesis. They are also seen in asplenia or functional hyposplenism, as the spleen is responsible for removing these nuclear remnants. Heinz bodies are associated with G6PD deficiency, basophilic stippling is seen in lead poisoning, target cells are found in liver disease and thalassemia, and schistocytes are characteristic of microangiopathic hemolytic anemia."
+                    },
+                    {
+                        "question": "Which of the following best differentiates megaloblastic anemia from other causes of macrocytic anemia?",
+                        "choices": [
+                          "Elevated mean corpuscular volume (MCV)",
+                          "Hypersegmented neutrophils",
+                          "Low reticulocyte count",
+                          "Increased red blood cell distribution width (RDW)"
+                        ],
+                        "correct_answer": "Hypersegmented neutrophils",
+                        "explanation": "Megaloblastic anemia, caused by vitamin B12 or folate deficiency, is characterized by hypersegmented neutrophils on a peripheral blood smear. While macrocytosis (elevated MCV) is present in both megaloblastic and non-megaloblastic macrocytic anemias, hypersegmented neutrophils are a distinguishing feature of megaloblastic anemia."
                     }
+                    
+                      
                       
                       
                       
