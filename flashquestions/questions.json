@@ -1268,16 +1268,16 @@
                     {
                         "question": "Which of the following best differentiates megaloblastic anemia from other causes of macrocytic anemia?",
                         "choices": [
-                          "Elevated mean corpuscular volume (MCV)",
+                          "Elevated mean corpuscular volume",
                           "Hypersegmented neutrophils",
                           "Low reticulocyte count",
-                          "Increased red blood cell distribution width (RDW)"
+                          "Increased red blood cell distribution width"
                         ],
                         "correct_answer": "Hypersegmented neutrophils",
-                        "explanation": "Megaloblastic anemia, caused by vitamin B12 or folate deficiency, is characterized by hypersegmented neutrophils on a peripheral blood smear. While macrocytosis (elevated MCV) is present in both megaloblastic and non-megaloblastic macrocytic anemias, hypersegmented neutrophils are a distinguishing feature of megaloblastic anemia."
+                        "explanation": "Megaloblastic anemia, caused by vitamin B12 or folate deficiency, is characterized by hypersegmented neutrophils on a peripheral blood smear. While macrocytosis is present in both megaloblastic and non-megaloblastic macrocytic anemias, hypersegmented neutrophils are a distinguishing feature of megaloblastic anemia."
                     },
                     {
-                        "question": "A patient with a history of chronic lymphocytic leukemia (CLL) and alcohol abuse presents with pallor, shortness of breath, and tachycardia. Laboratory findings show hemoglobin of 6 g/dL, MCV of 116 fL, and bilirubin of 2.4 mg/dL. Which statement is correct?",
+                        "question": "A patient with a history of chronic lymphocytic leukemia and alcohol abuse presents with pallor, shortness of breath, and tachycardia. Laboratory findings show hemoglobin of 6 g/dL, MCV of 116 fL, and bilirubin of 2.4 mg/dL. Which statement is correct?",
                         "choices": [
                           "Further tests are needed for the diagnosis",
                           "Low hemoglobin and high MCV confirm the diagnosis of megaloblastic anemia",
@@ -1286,7 +1286,19 @@
                         ],
                         "correct_answer": "Further tests are needed for the diagnosis",
                         "explanation": "While macrocytic anemia with elevated bilirubin suggests megaloblastic anemia, further testing is necessary to confirm the diagnosis. Acute hemolytic anemia can occur in CLL due to autoimmune hemolysis, which can also present with an increased MCV due to reticulocytosis and an elevated bilirubin from hemolysis."
+                    },
+                    {
+                        "question": "A 65-year-old male with a history of alcohol use disorder presents with fatigue and difficulty walking. Laboratory tests show macrocytic anemia. The patient was started on folate supplementation, and his anemia improved, but he continues to have difficulty walking. He is abstaining from alcohol. What is the most appropriate next step?",
+                        "choices": [
+                          "Increase folic acid intake",
+                          "Check for malabsorption syndrome",
+                          "Check a blood alcohol level",
+                          "Check vitamin B12 levels"
+                        ],
+                        "correct_answer": "Check vitamin B12 levels",
+                        "explanation": "Folate supplementation can improve the anemia of vitamin B12 deficiency but does not prevent the associated neurologic sequelae. Without proper vitamin B12 replacement, patients may develop irreversible neurological damage, including peripheral neuropathy and subacute combined degeneration of the spinal cord."
                     }
+                      
                       
                       
                     
