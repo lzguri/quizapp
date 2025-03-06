@@ -765,24 +765,26 @@ document.addEventListener("DOMContentLoaded", () => {
 function adjustDivWidth() {
     const div = document.getElementById('content');  // Select #content
     const internalMedicine = document.getElementById('internal-medicine'); // Select h1
+    const scorePageBackground = document.getElementById("scorePage");
 
     if (div) {  // Ensure the element exists
         if (window.innerWidth > 768) {
             // Apply styles for desktop screens (greater than 768px)
-            div.style.width = '60%';
+            div.style.width = '70%';
             div.style.margin = '20px auto';
             div.style.background = 'white';
             div.style.padding = '20px';
             div.style.borderRadius = '5px';
             div.style.boxShadow = '0px 0px 10px gray';
             div.style.textAlign = 'left';
+            scorePageBackground.style.backgroundColor = 'white'
 
             if (internalMedicine) {
                 internalMedicine.style.textAlign = 'left';  // Ensure h1 is left-aligned on desktop
             }
         } else {
             // Apply styles for mobile screens (768px or smaller)
-            div.style.width = '100%';
+            div.style.width = 'auto';
 
             if (internalMedicine) {
                 internalMedicine.style.textAlign = 'center';  // Center h1 on mobile
@@ -791,11 +793,13 @@ function adjustDivWidth() {
 
             // Remove the extra desktop styles for mobile
             div.style.margin = '';
+            div.style.width = '';
             div.style.background = '';
             div.style.padding = '';
             div.style.borderRadius = '';
             div.style.boxShadow = '';
             div.style.textAlign = '';  // Reset to default on mobile
+            scorePageBackground.style.backgroundColor = '#f4f4f4'
         }
     }
 }

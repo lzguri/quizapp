@@ -3,7 +3,7 @@
 body {
     font-family: 'Roboto', Arial, sans-serif;
     background-color: #f4f4f4;
-    padding: 20px;
+    padding: 5px;
     margin: 0;
     color: #333;
 }
@@ -28,7 +28,7 @@ body {
     margin: auto;
     background: white;
     padding: 20px;
-    border-radius: 10px;
+    border-radius: 2px;
     box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
 }
 
@@ -192,6 +192,7 @@ button:active {
     list-style: none;
     padding-left: 0;
     margin: auto;
+    width: 100%;
     
   }
   
@@ -321,12 +322,12 @@ button:active {
     border: 1px solid #cccccc;
     background-color: #f9f9f9;
     padding: 10px;
-    margin: 0 auto;
+    margin: auto;
     border-radius: 5px;
     display: flex;
     justify-content: center;
     gap: 10px;
-    width: 100% !important;
+    width: 100%;
 }
 
 .checkbox-filter-container label {
@@ -364,7 +365,8 @@ button:active {
     background-color: #f9f9f9;   /* Light gray background */
     padding: 10px;               /* Space inside the box */
     margin: 10px 0;              /* Space above/below the box */
-    border-radius: 5px;          /* Rounded corners, optional */
+    border-radius: 5px; 
+    width: 90%;         /* Rounded corners, optional */
   }
   
 
@@ -393,12 +395,12 @@ button:active {
   
 
   #scorePage {
-    width: 90% !important;
+    width: 100% !important;
     max-width: 1000px;   /* Prevents the container from exceeding 1000px */
     margin: 0 auto;
     text-align: left;
     padding-top: 1px;
-    background-color: rgb(255, 255, 255);
+    background-color: #f4f4f4;
   }
   
 .score-result {
@@ -477,7 +479,7 @@ button:active {
     background-color: #1e1e1e;
     border: 1px solid #444;
     color: #e0e0e0;
-    width: 90%; /* Consistent width as requested */
+    width: auto; /* Consistent width as requested */
     margin: 0 auto;
   }
   
