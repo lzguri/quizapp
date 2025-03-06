@@ -8,20 +8,6 @@ body {
     color: #333;
 }
 
-/* Title Styling */
-.internal-medicine {
-    text-align: center;
-    font-size: 26px;
-    font-weight: bold;
-    color: #030f3d;
-    padding: 15px;
-    margin-bottom: 20px;
-    background: linear-gradient(to right, #e3f2fd, #bbdefb);
-    border-radius: 8px;
-    box-shadow: 2px 2px 6px rgba(0, 0, 0, 0.1);
-    border-bottom: 4px solid #0073e6;
-}
-
 /* Main Content Containers */
 .container {
     max-width: 800px;
@@ -214,7 +200,8 @@ button:active {
     cursor: pointer;
     padding: 8px 10px;
     transition: background 0.2s;
-    width: 100%;
+    width: 90%;
+    font-weight: bold;
   }
   
   .tree-node-header:hover {
@@ -250,7 +237,7 @@ button:active {
   .question-list {
     list-style: none;
     width: 90%;      /* QUESTIONS occupy 90% of parent width */
-    margin: 6px 0 10px 25px; 
+    margin: 6px 0 10px 18px; 
     padding: 0;
     font-weight: lighter;
   }
@@ -311,7 +298,7 @@ button:active {
     font-weight: bold;
 }
 .unanswered::before {
-    content: "❓ Unanswered - ";
+    content: "✖/✔ Unanswered - ";
     color: blue;
     font-weight: bold;
 }
@@ -330,6 +317,7 @@ button:active {
     width: 100%;
 }
 
+/* correct, incorrect, unanswered checkbox labels */
 .checkbox-filter-container label {
     display: flex;
     align-items: center;
@@ -366,12 +354,9 @@ button:active {
     padding: 10px;               /* Space inside the box */
     margin: 10px 0;              /* Space above/below the box */
     border-radius: 5px; 
-    width: 90%;         /* Rounded corners, optional */
+    width: auto;         /* Rounded corners, optional */
   }
   
-
-
-
 
   /* Correct answer styling */
   .score-item.correct {
@@ -414,10 +399,6 @@ button:active {
         padding: 15px;
     }
 
-    .internal-medicine {
-        font-size: 22px;
-        padding: 10px;
-    }
 
     button {
         padding: 10px;
@@ -469,7 +450,7 @@ button:active {
   
   /* Explanation Text */
   .night-mode #explanation-text {
-    background-color: #2a2a2a;
+    background-color: #2a2a2a !important;
     color: #e0e0e0;
     border: 1px solid #444;
   }
@@ -518,4 +499,10 @@ button:active {
   .night-mode .review-question:hover {
     text-decoration: underline;
   }
+
+  .night-mode #questionLimitContainer {
+    background: #1e1e1e;
+
+    color: white;
+}
   
