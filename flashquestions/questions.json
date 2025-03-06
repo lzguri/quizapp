@@ -481,16 +481,16 @@
                 "name": "Eosinophilic granulomatosis with polyangiitis",
                 "questions": [
                     {
-                        "question": "The prodromal phase of eosinophilic granulomatosis with polyangiitis [EGPA] is characterized by which of the following?",
+                        "question": "The prodromal phase of eosinophilic granulomatosis with polyangiitis is characterized by which of the following?",
                         "choices": ["Asthma and eosinophilia", "Hemoptysis and weight loss", "Rash and fever", "Joint pain and fatigue"],
                         "correct_answer": "Asthma and eosinophilia",
-                        "explanation": "The prodromal phase of eosinophilic granulomatosis with polyangiitis [EGPA] is typically characterized by asthma and eosinophilia. This phase may precede the more severe vasculitic features of the disease."
+                        "explanation": "The prodromal phase of eosinophilic granulomatosis with polyangiitis is typically characterized by asthma and eosinophilia. This phase may precede the more severe vasculitic features of the disease."
                     },
                     {
                         "question": "Eosinophilic granulomatosis with polyangiitis (EGPA) is characterized by all of the following phases except for which?",
                         "choices": ["Prodromal phase", "Eosinophilic phase", "Vasculitic phase", "Pulmonary phase"],
                         "correct_answer": "Pulmonary phase",
-                        "explanation": "Lung phase is not a recognized phase of EGPA, though pulmonary involvement occurs during other phases. EGPA phases occur as follows: 1. Prodromal phase characterized by asthma and eosinophilia. 2. Eosinophilic phase marked by tissue eosinophilia and systemic symptoms like fever and weight loss. 3. Vasculitic phase involves small-vessel vasculitis. "
+                        "explanation": "Lung phase is not a recognized phase of EGPA, though pulmonary involvement occurs during other phases. EGPA phases occur as follows: **Prodromal phase ⟶ asthma and sometimes eosinophilia **Eosinophilic phase ⟶ tissue eosinophilia and systemic symptoms like fever and weight loss** **Vasculitic phase ⟶ small-vessel vasculitis.** "
                     },
                     {
                         "question": "Which of the following serologic markers is associated with eosinophilic granulomatosis with polyangiitis (EGPA)?",
@@ -1214,8 +1214,8 @@
                 "name": "Chronic obstructive pulmonary dsisease",
                 "questions": [
                     {
-                        "question": "Alpha-1 antitrypsin [AAT] deficiency usually involves which lobes of the lung?",
-                        "choices": ["Upper lobes", "Lower lobes", "Doesn't affect the lung at all"],
+                        "question": "Alpha-1 antitrypsin deficiency usually involves which lobes of the lung?",
+                        "choices": ["Upper lobes", "Lower lobes", "Doesn't affect the lung at all", "Affect all the lung equally"],
                         "correct_answer": "Lower lobes",
                         "explanation": "Alpha-1 antitrypsin deficiency primarily affects the lower lobes of the lung due to the accumulation of neutrophil elastase activity, which damages the alveoli."
                     }
@@ -1236,10 +1236,10 @@
                           "Stomach acid production is usually normal",
                           "Antibodies against intrinsic factor and parietal cells are not present",
                           "It has no association with other autoimmune disorders",
-                          "Neurologic symptoms can appear years before anemia is diagnosed",
+                          "Neurologic symptoms can appear before anemia is diagnosed",
                           "There is no increased likelihood of developing gastric cancer"
                         ],
-                        "correct_answer": "Neurologic symptoms can appear years before anemia is diagnosed",
+                        "correct_answer": "Neurologic symptoms can appear before anemia is diagnosed",
                         "explanation": "Pernicious anemia causes vitamin B12 deficiency, leading to neurologic symptoms that can precede anemia by years. It is associated with: **achlorhydria** **presence of anti-parietal and anti-intrinsic factor antibodies** **an increased risk of gastric cancer** **autoimmune diseases like type 1 diabetes mellitus**"
                     },
                     {
@@ -1263,7 +1263,7 @@
                           "Schistocytes"
                         ],
                         "correct_answer": "Howell-Jolly bodies",
-                        "explanation": "Howell-Jolly bodies are nuclear remnants seen in red blood cells and can be found in megaloblastic anemia due to ineffective erythropoiesis. They are also seen in asplenia or functional hyposplenism, as the spleen is responsible for removing these nuclear remnants. Heinz bodies are associated with G6PD deficiency, basophilic stippling is seen in lead poisoning, target cells are found in liver disease and thalassemia, and schistocytes are characteristic of microangiopathic hemolytic anemia."
+                        "explanation": "Howell-Jolly bodies are nuclear remnants in RBCs seen in megaloblastic anemia (ineffective erythropoiesis) and in asplenia/hyposplenism (when the spleen fails to remove them). The other choices:  **Heinz bodies ⟶ G6PD deficiency** **Basophilic stippling ⟶ Lead poisoning** **Target cells ⟶ liver disease and thalassemia** **Schistocytes ⟶ microangiopathic hemolytic anemia**"
                     },
                     {
                         "question": "Which of the following best differentiates megaloblastic anemia from other causes of macrocytic anemia?",
@@ -1285,7 +1285,7 @@
                           "Because of history of alcohol abuse, vitamin B12 deficiency is the likely diagnosis"
                         ],
                         "correct_answer": "Further tests are needed for the diagnosis",
-                        "explanation": "While macrocytic anemia with elevated bilirubin suggests megaloblastic anemia, further testing is necessary to confirm the diagnosis. Acute hemolytic anemia can occur in CLL due to autoimmune hemolysis, which can also present with an increased MCV due to reticulocytosis and an elevated bilirubin from hemolysis."
+                        "explanation": "Macrocytic anemia with high bilirubin suggests megaloblastic anemia, but further tests are needed since autoimmune hemolysis in CLL can similarly elevate MCV and bilirubin."
                     },
                     {
                         "question": "A 65-year-old male with a history of alcohol use disorder presents with fatigue and difficulty walking. Laboratory tests show macrocytic anemia. The patient was started on folate supplementation, and his anemia improved, but he continues to have difficulty walking. He is abstaining from alcohol. What is the most appropriate next step?",
@@ -1301,7 +1301,7 @@
                 ]
             },
             {
-                "name": "Transfusion",
+                "name": "Transfusion medicine",
                 "questions": [
                     {
                         "question": "A patient with sickle cell anemia presents to the ED with pallor, shortness of breath, fatigue, and dizziness. His hemoglobin is found to be 6.2 g/dL. He is given a transfusion according to his type and screen, but his repeat hemoglobin is 6.1 g/dL. What is the most likely explanation?",
@@ -1356,8 +1356,42 @@
                           "Allergic reaction to donor plasma proteins"
                         ],
                         "correct_answer": "Recipient antibodies reacting against donor white blood cells",
-                        "explanation": "A febrile nonhemolytic transfusion reaction (FNHTR) is a common and typically mild response to blood transfusion, characterized by fever and chills without red blood cell destruction. This reaction is primarily caused by recipient antibodies reacting against donor white blood cells or by cytokines released from donor leukocytes during blood storage."
-                      }
+                        "explanation": "A febrile nonhemolytic transfusion reaction (FNHTR) is a common, mild response marked by fever and chills without hemolysis. It is mainly caused by recipient antibodies to donor white blood cells or cytokines from stored donor leukocytes"
+                    },
+                    {
+                        "question": "A 60-year-old male with a history of congestive heart failure receives a blood transfusion. Within two hours, he develops acute respiratory distress, elevated blood pressure, and jugular venous distension. Which transfusion reaction is most likely?",
+                        "choices": [
+                          "Transfusion-related acute lung injury (TRALI)",
+                          "Transfusion-associated circulatory overload (TACO)",
+                          "Allergic transfusion reaction",
+                          "Febrile non-hemolytic transfusion reaction"
+                        ],
+                        "correct_answer": "Transfusion-associated circulatory overload (TACO)",
+                        "explanation": "TACO is characterized by acute respiratory distress, hypertension, and signs of fluid overload (e.g., jugular venous distension) occurring within six hours of transfusion. Patients with a history of heart failure are at increased risk. In contrast, TRALI typically presents with hypotension and non-cardiogenic pulmonary edema."
+                    },
+                    {
+                        "question": "What is the primary mechanism underlying transfusion-related acute lung injury (TRALI)?",
+                        "choices": [
+                          "Volume overload leading to pulmonary edema",
+                          "Allergic reaction to donor plasma proteins",
+                          "Donor antibodies reacting with recipient leukocytes causing pulmonary capillary leakage",
+                          "Bacterial contamination of transfused blood products"
+                        ],
+                        "correct_answer": "Donor antibodies reacting with recipient leukocytes causing pulmonary capillary leakage",
+                        "explanation": "TRALI is primarily caused by donor antileukocyte antibodies reacting with recipient leukocytes, leading to leukocyte aggregation in the pulmonary capillaries and subsequent non-cardiogenic pulmonary edema."
+                    },
+                    {
+                        "question": "A 58-year-old woman with a history of liver cirrhosis is receiving a transfusion of fresh frozen plasma. Approximately two hours into the transfusion, she develops acute respiratory distress with hypoxemia and bilateral pulmonary infiltrates on chest X-ray. Her blood pressure remains stable, and there are no signs of circulatory overload. Which transfusion reaction is most likely responsible for her symptoms?",
+                        "choices": [
+                          "Transfusion-related acute lung injury (TRALI)",
+                          "Transfusion-associated circulatory overload (TACO)",
+                          "Allergic transfusion reaction",
+                          "Febrile non-hemolytic transfusion reaction"
+                        ],
+                        "correct_answer": "Transfusion-related acute lung injury (TRALI)",
+                        "explanation": "TRALI is characterized by acute respiratory distress, hypoxemia, and non-cardiogenic pulmonary edema occurring during or within six hours of transfusion. It is often associated with plasma-containing blood products and presents without signs of circulatory overload."
+                    }
+                      
                       
                       
                       
