@@ -505,4 +505,12 @@ button:active {
 
     color: white;
 }
-  
+
+.night-mode .container {
+  max-width: 800px;
+  margin: auto;
+  background: #2a2a2a;
+  padding: 20px;
+  border-radius: 2px;
+  box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
+}

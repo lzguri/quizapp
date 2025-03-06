@@ -1359,18 +1359,19 @@
                         "explanation": "A febrile nonhemolytic transfusion reaction (FNHTR) is a common, mild response marked by fever and chills without hemolysis. It is mainly caused by recipient antibodies to donor white blood cells or cytokines from stored donor leukocytes"
                     },
                     {
-                        "question": "A 60-year-old male with a history of congestive heart failure receives a blood transfusion. Within two hours, he develops acute respiratory distress, elevated blood pressure, and jugular venous distension. Which transfusion reaction is most likely?",
+                        "question": "A patient with end-stage renal disease (ESRD) on dialysis presents with peritonitis due to bowel perforation and is scheduled for surgery. He is on warfarin for atrial fibrillation, with an INR of 2.6. The surgeon orders fresh frozen plasma (FFP) to reverse his INR. Two hours after starting the transfusion, the patient experiences shortness of breath, and crackles are heard on physical examination. What is the most likely cause?",
                         "choices": [
-                          "Transfusion-related acute lung injury (TRALI)",
                           "Transfusion-associated circulatory overload (TACO)",
-                          "Allergic transfusion reaction",
-                          "Febrile non-hemolytic transfusion reaction"
+                          "Transfusion-related acute lung injury (TRALI)",
+                          "COVID-19 pneumonia",
+                          "Anaphylactic shock",
+                          "Bacterial pneumonia"
                         ],
                         "correct_answer": "Transfusion-associated circulatory overload (TACO)",
-                        "explanation": "TACO is characterized by acute respiratory distress, hypertension, and signs of fluid overload (e.g., jugular venous distension) occurring within six hours of transfusion. Patients with a history of heart failure are at increased risk. In contrast, TRALI typically presents with hypotension and non-cardiogenic pulmonary edema."
-                    },
+                        "explanation": "The patient's acute respiratory symptoms following FFP transfusion, along with physical findings of crackles, suggest TACO. TACO is more common than TRALI and is characterized by volume overload leading to pulmonary edema. Patients with ESRD are at increased risk due to impaired fluid excretion and may not tolerate large transfusion volumes well. FFP requires larger volumes to reverse INR compared to other options like prothrombin complex concentrates (PCC), further increasing the risk of TACO."
+                    },    
                     {
-                        "question": "What is the primary mechanism underlying transfusion-related acute lung injury (TRALI)?",
+                        "question": "What is the primary mechanism underlying transfusion-related acute lung injury?",
                         "choices": [
                           "Volume overload leading to pulmonary edema",
                           "Allergic reaction to donor plasma proteins",
@@ -1378,17 +1379,17 @@
                           "Bacterial contamination of transfused blood products"
                         ],
                         "correct_answer": "Donor antibodies reacting with recipient leukocytes causing pulmonary capillary leakage",
-                        "explanation": "TRALI is primarily caused by donor antileukocyte antibodies reacting with recipient leukocytes, leading to leukocyte aggregation in the pulmonary capillaries and subsequent non-cardiogenic pulmonary edema."
+                        "explanation": "TRALI is caused by donor antibodies against HLA or neutrophil antigens (often from multiparous female donors) reacting with recipient leukocytes and pulmonary endothelium. This triggers complement activation, alveolar damage, and non-cardiogenic pulmonary edema."
                     },
                     {
-                        "question": "A 58-year-old woman with a history of liver cirrhosis is receiving a transfusion of fresh frozen plasma. Approximately two hours into the transfusion, she develops acute respiratory distress with hypoxemia and bilateral pulmonary infiltrates on chest X-ray. Her blood pressure remains stable, and there are no signs of circulatory overload. Which transfusion reaction is most likely responsible for her symptoms?",
+                        "question": "A 58-year-old woman with a history of liver cirrhosis is receiving a transfusion of packed RBC. Approximately two hours into the transfusion, she develops acute respiratory distress with hypoxemia and bilateral pulmonary infiltrates on chest X-ray. Her blood pressure remains stable, and there are no signs of circulatory overload. Which transfusion reaction is most likely responsible for her symptoms?",
                         "choices": [
-                          "Transfusion-related acute lung injury (TRALI)",
-                          "Transfusion-associated circulatory overload (TACO)",
+                          "Transfusion-related acute lung injury",
+                          "Transfusion-associated circulatory overload",
                           "Allergic transfusion reaction",
                           "Febrile non-hemolytic transfusion reaction"
                         ],
-                        "correct_answer": "Transfusion-related acute lung injury (TRALI)",
+                        "correct_answer": "Transfusion-related acute lung injury",
                         "explanation": "TRALI is characterized by acute respiratory distress, hypoxemia, and non-cardiogenic pulmonary edema occurring during or within six hours of transfusion. It is often associated with plasma-containing blood products and presents without signs of circulatory overload."
                     }
                       
