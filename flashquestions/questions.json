@@ -1335,7 +1335,31 @@
                         ],
                         "correct_answer": "O negative",
                         "explanation": "O negative blood is considered the universal donor because it lacks A, B, and Rh antigens, minimizing the risk of an immune reaction in recipients of any blood type. This makes it the preferred choice for emergency transfusions when the recipient's blood type is unknown."
-                    }
+                    },
+                    {
+                        "question": "What is the recommended platelet threshold for transfusion in patients undergoing neurosurgery or with intracranial bleeding?",
+                        "choices": [
+                          "10,000/μL",
+                          "20,000/μL",
+                          "50,000/μL",
+                          "100,000/μL"
+                        ],
+                        "correct_answer": "100,000/μL",
+                        "explanation": "For patients undergoing neurosurgery or experiencing intracranial bleeding, a platelet count of at least 100,000/μL is recommended to minimize the risk of hemorrhagic complications."
+                    },
+                    {
+                        "question": "What is the primary cause of a febrile nonhemolytic transfusion reaction?",
+                        "choices": [
+                          "Bacterial contamination of the blood product",
+                          "Recipient antibodies reacting against donor white blood cells",
+                          "Transfusion of ABO-incompatible blood",
+                          "Allergic reaction to donor plasma proteins"
+                        ],
+                        "correct_answer": "Recipient antibodies reacting against donor white blood cells",
+                        "explanation": "A febrile nonhemolytic transfusion reaction (FNHTR) is a common and typically mild response to blood transfusion, characterized by fever and chills without red blood cell destruction. This reaction is primarily caused by recipient antibodies reacting against donor white blood cells or by cytokines released from donor leukocytes during blood storage."
+                      }
+                      
+                      
                       
                       
                       
