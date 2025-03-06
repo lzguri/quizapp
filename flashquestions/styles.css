@@ -205,21 +205,23 @@ button:active {
   
   /* Wrapping container so topic box & subtopics share background/border */
   .tree-node-content {
-    background-color: #f1f1f1;
-    border: 1px solid #ccc;
+    background-color: #ddefff;
+    border: 1px solid #060359;
     border-radius: 4px;
     margin-bottom: 6px;
     width: 100%;
+    align-items: center;
 
   }
   
   /* Tree Node header lines for topics & subtopics */
   .tree-node-header {
-    display: flex;
+    display: block;
     align-items: center;
     cursor: pointer;
     padding: 8px 10px;
     transition: background 0.2s;
+    width: 100%;
   }
   
   .tree-node-header:hover {
@@ -331,7 +333,7 @@ button:active {
     display: flex;
     justify-content: center;
     gap: 10px;
-    width: 90% !important;
+    width: 100% !important;
 }
 
 .checkbox-filter-container label {
