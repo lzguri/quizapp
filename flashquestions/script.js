@@ -27,6 +27,9 @@ document.addEventListener("DOMContentLoaded", () => {
     const progressBar = document.getElementById("progressBar"); // Progress bar element
     const endTestButton = document.getElementById("endTest");
     
+    // Get the disable sound and night mode checkboxes
+    const toggleSoundCheckbox = document.getElementById("toggleSound");
+    const toggleNightModeCheckbox = document.getElementById("toggleNightMode");
     
 
 
@@ -67,7 +70,20 @@ document.addEventListener("DOMContentLoaded", () => {
             return data;
           }
           
-    
+        // When the "Disable Sound" checkbox is toggled, update soundEnabled accordingly
+    toggleSoundCheckbox.addEventListener("change", function() {
+        // When checked, sound should be disabled (i.e. soundEnabled = false)
+        soundEnabled = !this.checked;
+    });
+
+    // When the "Night Mode" checkbox is toggled, add or remove a night mode class on the body
+    toggleNightModeCheckbox.addEventListener("change", function() {
+        if (this.checked) {
+            document.body.classList.add("night-mode");
+        } else {
+            document.body.classList.remove("night-mode");
+        }
+    });
         
     
     function playSound(isCorrect) {
@@ -350,9 +366,12 @@ document.addEventListener("DOMContentLoaded", () => {
             answerChoices.appendChild(choiceDiv);
         });
     
-        if (userAnswers[currentQuestionIndex] !== null) {
+        if (isReview) {
+            displayExplanation(questionData, userAnswers[currentQuestionIndex]);
+        } else if (userAnswers[currentQuestionIndex] !== null) {
             displayExplanation(questionData, userAnswers[currentQuestionIndex]);
         }
+        
 
         if (isReview) {
             prevButton.remove();
@@ -588,7 +607,8 @@ document.addEventListener("DOMContentLoaded", () => {
               return html;
             }
           
-            scoreDetails.innerHTML = buildTreeView();
+            scoreDetails.innerHTML = `<tr><td style="width: 100%;">${buildTreeView()}</td></tr>`;
+
           
             // Expand/collapse logic for topic/subtopic
             document.querySelectorAll(".tree-node-header").forEach((header) => {
@@ -596,19 +616,19 @@ document.addEventListener("DOMContentLoaded", () => {
                 // Don't collapse if user clicks directly on question link
                 if (e.target.classList.contains("review-question")) return;
           
-                let node = this.parentElement.parentElement; // .tree-node
+                let node = this.closest('.tree-node');
                 let toggleIcon = this.querySelector(".tree-toggle-icon");
                 let childUL = node.querySelector("ul");
           
                 if (node.classList.contains("collapsed")) {
                   node.classList.remove("collapsed");
                   node.classList.add("expanded");
-                  toggleIcon.textContent = "▼";
+                  toggleIcon.textContent = "[-]";
                   if (childUL) childUL.style.display = "block";
                 } else {
                   node.classList.remove("expanded");
                   node.classList.add("collapsed");
-                  toggleIcon.textContent = "▶";
+                  toggleIcon.textContent = "[+]";
                   if (childUL) childUL.style.display = "none";
                 }
               });

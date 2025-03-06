@@ -1298,11 +1298,44 @@
                         "correct_answer": "Check vitamin B12 levels",
                         "explanation": "Folate supplementation can improve the anemia of vitamin B12 deficiency but does not prevent the associated neurologic sequelae. Without proper vitamin B12 replacement, patients may develop irreversible neurological damage, including peripheral neuropathy and subacute combined degeneration of the spinal cord."
                     }
-                      
-                      
-                      
-                    
-                      
+                ]
+            },
+            {
+                "name": "Transfusion",
+                "questions": [
+                    {
+                        "question": "A patient with sickle cell anemia presents to the ED with pallor, shortness of breath, fatigue, and dizziness. His hemoglobin is found to be 6.2 g/dL. He is given a transfusion according to his type and screen, but his repeat hemoglobin is 6.1 g/dL. What is the most likely explanation?",
+                        "choices": [
+                          "Patient is bleeding",
+                          "Presence of alloantibodies",
+                          "This is an appropriate response to transfusion",
+                          "Due to aplastic crisis"
+                        ],
+                        "correct_answer": "Presence of alloantibodies",
+                        "explanation": "Patients with sickle cell anemia are at high risk for developing alloantibodies due to frequent transfusions. The presence of alloantibodies can cause hemolysis of transfused red blood cells, leading to an inadequate rise or even a drop in hemoglobin levels after transfusion."
+                    },
+                    {
+                        "question": "Transfusion of 1 unit of packed red blood cells should raise hemoglobin and hematocrit by how much?",
+                        "choices": [
+                          "Hemoglobin by 1 g/dL and hematocrit by 3%",
+                          "Hemoglobin by 2 g/dL and hematocrit by 6%",
+                          "Hemoglobin by 0.5 g/dL and hematocrit by 1.5%",
+                          "No significant change in hemoglobin or hematocrit"
+                        ],
+                        "correct_answer": "Hemoglobin by 1 g/dL and hematocrit by 3%",
+                        "explanation": "Transfusion of 1 unit of packed red blood cells typically increases hemoglobin by approximately 1 g/dL and hematocrit by about 3%. This response may vary depending on ongoing blood loss, hemolysis, or other underlying conditions."
+                    },
+                    {
+                        "question": "Which of the following blood groups can be transfused to all recipients?",
+                        "choices": [
+                          "O negative",
+                          "O positive",
+                          "AB positive",
+                          "A negative"
+                        ],
+                        "correct_answer": "O negative",
+                        "explanation": "O negative blood is considered the universal donor because it lacks A, B, and Rh antigens, minimizing the risk of an immune reaction in recipients of any blood type. This makes it the preferred choice for emergency transfusions when the recipient's blood type is unknown."
+                    }
                       
                       
                       
@@ -1813,9 +1846,9 @@
                 "questions": [
                     {
                         "question": "Which of the following antibiotics does NOT cover methicillin-resistant Staphylococcus aureus [MRSA]?",
-                        "choices": ["Linezolid", "Vancomycin", "Ceftriaxone", "Daptomycin"],
+                        "choices": ["Linezolid", "Vancomycin", "Ceftriaxone", "Daptomycin", "Ceftaroline"],
                         "correct_answer": "Ceftriaxone",
-                        "explanation": "Linezolid, vancomycin, and daptomycin cover MRSA. Ceftriaxone does not."
+                        "explanation": "Linezolid, vancomycin, ceftaroline (only for skin infection) and daptomycin cover MRSA. Ceftriaxone does not."
                     },
                     {
                         "question": "A 52-year-old male with lymphoma is admitted for neutropenic fever. You correctly start the patient on gram-negative coverage with cefepime. Why is gram-negative coverage prioritized in this scenario?",
@@ -1890,7 +1923,7 @@
                         "question": "A patient is on daptomycin for MRSA endocarditis. Which laboratory test should be monitored?",
                         "choices": ["Liver function tests", "Creatine kinase", "Complete blood count", "Serum potassium"],
                         "correct_answer": "Creatine kinase",
-                        "explanation": "Daptomycin can cause muscle toxicity, including rhabdomyolysis, so creatine kinase [CK] levels should be monitored weekly during therapy."
+                        "explanation": "Daptomycin can cause muscle toxicity, including rhabdomyolysis, so creatine kinase levels should be monitored weekly during therapy."
                     },
                     {
                         "question": "A 35-year-old female with paraplegia due to a prior gunshot wound to the spine has a neurogenic bladder and performs intermittent self-catheterization. She presents to the ED with fever and malaise. Urinalysis is positive for pyuria, and she has a history of a Pseudomonas urinary tract infection approximately four months ago. You are planning to discharge her with oral antibiotics. Which is the most appropriate antibiotic choice?",

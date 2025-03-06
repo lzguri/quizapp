@@ -186,21 +186,13 @@ button:active {
     margin-top: 0px;
     line-height: 1.2;
 }
-/* Center the score breakdown section */
-.topic-list {
-    width: 100%;
-    margin: auto;
-    list-style: none;
-    padding: 0;
-    text-align: center;
-}
 
 /* Score tree container for topics & subtopics */
 .score-tree {
     list-style: none;
     padding-left: 0;
-    margin: 20px auto;
-    max-width: 700px;
+    margin: auto;
+    
   }
   
   /* Wrapping container so topic box & subtopics share background/border */
@@ -225,7 +217,8 @@ button:active {
   }
   
   .tree-node-header:hover {
-    background-color: #e7e7e7;
+    background-color: #96c4ff;
+    width: auto;
   }
   
   .tree-toggle-icon {
@@ -236,12 +229,11 @@ button:active {
   }
   
   .folder-icon::before {
-    content: "📁";
     margin-right: 6px;
   }
   
   .subtopic-folder-icon::before {
-    content: "📂";
+    /*content: "📂";*/
     margin-right: 6px;
   }
   
@@ -250,6 +242,7 @@ button:active {
     list-style: none;
     padding: 0 0 10px 18px; /* Indent subtopics slightly */
     margin: 0;
+    font-weight: bold;
   }
   
   /* Subtopic node -> question list */
@@ -258,6 +251,7 @@ button:active {
     width: 90%;      /* QUESTIONS occupy 90% of parent width */
     margin: 6px 0 10px 25px; 
     padding: 0;
+    font-weight: lighter;
   }
   
   /* Each question item */
@@ -267,7 +261,6 @@ button:active {
 
   #scoreTable {
     width: 100%;
-    align-items: center;
   }
   
   .question-item a {
@@ -325,7 +318,7 @@ button:active {
 
 /* Checkbox filter container */
 .checkbox-filter-container {
-    border: 1px solid #ccc;
+    border: 1px solid #cccccc;
     background-color: #f9f9f9;
     padding: 10px;
     margin: 0 auto;
@@ -400,7 +393,7 @@ button:active {
   
 
   #scorePage {
-    width: 90%;
+    width: 90% !important;
     max-width: 1000px;   /* Prevents the container from exceeding 1000px */
     margin: 0 auto;
     text-align: left;
@@ -428,3 +421,99 @@ button:active {
         padding: 10px;
     }
 }
+
+
+
+/*NIGHT MODE*/
+/* Applies a dark background and light text to the entire page */
+.night-mode {
+    background-color: #121212;
+    color: #e0e0e0;
+  }
+  
+  /* Ensure that key containers adopt the night mode colors */
+  .night-mode body,
+  .night-mode #content,
+  .night-mode #homepage,
+  .night-mode #scorePage {
+    background-color: #1a1a1a;
+    color: #e0e0e0;
+  }
+  
+  /* Buttons in Night Mode */
+  .night-mode button {
+    background-color: #333;
+    color: #e0e0e0;
+    border: 1px solid #555;
+  }
+  
+  /* Topics & Subtopics */
+  .night-mode .topic {
+    background: #1e1e1e;
+    color: #e0e0e0;
+    border: 1px solid #444;
+  }
+  
+  .night-mode .topic:hover {
+    background: #2a2a2a;
+  }
+  
+  /* Quiz Choices */
+  .night-mode .button-choice {
+    background: #2a2a2a;
+    color: #e0e0e0;
+    border: 1px solid #444;
+  }
+  
+  /* Explanation Text */
+  .night-mode #explanation-text {
+    background-color: #2a2a2a;
+    color: #e0e0e0;
+    border: 1px solid #444;
+  }
+  
+  /* Score Page Elements: Filter Container and Tree Nodes */
+  .night-mode .checkbox-filter-container {
+    background-color: #1e1e1e;
+    border: 1px solid #444;
+    color: #e0e0e0;
+    width: 90%; /* Consistent width as requested */
+    margin: 0 auto;
+  }
+  
+  .night-mode .score-tree,
+  .night-mode .tree-node {
+    width: 90%;
+    margin: 0 auto;
+  }
+  
+  /* Tree Node Content and Headers for Topics & Subtopics */
+  .night-mode .tree-node-content {
+    background-color: #1e1e1e;
+    border: 1px solid #444;
+    color: #e0e0e0;
+  }
+  
+  .night-mode .tree-node-header {
+    background-color: #2a2a2a;
+    color: #e0e0e0;
+    cursor: pointer;
+    padding: 8px 10px;
+  }
+  
+  /* Reset Quiz & Return Home Buttons on Score Page */
+  .night-mode #resetQuizFinal,
+  .night-mode #returnHomeFinal {
+    width: 90%;
+    margin: 10px auto;
+    display: block;
+  }
+  
+  /* Adjust links (like review-question) for night mode */
+  .night-mode .review-question {
+    color: #cce0ff;
+  }
+  .night-mode .review-question:hover {
+    text-decoration: underline;
+  }
+  
