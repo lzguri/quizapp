@@ -1338,7 +1338,45 @@
                         ],
                         "correct_answer": "Clopidogrel",
                         "explanation": "Glanzmann thrombasthenia is a platelet disorder caused by a deficiency or dysfunction of glycoprotein IIb/IIIa, impairing platelet aggregation. Clopidogrel inhibits platelet aggregation by blocking the P2Y12 receptor, indirectly affecting glycoprotein IIb/IIIa activation, leading to a similar defect in platelet function."
-                    } 
+                    },
+                    {
+                        "question": "Which of the following is NOT part of thrombotic thrombocytopenic purpura (TTP)?",
+                        "choices": [
+                          "Microangiopathic hemolytic anemia",
+                          "Acute kidney injury",
+                          "Fever",
+                          "Neurologic involvement",
+                          "Thrombocytopenia",
+                          "Leukocytosis"
+                        ],
+                        "correct_answer": "Leukocytosis",
+                        "explanation": "TTP is characterized by the classic pentad: microangiopathic hemolytic anemia, thrombocytopenia, neurologic symptoms, fever, and renal dysfunction. However, leukocytosis is not a typical feature of TTP and suggests another underlying condition."
+                    },
+                    {
+                        "question": "A patient presents with confusion, acute kidney injury, microangiopathic hemolytic anemia, and severe thrombocytopenia. What is the next step in management?",
+                        "choices": [
+                          "Emergency plasma exchange",
+                          "Transfuse platelets",
+                          "Transfuse pRBC",
+                          "Send for ADAMTS13 levels"
+                        ],
+                        "correct_answer": "Emergency plasma exchange",
+                        "explanation": "The patient's presentation is highly suggestive of thrombotic thrombocytopenic purpura (TTP), a life-threatening condition requiring urgent plasma exchange. Delaying treatment while waiting for ADAMTS13 levels can be fatal. Platelet transfusion is contraindicated as it may worsen thrombosis. RBC transfusion may be considered if severe anemia is present but is not the primary intervention."
+                    },
+                    {
+                        "question": "Which of the following medications can be used for the treatment of thrombotic thrombocytopenic purpura (TTP)?",
+                        "choices": [
+                          "Caplacizumab",
+                          "Azathioprine",
+                          "Cyclophosphamide",
+                          "Infliximab",
+                          "Temazepam"
+                        ],
+                        "correct_answer": "Caplacizumab",
+                        "explanation": "Caplacizumab is a monoclonal antibody that inhibits von Willebrand factor (vWF)-platelet interaction by targeting the A1 domain of vWF. This prevents excessive platelet aggregation and microvascular thrombosis in TTP. It is used alongside plasma exchange and immunosuppression to improve outcomes."
+                    }
+                      
+                         
                 ]
             },
             {
@@ -1358,6 +1396,14 @@
             },
             {
                 "name": "Microcytic anemia",
+                "Clinical pearl": [
+                    {
+                    "pearl": "**Iron deficiency is caused mainly by blood loss**"
+                    },
+                    {
+                    "pearl": "**Remember: In microcytic anemia, lab findings help distinguish between iron deficiency and thalassemia**"
+                    }
+                ],
                 "questions": [
                     {
                         "question": "Which of the following conditions is least likely to present with microcytic anemia?",
@@ -1374,6 +1420,14 @@
             },
             {
                 "name": "Transfusion medicine",
+                "Clinical pearl": [
+                    {
+                    "pearl": "**Iron deficiency is caused mainly by blood loss**"
+                    },
+                    {
+                    "pearl": "**Remember: In microcytic anemia, lab findings help distinguish between iron deficiency and thalassemia**"
+                    }
+                ],
                 "questions": [
                     {
                         "question": "A patient with sickle cell anemia presents to the ED with pallor, shortness of breath, fatigue, and dizziness. His hemoglobin is found to be 6.2 g/dL. He is given a transfusion according to his type and screen, but his repeat hemoglobin is 6.1 g/dL. What is the most likely explanation?",

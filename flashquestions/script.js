@@ -317,6 +317,54 @@ document.addEventListener("DOMContentLoaded", () => {
         endTestButton.disabled = false; // Ensure it's clickable
     }
 
+
+        // Global variable for clinical pearls toggle
+    let clinicalPearlsEnabled = true;
+    const toggleClinicalPearlsCheckbox = document.getElementById("toggleClinicalPearls");
+    if (toggleClinicalPearlsCheckbox) {
+    toggleClinicalPearlsCheckbox.addEventListener("change", function() {
+        // When checked, clinical pearls are disabled.
+        clinicalPearlsEnabled = !this.checked;
+    });
+    }
+
+    // Helper function to display a clinical pearl using the same bullet formatting as explanations
+    function displayClinicalPearl(pearlObj) {
+    let pearlDiv = document.createElement("div");
+    pearlDiv.classList.add("explanation"); // Reuse same styling as explanation
+    // Optionally add an extra class if you want to differentiate visually
+    pearlDiv.classList.add("clinical-pearl");
+
+    let pearlText = pearlObj.pearl;
+    // Use a regular expression to detect text between ** and format it as bullet points
+    let bulletPattern = /\*\*(.*?)\*\*/g;
+    let parts = pearlText.split(bulletPattern);
+    let finalHTML = "";
+    let inBulletList = false;
+
+    parts.forEach((part, index) => {
+        if (index % 2 === 0) {
+        if (inBulletList) {
+            finalHTML += "</ul>"; // Close bullet list if open
+            inBulletList = false;
+        }
+        finalHTML += part;
+        } else {
+        if (!inBulletList) {
+            finalHTML += "<ul style='margin-top: 5px; margin-bottom: 5px;'>";
+            inBulletList = true;
+        }
+        finalHTML += `<li>${part}</li>`;
+        }
+    });
+    if (inBulletList) {
+        finalHTML += "</ul>";
+    }
+
+    pearlDiv.innerHTML = finalHTML;
+    answerChoices.appendChild(pearlDiv);
+    }
+
     function showQuestion(isReview = false) {
         let questionData = selectedQuestions[currentQuestionIndex];
         questionTitle.textContent = `${currentQuestionIndex + 1}. ${questionData.question}`;
@@ -371,6 +419,27 @@ document.addEventListener("DOMContentLoaded", () => {
         } else if (userAnswers[currentQuestionIndex] !== null) {
             displayExplanation(questionData, userAnswers[currentQuestionIndex]);
         }
+
+                // In showQuestion(), after displaying the question’s explanation:
+        if (clinicalPearlsEnabled && questionData.subtopicPearls && questionData.subtopicPearls.length > 0) {
+            // With ~25% chance or every 5th question – adjust as needed
+            if (Math.random() < 0.25) {
+                // Pick a random pearl from this subtopic’s pearls:
+                let pearl = questionData.subtopicPearls[Math.floor(Math.random() * questionData.subtopicPearls.length)];
+                // Use a function similar to displayExplanation() to render it.
+                displayClinicalPearl(pearl);
+            }
+        }
+
+        if (clinicalPearlsEnabled && questionData.subtopicPearls && questionData.subtopicPearls.length > 0) {
+            // For a ratio of roughly 4:1, show a pearl every 5th question.
+            if ((currentQuestionIndex + 1) % 5 === 0) {
+            let randomIndex = Math.floor(Math.random() * questionData.subtopicPearls.length);
+            let pearl = questionData.subtopicPearls[randomIndex];
+            displayClinicalPearl(pearl);
+            }
+        }
+
         
 
         if (isReview) {
