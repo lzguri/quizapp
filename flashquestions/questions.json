@@ -1495,7 +1495,20 @@
                         ],
                         "correct_answer": "Molecular testing for BCR-ABL gene",
                         "explanation": "The diagnosis of chronic myeloid leukemia (CML) is confirmed through molecular testing for the BCR-ABL gene in the peripheral blood or bone marrow. This test detects the BCR-ABL fusion transcript resulting from the t(9;22) translocation (Philadelphia chromosome)."
-                      }
+                    },
+                    {
+                        "question": "Which of the following is NOT a treatment for chronic myeloid leukemia (CML)?",
+                        "choices": [
+                          "Imatinib",
+                          "Hydroxyurea",
+                          "Allogeneic hematopoietic cell transplantation",
+                          "Interferon",
+                          "Rituximab"
+                        ],
+                        "correct_answer": "Rituximab",
+                        "explanation": "CML is primarily treated with tyrosine kinase inhibitors (TKIs) such as imatinib. Hydroxyurea can be used for cytoreduction, and allogeneic hematopoietic cell transplantation is an option for refractory cases. Interferon was historically used before TKIs. Rituximab, a monoclonal antibody targeting CD20, is used for B-cell malignancies like non-Hodgkin lymphoma and chronic lymphocytic leukemia, not for CML."
+                    }
+                      
                       
                       
                       
