@@ -1338,11 +1338,38 @@
                         ],
                         "correct_answer": "Clopidogrel",
                         "explanation": "Glanzmann thrombasthenia is a platelet disorder caused by a deficiency or dysfunction of glycoprotein IIb/IIIa, impairing platelet aggregation. Clopidogrel inhibits platelet aggregation by blocking the P2Y12 receptor, indirectly affecting glycoprotein IIb/IIIa activation, leading to a similar defect in platelet function."
-                    }
-                      
-                      
-                      
-                    
+                    } 
+                ]
+            },
+            {
+                "name": "Hemolytic anemia",
+                "questions": [
+                    {
+                        "question": "A young patient presents with progressive neurological symptoms. Laboratory results show anemia with high LDH and bilirubin and low haptoglobin. You order a Coombs test. What is the most likely result?",
+                        "choices": [
+                          "Positive",
+                          "Negative",
+                          "Indeterminate"
+                        ],
+                        "correct_answer": "Negative",
+                        "explanation": "Wilson's disease can cause non-immune hemolytic anemia due to excessive copper accumulation, leading to oxidative damage and red blood cell destruction. The Coombs test is negative in this type of hemolysis."
+                    }  
+                ]
+            },
+            {
+                "name": "Microcytic anemia",
+                "questions": [
+                    {
+                        "question": "Which of the following conditions is least likely to present with microcytic anemia?",
+                        "choices": [
+                          "Iron deficiency anemia",
+                          "Thalassemia",
+                          "Sideroblastic anemia",
+                          "Anemia of chronic disease"
+                        ],
+                        "correct_answer": "Anemia of chronic disease",
+                        "explanation": "While anemia of chronic disease can sometimes present as microcytic anemia, it is more commonly normocytic. In contrast, iron deficiency anemia, thalassemia, and sideroblastic anemia are typically associated with microcytosis."
+                    }  
                 ]
             },
             {
