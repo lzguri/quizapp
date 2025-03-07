@@ -1530,7 +1530,19 @@
                         ],
                         "correct_answer": "Order liver ultrasound",
                         "explanation": "Elevated hemoglobin with high EPO suggests secondary polycythemia rather than polycythemia vera (which typically has low EPO). Smoking can cause secondary polycythemia due to chronic hypoxia, but the patient's history of untreated hepatitis B raises concern for hepatocellular carcinoma or other liver pathology, which can produce excess EPO. A liver ultrasound is warranted to evaluate for an EPO-secreting tumor."
+                    },
+                    {
+                        "question": "Which genetic mutation is present in the majority of patients with polycythemia vera (PV)?",
+                        "choices": [
+                          "BCR-ABL fusion gene",
+                          "JAK2 activating mutation",
+                          "FLT3 mutation",
+                          "CALR mutation"
+                        ],
+                        "correct_answer": "JAK2 activating mutation",
+                        "explanation": "An activating mutation of the JAK2 gene is present in approximately 97% of patients with polycythemia vera (PV). This mutation leads to uncontrolled red blood cell production independent of erythropoietin levels, contributing to the development of PV."
                     }
+                      
                       
                       
                       
