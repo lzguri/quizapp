@@ -1382,6 +1382,28 @@
                         "explanation": "TRALI is caused by donor antibodies against HLA or neutrophil antigens (often from multiparous female donors) reacting with recipient leukocytes and pulmonary endothelium. This triggers complement activation, alveolar damage, and non-cardiogenic pulmonary edema."
                     },
                     {
+                        "question": "A patient presents to the ED with confusion, elevated creatinine of 1.9 mg/dL (baseline normal), hemoglobin of 6.5 g/dL, and platelets of 98,000/μL. Which of the following should be avoided in this patient?",
+                        "choices": [
+                          "IV fluids",
+                          "Platelet transfusion",
+                          "FFP transfusion",
+                          "Acetaminophen"
+                        ],
+                        "correct_answer": "Platelet transfusion",
+                        "explanation": "In a patient with thrombocytopenia and signs of possible thrombotic microangiopathy (e.g., renal dysfunction and anemia), platelet transfusion should be avoided as it may worsen thrombosis. If thrombotic thrombocytopenic purpura (TTP) is suspected, urgent plasma exchange should be considered."
+                    },
+                    {
+                        "question": "A 55-year-old male with sepsis due to gram-negative bacteremia develops diffuse bleeding from IV sites, mucosal bleeding, and petechiae. Laboratory tests show thrombocytopenia, prolonged PT and aPTT, and low fibrinogen levels. What is the most appropriate treatment for his hypofibrinogenemia?",
+                        "choices": [
+                          "Fresh frozen plasma",
+                          "Cryoprecipitate",
+                          "Platelet transfusion",
+                          "Vitamin K"
+                        ],
+                        "correct_answer": "Cryoprecipitate",
+                        "explanation": "Disseminated intravascular coagulation (DIC) is characterized by widespread coagulation activation leading to consumption of clotting factors and platelets. Cryoprecipitate is used to treat hypofibrinogenemia in DIC as it provides concentrated fibrinogen, which is essential for clot formation."
+                    },                                           
+                    {
                         "question": "A 58-year-old woman with a history of liver cirrhosis is receiving a transfusion of packed RBC. Approximately two hours into the transfusion, she develops acute respiratory distress with hypoxemia and bilateral pulmonary infiltrates on chest X-ray. Her blood pressure remains stable, and there are no signs of circulatory overload. Which transfusion reaction is most likely responsible for her symptoms?",
                         "choices": [
                           "Transfusion-related acute lung injury",
