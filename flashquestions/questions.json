@@ -1431,15 +1431,15 @@
                         "explanation": "A febrile nonhemolytic transfusion reaction (FNHTR) is a common, mild response marked by fever and chills without hemolysis. It is mainly caused by recipient antibodies to donor white blood cells or cytokines from stored donor leukocytes"
                     },
                     {
-                        "question": "A patient with end-stage renal disease (ESRD) on dialysis presents with peritonitis due to bowel perforation and is scheduled for surgery. He is on warfarin for atrial fibrillation, with an INR of 2.6. The surgeon orders fresh frozen plasma (FFP) to reverse his INR. Two hours after starting the transfusion, the patient experiences shortness of breath, and crackles are heard on physical examination. What is the most likely cause?",
+                        "question": "A patient with end-stage renal disease on dialysis presents with peritonitis due to bowel perforation and is scheduled for surgery. He is on warfarin for atrial fibrillation, with an INR of 2.6. The surgeon orders fresh frozen plasma (FFP) to reverse his INR. Two hours after starting the transfusion, the patient experiences shortness of breath, and crackles are heard on physical examination. What is the most likely cause?",
                         "choices": [
-                          "Transfusion-associated circulatory overload (TACO)",
-                          "Transfusion-related acute lung injury (TRALI)",
+                          "Transfusion-associated circulatory overload",
+                          "Transfusion-related acute lung injury",
                           "COVID-19 pneumonia",
                           "Anaphylactic shock",
                           "Bacterial pneumonia"
                         ],
-                        "correct_answer": "Transfusion-associated circulatory overload (TACO)",
+                        "correct_answer": "Transfusion-associated circulatory overload",
                         "explanation": "The patient's acute respiratory symptoms following FFP transfusion, along with physical findings of crackles, suggest TACO. TACO is more common than TRALI and is characterized by volume overload leading to pulmonary edema. Patients with ESRD are at increased risk due to impaired fluid excretion and may not tolerate large transfusion volumes well. FFP requires larger volumes to reverse INR compared to other options like prothrombin complex concentrates (PCC), further increasing the risk of TACO."
                     },    
                     {
