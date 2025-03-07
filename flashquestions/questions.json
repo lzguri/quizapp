@@ -1415,7 +1415,91 @@
                         ],
                         "correct_answer": "Anemia of chronic disease",
                         "explanation": "While anemia of chronic disease can sometimes present as microcytic anemia, it is more commonly normocytic. In contrast, iron deficiency anemia, thalassemia, and sideroblastic anemia are typically associated with microcytosis."
+                    },
+                    {
+                        "question": "In contrast to iron deficiency anemia, thalassemia is characterized by which of the following?",
+                        "choices": [
+                          "Normal RDW",
+                          "Microcytosis",
+                          "Hypochromia",
+                          "Anemia"
+                        ],
+                        "correct_answer": "Normal RDW",
+                        "explanation": "Thalassemia and iron deficiency anemia both present with microcytosis and hypochromia. However, thalassemia typically has a normal RDW, whereas iron deficiency anemia shows an elevated RDW due to variation in red blood cell size. Anemia is present in both conditions but is usually more severe in thalassemia relative to the degree of microcytosis."
+                    },
+                    {
+                        "question": "Which of the following is NOT a characteristic finding in iron deficiency anemia?",
+                        "choices": [
+                          "Thrombocytosis",
+                          "Low ferritin",
+                          "High TIBC",
+                          "High RDW",
+                          "Microcytosis",
+                          "Leukopenia"
+                        ],
+                        "correct_answer": "Leukopenia",
+                        "explanation": "Iron deficiency anemia is typically associated with microcytosis, low ferritin, high total iron-binding capacity (TIBC), high red cell distribution width (RDW), and reactive thrombocytosis. Leukopenia is not a characteristic feature and may suggest another underlying condition."
+                    }
+                      
+                        
+                ]
+            },
+            {
+                "name": "nameOfTopic",
+                "questions": [
+                    {
+                        "question": "questionOfTopic",
+                        "choices": [
+                          "Positive",
+                          "Negative",
+                          "Indeterminate"
+                        ],
+                        "correct_answer": "AnswerOfTopic",
+                        "explanation": "explanation of topic."
                     }  
+                ]
+            },
+            {
+                "name": "Myeloproliferative disorders",
+                "questions": [
+                    {
+                        "question": "All of the following are classified as myeloproliferative disorders EXCEPT:",
+                        "choices": [
+                          "Polycythemia vera",
+                          "Essential thrombocythemia",
+                          "Primary myelofibrosis",
+                          "Chronic myeloid leukemia",
+                          "Myelodysplasia"
+                        ],
+                        "correct_answer": "Myelodysplasia",
+                        "explanation": "Myeloproliferative disorders are clonal hematopoietic stem cell disorders characterized by excessive production of mature blood cells. They include: **polycythemia vera** **essential thrombocythemia** **primary myelofibrosis** **chronic myeloid leukemia**Myelodysplasia (MDS), in contrast, is a disorder of ineffective hematopoiesis and is classified separately as a myelodysplastic syndrome rather than a myeloproliferative disorder."
+                    },
+                    {
+                        "question": "Which genetic abnormality is associated with myeloid proliferation in chronic myeloid leukemia (CML)?",
+                        "choices": [
+                          "JAK2 mutation",
+                          "t(15;17) translocation",
+                          "t(9;22) translocation",
+                          "FLT3 mutation"
+                        ],
+                        "correct_answer": "t(9;22) translocation",
+                        "explanation": "Myeloid proliferation in chronic myeloid leukemia (CML) is driven by the translocation of chromosomes 9 and 22 [t(9;22)], known as the Philadelphia chromosome. This genetic rearrangement results in the formation of the BCR-ABL fusion gene, which encodes an abnormal tyrosine kinase that promotes uncontrolled cell growth."
+                    },
+                    {
+                        "question": "How is the diagnosis of chronic myeloid leukemia (CML) confirmed?",
+                        "choices": [
+                          "Bone marrow biopsy alone",
+                          "Peripheral blood smear",
+                          "Cytogenetic analysis for t(9;22) only",
+                          "Molecular testing for BCR-ABL gene"
+                        ],
+                        "correct_answer": "Molecular testing for BCR-ABL gene",
+                        "explanation": "The diagnosis of chronic myeloid leukemia (CML) is confirmed through molecular testing for the BCR-ABL gene in the peripheral blood or bone marrow. This test detects the BCR-ABL fusion transcript resulting from the t(9;22) translocation (Philadelphia chromosome)."
+                      }
+                      
+                      
+                      
+                      
                 ]
             },
             {
