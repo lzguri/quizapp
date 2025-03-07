@@ -1507,7 +1507,20 @@
                         ],
                         "correct_answer": "Rituximab",
                         "explanation": "CML is primarily treated with tyrosine kinase inhibitors (TKIs) such as imatinib. Hydroxyurea can be used for cytoreduction, and allogeneic hematopoietic cell transplantation is an option for refractory cases. Interferon was historically used before TKIs. Rituximab, a monoclonal antibody targeting CD20, is used for B-cell malignancies like non-Hodgkin lymphoma and chronic lymphocytic leukemia, not for CML."
+                    },
+                    {
+                        "question": "Polycythemia vera is characterized by all of the following EXCEPT:",
+                        "choices": [
+                          "Leukocytosis",
+                          "Low erythropoietin (EPO)",
+                          "Basophilia",
+                          "Thrombocytosis",
+                          "Lymphadenopathy"
+                        ],
+                        "correct_answer": "Lymphadenopathy",
+                        "explanation": "Polycythemia vera is a myeloproliferative disorder characterized by increased red blood cell mass, leukocytosis, thrombocytosis, and basophilia. It is driven by a JAK2 mutation and is associated with low erythropoietin (EPO) levels. Lymphadenopathy is not a typical feature and suggests an alternative diagnosis, such as a lymphoproliferative disorder."
                     }
+                      
                       
                       
                       
