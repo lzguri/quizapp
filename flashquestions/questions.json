@@ -1301,6 +1301,51 @@
                 ]
             },
             {
+                "name": "Thrombocytosis and thrombocytopenia",
+                "questions": [
+                    {
+                        "question": "Thrombocytosis can occur in all of the following conditions EXCEPT:",
+                        "choices": [
+                          "Myeloproliferative disorders",
+                          "Inflammatory conditions",
+                          "Malignancy",
+                          "Infection",
+                          "Iron deficiency",
+                          "Megaloblastic anemia"
+                        ],
+                        "correct_answer": "Megaloblastic anemia",
+                        "explanation": "Thrombocytosis can be seen in: **Myeloproliferative disorders (e.g., essential thrombocythemia)** **Inflammatory conditions** **Malignancy** **Infection** **Iron deficiency** However, vitamin B12 deficiency is more commonly associated with pancytopenia rather than thrombocytosis."
+                    },
+                    {
+                        "question": "All of the following cause immune destruction of platelets EXCEPT:",
+                        "choices": [
+                          "Immune thrombocytopenic purpura",
+                          "Heparin-induced thrombocytopenia type I",
+                          "Heparin-induced thrombocytopenia type II",
+                          "Systemic lupus erythematosus-associated thrombocytopenia",
+                          "Drug-induced immune thrombocytopenia"
+                        ],
+                        "correct_answer": "Heparin-induced thrombocytopenia type I",
+                        "explanation": "HIT type I is a non-immune, transient decrease in platelets due to direct heparin effect, resolving without intervention. In contrast, ITP, HIT type II, SLE-associated thrombocytopenia, and drug-induced immune thrombocytopenia involve immune-mediated platelet destruction."
+                    },
+                    {
+                        "question": "Glanzmann thrombasthenia shares a similar pathophysiology with which of the following medications?",
+                        "choices": [
+                          "Aspirin",
+                          "Ibuprofen",
+                          "Clopidogrel",
+                          "Dipyridamole"
+                        ],
+                        "correct_answer": "Clopidogrel",
+                        "explanation": "Glanzmann thrombasthenia is a platelet disorder caused by a deficiency or dysfunction of glycoprotein IIb/IIIa, impairing platelet aggregation. Clopidogrel inhibits platelet aggregation by blocking the P2Y12 receptor, indirectly affecting glycoprotein IIb/IIIa activation, leading to a similar defect in platelet function."
+                    }
+                      
+                      
+                      
+                    
+                ]
+            },
+            {
                 "name": "Transfusion medicine",
                 "questions": [
                     {
@@ -1413,14 +1458,7 @@
                         ],
                         "correct_answer": "Transfusion-related acute lung injury",
                         "explanation": "TRALI is characterized by acute respiratory distress, hypoxemia, and non-cardiogenic pulmonary edema occurring during or within six hours of transfusion. It is often associated with plasma-containing blood products and presents without signs of circulatory overload."
-                    }
-                      
-                      
-                      
-                      
-                      
-                      
-                    
+                    }     
                 ]
             }
         ]

@@ -779,17 +779,9 @@ function adjustDivWidth() {
             div.style.textAlign = 'left';
             scorePageBackground.style.backgroundColor = 'white'
 
-            if (internalMedicine) {
-                internalMedicine.style.textAlign = 'left';  // Ensure h1 is left-aligned on desktop
-            }
         } else {
             // Apply styles for mobile screens (768px or smaller)
             div.style.width = 'auto';
-
-            if (internalMedicine) {
-                internalMedicine.style.textAlign = 'center';  // Center h1 on mobile
-                internalMedicine.style.padding = "5px"
-            }
 
             // Remove the extra desktop styles for mobile
             div.style.margin = '';
