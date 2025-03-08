@@ -1227,6 +1227,53 @@
         ]
     },
     {
+        "name": "Oncology",
+        "subtopics": [
+            {
+                "name": "Lung cancer",
+                "questions": [
+                    {
+                        "question": "Squamous cell carcinoma of the lung causes hypercalcemia by which mechanism?",
+                        "choices": [
+                          "Metastasis to the bone",
+                          "Parathyroid hormone-related protein (PTHrP) production",
+                          "Increased vitamin D",
+                          "Producing IL-6"
+                        ],
+                        "correct_answer": "Parathyroid hormone-related protein (PTHrP) production",
+                        "explanation": "Squamous cell carcinoma of the lung is associated with humoral hypercalcemia of malignancy due to the production of parathyroid hormone-related protein (PTHrP). PTHrP mimics the effects of parathyroid hormone, leading to increased calcium resorption from bone and reduced renal calcium excretion. Unlike some other malignancies, squamous cell carcinoma does not typically cause hypercalcemia through increased vitamin D production."
+                    }
+                      
+                    
+                ]
+            }
+        ]
+    },
+    {
+        "name": "Critical care",
+        "subtopics": [
+            {
+                "name": "Lung cancer",
+                "questions": [
+                    {
+                        "question": "A 65-year-old male with a history of COPD and heart failure is admitted to the ICU with severe respiratory distress. His arterial blood gas (ABG) shows pH 7.28, pCO₂ 60 mmHg, and pO₂ 55 mmHg on a non-rebreather mask. His respiratory rate is 32 breaths per minute, and he is using accessory muscles. What is the next best step in management?",
+                        "choices": [
+                          "Administer intravenous furosemide",
+                          "Initiate noninvasive positive pressure ventilation (NIPPV)",
+                          "Intubate and initiate mechanical ventilation",
+                          "Administer high-flow nasal cannula oxygen therapy"
+                        ],
+                        "correct_answer": "Initiate noninvasive positive pressure ventilation (NIPPV)",
+                        "explanation": "The patient's ABG is consistent with acute hypercapnic respiratory failure likely due to COPD exacerbation. Noninvasive positive pressure ventilation (NIPPV) is the preferred initial management to improve ventilation and reduce work of breathing. Intubation is reserved for those who fail NIPPV. High-flow nasal cannula may provide oxygenation but does not address hypercapnia effectively."
+                    }
+                      
+                      
+                    
+                ]
+            }
+        ]
+    },
+    {
         "name": "Hematology",
         "subtopics": [
             {

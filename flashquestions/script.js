@@ -208,7 +208,7 @@ document.addEventListener("DOMContentLoaded", () => {
             topicDiv.classList.add("topic");
             topicDiv.innerHTML = `
                 <input type="checkbox" class="topic-checkbox" id="topic-${index}">
-                <label for="topic-${index}" class="topic-label">${topic.name} [${topicQuestionCount}]</label>
+                <label for="topic-${index}" class="topic-label">${topic.name}<span style="font-weight: lighter;"> [${topicQuestionCount}] </span></label>
                 <div class="subtopics" style="display: none;"></div>
             `;
     
@@ -221,7 +221,7 @@ document.addEventListener("DOMContentLoaded", () => {
                 let subtopicDiv = document.createElement("div");
                 subtopicDiv.innerHTML = `
                     <input type="checkbox" class="subtopic-checkbox" id="subtopic-${index}-${subIndex}" data-topic="${index}" data-subtopic="${subIndex}">
-                    <label for="subtopic-${index}-${subIndex}">${subtopic.name} [${subtopicQuestionCount}]</label>
+                    <label for="subtopic-${index}-${subIndex}">${subtopic.name}<span style="font-weight: lighter;"> [${subtopicQuestionCount}]</span></label>
                 `;
                 subtopicsDiv.appendChild(subtopicDiv);
             });
