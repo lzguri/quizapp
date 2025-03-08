@@ -1417,6 +1417,16 @@
                         "explanation": "While anemia of chronic disease can sometimes present as microcytic anemia, it is more commonly normocytic. In contrast, iron deficiency anemia, thalassemia, and sideroblastic anemia are typically associated with microcytosis."
                     },
                     {
+                        "question": "Can iron deficiency anemia present with normocytic anemia?",
+                        "choices": [
+                          "Yes",
+                          "No",
+                          "Can't make a determination"
+                        ],
+                        "correct_answer": "Yes",
+                        "explanation": "Iron deficiency anemia typically presents as microcytic anemia, but in early stages or in cases of concurrent anemia of chronic disease, it can present as normocytic anemia before progressing to microcytosis. The progression follows this sequence: **Diminished iron stores (low ferritin) ⟶ diminished serum iron ⟶ decrease in hemoglobin (normocytic anemia) ⟶ microcytic hypochromic anemia.**"
+                    },                     
+                    {
                         "question": "In contrast to iron deficiency anemia, thalassemia is characterized by which of the following?",
                         "choices": [
                           "Normal RDW",
@@ -1438,7 +1448,7 @@
                           "Leukopenia"
                         ],
                         "correct_answer": "Leukopenia",
-                        "explanation": "Iron deficiency anemia is typically associated with microcytosis, low ferritin, high total iron-binding capacity (TIBC), high red cell distribution width (RDW), and reactive thrombocytosis. Leukopenia is not a characteristic feature and may suggest another underlying condition."
+                        "explanation": "Iron deficiency anemia is typically associated with: **Microcytosis (low MCV) and hypochromia (low MCHC)** **Low ferritin, and high total iron-binding capacity (TIBC)** **High red cell distribution width (RDW)** **Reactive thrombocytosis** Leukopenia is not a characteristic feature and may suggest another underlying condition."
                     }
                       
                         
@@ -1473,6 +1483,18 @@
                         ],
                         "correct_answer": "Myelodysplasia",
                         "explanation": "Myeloproliferative disorders are clonal hematopoietic stem cell disorders characterized by excessive production of mature blood cells. They include: **polycythemia vera** **essential thrombocythemia** **primary myelofibrosis** **chronic myeloid leukemia**Myelodysplasia (MDS), in contrast, is a disorder of ineffective hematopoiesis and is classified separately as a myelodysplastic syndrome rather than a myeloproliferative disorder."
+                    },
+                    {
+                        "question": "Essential thrombocythemia is characterized by all of the following EXCEPT:",
+                        "choices": [
+                          "Erythromelalgia",
+                          "Thrombotic complications",
+                          "Hemorrhagic complications",
+                          "Splenomegaly",
+                          "Elevated INR"
+                        ],
+                        "correct_answer": "Elevated INR",
+                        "explanation": "Essential thrombocythemia is a myeloproliferative disorder characterized by an excessive production of platelets, leading to both thrombotic and hemorrhagic complications. It can also be associated with erythromelalgia (burning pain and redness of extremities) and splenomegaly. However, it does not typically cause an elevated INR."
                     },
                     {
                         "question": "Which genetic abnormality is associated with myeloid proliferation in chronic myeloid leukemia (CML)?",
@@ -1518,7 +1540,7 @@
                           "Lymphadenopathy"
                         ],
                         "correct_answer": "Lymphadenopathy",
-                        "explanation": "Polycythemia vera is a myeloproliferative disorder characterized by increased red blood cell mass, leukocytosis, thrombocytosis, and basophilia. It is driven by a JAK2 mutation and is associated with low erythropoietin (EPO) levels. Lymphadenopathy is not a typical feature and suggests an alternative diagnosis, such as a lymphoproliferative disorder."
+                        "explanation": "Polycythemia vera is a myeloproliferative disorder characterized by: **Increased red blood cell mass** **Leukocytosis, thrombocytosis, and basophilia** ** JAK2 mutation** **Low erythropoietin (EPO) levels** Lymphadenopathy is not a typical feature and suggests an alternative diagnosis, such as a lymphoproliferative disorder."
                     },
                     {
                         "question": "A patient with a history of smoking and untreated hepatitis B is found to have an elevated hemoglobin level and high erythropoietin (EPO). He has no shortness of breath. What is the next step in evaluation?",
@@ -1541,15 +1563,7 @@
                         ],
                         "correct_answer": "JAK2 activating mutation",
                         "explanation": "An activating mutation of the JAK2 gene is present in approximately 97% of patients with polycythemia vera (PV). This mutation leads to uncontrolled red blood cell production independent of erythropoietin levels, contributing to the development of PV."
-                    }
-                      
-                      
-                      
-                      
-                      
-                      
-                      
-                      
+                    }  
                 ]
             },
             {
