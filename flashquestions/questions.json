@@ -1374,9 +1374,18 @@
                         ],
                         "correct_answer": "Caplacizumab",
                         "explanation": "Caplacizumab is a monoclonal antibody that inhibits von Willebrand factor (vWF)-platelet interaction by targeting the A1 domain of vWF. This prevents excessive platelet aggregation and microvascular thrombosis in TTP. It is used alongside plasma exchange and immunosuppression to improve outcomes."
+                    },
+                    {
+                        "question": "In a patient with low ferritin and a platelet count > 700 × 10⁹/L (normal range: 150-450 × 10⁹/L), what is the next step?",
+                        "choices": [
+                          "Replace iron and recheck platelets",
+                          "Order bone marrow biopsy",
+                          "Check for JAK2 mutation",
+                          "Order aspirin due to risk of thrombosis"
+                        ],
+                        "correct_answer": "Replace iron and recheck platelets",
+                        "explanation": "Iron deficiency can cause reactive thrombocytosis, often leading to platelet counts > 700 × 10⁹/L. The first step is iron replacement and reassessment of platelet levels. If thrombocytosis persists despite iron repletion, further evaluation for a myeloproliferative disorder (e.g., JAK2 mutation testing) may be warranted."
                     }
-                      
-                         
                 ]
             },
             {
@@ -1519,7 +1528,7 @@
                         "explanation": "The diagnosis of chronic myeloid leukemia (CML) is confirmed through molecular testing for the BCR-ABL gene in the peripheral blood or bone marrow. This test detects the BCR-ABL fusion transcript resulting from the t(9;22) translocation (Philadelphia chromosome)."
                     },
                     {
-                        "question": "Which of the following is NOT a treatment for chronic myeloid leukemia (CML)?",
+                        "question": "Which of the following is NOT a treatment for chronic myeloid leukemia?",
                         "choices": [
                           "Imatinib",
                           "Hydroxyurea",
