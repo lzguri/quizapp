@@ -1497,7 +1497,7 @@
                         "explanation": "Essential thrombocythemia is a myeloproliferative disorder characterized by an excessive production of platelets, leading to both thrombotic and hemorrhagic complications. It can also be associated with erythromelalgia (burning pain and redness of extremities) and splenomegaly. However, it does not typically cause an elevated INR."
                     },
                     {
-                        "question": "Which genetic abnormality is associated with myeloid proliferation in chronic myeloid leukemia (CML)?",
+                        "question": "Which genetic abnormality is associated with myeloid proliferation in chronic myeloid leukemia?",
                         "choices": [
                           "JAK2 mutation",
                           "t(15;17) translocation",
@@ -1505,10 +1505,10 @@
                           "FLT3 mutation"
                         ],
                         "correct_answer": "t(9;22) translocation",
-                        "explanation": "Myeloid proliferation in chronic myeloid leukemia (CML) is driven by the translocation of chromosomes 9 and 22 [t(9;22)], known as the Philadelphia chromosome. This genetic rearrangement results in the formation of the BCR-ABL fusion gene, which encodes an abnormal tyrosine kinase that promotes uncontrolled cell growth."
+                        "explanation": "Myeloid proliferation in chronic myeloid leukemia (CML) is driven by the translocation of chromosomes 9 and 22, t(9;22), known as the Philadelphia chromosome. This genetic rearrangement results in the formation of the BCR-ABL fusion gene, which encodes an abnormal tyrosine kinase that promotes uncontrolled cell growth."
                     },
                     {
-                        "question": "How is the diagnosis of chronic myeloid leukemia (CML) confirmed?",
+                        "question": "How is the diagnosis of chronic myeloid leukemia confirmed?",
                         "choices": [
                           "Bone marrow biopsy alone",
                           "Peripheral blood smear",
@@ -1540,7 +1540,7 @@
                           "Lymphadenopathy"
                         ],
                         "correct_answer": "Lymphadenopathy",
-                        "explanation": "Polycythemia vera is a myeloproliferative disorder characterized by: **Increased red blood cell mass** **Leukocytosis, thrombocytosis, and basophilia** ** JAK2 mutation** **Low erythropoietin (EPO) levels** Lymphadenopathy is not a typical feature and suggests an alternative diagnosis, such as a lymphoproliferative disorder."
+                        "explanation": "Polycythemia vera is a myeloproliferative disorder characterized by: **JAK2 mutation (uncontrolled divison) ⟶ increased red blood cell mass** **Myeloid lineage neoplasm ⟶ leukocytosis, thrombocytosis, and basophilia** **High hemoglobin (negative feedback) ⟶ low erythropoietin (EPO) levels** Lymphadenopathy is not a typical feature and suggests an alternative diagnosis, such as a lymphoproliferative disorder."
                     },
                     {
                         "question": "A patient with a history of smoking and untreated hepatitis B is found to have an elevated hemoglobin level and high erythropoietin (EPO). He has no shortness of breath. What is the next step in evaluation?",
