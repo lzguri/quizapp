@@ -470,11 +470,6 @@
                         "correct_answer": "c-ANCA (anti-PR3 antibody)",
                         "explanation": "c-ANCA, also known as anti-proteinase 3 (anti-PR3) antibody, is strongly associated with Granulomatosis with polyangiitis (formerly known as Wegener's granulomatosis) and serves as a key diagnostic marker for the condition."
                     }
-                      
-                      
-                      
-                                            
-                    
                 ]
             },
             {
@@ -646,12 +641,6 @@
                         "correct_answer": "Reconsideration of the diagnosis",
                         "explanation": "Giant cell arteritis typically responds rapidly to high-dose corticosteroids. A lack of response should prompt reconsideration of the diagnosis, as it may indicate an alternative underlying condition."
                       }
-                      
-                      
-                      
-                      
-                      
-                    
                 ]
             },
             {
@@ -662,7 +651,20 @@
                         "choices": ["ANA is positive in most lupus patients", "ANA is a specific marker for lupus", "ANA negative confirms lupus", "ANA is always negative in lupus"],
                         "correct_answer": "ANA is positive in most lupus patients",
                         "explanation": "In lupus, more than 95% of patients are ANA positive. If ANA is negative, it is unlikely to be lupus, as ANA is a sensitive but not specific marker for the disease."
-                    }                    
+                    },
+                    {
+                        "question": "A patient with a history of systemic lupus erythematosus (SLE) presents with feeling unwell. Anti-dsDNA titers are found to be high. What is the next step in management?",
+                        "choices": [
+                          "Order renal function test and urinalysis",
+                          "Order Coombs test as the patient very likely has hemolytic anemia",
+                          "No further testing is needed",
+                          "Anti-dsDNA highly correlates with lung involvement, order PFTs"
+                        ],
+                        "correct_answer": "Order renal function test and urinalysis",
+                        "explanation": "Anti-dsDNA is highly specific for SLE and is useful for both diagnosis and monitoring disease activity. There is a strong association between high titers of anti-dsDNA antibodies and lupus nephritis. In patients with elevated anti-dsDNA, checking for glomerulonephritis through urinalysis and renal function tests is crucial, as early detection and treatment can help prevent progression to renal failure."
+                    }
+                      
+                                         
                 ]
             }
         ]
@@ -1340,7 +1342,7 @@
                         "explanation": "Glanzmann thrombasthenia is a platelet disorder caused by a deficiency or dysfunction of glycoprotein IIb/IIIa, impairing platelet aggregation. Clopidogrel inhibits platelet aggregation by blocking the P2Y12 receptor, indirectly affecting glycoprotein IIb/IIIa activation, leading to a similar defect in platelet function."
                     },
                     {
-                        "question": "Which of the following is NOT part of thrombotic thrombocytopenic purpura (TTP)?",
+                        "question": "Which of the following is NOT part of thrombotic thrombocytopenic purpura pentad?",
                         "choices": [
                           "Microangiopathic hemolytic anemia",
                           "Acute kidney injury",
@@ -1350,7 +1352,7 @@
                           "Leukocytosis"
                         ],
                         "correct_answer": "Leukocytosis",
-                        "explanation": "TTP is characterized by the classic pentad: microangiopathic hemolytic anemia, thrombocytopenia, neurologic symptoms, fever, and renal dysfunction. However, leukocytosis is not a typical feature of TTP and suggests another underlying condition."
+                        "explanation": "TTP is characterized by the classic pentad: **Microangiopathic hemolytic anemia**  **Thrombocytopenia** **Neurologic symptoms** **Fever** **Renal dysfunction** However, leukocytosis is not a typical feature of TTP and suggests another underlying condition."
                     },
                     {
                         "question": "A patient presents with confusion, acute kidney injury, microangiopathic hemolytic anemia, and severe thrombocytopenia. What is the next step in management?",
@@ -1364,7 +1366,7 @@
                         "explanation": "The patient's presentation is highly suggestive of thrombotic thrombocytopenic purpura (TTP), a life-threatening condition requiring urgent plasma exchange. Delaying treatment while waiting for ADAMTS13 levels can be fatal. Platelet transfusion is contraindicated as it may worsen thrombosis. RBC transfusion may be considered if severe anemia is present but is not the primary intervention."
                     },
                     {
-                        "question": "Which of the following medications can be used for the treatment of thrombotic thrombocytopenic purpura (TTP)?",
+                        "question": "Which of the following medications can be used for the treatment of thrombotic thrombocytopenic purpura?",
                         "choices": [
                           "Caplacizumab",
                           "Azathioprine",
@@ -1514,7 +1516,7 @@
                           "FLT3 mutation"
                         ],
                         "correct_answer": "t(9;22) translocation",
-                        "explanation": "Myeloid proliferation in chronic myeloid leukemia (CML) is driven by the translocation of chromosomes 9 and 22, t(9;22), known as the Philadelphia chromosome. This genetic rearrangement results in the formation of the BCR-ABL fusion gene, which encodes an abnormal tyrosine kinase that promotes uncontrolled cell growth."
+                        "explanation": "Myeloid proliferation in chronic myeloid leukemia is driven by the translocation of chromosomes 9 and 22, t(9;22), known as the Philadelphia chromosome. This genetic rearrangement results in the formation of the BCR-ABL fusion gene, which encodes an abnormal tyrosine kinase that promotes uncontrolled cell growth."
                     },
                     {
                         "question": "How is the diagnosis of chronic myeloid leukemia confirmed?",
@@ -1543,7 +1545,7 @@
                         "question": "Polycythemia vera is characterized by all of the following EXCEPT:",
                         "choices": [
                           "Leukocytosis",
-                          "Low erythropoietin (EPO)",
+                          "Low erythropoietin",
                           "Basophilia",
                           "Thrombocytosis",
                           "Lymphadenopathy"
@@ -1552,7 +1554,7 @@
                         "explanation": "Polycythemia vera is a myeloproliferative disorder characterized by: **JAK2 mutation (uncontrolled divison) ⟶ increased red blood cell mass** **Myeloid lineage neoplasm ⟶ leukocytosis, thrombocytosis, and basophilia** **High hemoglobin (negative feedback) ⟶ low erythropoietin (EPO) levels** Lymphadenopathy is not a typical feature and suggests an alternative diagnosis, such as a lymphoproliferative disorder."
                     },
                     {
-                        "question": "A patient with a history of smoking and untreated hepatitis B is found to have an elevated hemoglobin level and high erythropoietin (EPO). He has no shortness of breath. What is the next step in evaluation?",
+                        "question": "A patient with a history of smoking and untreated hepatitis B is found to have an elevated hemoglobin level and high erythropoietin. He has no shortness of breath. What is the next step in evaluation?",
                         "choices": [
                           "Order renal ultrasound",
                           "Order liver ultrasound",
@@ -1563,7 +1565,7 @@
                         "explanation": "Elevated hemoglobin with high EPO suggests secondary polycythemia rather than polycythemia vera (which typically has low EPO). Smoking can cause secondary polycythemia due to chronic hypoxia, but the patient's history of untreated hepatitis B raises concern for hepatocellular carcinoma or other liver pathology, which can produce excess EPO. A liver ultrasound is warranted to evaluate for an EPO-secreting tumor."
                     },
                     {
-                        "question": "Which genetic mutation is present in the majority of patients with polycythemia vera (PV)?",
+                        "question": "Which genetic mutation is present in the majority of patients with polycythemia vera?",
                         "choices": [
                           "BCR-ABL fusion gene",
                           "JAK2 activating mutation",
