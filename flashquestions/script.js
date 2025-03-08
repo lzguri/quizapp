@@ -200,6 +200,34 @@ document.addEventListener("DOMContentLoaded", () => {
         return count;
     }
     
+        // Function to handle "Select All" checkbox behavior
+    selectAllCheckbox.addEventListener("change", function () {
+        let isChecked = this.checked;
+        
+        // Select or Deselect all topics and subtopics
+        document.querySelectorAll(".topic-checkbox").forEach(topicCheckbox => {
+            topicCheckbox.checked = isChecked;
+        });
+
+        document.querySelectorAll(".subtopic-checkbox").forEach(subtopicCheckbox => {
+            subtopicCheckbox.checked = isChecked;
+        });
+        
+        updateQuestionCount();
+    });
+
+    // If any topic or subtopic is selected manually, uncheck "Select All" and allow other selections
+    document.querySelectorAll(".topic-checkbox, .subtopic-checkbox").forEach(checkbox => {
+        checkbox.addEventListener("change", function () {
+            selectAllCheckbox.checked = false;
+            document.querySelectorAll(".topic-checkbox").forEach(topicCheckbox => {
+                topicCheckbox.disabled = false;
+            });
+        });
+    });
+
+
+    
 
 
     // This function allows for the user to pick topic and subtopics
