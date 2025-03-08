@@ -1507,9 +1507,31 @@
                         ],
                         "correct_answer": "Leukopenia",
                         "explanation": "Iron deficiency anemia is typically associated with: **Microcytosis (low MCV) and hypochromia (low MCHC)** **Low ferritin, and high total iron-binding capacity (TIBC)** **High red cell distribution width (RDW)** **Reactive thrombocytosis** Leukopenia is not a characteristic feature and may suggest another underlying condition."
+                    },
+                    {
+                        "question": "What is the next step in a 40-year-old male who presents with anemia, high total iron-binding capacity, and low ferritin?",
+                        "choices": [
+                          "Start iron supplementation",
+                          "Order colonoscopy",
+                          "Check vitamin B12 levels",
+                          "Perform bone marrow biopsy"
+                        ],
+                        "correct_answer": "Order colonoscopy",
+                        "explanation": "The findings are consistent with iron deficiency anemia (IDA). In a male patient, IDA is concerning for chronic blood loss, often from gastrointestinal sources. The next step is to investigate for occult bleeding, with colonoscopy being the preferred initial test to rule out colorectal cancer or other GI pathology."
+                    },
+                    {
+                        "question": "What is the next step in a young female who presents with severe iron deficiency anemia, normal platelet count, heavy menstrual bleeding, and a family history of a bleeding diathesis?",
+                        "choices": [
+                          "Prescribe oral contraceptive pills (OCP)",
+                          "Check for platelet aggregation dysfunction",
+                          "Check INR",
+                          "Order colonoscopy",
+                          "Order oral iron"
+                        ],
+                        "correct_answer": "Check for platelet aggregation dysfunction",
+                        "explanation": "In a young female with severe iron deficiency anemia, heavy menstrual bleeding, and a family history of bleeding diathesis, an inherited bleeding disorder such as von Willebrand disease should be suspected. Checking platelet aggregation function and von Willebrand factor levels is the next step before starting empiric hormonal therapy."
                     }
                       
-                        
                 ]
             },
             {
@@ -1543,9 +1565,18 @@
                         ],
                         "correct_answer": "Acute blood loss anemia",
                         "explanation": "Reticulocyte count reflects bone marrow function. In pre-bone marrow causes of anemia, the marrow lacks ingredients to produce erythrocytes: Causes include:  **Iron ⟶ iron deficiency** **Vitamin B12 and folic acid ⟶ megaloblastic anemia** **anemia of chronic disease** In bone marrow disorders, the marrow itself is defective. Causes include: **Aplastic anemia** **Myelodysplastic syndrome** **Myelofibrosis** A high reticulocyte count is seen in conditions like acute blood loss and hemolysis, where the bone marrow responds appropriatel unless there is iron, vitamin B12 or folic acid deficiency."
-                    }
-                      
-                      
+                    },
+                    {
+                        "question": "A patient presents with normocytic anemia and high RDW. He reports chronic greasy diarrhea, especially after consuming rye or bread. What is the next step in management?",
+                        "choices": [
+                          "Check iron studies only",
+                          "Check iron studies and folic acid",
+                          "Check a Coombs test",
+                          "Bone marrow biopsy"
+                        ],
+                        "correct_answer": "Check iron studies and folic acid",
+                        "explanation": "The patient likely has celiac disease, which can lead to malabsorption of both iron and folic acid. Normocytic anemia with high RDW suggests a mix of small and large red blood cells, consistent with combined deficiencies. Checking both iron studies and folic acid is essential for proper diagnosis and management."
+                    } 
                 ]
             },
             {
