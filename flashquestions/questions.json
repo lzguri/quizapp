@@ -1475,6 +1475,18 @@
                         "explanation": "While anemia of chronic disease can sometimes present as microcytic anemia, it is more commonly normocytic. In contrast, iron deficiency anemia, thalassemia, and sideroblastic anemia are typically associated with microcytosis."
                     },
                     {
+                        "question": "A patient with tuberculosis started on treatment develops microcytic anemia. Iron studies show high ferritin levels and high serum iron. Which vitamin is needed for treatment?",
+                        "choices": [
+                          "Vitamin C",
+                          "Vitamin B12",
+                          "Vitamin B6",
+                          "Vitamin B1",
+                          "Vitamin K"
+                        ],
+                        "correct_answer": "Vitamin B6",
+                        "explanation": "The patient's presentation suggests sideroblastic anemia, which can be caused by isoniazid therapy due to pyridoxine (Vitamin B6) deficiency. This leads to defective heme synthesis, resulting in microcytic anemia with high ferritin and serum iron levels. Supplementing with Vitamin B6 can help correct the anemia."
+                    },
+                    {
                         "question": "Can iron deficiency anemia present with normocytic anemia?",
                         "choices": [
                           "Yes",
