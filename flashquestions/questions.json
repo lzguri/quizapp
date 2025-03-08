@@ -1567,6 +1567,17 @@
                         "explanation": "Reticulocyte count reflects bone marrow function. In pre-bone marrow causes of anemia, the marrow lacks ingredients to produce erythrocytes: Causes include:  **Iron ⟶ iron deficiency** **Vitamin B12 and folic acid ⟶ megaloblastic anemia** **anemia of chronic disease** In bone marrow disorders, the marrow itself is defective. Causes include: **Aplastic anemia** **Myelodysplastic syndrome** **Myelofibrosis** A high reticulocyte count is seen in conditions like acute blood loss and hemolysis, where the bone marrow responds appropriatel unless there is iron, vitamin B12 or folic acid deficiency."
                     },
                     {
+                        "question": "Which of the following plays a major role in anemia of chronic disease?",
+                        "choices": [
+                          "Hepcidin",
+                          "Erythropoietin",
+                          "Transferrin",
+                          "Ferritin"
+                        ],
+                        "correct_answer": "Hepcidin",
+                        "explanation": "Hepcidin is the key regulator of iron metabolism and plays a central role in anemia of chronic disease by inhibiting iron absorption in the intestines and preventing iron release from macrophages."
+                    },
+                    {
                         "question": "A patient presents with normocytic anemia and high RDW. He reports chronic greasy diarrhea, especially after consuming rye or bread. What is the next step in management?",
                         "choices": [
                           "Check iron studies only",
