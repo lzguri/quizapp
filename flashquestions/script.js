@@ -26,10 +26,15 @@ document.addEventListener("DOMContentLoaded", () => {
     const questionLimitInput = document.getElementById("questionLimitInput");
     const progressBar = document.getElementById("progressBar"); // Progress bar element
     const endTestButton = document.getElementById("endTest");
+    const selectAllCheckbox = document.getElementById("selectAll");
     
     // Get the disable sound and night mode checkboxes
+    const menuButton = document.getElementById("menuButton");
+    const menuContent = document.getElementById("menuContent");
     const toggleSoundCheckbox = document.getElementById("toggleSound");
     const toggleNightModeCheckbox = document.getElementById("toggleNightMode");
+
+    
     
 
 

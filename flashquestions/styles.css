@@ -143,7 +143,14 @@ button:active {
     margin-left: 10px;
 }
 
-
+.appMenu {
+  position: fixed;
+  padding: 6px;
+  color: white;
+  border: 0px solid blue;
+  background-color: #215fac;
+  width: 100%;
+}
 
 
 /* Correct and Incorrect Answers */
