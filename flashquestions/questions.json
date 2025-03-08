@@ -1528,6 +1528,27 @@
                 ]
             },
             {
+                "name": "Normocytic anemia",
+                "questions": [
+                    {
+                        "question": "Which of the following conditions is associated with a high reticulocyte count?",
+                        "choices": [
+                          "Iron deficiency anemia",
+                          "Megaloblastic anemia",
+                          "Anemia of chronic disease",
+                          "Aplastic anemia",
+                          "Myelodysplastic syndromes",
+                          "Myelofibrosis",
+                          "Acute blood loss anemia"
+                        ],
+                        "correct_answer": "Acute blood loss anemia",
+                        "explanation": "Reticulocyte count reflects bone marrow function. In pre-bone marrow causes of anemia, the marrow lacks ingredients to produce erythrocytes: Causes include:  **Iron ⟶ iron deficiency** **Vitamin B12 and folic acid ⟶ megaloblastic anemia** **anemia of chronic disease** In bone marrow disorders, the marrow itself is defective. Causes include: **Aplastic anemia** **Myelodysplastic syndrome** **Myelofibrosis** A high reticulocyte count is seen in conditions like acute blood loss and hemolysis, where the bone marrow responds appropriatel unless there is iron, vitamin B12 or folic acid deficiency."
+                    }
+                      
+                      
+                ]
+            },
+            {
                 "name": "Myeloproliferative disorders",
                 "questions": [
                     {
