@@ -528,6 +528,7 @@ button:active {
   display: block; /* Or block, depending on your needs */
   left: -20px;
   top: -22px;
+  margin-bottom: -25px;
 }
 
 .dropdown-button {
@@ -542,6 +543,7 @@ button:active {
   border-bottom-right-radius: 0px;
   text-align: left;
   gap: 10px;
+  border-bottom: 1px solid rgb(0, 0, 34);
 }
 
 .dropdown-button {
