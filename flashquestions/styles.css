@@ -526,8 +526,8 @@ button:active {
 }
 
 .dropdown-button {
-  background-color: #215fac;
-  color: white;
+  background-color: #f4f4f4;
+  color: rgb(0, 0, 0);
   padding: 16px;
   font-size: 16px;
   border: none;
@@ -569,4 +569,16 @@ button:active {
 
 .dropdown:hover .dropdown-content {
   display: block;
+}
+
+#menuIcon {
+  position:relative;
+  width:25px;
+  height: 25px;
+  right: 10px;
+  
+}
+
+.menuName {
+  position: block;
 }

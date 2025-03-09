@@ -2516,6 +2516,69 @@
                 ]
             },
             {
+                "name": "Sepsis and septic shock",
+                "questions": [
+                    {
+                        "question": "A patient presents with BP of 80/40 mmHg, HR of 120 bpm, and Temp of 103.2°F. A macular rash is noted, along with leukocytosis and thrombocytopenia. Earlier today, she was seen in the ED for an abscess, which was incised, drained, and packed. Blood cultures have been collected. What is the most likely blood culture result?",
+                        "choices": [
+                          "It will grow gram-positive cocci in clusters",
+                          "It will grow gram-negative rods",
+                          "It will grow anaerobic bacteria",
+                          "It will not have any growth"
+                        ],
+                        "correct_answer": "It will not have any growth",
+                        "explanation": "The patient's presentation is suggestive of toxic shock syndrome (TSS), likely due to Staphylococcus aureus from the skin infection. TSS is mediated by exotoxins and does not require bloodstream invasion, so blood cultures are often negative (only ~ 5% positive) despite severe illness. Gram-positive cocci in clusters (S. aureus) may be found in wound cultures but not necessarily in blood."
+                    }
+                      
+                ]
+            },
+            {
+                "name": "Viral Hepatitis",
+                "questions": [
+                    {
+                        "question": "A resident physician with unknown hepatitis B immune status experiences an accidental needle stick from a treatment-naive patient who tested positive for hepatitis B on admission. What is the next step?",
+                        "choices": [
+                          "Administer hepatitis B vaccine",
+                          "Administer hepatitis B immune globulin (HBIG)",
+                          "Test for anti-HBs titer and HBsAg",
+                          "Check HBsAg in 6 months",
+                          "No need for any further intervention"
+                        ],
+                        "correct_answer": "Test for anti-HBs titer and HBsAg",
+                        "explanation": "For healthcare workers with unknown hepatitis B immune status after an occupational exposure, the next step is to test for anti-HBs titer and HBsAg to determine if they have immunity or an active infection. A person is considered immune if anti-HBs ≥10 mIU/mL after completing the hepatitis B vaccine series. If the exposed individual is non-immune (anti-HBs negative or low titers), HBIG and the hepatitis B vaccine series should be given as post-exposure prophylaxis."
+                    }  
+                ]
+            },
+            {
+                "name": "Clostridioides difficile",
+                "questions": [
+                    {
+                        "question": "Which of the following is NOT a risk factor for Clostridioides difficile infection?",
+                        "choices": [
+                          "Antibiotic exposure",
+                          "Inflammatory bowel disease",
+                          "Proton pump inhibitors",
+                          "Solid organ transplant",
+                          "Celiac disease"
+                        ],
+                        "correct_answer": "Celiac disease",
+                        "explanation": "Risk factors for C. difficile infection include **Antibiotic exposure** **Proton pump inhibitor use** **Inflammatory bowel disease**  **Solid organ transplant** **Gastrointestinal surgery** Celiac disease is not a recognized risk factor for C. difficile infection."
+                    },
+                    {
+                        "question": "Which of the following antibiotics is LEAST likely to cause Clostridioides difficile infection?",
+                        "choices": [
+                          "Doxycycline",
+                          "Levofloxacin",
+                          "Clindamycin",
+                          "Piperacillin-tazobactam",
+                          "Azithromycin"
+                        ],
+                        "correct_answer": "Doxycycline",
+                        "explanation": "Antibiotics vary in their risk of causing C. difficile infection. **Clindamycin has the highest risk** **Followed by fluoroquinolones (e.g., levofloxacin)** **Broad-spectrum beta-lactams (e.g., piperacillin-tazobactam)** **Macrolides (e.g., azithromycin) have a lower risk** **Tetracyclines (e.g., doxycycline) are the least likely**"
+                    }
+                ]
+            },
+            {
                 "name": "Cryptococcal infection",
                 "questions": [
                     {
