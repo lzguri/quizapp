@@ -527,7 +527,7 @@ button:active {
   position: relative;
   display: block; /* Or block, depending on your needs */
   left: -20px;
-  top: -30px;
+  top: -22px;
 }
 
 .dropdown-button {
