@@ -525,36 +525,50 @@ button:active {
 /*DROP DOWN MENU */
 .dropdown {
   position: relative;
-  display: inline-block; /* Or block, depending on your needs */
+  display: block; /* Or block, depending on your needs */
+  left: -20px;
+  top: -30px;
 }
 
 .dropdown-button {
-  background-color: #4CAF50;
+  background-color: #215fac;
   color: white;
   padding: 16px;
   font-size: 16px;
   border: none;
   cursor: pointer;
+  width: calc(100% + 40px);
+  border-bottom-left-radius: 0px;
+  border-bottom-right-radius: 0px;
+  text-align: left;
+  gap: 10px;
+}
+
+.dropdown-button {
+  box-shadow: none !important;
 }
 
 .dropdown-content {
-  display: none; /* Initially hidden */
+  display: none; /* Hidden by default */
   position: absolute;
-  background-color: #f9f9f9;
-  min-width: 160px;
-  box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
-  z-index: 1;
+  top: 100%; /* Directly below the button */
+  left: 0;
+  width: 100%; /* Match the width of the button */
+  background-color: #215fac;
+  z-index: 1000;
+  box-shadow: none !important;
+  margin-top: 0; /* Remove white space */
 }
 
 .dropdown-content a {
-  color: black;
+  color: white;
   padding: 12px 16px;
   text-decoration: none;
   display: block;
 }
 
 .dropdown-content a:hover {
-  background-color: #f1f1f1;
+  background-color: #1a4a87;
 }
 
 .dropdown:hover .dropdown-content {
