@@ -178,7 +178,7 @@
                         "explanation": "Corticosteroids are not first-line treatment for viral or idiopathic acute pericarditis because they have been associated with an increased risk of recurrence."
                     },
                     {
-                        "question": "A patient diagnosed with pericarditis is hospitalized and started on treatment. While on telemetry, non-sustained ventricular tachycardia (NSVT) is observed. What is the next step?",
+                        "question": "A patient diagnosed with pericarditis is hospitalized and started on treatment. While on telemetry, non-sustained ventricular tachycardia is observed. What is the next step?",
                         "choices": [
                           "Evaluate for myocarditis",
                           "Increase NSAID dose",
@@ -317,7 +317,7 @@
                 "name": "Ventricular tachycardia",
                 "questions": [
                     {
-                        "question": "Which of the following characteristics is NOT typical of non-sustained ventricular tachycardia (NSVT)?",
+                        "question": "Which of the following characteristics is NOT typical of non-sustained ventricular tachycardia?",
                         "choices": [
                           "Three or more consecutive ventricular beats",
                           "Rate of >100 beats per minute",
@@ -488,10 +488,10 @@
                         "explanation": "Lung phase is not a recognized phase of EGPA, though pulmonary involvement occurs during other phases. EGPA phases occur as follows: **Prodromal phase ⟶ asthma and sometimes eosinophilia **Eosinophilic phase ⟶ tissue eosinophilia and systemic symptoms like fever and weight loss** **Vasculitic phase ⟶ small-vessel vasculitis.** "
                     },
                     {
-                        "question": "Which of the following serologic markers is associated with eosinophilic granulomatosis with polyangiitis (EGPA)?",
-                        "choices": ["p-ANCA [anti-MPO]", "c-ANCA [anti-PR3]", "ANA", "Anti-dsDNA"],
+                        "question": "Which of the following serologic markers is associated with eosinophilic granulomatosis with polyangiitis?",
+                        "choices": ["p-ANCA (anti-MPO)", "c-ANCA (anti-PR3)", "ANA", "Anti-dsDNA"],
                         "correct_answer": "p-ANCA [anti-MPO]",
-                        "explanation": "p-ANCA [anti-MPO] is associated with EGPA, although only about half of patients are positive for this marker."
+                        "explanation": "p-ANCA (anti-MPO) is associated with EGPA, although only about half of patients are positive for this marker."
                     }                   
                 ]
             },
@@ -876,7 +876,7 @@
                           "Heart failure"
                         ],
                         "correct_answer": "Heart failure",
-                        "explanation": "Variceal bleeding in cirrhotic patients can lead to complications such as hepatic encephalopathy (due to increased nitrogen load from blood in the gut), hemorrhagic shock (from blood loss), aspiration pneumonitis (due to vomiting and encephalopathy), and infection (from bacterial translocation). Heart failure is not a typical complication associated with variceal bleeding."
+                        "explanation": "Variceal bleeding in cirrhotic patients can lead to complications such as: **increased nitrogen load from blood in the gut ⟶ hepatic encephalopathy** **blood loss ⟶ hemorrhagic shock** **vomiting and encephalopathy ⟶ aspiration pneumonitis** **bacterial translocation ⟶ infection** Heart failure is not a typical complication associated with variceal bleeding."
                     },
                     {
                         "question": "A patient with refractory ascites, despite being on maximal therapy with furosemide and spironolactone, requires therapeutic paracentesis almost every week. What is the next step in management?",
@@ -1115,7 +1115,7 @@
                           "Suprahepatic vein thrombosis"
                         ],
                         "correct_answer": "Suprahepatic vein thrombosis",
-                        "explanation": "Autoimmune hepatitis can present with a spectrum of liver disease, ranging from: **asymptomatic elevation of liver enzymes** **acute hepatitis** **liver cirrhosis**  **acute liver failure** However, it is not associated with suprahepatic vein thrombosis (Budd-Chiari syndrome), which is typically caused by hypercoagulable states, myeloproliferative disorders, or malignancies."
+                        "explanation": "Autoimmune hepatitis can present with a spectrum of liver disease, ranging from: **Asymptomatic elevation of liver enzymes** **Acute hepatitis** **Liver cirrhosis**  **Acute liver failure** However, it is not associated with suprahepatic vein thrombosis (Budd-Chiari syndrome), which is typically caused by hypercoagulable states, myeloproliferative disorders, or malignancies."
                     },
                     {
                         "question": "All of the following laboratory findings are seen in autoimmune hepatitis EXCEPT:",
@@ -1127,7 +1127,7 @@
                           "Positive anti-Smith antibody"
                         ],
                         "correct_answer": "Positive anti-Smith antibody",
-                        "explanation": "Autoimmune hepatitis can be associated with: **elevated IgG levels** **positive ANA**** positive anti-smooth muscle antibody** **positive anti-liver kidney microsomal (LKM) antibody** However, anti-Smith antibodies are specific for systemic lupus erythematosus (SLE) and are not seen in autoimmune hepatitis."
+                        "explanation": "Autoimmune hepatitis can be associated with: **Elevated IgG levels** **Positive ANA**** Positive anti-smooth muscle antibody** **Positive anti-liver kidney microsomal (LKM) antibody** However, anti-Smith antibodies are specific for systemic lupus erythematosus (SLE) and are not seen in autoimmune hepatitis."
                     },
                     {
                         "question": "How is the diagnosis of autoimmune hepatitis established?",
@@ -1253,10 +1253,10 @@
         "name": "Critical care",
         "subtopics": [
             {
-                "name": "Lung cancer",
+                "name": "Acute respiratory failure",
                 "questions": [
                     {
-                        "question": "A 65-year-old male with a history of COPD and heart failure is admitted to the ICU with severe respiratory distress. His arterial blood gas (ABG) shows pH 7.28, pCO₂ 60 mmHg, and pO₂ 55 mmHg on a non-rebreather mask. His respiratory rate is 32 breaths per minute, and he is using accessory muscles. What is the next best step in management?",
+                        "question": "A 65-year-old male with a history of COPD and heart failure is admitted to the ICU with severe respiratory distress. His arterial blood gas shows pH 7.28, pCO₂ 60 mmHg, and pO₂ 55 mmHg on a non-rebreather mask. His respiratory rate is 32 breaths per minute, and he is using accessory muscles. What is the next best step in management?",
                         "choices": [
                           "Administer intravenous furosemide",
                           "Initiate noninvasive positive pressure ventilation (NIPPV)",
@@ -1425,7 +1425,7 @@
                         "explanation": "Caplacizumab is a monoclonal antibody that inhibits von Willebrand factor (vWF)-platelet interaction by targeting the A1 domain of vWF. This prevents excessive platelet aggregation and microvascular thrombosis in TTP. It is used alongside plasma exchange and immunosuppression to improve outcomes."
                     },
                     {
-                        "question": "In a patient with low ferritin and a platelet count > 700 × 10⁹/L (normal range: 150-450 × 10⁹/L), what is the next step?",
+                        "question": "In a patient with low ferritin and a platelet count > 700k/µL (normal range: 150-450k/µL), what is the next step?",
                         "choices": [
                           "Replace iron and recheck platelets",
                           "Order bone marrow biopsy",
@@ -1433,7 +1433,7 @@
                           "Order aspirin due to risk of thrombosis"
                         ],
                         "correct_answer": "Replace iron and recheck platelets",
-                        "explanation": "Iron deficiency can cause reactive thrombocytosis, often leading to platelet counts > 700 × 10⁹/L. The first step is iron replacement and reassessment of platelet levels. If thrombocytosis persists despite iron repletion, further evaluation for a myeloproliferative disorder (e.g., JAK2 mutation testing) may be warranted."
+                        "explanation": "Iron deficiency can cause reactive thrombocytosis, often leading to platelet counts > 700k/µL. The first step is iron replacement and reassessment of platelet levels. If thrombocytosis persists despite iron repletion, further evaluation for a myeloproliferative disorder (e.g., JAK2 mutation testing) may be warranted."
                     }
                 ]
             },
@@ -1627,7 +1627,7 @@
                           "Elevated INR"
                         ],
                         "correct_answer": "Elevated INR",
-                        "explanation": "Essential thrombocythemia is a myeloproliferative disorder characterized by an excessive production of platelets, leading to both thrombotic and hemorrhagic complications. It can also be associated with erythromelalgia (burning pain and redness of extremities) and splenomegaly. However, it does not typically cause an elevated INR."
+                        "explanation": "Essential thrombocythemia is a myeloproliferative disorder characterized by: **An excessive production of platelets ⟶ leading to both thrombotic and hemorrhagic complications** **Erythromelalgia (burning pain and redness of extremities)** **Splenomegaly** However, it does not typically cause an elevated INR."
                     },
                     {
                         "question": "Which genetic abnormality is associated with myeloid proliferation in chronic myeloid leukemia?",
@@ -1942,7 +1942,7 @@
                 "name": "Acute kidney injury",
                 "questions": [
                     {
-                        "question": "A patient with dementia and benign prostatic hyperplasia (BPH) presents to the ED after a fall. Imaging is negative for fractures. Lab results show a creatinine level of 3.2 mg/dL, whereas his baseline creatinine is reportedly normal. What is the next step in management?",
+                        "question": "A patient with dementia and benign prostatic hyperplasia presents to the ED after a fall. Imaging is negative for fractures. Lab results show a creatinine level of 3.2 mg/dL, whereas his baseline creatinine is reportedly normal. What is the next step in management?",
                         "choices": [
                           "Order FeNa",
                           "Order urine osmolarity",
@@ -2096,7 +2096,7 @@
                         "explanation": "APGN is associated with an increased anti-streptolysin O (ASO) titer, indicating a recent streptococcal infection, and decreased C3 levels due to complement activation."
                     },
                     {
-                        "question": "How do complement levels help differentiate IgA nephropathy from poststreptococcal glomerulonephritis (PSGN)?",
+                        "question": "How do complement levels help differentiate IgA nephropathy from poststreptococcal glomerulonephritis?",
                         "choices": [
                           "PSGN has low C3 levels, while IgA nephropathy has normal complement levels",
                           "IgA nephropathy has low C3 levels, while PSGN has normal complement levels",
@@ -2220,7 +2220,7 @@
                         "explanation": "Hyperammonemia is not usually seen in adrenal failure. However, hyponatremia, hypoglycemia, hyperkalemia, and eosinophilia are common findings in adrenal insufficiency due to hormonal imbalances."
                     },
                     {
-                        "question": "Hyperpigmentation is seen in?",
+                        "question": "Hyperpigmentation is seen in which type of adrenal insufficiency?",
                         "choices": ["Primary adrenal insufficiency", "Secondary adrenal insufficiency", "Seen equally in both disorders"],
                         "correct_answer": "Primary adrenal insufficiency",
                         "explanation": "Hyperpigmentation is seen in primary adrenal insufficiency due to increased production of proopiomelanocortin (POMC), which is converted into corticotropin (ACTH) and melanocyte-stimulating hormone (MSH). MSH stimulates melanocytes, leading to hyperpigmentation."
@@ -2238,6 +2238,17 @@
                         "correct_answer": "Increase in PTH level",
                         "explanation": "Lithium-induced hypercalcemia occurs due to increased secretion of parathyroid hormone (PTH). Lithium raises the set point at which calcium suppresses PTH release, leading to elevated PTH levels and subsequent hypercalcemia."
                     },
+                    {
+                        "question": "Which of the following types of IV treatment should be avoided in hypercalcemia?",
+                        "choices": [
+                          "Normal saline",
+                          "Loop diuretics",
+                          "Lactated Ringer's solution",
+                          "Bisphosphonates"
+                        ],
+                        "correct_answer": "Lactated Ringer's solution",
+                        "explanation": "Lactated Ringer's solution contains calcium and should be avoided in hypercalcemia as it can further increase serum calcium levels. Instead, normal saline is preferred for volume expansion, and bisphosphonates can be used to reduce bone resorption."
+                    },                      
                     {
                         "question": "Which antihypertensive is preferred in patients with hypercalciuria and recurrent calcium nephrolithiasis?",
                         "choices": ["Lisinopril", "Indapamide", "Metoprolol", "Hydralazine"],
@@ -2395,7 +2406,7 @@
                         "explanation": "Daptomycin is inactivated by lung surfactant and therefore is ineffective for treating pneumonia."
                     },
                     {
-                        "question": "Which of the following antibiotics should be used to treat methicillin-susceptible Staphylococcus aureus (MSSA)?",
+                        "question": "Which of the following antibiotics should be used to treat methicillin-susceptible Staphylococcus aureus?",
                         "choices": ["Vancomycin", "Nafcillin", "Rifampin", "Azithromycin"],
                         "correct_answer": "Nafcillin",
                         "explanation": "Nafcillin and cefazolin are preferred for MSSA due to superior efficacy. If cultures confirm MSSA, deescalate from vancomycin to nafcillin or cefazolin."
