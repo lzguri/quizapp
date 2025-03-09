@@ -895,7 +895,7 @@ function adjustDivWidth() {
             div.style.padding = '';
             div.style.borderRadius = '';
             div.style.boxShadow = '';
-            progressBarContent.style.marginTop = "25px"
+            progressBarContent.style.marginTop = "10px"
             div.style.textAlign = '';  // Reset to default on mobile
             scorePageBackground.style.backgroundColor = '#f4f4f4'
         }

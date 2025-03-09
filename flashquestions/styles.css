@@ -128,9 +128,9 @@ button:active {
     font-size: 14px;
 }
 
-/*.button-choice:hover {
+.button-choice:hover {
     background-color: #e0e0e0;
-}*/
+}
 
 #questionLimitContainer {
     margin-top: 10px;
@@ -145,14 +145,6 @@ button:active {
     margin-left: 10px;
 }
 
-.appMenu {
-  position: fixed;
-  padding: 6px;
-  color: white;
-  border: 0px solid blue;
-  background-color: #215fac;
-  width: 100%;
-}
 
 
 /* Correct and Incorrect Answers */
@@ -529,7 +521,7 @@ button:active {
   position: relative;
   display: block; /* Or block, depending on your needs */
   left: -20px;
-  top: -22px;
+  top: -30px;
   margin-bottom: -25px;
 }
 

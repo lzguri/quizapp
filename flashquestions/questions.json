@@ -9,7 +9,7 @@
                         "question": "Which medications should be avoided in patients using nitrates?",
                         "choices": ["Sildenafil", "Aspirin", "Lisinopril", "Metoprolol"],
                         "correct_answer": "Sildenafil",
-                        "explanation": "Sildenafil and other phosphodiesterase inhibitors [vardenafil, tadalafil] should be avoided in patients using nitrates because they can cause a dangerous drop in blood pressure due to their combined vasodilatory effects."
+                        "explanation": "Sildenafil and other PDE-5 inhibitors (vardenafil, tadalafil) block cGMP breakdown, enhancing nitric oxide–mediated vasodilation. When combined with nitrates (covert to nitric oxide ⟶  increases cGMP), this leads to excessive vasodilation and a dangerous drop in blood pressure."
                     },                    
                     {
                         "question": "What is the proper use of nitrates in the management of angina to prevent tachyphylaxis?",
@@ -33,7 +33,7 @@
                         "question": "Which of the following is NOT part of the four major classes of antianginal medications for stable angina?",
                         "choices": ["β-blockers", "Nitrates", "Calcium channel blockers", "Ranolazine", "ACE inhibitors"],
                         "correct_answer": "ACE inhibitors",
-                        "explanation": "The four major classes of antianginal medications for stable angina are β-blockers, nitrates, calcium channel blockers, and ranolazine. ACE inhibitors  are not considered antianginal medications."
+                        "explanation": "The four major classes of antianginal medications for stable angina are:  **β-blockers** **Nitrates** **Calcium channel blockers** **Ranolazine** ACE inhibitors  are not considered antianginal medications."
                     }                          
                 ]
             },
@@ -1243,6 +1243,64 @@
                         "correct_answer": "Parathyroid hormone-related protein (PTHrP) production",
                         "explanation": "Squamous cell carcinoma of the lung is associated with humoral hypercalcemia of malignancy due to the production of parathyroid hormone-related protein (PTHrP). PTHrP mimics the effects of parathyroid hormone, leading to increased calcium resorption from bone and reduced renal calcium excretion. Unlike some other malignancies, squamous cell carcinoma does not typically cause hypercalcemia through increased vitamin D production."
                     }
+                      
+                    
+                ]
+            },
+            {
+                "name": "Cancer complications",
+                "questions": [
+                    {
+                        "question": "Which of the following is NOT seen in tumor lysis syndrome?",
+                        "choices": [
+                          "Hyperkalemia",
+                          "Hypercalcemia",
+                          "Hyperuricemia",
+                          "Acute kidney injury",
+                          "Hyperphosphatemia"
+                        ],
+                        "correct_answer": "Hypercalcemia",
+                        "explanation": "Tumor lysis syndrome occurs due to rapid tumor cell breakdown, leading to **Hyperkalemia ⟶ release of intracellular potassium** **Hyperuricemia ⟶ purine breakdown** **Hyperphosphatemia ⟶ release from dying cells** **Acute kidney injury ⟶ uric acid and calcium-phosphate precipitation** **Hypocalcemia ⟶ phosphate binding calcium** Hypercalcemia is typically not seen." 
+                    },
+                    {
+                        "question": "A patient diagnosed with non-Hodgkin lymphoma has extensive lymphadenopathy on imaging. Elevation of which of the following markers indicates an increased risk for acute kidney injury?",
+                        "choices": [
+                          "LDH",
+                          "AST/ALT",
+                          "ALP",
+                          "Hemoglobin"
+                        ],
+                        "correct_answer": "LDH",
+                        "explanation": "Elevated lactate dehydrogenase (LDH, intracellular marker) in NHL suggests high tumor burden and rapid cell turnover ⟶ increased risk for tumor lysis syndrome (TLS) ⟶ release of uric acid and phosphate ⟶ acute kidney injury due to crystallization and nephrotoxicity."
+                    },
+                    {
+                        "question": "How does rasburicase work in the management of tumor lysis syndrome?",
+                        "choices": [
+                          "Inhibiting xanthine oxidase",
+                          "Enhancing renal phosphate excretion",
+                          "Converting uric acid to a more soluble metabolite",
+                          "Blocking uric acid reabsorption in the kidneys"
+                        ],
+                        "correct_answer": "Converting uric acid to a more soluble metabolite",
+                        "explanation": "Rasburicase converts uric acid to allantoin, which is more soluble and excreted in urine ⟶ prevents uric acid-induced kidney injury. Allopurinol inhibits xanthine oxidase, reducing uric acid production. Allopurinol is used prophylactically, while rasburicase is used for high-risk patients or when uric acid is already elevated."
+                    },
+                    {
+                        "question": "Which of the following is NOT a side effect of rasburicase?",
+                        "choices": [
+                          "Anaphylaxis",
+                          "Methemoglobinemia",
+                          "Hemolysis due to G6PD deficiency",
+                          "Nephrotoxicity"
+                        ],
+                        "correct_answer": "Nephrotoxicity",
+                        "explanation": "Rasburicase can cause **Anaphylaxis** **Methemoglobinemia** **Hemolysis in G6PD deficiency** due to its oxidative properties. However, it does not cause nephrotoxicity; in fact, it helps prevent kidney injury by reducing uric acid levels."
+                    }
+                      
+                      
+                      
+                      
+                      
+                      
                       
                     
                 ]
