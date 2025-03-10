@@ -400,9 +400,9 @@ document.addEventListener("DOMContentLoaded", () => {
 
     function showQuestion(isReview = false) {
         let questionData = selectedQuestions[currentQuestionIndex];
-        questionTitle.textContent = `${currentQuestionIndex + 1}. ${questionData.question}`;
+        questionTitle.textContent = `${currentQuestionIndex + 1}/${selectedQuestions.length}. ${questionData.question}`;
         questionTitle.style.fontWeight = "normal";
-        questionTitle.style.fontSize = "20px";
+        questionTitle.style.fontSize = "17px";
         answerChoices.innerHTML = "";
     
         let shuffledChoices = shuffle(questionData.choices);

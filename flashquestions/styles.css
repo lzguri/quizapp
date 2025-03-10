@@ -529,14 +529,13 @@ input[type='checkbox'] {
   position: relative;
   display: block; /* Or block, depending on your needs */
   left: -20px;
-  top: -20px;
   margin-bottom: -5px;
 }
 
 .dropdown-button {
   background-color: #f4f4f4;
   color: rgb(0, 0, 0);
-  padding-left: 15px;
+  padding-right: 25px;
   font-size: 16px;
   border: none;
   cursor: pointer;
@@ -545,6 +544,7 @@ input[type='checkbox'] {
   border-bottom-right-radius: 0px;
   text-align: right;
   gap: 10px;
+  
 
 }
 
