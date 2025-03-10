@@ -883,6 +883,7 @@ function adjustDivWidth() {
             div.style.borderRadius = '5px';
             div.style.boxShadow = '0px 0px 10px gray';
             div.style.textAlign = 'left';
+            dropdownButton.style.backgroundColor - "white"
             
             scorePageBackground.style.backgroundColor = 'white'
 
@@ -899,7 +900,7 @@ function adjustDivWidth() {
             div.style.boxShadow = '';
             div.style.textAlign = '';  // Reset to default on mobile
             scorePageBackground.style.backgroundColor = '#f4f4f4';
-            dropdownButton.style.backgroundColor - "#f4f4f4"
+            
         }
     }
 }

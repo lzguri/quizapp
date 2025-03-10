@@ -775,6 +775,30 @@
                         "explanation": "Alpha-1 antitrypsin deficiency is a rare genetic disorder that can lead to cirrhosis, while alcohol, metabolic dysfunction-associated steatotic liver disease (formerly NAFLD), and chronic viral hepatitis are much more common causes."
                     },
                     {
+                        "question": "Proton pump inhibitors should be avoided in patients with liver cirrhosis due to which reason?",
+                        "choices": [
+                          "Increased risk for bleeding",
+                          "Increased risk for spontaneous bacterial peritonitis (SBP)",
+                          "Cause liver cirrhosis",
+                          "Increase risk of hepatic encephalopathy",
+                          "Increase risk of hepatorenal syndrome"
+                        ],
+                        "correct_answer": "Increased risk for spontaneous bacterial peritonitis (SBP)",
+                        "explanation": "PPIs increase the risk of spontaneous bacterial peritonitis (SBP) in cirrhotic patients by altering gut microbiota and reducing gastric acid, which normally helps prevent bacterial overgrowth and translocation. Although PPIs can cause AKI they are not associated with hepatorenal syndrome directly."
+                    },
+                    {
+                        "question": "A patient with newly diagnosed liver cirrhosis from hepatitis C has a platelet count of 95,000. Which of the following is NOT indicated at this time?",
+                        "choices": [
+                          "Ultrasound of the liver",
+                          "Screening endoscopy",
+                          "Assess for hepatitis B vaccination",
+                          "Medication adjustments",
+                          "Serology for CMV"
+                        ],
+                        "correct_answer": "Serology for CMV",
+                        "explanation": "Routine evaluation of cirrhosis includes: **Liver ultrasound for HCC screening with or without AFP** **Endoscopy for varices** **Hepatitis B vaccination assessment** **Medication review to avoid hepatotoxic drugs** CMV serology is not routinely indicated in newly diagnosed cirrhosis."
+                    },                      
+                    {
                         "question": "Why are platelets low in patients with liver cirrhosis?",
                         "choices": [
                           "Hypersplenism",
