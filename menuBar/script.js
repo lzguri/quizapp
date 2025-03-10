@@ -1,19 +1,17 @@
-const dropdownButton = document.querySelector(".dropdown-button");
-const dropdownContent = document.querySelector(".dropdown-content");
-
-dropdownButton.addEventListener("click", function() {
-  if (dropdownContent.style.display === "block") {
-    dropdownContent.style.display = "none";
-  } else {
-    dropdownContent.style.display = "block";
-  }
-});
-
-// Close the dropdown if the user clicks outside of it
-window.addEventListener('click', function(event) {
-  if (!event.target.matches('.dropdown-button')) {
-    if (dropdownContent.style.display === 'block') {
-      dropdownContent.style.display = 'none';
+function toggleMenu() {
+    const menu = document.getElementById("dropdownMenu");
+    if (menu.style.display === "block") {
+        menu.style.display = "none";
+    } else {
+        menu.style.display = "block";
     }
-  }
+}
+
+// Close dropdown if clicked outside
+document.addEventListener("click", function(event) {
+    const menu = document.getElementById("dropdownMenu");
+    const profile = document.querySelector(".profile");
+    if (!profile.contains(event.target) && !menu.contains(event.target)) {
+        menu.style.display = "none";
+    }
 });

@@ -869,6 +869,8 @@ function adjustDivWidth() {
     const internalMedicine = document.getElementById('internal-medicine'); // Select h1
     const scorePageBackground = document.getElementById("scorePage");
     const progressBarContent = document.getElementById("progressContainer");
+    const dropdownButton = document.querySelector(".dropdown-button");
+
     
 
     if (div) {  // Ensure the element exists
@@ -895,9 +897,9 @@ function adjustDivWidth() {
             div.style.padding = '';
             div.style.borderRadius = '';
             div.style.boxShadow = '';
-            progressBarContent.style.marginTop = "10px"
             div.style.textAlign = '';  // Reset to default on mobile
-            scorePageBackground.style.backgroundColor = '#f4f4f4'
+            scorePageBackground.style.backgroundColor = '#f4f4f4';
+            dropdownButton.style.backgroundColor - "#f4f4f4"
         }
     }
 }

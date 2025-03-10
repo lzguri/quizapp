@@ -5,17 +5,38 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Dropdown Menu</title>
     <link rel="stylesheet" href="styles.css">
+    <script defer src="script.js"></script>
 </head>
 <body>
-    <div class="dropdown">
-        <button class="dropdown-button">Dropdown</button>
-        <div class="dropdown-content">
-          <a href="#">Option 1</a>
-          <a href="#">Option 2</a>
-          <a href="#">Option 3</a>
+    <div class="menu-container">
+        <div class="profile" onclick="toggleMenu()">
+            <img src="profile.jpg" alt="Profile" class="profile-pic">
+            <span class="notification-badge">2</span>
         </div>
-      </div>
-
-    <script src="script.js"></script>
+        <div class="dropdown-menu" id="dropdownMenu">
+            <ul>
+                <li><i class="icon-dashboard"></i> Dashboard</li>
+                <li><i class="icon-integrations"></i> Integrations</li>
+                <li><i class="icon-settings"></i> Settings</li>
+                <li class="divider">Support</li>
+                <li><i class="icon-guide"></i> Guide</li>
+                <li><i class="icon-help"></i> Help Center</li>
+                <li class="divider"></li>
+                <li class="plan-info">
+                    <span>Free Plan</span>
+                    <span>12,000 views</span>
+                    <button class="upgrade-button">Upgrade</button>
+                </li>
+                <li class="views-info">
+                    <span>Views <span class="view-count">8,495/12K</span></span>
+                    <div class="progress-bar">
+                        <div class="progress" style="width: 70%;"></div>
+                    </div>
+                    <span class="reset-info">Monthly usage resets in: 14 days</span>
+                </li>
+                <li class="logout"><i class="icon-logout"></i> Log Out</li>
+            </ul>
+        </div>
+    </div>
 </body>
 </html>

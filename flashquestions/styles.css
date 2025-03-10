@@ -10,13 +10,14 @@ body {
 
 /* Main Content Containers */
 .container {
-    max-width: 800px;
-    margin: auto;
-    background: white;
-    padding: 20px;
-    border-radius: 2px;
-    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
+  max-width: 900px;
+  margin: 20px auto;
+  background: white;
+  padding: 20px;
+  border-radius: 8px;
+  box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1);
 }
+
 
 /* Progress Bar */
 #progressContainer {
@@ -132,12 +133,19 @@ button:active {
     background-color: #e0e0e0;
 }
 
+/* Checkbox customization */
+input[type='checkbox'] {
+  transform: scale(1.2);
+  margin-right: 8px;
+}
+
+/* Limit number of questions container */
 #questionLimitContainer {
-    margin-top: 10px;
-    padding: 10px;
-    background: #f0f0f0;
-    border-radius: 5px;
-    text-align: center;
+  background: #f8f8f8;
+  padding: 12px;
+  border-radius: 6px;
+  text-align: center;
+  margin-top: 10px;
 }
 
 #questionLimitInput {
@@ -537,7 +545,7 @@ button:active {
   border-bottom-right-radius: 0px;
   text-align: left;
   gap: 10px;
-  border-bottom: 1px solid rgb(0, 0, 34);
+
 }
 
 .dropdown-button {
@@ -564,7 +572,7 @@ button:active {
 }
 
 .dropdown-content a:hover {
-  background-color: #1a4a87;
+  background-color: #f4f4f4;
 }
 
 .dropdown:hover .dropdown-content {
@@ -572,13 +580,15 @@ button:active {
 }
 
 #menuIcon {
-  position:relative;
-  width:25px;
-  height: 25px;
-  right: 10px;
-  
+  display: inline-block;
+  width: 27px;
+  height: 27px;
+  margin-right: 8px;
 }
 
-.menuName {
-  position: block;
+#menuName {
+  display: inline-block;
+  font-size: 20px;
+  font-weight: 700;
+  color: #333;
 }
