@@ -810,7 +810,7 @@
                         "explanation": "Thrombocytopenia in liver cirrhosis is primarily due to hypersplenism, which results from portal hypertension causing splenic congestion and increased platelet sequestration. Additionally, decreased thrombopoietin production by the liver can contribute to reduced platelet levels."
                     },
                     {
-                        "question": "Which of the following laboratory values are used to predict mortality in patients with liver cirrhosis?",
+                        "question": "All of the following laboratory values are used to predict mortality in patients with liver cirrhosis EXCEPT for?",
                         "choices": [
                           "Bilirubin",
                           "INR",
@@ -1237,17 +1237,140 @@
         "name": "Pulmonology",
         "subtopics": [
             {
-                "name": "Chronic obstructive pulmonary dsisease",
+                "name": "Chronic obstructive pulmonary disease",
                 "questions": [
                     {
                         "question": "Alpha-1 antitrypsin deficiency usually involves which lobes of the lung?",
                         "choices": ["Upper lobes", "Lower lobes", "Doesn't affect the lung at all", "Affect all the lung equally"],
                         "correct_answer": "Lower lobes",
                         "explanation": "Alpha-1 antitrypsin deficiency primarily affects the lower lobes of the lung due to the accumulation of neutrophil elastase activity, which damages the alveoli."
+                    },
+                    {
+                        "question": "A young patient presents with liver cirrhosis, and a CT abdomen shows emphysema. What is the next step in evaluation?",
+                        "choices": [
+                          "Check serum alpha-1 antitrypsin levels",
+                          "Order hepatitis B and C serology",
+                          "Perform a liver biopsy",
+                          "Check autoimmune liver disease markers"
+                        ],
+                        "correct_answer": "Check serum alpha-1 antitrypsin levels",
+                        "explanation": "CT abdomen captures only the lung bases, where emphysema from alpha-1 antitrypsin deficiency is most commonly seen. Alpha-1 antitrypsin deficiency causes liver cirrhosis due to misfolded protein accumulation and lung disease due to protease-mediated damage. Checking serum alpha-1 antitrypsin levels is the next step."
+                    },
+                    {
+                        "question": "Which of the following is NOT a complication of alpha-1 antitrypsin deficiency?",
+                        "choices": [
+                          "Chronic obstructive pulmonary disease",
+                          "Bronchiectasis",
+                          "Pneumothorax",
+                          "Liver cirrhosis",
+                          "Myocarditis"
+                        ],
+                        "correct_answer": "Myocarditis",
+                        "explanation": "Alpha-1 antitrypsin deficiency leads to COPD (especially panacinar emphysema), bronchiectasis, and liver cirrhosis due to protein accumulation. Pneumothorax can occur as a complication of severe emphysema, but myocarditis is not associated with this condition."
+                    },
+                    {
+                        "question": "All of the following are indications for home oxygen therapy in COPD except:",
+                        "choices": [
+                          "Resting PaO₂ ≤ 55 mmHg",
+                          "SpO₂ ≤ 88% at rest",
+                          "PaO₂ ≤ 59 mmHg with signs of cor pulmonale",
+                          "SpO₂ of 90% while sleeping"
+                        ],
+                        "correct_answer": "SpO₂ of 90% while sleeping",
+                        "explanation": "Home oxygen is indicated in COPD for: **PaO₂ ≤ 55 mmHg or SpO₂ ≤ 88% at rest** **PaO₂ ≤ 59 mmHg with signs of cor pulmonale (e.g., right heart failure, polycythemia).** A transient SpO₂ of 90% while sleeping is not an indication for long-term oxygen therapy."
+                    },
+                    {
+                        "question": "Inhaled corticosteroids in COPD increase the risk for which of the following?",
+                        "choices": [
+                          "Pneumonia",
+                          "Pulmonary embolism",
+                          "Lung fibrosis",
+                          "Bronchiectasis"
+                        ],
+                        "correct_answer": "Pneumonia",
+                        "explanation": "Inhaled corticosteroids in COPD increase the risk of pneumonia due to local immunosuppression in the lungs, leading to higher susceptibility to infections. This risk is particularly notable in patients with frequent exacerbations or advanced disease."
+                    },
+                    {
+                        "question": "In which scenario is PDE-4 inhibitor (roflumilast) recommended as add-on therapy in COPD?",
+                        "choices": [
+                          "Mild COPD with occasional dyspnea",
+                          "Moderate COPD with emphysema-predominant phenotype",
+                          "Severe COPD with chronic bronchitis and recurrent exacerbations",
+                          "COPD with pulmonary hypertension"
+                        ],
+                        "correct_answer": "Severe COPD with chronic bronchitis and recurrent exacerbations",
+                        "explanation": "Roflumilast, a PDE-4 inhibitor, is used as add-on therapy in severe COPD with chronic bronchitis and recurrent exacerbations to reduce inflammation and prevent exacerbations. It is not used in mild disease or emphysema-predominant COPD."
                     }
-                    
+                ]
+            },
+            {
+                "name": "Sarcoidosis",
+                "questions": [
+                    {
+                        "question": "What type of pulmonary function test abnormalities can be seen in sarcoidosis?",
+                        "choices": [
+                          "Obstructive pattern only",
+                          "Restrictive pattern only",
+                          "Mixed obstructive and restrictive pattern",
+                          "Normal PFTs"
+                        ],
+                        "correct_answer": "Mixed obstructive and restrictive pattern",
+                        "explanation": "Sarcoidosis can cause a restrictive pattern due to pulmonary fibrosis, an obstructive pattern due to airway involvement, or a mixed pattern depending on the extent of lung involvement. PFT abnormalities vary based on disease severity and location."
+                    },
+                    {
+                        "question": "Which of the following lab findings can be seen in a patient with sarcoidosis presenting with hypercalcemia?",
+                        "choices": [
+                          "Low PTH",
+                          "High PTH",
+                          "High PTHrP",
+                          "High 25OH vitamin D levels"
+                        ],
+                        "correct_answer": "Low PTH",
+                        "explanation": "Hypercalcemia in sarcoidosis is due to increased 1-alpha-hydroxylase activity in macrophages, leading to excessive 1,25-dihydroxyvitamin D production and enhanced calcium absorption. This results in suppressed PTH. PTHrP is seen in malignancy, and 25OH vitamin D levels remain normal."
+                    },
+                    {
+                        "question": "All of the following are seen in Löfgren syndrome except for:",
+                        "choices": [
+                          "Fever",
+                          "Bilateral hilar lymphadenopathy",
+                          "Erythema nodosum",
+                          "Pulmonary fibrosis"
+                        ],
+                        "correct_answer": "Pulmonary fibrosis",
+                        "explanation": "Löfgren syndrome is an acute presentation of sarcoidosis characterized by  bilateral hilar lymphadenopathy, erythema nodosum, fever, and often ankle arthritis. Pulmonary fibrosis is not a typical feature of Löfgren syndrome but may be seen in chronic sarcoidosis."
+                    },
+                    {
+                        "question": "All of the following are features of Heerfordt syndrome except for:",
+                        "choices": [
+                          "Anterior uveitis",
+                          "Parotid gland enlargement",
+                          "Facial palsy",
+                          "Raynaud phenomenon"
+                        ],
+                        "correct_answer": "Raynaud phenomenon",
+                        "explanation": "Heerfordt syndrome, also known as uveoparotid fever, is a rare form of sarcoidosis that presents with a combination of anterior uveitis, fever, parotid gland swelling, and facial nerve palsy. Raynaud phenomenon is not typically associated with this syndrome."
+                    },
+                    {
+                        "question": "Which of the following exposures might resemble sarcoidosis?",
+                        "choices": [
+                          "Beryllium",
+                          "Asbestos",
+                          "Silica",
+                          "Coal dust"
+                        ],
+                        "correct_answer": "Beryllium",
+                        "explanation": "Exposure to beryllium, often seen in workers in industries such as aerospace, electronics, and nuclear power, can cause chronic beryllium disease (CBD), which presents with granulomatous lung disease similar to sarcoidosis. While asbestos, silica, and coal dust can cause various pulmonary diseases, they do not typically mimic sarcoidosis."
+                    }
+                      
+                      
+                      
+                      
+                      
+                      
+                      
                 ]
             }
+            
         ]
     },
     {
@@ -1979,7 +2102,7 @@
                           "Seizures"
                         ],
                         "correct_answer": "Seizures",
-                        "explanation": "Potassium is essential for the proper generation and conduction of action potentials in: **smooth muscle → ileus** **striated → generalized and respiratory muscle weakness **cardiac muscles → EKG changes and arrhythmias** However, seizures are not typically a direct consequence of hypokalemia."
+                        "explanation": "Potassium is essential for the proper generation and conduction of action potentials in: **Smooth muscle → ileus** **Striated → generalized and respiratory muscle weakness** **Cardiac muscles → EKG changes and arrhythmias** However, seizures are not typically a direct consequence of hypokalemia."
                     },
                     {
                         "question": "A patient with a history of anorexia is started on nutritional support and subsequently develops weakness, respiratory failure, and confusion. Which electrolyte abnormality is most likely responsible for these symptoms?",
@@ -2008,9 +2131,9 @@
                         "choices": [
                           "Drop from 130 to 125 over 5 days",
                           "Drop from 136 to 119 over a month",
-                          "Drop from 135 to 124 in two days"
+                          "Drop from 131 to 121 in two days"
                         ],
-                        "correct_answer": "Drop from 135 to 124 in two days",
+                        "correct_answer": "Drop from 131 to 121 in two days",
                         "explanation": "Acute hyponatremia (developing in <48 hours) is more dangerous than chronic hyponatremia because the brain has inadequate time to adapt to changes in sodium levels. This can lead to cerebral edema and life-threatening neurological complications."
                     }
                       
@@ -2537,6 +2660,24 @@
                       
                       
                        
+                ]
+            },
+            {
+                "name": "Tuberculosis",
+                "questions": [
+                    {
+                        "question": "All of the following regimens can be used to treat a patient with a positive IGRA and negative X-ray except:",
+                        "choices": [
+                          "Rifampin daily for 4 months",
+                          "Isoniazid and rifapentine weekly for 3 months",
+                          "Isoniazid and rifampin daily for 3 months",
+                          "Isoniazid daily for 9 months",
+                          "Rifampin, Isoniazid, Pyrazinamide, and Ethambutol"
+                        ],
+                        "correct_answer": "RIPE regimen (Rifampin, Isoniazid, Pyrazinamide, Ethambutol)",
+                        "explanation": "A positive IGRA with a negative X-ray suggests latent TB infection, which is treated with rifamycin-based regimens (e.g., rifampin for 4 months, isoniazid and rifapentine for 3 months, or isoniazid and rifampin for 3 months). The RIPE regimen (rifampin, isoniazid, pyrazinamide, ethambutol) is used only for active TB."
+                      }
+                      
                 ]
             },
             {
